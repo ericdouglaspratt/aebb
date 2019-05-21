@@ -10,7 +10,8 @@ var stations = [
     "id": 4,
     "name": "Tremont St at E Berkeley St",
     "lat": 42.345392,
-    "long": -71.069616
+    "long": -71.069616,
+    "photo": "photos/tremont-st-at-e-berkeley-st.jpg"
   },
   {
     "id": 5,
@@ -62,7 +63,8 @@ var stations = [
     "id": 12,
     "name": "Ruggles T Stop - Columbus Ave at Melnea Cass Blvd",
     "lat": 42.336282,
-    "long": -71.088019
+    "long": -71.088019,
+    "photo": "photos/ruggles-t-stop.jpg"
   },
   {
     "id": 14,
@@ -134,7 +136,8 @@ var stations = [
     "id": 25,
     "name": "South End Library - Tremont St at W Newton St",
     "lat": 42.341332,
-    "long": -71.076847
+    "long": -71.076847,
+    "photo": "photos/south-end-library.jpg"
   },
   {
     "id": 26,
@@ -146,7 +149,8 @@ var stations = [
     "id": 27,
     "name": "Roxbury Crossing T Stop - Columbus Ave at Tremont St",
     "lat": 42.331184,
-    "long": -71.095171
+    "long": -71.095171,
+    "photo": "photos/roxbury-crossing-t-stop.jpg"
   },
   {
     "id": 29,
@@ -318,7 +322,8 @@ var stations = [
     "id": 57,
     "name": "Columbus Ave at Massachusetts Ave",
     "lat": 42.340542615516,
-    "long": -71.081388479142
+    "long": -71.081388479142,
+    "photo": "photos/massachusetts-ave-at-columbus-ave.jpg"
   },
   {
     "id": 58,
@@ -770,13 +775,15 @@ var stations = [
     "id": 131,
     "name": "Jackson Square T Stop",
     "lat": 42.322931,
-    "long": -71.100141
+    "long": -71.100141,
+    "photo": "photos/jackson-square-t-stop.jpg"
   },
   {
     "id": 133,
     "name": "Green Street T Stop - Green St at Amory St",
     "lat": 42.310579,
-    "long": -71.107341
+    "long": -71.107341,
+    "photo": "photos/green-street-t-stop.jpg"
   },
   {
     "id": 134,
@@ -883,7 +890,8 @@ var stations = [
     "id": 152,
     "name": "Ink Block - Harrison Ave at Herald St",
     "lat": 42.345901,
-    "long": -71.063187
+    "long": -71.063187,
+    "photo": "photos/ink-block.jpg"
   },
   {
     "id": 156,
@@ -1263,7 +1271,8 @@ var stations = [
     "id": 222,
     "name": "Troy Boston",
     "lat": 42.343749,
-    "long": -71.062256
+    "long": -71.062256,
+    "photo": "photos/troy-boston.jpg"
   },
   {
     "id": 224,
