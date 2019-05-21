@@ -435,7 +435,8 @@ var stations = [
     "id": 74,
     "name": "Harvard Square at Mass Ave/ Dunster",
     "lat": 42.373268,
-    "long": -71.118579
+    "long": -71.118579,
+    "photo": "photos/harvard-square-at-mass-ave-dunster.jpg"
   },
   {
     "id": 75,
@@ -609,7 +610,8 @@ var stations = [
     "id": 102,
     "name": "Powder House Circle - Nathan Tufts Park",
     "lat": 42.400877,
-    "long": -71.116772
+    "long": -71.116772,
+    "photo": "photos/powder-house-circle.jpg"
   },
   {
     "id": 103,
@@ -667,13 +669,15 @@ var stations = [
     "id": 111,
     "name": "Packard Ave at Powderhouse Blvd",
     "lat": 42.40449,
-    "long": -71.123413
+    "long": -71.123413,
+    "photo": "photos/packard-ave-at-powderhouse-blvd.jpg"
   },
   {
     "id": 112,
     "name": "Clarendon Hill at Broadway",
     "lat": 42.406302,
-    "long": -71.132446
+    "long": -71.132446,
+    "photo": "photos/clarendon-hill-at-broadway.jpg"
   },
   {
     "id": 113,
@@ -711,7 +715,8 @@ var stations = [
     "id": 118,
     "name": "Linear Park - Mass. Ave. at Cameron Ave. ",
     "lat": 42.397828,
-    "long": -71.130516
+    "long": -71.130516,
+    "photo": "photos/linear-park-mass-ave-at-cameron-ave.jpg"
   },
   {
     "id": 119,
@@ -815,7 +820,8 @@ var stations = [
     "id": 137,
     "name": "Magoun Square at Trum Field",
     "lat": 42.398365,
-    "long": -71.107818
+    "long": -71.107818,
+    "photo": "photos/magoun-square-at-trum-field.jpg"
   },
   {
     "id": 138,
@@ -833,7 +839,8 @@ var stations = [
     "id": 140,
     "name": "Danehy Park",
     "lat": 42.388966,
-    "long": -71.132788
+    "long": -71.132788,
+    "photo": "photos/danehy-park.jpg"
   },
   {
     "id": 141,
@@ -845,7 +852,8 @@ var stations = [
     "id": 142,
     "name": "Alewife Station at Russell Field",
     "lat": 42.396105,
-    "long": -71.139459
+    "long": -71.139459,
+    "photo": "photos/alewife-station-at-russell-field.jpg"
   },
   {
     "id": 143,
@@ -864,7 +872,8 @@ var stations = [
     "id": 145,
     "name": "Rindge Avenue - O'Neill Library",
     "lat": 42.392766,
-    "long": -71.129042
+    "long": -71.129042,
+    "photo": "photos/rindge-avenue-oneill-library.jpg"
   },
   {
     "id": 146,
@@ -1025,7 +1034,8 @@ var stations = [
     "id": 181,
     "name": "Huron Ave At Vassal Lane",
     "lat": 42.381650612901,
-    "long": -71.134269814984
+    "long": -71.134269814984,
+    "photo": "photos/huron-ave-at-vassal-lane.jpg"
   },
   {
     "id": 182,
@@ -1037,7 +1047,8 @@ var stations = [
     "id": 183,
     "name": "Alewife MBTA at Steel Place",
     "lat": 42.395588,
-    "long": -71.142606
+    "long": -71.142606,
+    "photo": "photos/alewife-mbta-at-steel-place.jpg"
   },
   {
     "id": 184,
@@ -1284,7 +1295,8 @@ var stations = [
     "id": 224,
     "name": "Fresh Pond Reservation",
     "lat": 42.382678275219,
-    "long": -71.143478951426
+    "long": -71.143478951426,
+    "photo": "photos/fresh-pond-reservation.jpg"
   },
   {
     "id": 225,
