@@ -194,7 +194,8 @@ var stations = [
     "id": 36,
     "name": "Copley Square - Dartmouth St at Boylston St",
     "lat": 42.349767,
-    "long": -71.077327
+    "long": -71.077327,
+    "photo": "photos/copley-square.jpg"
   },
   {
     "id": 37,
@@ -245,7 +246,8 @@ var stations = [
     "id": 45,
     "name": "Jersey St. at Boylston St.",
     "lat": 42.344681,
-    "long": -71.097853
+    "long": -71.097853,
+    "photo": "photos/jersey-st-at-boylston-st.jpg"
   },
   {
     "id": 46,
@@ -278,7 +280,8 @@ var stations = [
     "id": 50,
     "name": "Boylston St at Berkeley St",
     "lat": 42.351142,
-    "long": -71.073292
+    "long": -71.073292,
+    "photo": "photos/boylston-st-at-berkeley-st.jpg"
   },
   {
     "id": 51,
@@ -310,7 +313,8 @@ var stations = [
     "id": 55,
     "name": "Boylston St at Massachusetts Ave",
     "lat": 42.347265,
-    "long": -71.088088
+    "long": -71.088088,
+    "photo": "photos/boylston-st-at-massachusetts-ave.jpg"
   },
   {
     "id": 56,
@@ -350,7 +354,8 @@ var stations = [
     "id": 61,
     "name": "Boylston St at Fairfield St",
     "lat": 42.348762,
-    "long": -71.082383
+    "long": -71.082383,
+    "photo": "photos/boylston-st-at-fairfield-st.jpg"
   },
   {
     "id": 63,
@@ -789,7 +794,8 @@ var stations = [
     "id": 134,
     "name": "Boylston St at Dartmouth St",
     "lat": 42.350413,
-    "long": -71.07655
+    "long": -71.07655,
+    "photo": "photos/boylston-st-at-dartmouth-st.jpg"
   },
   {
     "id": 135,
