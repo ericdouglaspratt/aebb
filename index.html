@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+      Andy and Eric Bike Boston
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <meta property="og:site_name" content="Andy and Eric Bike Boston" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Andy and Eric Bike Boston" />
+    <meta property="og:image" content="http://ericdouglaspratt.com/misc/aebb/img/hubway-progress.png" />
+    <meta property="og:description" content="Hitting every Hubway station in the city." />
+    <meta property="og:url" content="http://ericdouglaspratt.com/misc/aebb/" />
+
+    <style type="text/css">
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Helvetica, sans-serif;
+      }
+      .Layout {
+        bottom: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+      }
+      .HeaderMobile {
+        background-color: #1D428A;
+        color: #FFF;
+        flex-grow: 0;
+        font-size: 18px;
+        margin: 0;
+        padding: 10px;
+      }
+      #map-canvas {
+        flex-grow: 1;
+        height: 100%;
+      }
+      .InfoPane {
+        background-color: #1D428A;
+        color: #FFF;
+        flex-grow: 0;
+        padding: 10px;
+      }
+      .InfoPane-header {
+        display: none;
+        font-size: 18px;
+        margin: 0;
+      }
+      .ProgressBar {
+        padding-top: 45px;
+        margin-top: 20px;
+      }
+      .ProgressBar-bar,
+      .ProgressBar-completed {
+        height: 8px;
+      }
+      .ProgressBar-bar {
+        background-color: #FFF;
+      }
+      .ProgressBar-completed {
+        background-color: #b04d00;
+        position: relative;
+        width: 0%;
+      }
+      .ProgressBar-report {
+        border-right: 2px solid #b04d00;
+        bottom: 8px;
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 0 5px 5px 0;
+        position: absolute;
+        right: 0;
+        text-align: right;
+      }
+      .ProgressBar-percentage {
+        font-size: 36px;
+        position: relative;
+        top: -5px;
+      }
+      .ProgressBar-stationsComplete {
+        font-size: 12px;
+        margin-top: -4px;
+        position: relative;
+        top: -5px;
+      }
+      .ProgressBar-axis {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4px;
+      }
+      .ProgressBar-min,
+      .ProgressBar-max {
+        font-size: 12px;
+      }
+      @media (min-width: 1024px) {
+        .Layout {
+          flex-flow: row nowrap;
+        }
+        .HeaderMobile {
+          display: none;
+        }
+        .InfoPane {
+          padding: 20px;
+          width: 400px;
+        }
+        .InfoPane-header {
+          display: block;
+        }
+        .ProgressBar {
+           margin-top: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Layout">
+      <h1 class="HeaderMobile">
+        Andy and Eric Bike Boston
+      </h1>
+      <div id="map-canvas"></div>
+      <div class="InfoPane">
+        <h1 class="InfoPane-header">
+          Andy and Eric Bike Boston
+        </h1>
+        <div class="ProgressBar">
+          <div class="ProgressBar-bar">
+            <div class="ProgressBar-completed">
+              <span class="ProgressBar-report">
+                <span class="ProgressBar-percentage"></span>
+                <span class="ProgressBar-stationsComplete"></span>
+              </span>
+            </div>
+          </div>
+          <div class="ProgressBar-axis">
+            <span class="ProgressBar-min">0</span>
+            <span class="ProgressBar-max"></span>
+          </div>
+        </div>
+      </div>
+     </div>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWqbvKL6g7a4SPMhAnpOx-QMtnt5YXuMI"></script>
+    <script type="text/javascript" src="lodash.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
