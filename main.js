@@ -1859,55 +1859,68 @@ for (var i = 0; i < numStations; i++) {
 // stations we've visited split by day
 var trips = [
   {
-    color: '#f1c40f', // May 28, 2017
+    color: '#f1c40f',
+    date: '2017-05-28',
     stations: [107, 72, 60, 120, 58, 42, 81, 22]
   },
   {
-    color: '#2980b9', // August 13, 2017
+    color: '#2980b9',
+    date: '2017-08-13',
     stations: [22, 192, 43, 151, 20, 40, 98, 85, 129, 94, 169, 171, 84, 185, 80, 67, 53, 52]
   },
   {
-    color: '#e67e22', // March 3, 2018
+    color: '#e67e22',
+    date: '2018-03-03',
     stations: [182, 84, 90, 195, 143, 98, 94]
   },
   {
-    color: '#e67e22', // March 18, 2018
+    color: '#e67e22',
+    date: '2018-03-18',
     stations: [22, 65, 119, 146, 163, 22]
   },
   {
-    color: '#c0392b', // March 30, 2018
+    color: '#c0392b',
+    date: '2018-03-30',
     stations: [94, 47, 20, 151, 157]
   },
   {
-    color: '#2ecc71', // March 31, 2018
+    color: '#2ecc71',
+    date: '2018-03-31',
     stations: [82, 69, 11, 30, 14, 3, 160, 46, 21, 16, 49, 81]
   },
   {
-    color: '#0000ff', // June 23, 2018
+    color: '#0000ff',
+    date: '2018-06-23',
     stations: [45, 55, 61, 36, 134, 50, 42, 81]
   },
   {
-    color: '#ff0000', // June 24, 2018
+    color: '#ff0000',
+    date: '2018-06-24',
     stations: [124, 133, 131, 27, 12, 57, 25, 4, 152, 222, 81]
   },
   {
-    color: '#00ff00', // June 30, 2018
+    color: '#00ff00',
+    date: '2018-06-30',
     stations: [100, 114, 102, 137, 111, 112, 118, 183, 142, 145, 140, 224, 181, 74]
   },
   {
-    color: '#27ae60', // September 8, 2018
+    color: '#27ae60',
+    date: '2018-09-08',
     stations: [236, 194, 235, 329, 78, 88, 95, 225, 116, 76, 68, 75, 177, 184, 179, 9, 10, 227]
   },
   {
-    color: '#d35400', // May 11, 2019
+    color: '#d35400',
+    date: '2019-05-11',
     stations: [76, 87, 97, 70, 73, 221, 96, 110, 108, 89, 104, 176, 115]
   },
   {
-    color: '#16a085', // May 17, 2019
+    color: '#16a085',
+    date: '2019-05-17',
     stations: [59, 64, 157, 218, 24, 7, 31, 186, 136, 135]
   },
   {
-    color: '#1abc9c', // May 19, 2019
+    color: '#1abc9c',
+    date: '2019-05-19',
     stations: [217, 355, 210, 209, 216, 214, 219, 215, 212, 213, 211]
   }
 ];
@@ -2049,6 +2062,18 @@ function initialize() {
 
   var numStationsEl = document.getElementsByClassName('ProgressBar-max')[0];
   numStationsEl.innerHTML = numStations;
+
+  var reversedTrips = trips.slice().reverse();
+  var tripHtml = [
+    '<ul>',
+    ...reversedTrips.map(trip => {
+      const dateObj = moment(trip.date, 'YYYY-MM-DD');
+      return `<li>${dateObj.format('MMM D, YYYY')} - ${trip.stations.length} stations</li>`;
+    }),
+    '</ul>'
+  ].join('');
+  var tripHistoryEl = document.getElementsByClassName('TripHistory')[0];
+  tripHistoryEl.innerHTML = tripHtml;
 
   for (var i = 0; i < numStations; i++) {
     let isVisited = false;

@@ -102,6 +102,9 @@
       .ProgressBar-max {
         font-size: 12px;
       }
+      .TripHistory {
+        display: none;
+      }
       @media (min-width: 1024px) {
         .Layout {
           flex-flow: row nowrap;
@@ -118,6 +121,14 @@
         }
         .ProgressBar {
            margin-top: 40px;
+        }
+        .TripHistory {
+          display: block;
+        }
+        .TripHistory ul {
+          list-style-type: none;
+          margin: 20px 0 0;
+          padding: 0;
         }
       }
     </style>
@@ -146,10 +157,14 @@
             <span class="ProgressBar-max"></span>
           </div>
         </div>
+        <div class="TripHistory">
+          
+        </div>
       </div>
      </div>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWqbvKL6g7a4SPMhAnpOx-QMtnt5YXuMI"></script>
     <script type="text/javascript" src="lodash.min.js"></script>
+    <script type="text/javascript" src="moment.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
