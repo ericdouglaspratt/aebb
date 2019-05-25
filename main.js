@@ -36,7 +36,8 @@ var stations = [
     "id": 8,
     "name": "Union Square - Brighton Ave at Cambridge St",
     "lat": 42.353334,
-    "long": -71.137313
+    "long": -71.137313,
+    "photo": "photos/union-square-allston.jpg"
   },
   {
     "id": 9,
@@ -201,7 +202,8 @@ var stations = [
     "id": 37,
     "name": "New Balance - 20 Guest St",
     "lat": 42.357329,
-    "long": -71.146735
+    "long": -71.146735,
+    "photo": "photos/new-balance.jpg"
   },
   {
     "id": 39,
@@ -220,7 +222,8 @@ var stations = [
     "id": 41,
     "name": "Packard's Corner - Commonwealth Ave at Brighton Ave",
     "lat": 42.352261,
-    "long": -71.123831
+    "long": -71.123831,
+    "photo": "photos/packards-corner.jpg"
   },
   {
     "id": 42,
@@ -381,7 +384,8 @@ var stations = [
     "id": 66,
     "name": "Allston Green District - Griggs St at Commonwealth Ave",
     "lat": 42.34852,
-    "long": -71.133947
+    "long": -71.133947,
+    "photo": "photos/allston-green-district.jpg"
   },
   {
     "id": 67,
@@ -617,7 +621,8 @@ var stations = [
     "id": 103,
     "name": "JFK Crossing at Harvard St. / Thorndike St.",
     "lat": 42.346563,
-    "long": -71.128374
+    "long": -71.128374,
+    "photo": "photos/jfk-crossing-at-harvard-st-thorndike-st.jpg"
   },
   {
     "id": 104,
@@ -989,13 +994,15 @@ var stations = [
     "id": 174,
     "name": "Washington St at Brock St",
     "lat": 42.348953,
-    "long": -71.160317
+    "long": -71.160317,
+    "photo": "photos/washington-st-at-brock-st.jpg"
   },
   {
     "id": 175,
     "name": "Brighton Center - Washington St at Cambridge St",
     "lat": 42.348949,
-    "long": -71.150272
+    "long": -71.150272,
+    "photo": "photos/brighton-center.jpg"
   },
   {
     "id": 176,
@@ -1198,7 +1205,8 @@ var stations = [
     "id": 208,
     "name": "Oak Square - 615 Washington St",
     "lat": 42.35057,
-    "long": -71.166491
+    "long": -71.166491,
+    "photo": "photos/oak-square.jpg"
   },
   {
     "id": 209,
@@ -1309,7 +1317,8 @@ var stations = [
     "id": 226,
     "name": "Commonwealth Ave At Babcock St",
     "lat": 42.351547347914,
-    "long": -71.121262460947
+    "long": -71.121262460947,
+    "photo": "photos/commonwealth-ave-at-babcock-st.jpg"
   },
   {
     "id": 227,
@@ -1481,7 +1490,8 @@ var stations = [
     "id": 332,
     "name": "Harvard Ave at Brainerd Rd",
     "lat": 42.34953016890375,
-    "long": -71.13022770741735
+    "long": -71.13022770741735,
+    "photo": "photos/harvard-ave-at-brainerd-rd.jpg"
   },
   {
     "id": 333,
@@ -1517,7 +1527,8 @@ var stations = [
     "id": 338,
     "name": "Commonwealth Ave at Kelton St",
     "lat": 42.348358628170445,
-    "long": -71.13997217276847
+    "long": -71.13997217276847,
+    "photo": "photos/commonwealth-ave-at-kelton-st.jpg"
   },
   {
     "id": 339,
@@ -1553,7 +1564,8 @@ var stations = [
     "id": 344,
     "name": "Commonwealth Ave at Chiswick Rd",
     "lat": 42.34024644768889,
-    "long": -71.15168806174552
+    "long": -71.15168806174552,
+    "photo": "photos/commonwealth-ave-at-chiswick-rd.jpg"
   },
   {
     "id": 345,
@@ -1565,7 +1577,8 @@ var stations = [
     "id": 346,
     "name": "Cleveland Circle",
     "lat": 42.335543083570826,
-    "long": -71.15061519672052
+    "long": -71.15061519672052,
+    "photo": "photos/cleveland-circle.jpg"
   },
   {
     "id": 347,
@@ -1595,7 +1608,8 @@ var stations = [
     "id": 351,
     "name": "Faneuil St at Arlington St",
     "lat": 42.35276620545606,
-    "long": -71.15988485533308
+    "long": -71.15988485533308,
+    "photo": "photos/faneuil-st-at-arlington-st.jpg"
   },
   {
     "id": 352,
@@ -1613,7 +1627,8 @@ var stations = [
     "id": 354,
     "name": "Washington St at Egremont Rd",
     "lat": 42.34286835071959,
-    "long": -71.14127840855872
+    "long": -71.14127840855872,
+    "photo": "photos/washington-st-at-egremont-rd.jpg"
   },
   {
     "id": 355,
@@ -1946,6 +1961,11 @@ var trips = [
     color: '#1abc9c',
     date: '2019-05-19',
     stations: [217, 355, 210, 209, 216, 214, 219, 215, 212, 213, 211]
+  },
+  {
+    color: '#3498db',
+    date: '2019-05-25',
+    stations: [226, 41, 332, 103, 66, 338, 354, 346, 344, 175, 174, 208, 351, 37, 8]
   }
 ];
 
