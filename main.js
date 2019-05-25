@@ -1783,6 +1783,12 @@ var stations = [
     "name": "Albany St at E. Brookline St",
     "lat": 42.33664795427071,
     "long": -71.0689445958451
+  },
+  {
+    "id": 386,
+    "name": "Sennott Park  Broadway at Norfolk Street",
+    "lat": 42.36860524248197,
+    "long": -71.09930185605663
   }
 ];
 
@@ -2046,7 +2052,7 @@ function drawDayRoute(visited, color, map) {
 
 function initialize() {
   var mapOptions = {
-    center: { lat: 42.3615287, lng: -71.0677415},
+    center: { lat: 42.3615287, lng: -71.0677415 },
     zoom: 14,
     disableDefaultUI: false,
     fullscreenControl: false,
