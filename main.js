@@ -370,7 +370,8 @@ var stations = [
     "id": 63,
     "name": "Dorchester Ave at Gillette Park",
     "lat": 42.344041,
-    "long": -71.057376
+    "long": -71.057376,
+    "photo": "photos/dorchester-ave-at-gillette-park.jpg"
   },
   {
     "id": 64,
@@ -747,7 +748,8 @@ var stations = [
     "id": 121,
     "name": "W Broadway at Dorchester St",
     "lat": 42.335693,
-    "long": -71.045859
+    "long": -71.045859,
+    "photo": "photos/w-broadway-at-dorchester-st.jpg"
   },
   {
     "id": 122,
@@ -903,7 +905,8 @@ var stations = [
     "id": 150,
     "name": "State Street at Channel Center",
     "lat": 42.344137,
-    "long": -71.052608
+    "long": -71.052608,
+    "photo": "photos/state-street-at-channel-center.jpg"
   },
   {
     "id": 151,
@@ -949,7 +952,8 @@ var stations = [
     "id": 161,
     "name": "W Broadway at D St",
     "lat": 42.339109,
-    "long": -71.051443
+    "long": -71.051443,
+    "photo": "photos/w-broadway-at-d-st.jpg"
   },
   {
     "id": 162,
@@ -1707,7 +1711,8 @@ var stations = [
     "id": 366,
     "name": "Broadway T Stop",
     "lat": 42.34278116224413,
-    "long": -71.05747275072645
+    "long": -71.05747275072645,
+    "photo": "photos/broadway-t-stop.jpg"
   },
   {
     "id": 367,
@@ -1972,6 +1977,11 @@ var trips = [
     color: '#3498db',
     date: '2019-05-25',
     stations: [226, 41, 332, 103, 66, 338, 354, 346, 344, 175, 174, 208, 351, 37, 8]
+  },
+  {
+    color: '#9b59b6',
+    date: '2019-05-26',
+    stations: [65, 163, 150, 63, 366, 161, 121]
   }
 ];
 
