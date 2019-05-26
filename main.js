@@ -1,3 +1,9 @@
+// next steps:
+//  - geolocation + blue dot
+//  - react conversion, interaction between trip list and map and vice versa
+//  - mobile solution for trip list
+//  - ability to plan routes and visualize, dotted line maybe
+
 var stations = [
   {
     "id": 3,
@@ -1879,13 +1885,13 @@ var mapStyles = [
       { visibility: "off" }
     ]
   },
-  {
+  /*{
     featureType: "transit",
     elementType: "all",
     stylers: [
       { visibility: "off" }
     ]
-  }
+  }*/
 ];
 
 // create station lookup object
