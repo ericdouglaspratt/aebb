@@ -1,0 +1,116 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Helvetica, sans-serif;
+}
+.Layout {
+  bottom: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.HeaderMobile {
+  background-color: #1D428A;
+  color: #FFF;
+  flex-grow: 0;
+  font-size: 18px;
+  margin: 0;
+  padding: 10px;
+}
+#map-canvas {
+  flex-grow: 1;
+  height: 100%;
+}
+.InfoPane {
+  background-color: #1D428A;
+  color: #FFF;
+  flex-grow: 0;
+  padding: 10px;
+}
+.InfoPane-header {
+  display: none;
+  font-size: 18px;
+  margin: 0;
+}
+.ProgressBar {
+  padding-top: 45px;
+  margin-top: 20px;
+}
+.ProgressBar-bar,
+.ProgressBar-completed {
+  height: 8px;
+}
+.ProgressBar-bar {
+  background-color: #FFF;
+}
+.ProgressBar-completed {
+  background-color: #b04d00;
+  position: relative;
+  width: 0%;
+}
+.ProgressBar-report {
+  border-right: 2px solid #b04d00;
+  bottom: 8px;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0 5px 5px 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+.ProgressBar-percentage {
+  font-size: 36px;
+  position: relative;
+  top: -5px;
+}
+.ProgressBar-stationsComplete {
+  font-size: 12px;
+  margin-top: -4px;
+  position: relative;
+  top: -5px;
+}
+.ProgressBar-axis {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+.ProgressBar-min,
+.ProgressBar-max {
+  font-size: 12px;
+}
+.TripHistory {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .Layout {
+    flex-flow: row nowrap;
+  }
+  .HeaderMobile {
+    display: none;
+  }
+  .InfoPane {
+    padding: 20px;
+    width: 400px;
+  }
+  .InfoPane-header {
+    display: block;
+  }
+  .ProgressBar {
+     margin-top: 40px;
+  }
+  .TripHistory {
+    display: block;
+  }
+  .TripHistory ul {
+    list-style-type: none;
+    margin: 20px 0 0;
+    padding: 0;
+  }
+}
