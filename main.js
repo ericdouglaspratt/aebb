@@ -8,8 +8,8 @@ var stations = [
   {
     "id": 3,
     "name": "Colleges of the Fenway - Fenway at Avenue Louis Pasteur",
-    "lat": 42.340115,
-    "long": -71.100619,
+    "lat": 42.34011512249236,
+    "long": -71.10061883926392,
     "photo": "photos/colleges-of-the-fenway.jpg"
   },
   {
@@ -28,14 +28,14 @@ var stations = [
   {
     "id": 6,
     "name": "Cambridge St at Joy St",
-    "lat": 42.361304,
-    "long": -71.06521
+    "lat": 42.36121165307985,
+    "long": -71.06530619789737
   },
   {
     "id": 7,
     "name": "Fan Pier",
-    "lat": 42.352941,
-    "long": -71.043885,
+    "lat": 42.3533905070523,
+    "long": -71.04457139968872,
     "photo": "photos/fan-pier.jpg"
   },
   {
@@ -48,8 +48,8 @@ var stations = [
   {
     "id": 9,
     "name": "Commonwealth Ave at Agganis Way",
-    "lat": 42.351246,
-    "long": -71.115639,
+    "lat": 42.35169201885973,
+    "long": -71.11903488636017,
     "photo": "photos/commonwealth-at-amory-st.jpg"
   },
   {
@@ -69,35 +69,35 @@ var stations = [
   {
     "id": 12,
     "name": "Ruggles T Stop - Columbus Ave at Melnea Cass Blvd",
-    "lat": 42.336282,
-    "long": -71.088019,
+    "lat": 42.33624444796878,
+    "long": -71.08798563480377,
     "photo": "photos/ruggles-t-stop.jpg"
   },
   {
     "id": 14,
     "name": "HMS/HSPH - Avenue Louis Pasteur at Longwood Ave",
-    "lat": 42.337417,
-    "long": -71.102861,
+    "lat": 42.3374174845973,
+    "long": -71.10286116600037,
     "photo": "photos/avenue-louis-pasteur-at-longwood-ave.jpg"
   },
   {
     "id": 15,
     "name": "Brighton Mills - 370 Western Ave",
-    "lat": 42.361546,
-    "long": -71.137762
+    "lat": 42.3615457081725,
+    "long": -71.13776206970215
   },
   {
     "id": 16,
     "name": "Back Bay T Stop - Dartmouth St at Stuart St",
-    "lat": 42.348074,
-    "long": -71.07657,
+    "lat": 42.34807412317439,
+    "long": -71.07657015323639,
     "photo": "photos/back-bay-t-stop.jpg"
   },
   {
     "id": 17,
     "name": "Soldiers Field Park - 111 Western Ave",
-    "lat": 42.365064,
-    "long": -71.119233
+    "lat": 42.364263440638524,
+    "long": -71.1182756971175
   },
   {
     "id": 19,
@@ -108,15 +108,15 @@ var stations = [
   {
     "id": 20,
     "name": "Aquarium T Stop - 200 Atlantic Ave",
-    "lat": 42.359912,
-    "long": -71.05143,
+    "lat": 42.35991176110118,
+    "long": -71.0514298081398,
     "photo": "photos/aquarium-t-stop.jpg"
   },
   {
     "id": 21,
     "name": "Prudential Center - Belvedere St",
-    "lat": 42.345959,
-    "long": -71.082578,
+    "lat": 42.34652003998412,
+    "long": -71.08065776545118,
     "photo": "photos/prudential-center.jpg"
   },
   {
@@ -135,8 +135,8 @@ var stations = [
   {
     "id": 24,
     "name": "Seaport Square - Seaport Blvd at Northern Ave",
-    "lat": 42.351482,
-    "long": -71.044361,
+    "lat": 42.35148193460858,
+    "long": -71.04436084628105,
     "photo": "photos/seaport-square.jpg"
   },
   {
@@ -168,22 +168,22 @@ var stations = [
   {
     "id": 30,
     "name": "Brigham Circle - Francis St at Huntington Ave",
-    "lat": 42.334398,
-    "long": -71.105079,
+    "lat": 42.33462893055976,
+    "long": -71.10407917767589,
     "photo": "photos/brigham-circle.jpg"
   },
   {
     "id": 31,
     "name": "Seaport Hotel - Congress St at Seaport Ln",
-    "lat": 42.34896,
-    "long": -71.041998,
+    "lat": 42.34881026188269,
+    "long": -71.04167744055303,
     "photo": "photos/seaport-hotel.jpg"
   },
   {
     "id": 32,
     "name": "Landmark Center - Brookline Ave at Park Dr",
-    "lat": 42.345194,
-    "long": -71.101697
+    "lat": 42.34519428944095,
+    "long": -71.1016970872879
   },
   {
     "id": 33,
@@ -194,28 +194,28 @@ var stations = [
   {
     "id": 35,
     "name": "Arch St at Franklin St",
-    "lat": 42.355302,
-    "long": -71.058256
+    "lat": 42.355335019412564,
+    "long": -71.0582291708306
   },
   {
     "id": 36,
     "name": "Copley Square - Dartmouth St at Boylston St",
-    "lat": 42.349767,
-    "long": -71.077327,
+    "lat": 42.34992828230057,
+    "long": -71.07739206866427,
     "photo": "photos/copley-square.jpg"
   },
   {
     "id": 37,
     "name": "New Balance - 20 Guest St",
-    "lat": 42.357329,
-    "long": -71.146735,
+    "lat": 42.35732921867706,
+    "long": -71.14673539996147,
     "photo": "photos/new-balance.jpg"
   },
   {
     "id": 39,
     "name": "Washington St at Rutland St",
-    "lat": 42.338515,
-    "long": -71.074041
+    "lat": 42.338514601785995,
+    "long": -71.07404083013535
   },
   {
     "id": 40,
@@ -234,8 +234,8 @@ var stations = [
   {
     "id": 42,
     "name": "Boylston St at Arlington St",
-    "lat": 42.352033,
-    "long": -71.070627,
+    "lat": 42.352054773220544,
+    "long": -71.07048687257702,
     "photo": "photos/boylston-st-at-arlington-st.jpg"
   },
   {
@@ -248,21 +248,21 @@ var stations = [
   {
     "id": 44,
     "name": "Congress St at North St",
-    "lat": 42.360613,
-    "long": -71.057452
+    "lat": 42.36041774637169,
+    "long": -71.05752243543975
   },
   {
     "id": 45,
     "name": "Jersey St. at Boylston St.",
-    "lat": 42.344681,
-    "long": -71.097853,
+    "lat": 42.3446808403874,
+    "long": -71.09785348176956,
     "photo": "photos/jersey-st-at-boylston-st.jpg"
   },
   {
     "id": 46,
     "name": "Christian Science Plaza - Massachusetts Ave at Westland Ave",
-    "lat": 42.343666,
-    "long": -71.085824,
+    "lat": 42.3436658245146,
+    "long": -71.08582377433777,
     "photo": "photos/christian-science-plaza.jpg"
   },
   {
@@ -288,15 +288,15 @@ var stations = [
   {
     "id": 50,
     "name": "Boylston St at Berkeley St",
-    "lat": 42.351142,
-    "long": -71.073292,
+    "lat": 42.3511419825475,
+    "long": -71.07329249382019,
     "photo": "photos/boylston-st-at-berkeley-st.jpg"
   },
   {
     "id": 51,
     "name": "Washington St at Lenox St",
-    "lat": 42.335099,
-    "long": -71.079038
+    "lat": 42.3350989929096,
+    "long": -71.07903778553009
   },
   {
     "id": 52,
@@ -308,8 +308,8 @@ var stations = [
   {
     "id": 53,
     "name": "Beacon St at Massachusetts Ave",
-    "lat": 42.350827,
-    "long": -71.089811,
+    "lat": 42.35082680669095,
+    "long": -71.0898108780384,
     "photo": "photos/beacon-st-at-mass-ave.jpg"
   },
   {
@@ -328,21 +328,21 @@ var stations = [
   {
     "id": 56,
     "name": "Dudley Square - Dudley St at Warren St",
-    "lat": 42.32854,
-    "long": -71.084165
+    "lat": 42.32854046293402,
+    "long": -71.08416482806204
   },
   {
     "id": 57,
     "name": "Columbus Ave at Massachusetts Ave",
-    "lat": 42.340542615516,
-    "long": -71.081388479142,
+    "lat": 42.340542615516355,
+    "long": -71.08138847914233,
     "photo": "photos/massachusetts-ave-at-columbus-ave.jpg"
   },
   {
     "id": 58,
     "name": "Mugar Way at Beacon St",
-    "lat": 42.355549,
-    "long": -71.072842,
+    "lat": 42.355536284897084,
+    "long": -71.07286870479584,
     "photo": "photos/beacon-st-arlington-st.jpg"
   },
   {
@@ -355,8 +355,8 @@ var stations = [
   {
     "id": 60,
     "name": "Charles Circle - Charles St at Cambridge St",
-    "lat": 42.360714,
-    "long": -71.070928,
+    "lat": 42.36018499796463,
+    "long": -71.07086597688976,
     "photo": "photos/charles-circle-charles-st-at-cambridge-st.jpg"
   },
   {
@@ -369,29 +369,29 @@ var stations = [
   {
     "id": 63,
     "name": "Dorchester Ave at Gillette Park",
-    "lat": 42.344041,
-    "long": -71.057376,
+    "lat": 42.344040510016356,
+    "long": -71.05737626552582,
     "photo": "photos/dorchester-ave-at-gillette-park.jpg"
   },
   {
     "id": 64,
     "name": "Congress St at Sleeper St",
-    "lat": 42.351004,
-    "long": -71.0493,
+    "lat": 42.351004495946704,
+    "long": -71.04930013418198,
     "photo": "photos/congress-st-at-sleeper-st.jpg"
   },
   {
     "id": 65,
     "name": "Boston Convention and Exhibition Center - Summer St at West Side Dr",
-    "lat": 42.347763,
-    "long": -71.04536,
+    "lat": 42.347763454147454,
+    "long": -71.0453599691391,
     "photo": "photos/boston-convention-and-exhibition-center.jpg"
   },
   {
     "id": 66,
     "name": "Allston Green District - Griggs St at Commonwealth Ave",
-    "lat": 42.34852,
-    "long": -71.133947,
+    "lat": 42.34922469338298,
+    "long": -71.13275302578586,
     "photo": "photos/allston-green-district.jpg"
   },
   {
@@ -418,8 +418,8 @@ var stations = [
   {
     "id": 70,
     "name": "Harvard Kennedy School at Bennett St / Eliot St",
-    "lat": 42.371992,
-    "long": -71.12227,
+    "lat": 42.3722168027866,
+    "long": -71.12188071012497,
     "photo": "photos/harvard-kennedy-school-at-bennett-st.jpg"
   },
   {
@@ -431,8 +431,8 @@ var stations = [
   {
     "id": 72,
     "name": "One Broadway / Kendall Sq at Main St / 3rd St",
-    "lat": 42.362613,
-    "long": -71.084105,
+    "lat": 42.36224178650923,
+    "long": -71.0831107199192,
     "photo": "photos/one-broadway-kendall-sq-at-main-st-third-st.jpg"
   },
   {
@@ -452,8 +452,8 @@ var stations = [
   {
     "id": 75,
     "name": "Lafayette Square at Mass Ave / Main St / Columbia St",
-    "lat": 42.363465,
-    "long": -71.100573,
+    "lat": 42.36346469304347,
+    "long": -71.10057324171066,
     "photo": "photos/lafayette-square-at-mass-ave-main-st.jpg"
   },
   {
@@ -472,8 +472,8 @@ var stations = [
   {
     "id": 78,
     "name": "Union Square - Somerville",
-    "lat": 42.379637,
-    "long": -71.095319,
+    "lat": 42.37965809715277,
+    "long": -71.09394280244487,
     "photo": "photos/union-square-somerville.jpg"
   },
   {
@@ -485,8 +485,8 @@ var stations = [
   {
     "id": 80,
     "name": "MIT Stata Center at Vassar St / Main St",
-    "lat": 42.361962,
-    "long": -71.092053,
+    "lat": 42.3621312344991,
+    "long": -71.09115600585936,
     "photo": "photos/mit-stata-center-at-vassar-st-main-st.jpg"
   },
   {
@@ -499,8 +499,8 @@ var stations = [
   {
     "id": 82,
     "name": "Beacon St at Tappan St",
-    "lat": 42.339335,
-    "long": -71.13493,
+    "lat": 42.33826680058037,
+    "long": -71.13894682028331,
     "photo": "photos/washington-square.jpg"
   },
   {
@@ -520,8 +520,8 @@ var stations = [
   {
     "id": 86,
     "name": "Brookline Village - Pearl Street at MBTA",
-    "lat": 42.332799,
-    "long": -71.116205
+    "lat": 42.3329989199507,
+    "long": -71.11634425762531
   },
   {
     "id": 87,
@@ -561,14 +561,14 @@ var stations = [
   {
     "id": 92,
     "name": "University of Massachusetts Boston - Integrated Sciences Complex",
-    "lat": 42.314507,
-    "long": -71.041269
+    "lat": 42.313917,
+    "long": -71.04025
   },
   {
     "id": 93,
     "name": "JFK/UMass T Stop",
-    "lat": 42.32034,
-    "long": -71.05118
+    "lat": 42.32033973515723,
+    "long": -71.05118036270142
   },
   {
     "id": 94,
@@ -594,8 +594,8 @@ var stations = [
   {
     "id": 97,
     "name": "Harvard University River Houses at DeWolfe St / Cowperthwaite St",
-    "lat": 42.36919,
-    "long": -71.117141,
+    "lat": 42.36919031768079,
+    "long": -71.11714124679565,
     "photo": "photos/harvard-river-houses-at-dewolfe-st.jpg"
   },
   {
@@ -641,8 +641,8 @@ var stations = [
   {
     "id": 105,
     "name": "Lower Cambridgeport at Magazine St / Riverside Rd",
-    "lat": 42.356954,
-    "long": -71.113687
+    "lat": 42.357218503176526,
+    "long": -71.1138716340065
   },
   {
     "id": 106,
@@ -667,8 +667,8 @@ var stations = [
   {
     "id": 109,
     "name": "West End Park",
-    "lat": 42.365908,
-    "long": -71.064467
+    "lat": 42.36590788445084,
+    "long": -71.06446668505669
   },
   {
     "id": 110,
@@ -694,14 +694,14 @@ var stations = [
   {
     "id": 113,
     "name": "Andrew T Stop - Dorchester Ave at Dexter St",
-    "lat": 42.330474,
-    "long": -71.057017
+    "lat": 42.330473650415165,
+    "long": -71.05701684951782
   },
   {
     "id": 114,
     "name": "Teele Square",
-    "lat": 42.402763,
-    "long": -71.126908
+    "lat": 42.40203828065014,
+    "long": -71.1265329148955
   },
   {
     "id": 115,
@@ -720,8 +720,8 @@ var stations = [
   {
     "id": 117,
     "name": "Binney St / Sixth St",
-    "lat": 42.366095,
-    "long": -71.086388
+    "lat": 42.36616223459919,
+    "long": -71.08688293667001
   },
   {
     "id": 118,
@@ -766,8 +766,8 @@ var stations = [
   {
     "id": 125,
     "name": "Hyde Square - Barbara St at Centre St",
-    "lat": 42.320998,
-    "long": -71.110833
+    "lat": 42.32176525723952,
+    "long": -71.10984160567114
   },
   {
     "id": 126,
@@ -791,14 +791,14 @@ var stations = [
   {
     "id": 130,
     "name": "Upham's Corner",
-    "lat": 42.317283,
-    "long": -71.065363
+    "lat": 42.31727474327453,
+    "long": -71.06537003967787
   },
   {
     "id": 131,
     "name": "Jackson Square T Stop",
-    "lat": 42.322931,
-    "long": -71.100141,
+    "lat": 42.32293117195949,
+    "long": -71.10014140605927,
     "photo": "photos/jackson-square-t-stop.jpg"
   },
   {
@@ -845,8 +845,8 @@ var stations = [
   {
     "id": 139,
     "name": "Dana Park",
-    "lat": 42.36178,
-    "long": -71.1081
+    "lat": 42.361780439606044,
+    "long": -71.10809952020645
   },
   {
     "id": 140,
@@ -858,8 +858,8 @@ var stations = [
   {
     "id": 141,
     "name": "Kendall Street",
-    "lat": 42.36356,
-    "long": -71.082168
+    "lat": 42.363560158429884,
+    "long": -71.08216792345047
   },
   {
     "id": 142,
@@ -931,28 +931,28 @@ var stations = [
   {
     "id": 157,
     "name": "Seaport Blvd at Sleeper St",
-    "lat": 42.353178091863,
-    "long": -71.048173569234,
+    "lat": 42.35317809186252,
+    "long": -71.04817356923377,
     "photo": "photos/seaport-blvd-at-sleeper-st.jpg"
   },
   {
     "id": 159,
     "name": "S Huntington Ave at Heath St",
-    "lat": 42.327973,
-    "long": -71.110897
+    "lat": 42.32760387040573,
+    "long": -71.11089169979095
   },
   {
     "id": 160,
     "name": "Wentworth Institute of Technology - Huntington Ave at Vancouver St",
-    "lat": 42.337586,
-    "long": -71.096271,
+    "lat": 42.33758601097239,
+    "long": -71.09627097845076,
     "photo": "photos/wentworth-institute-of-technology.jpg"
   },
   {
     "id": 161,
     "name": "W Broadway at D St",
-    "lat": 42.339109,
-    "long": -71.051443,
+    "lat": 42.3391085,
+    "long": -71.0514432,
     "photo": "photos/w-broadway-at-d-st.jpg"
   },
   {
@@ -990,8 +990,8 @@ var stations = [
   {
     "id": 171,
     "name": "Bunker Hill Community College",
-    "lat": 42.37409,
-    "long": -71.06906,
+    "lat": 42.37408991426522,
+    "long": -71.06905996799469,
     "photo": "photos/bunker-hill-community-college.jpg"
   },
   {
@@ -1003,82 +1003,82 @@ var stations = [
   {
     "id": 174,
     "name": "Washington St at Brock St",
-    "lat": 42.348953,
-    "long": -71.160317,
+    "lat": 42.3489528466951,
+    "long": -71.16031676530838,
     "photo": "photos/washington-st-at-brock-st.jpg"
   },
   {
     "id": 175,
     "name": "Brighton Center - Washington St at Cambridge St",
-    "lat": 42.348949,
-    "long": -71.150272,
+    "lat": 42.34894857235593,
+    "long": -71.15027189254761,
     "photo": "photos/brighton-center.jpg"
   },
   {
     "id": 176,
     "name": "Lesley University",
-    "lat": 42.386748,
-    "long": -71.119019,
+    "lat": 42.38674802045056,
+    "long": -71.11901879310608,
     "photo": "photos/lesley-university.jpg"
   },
   {
     "id": 177,
     "name": "University Park",
-    "lat": 42.362648,
-    "long": -71.100061,
+    "lat": 42.36264779118595,
+    "long": -71.10006093978882,
     "photo": "photos/university-park.jpg"
   },
   {
     "id": 178,
     "name": "MIT Pacific St at Purrington St",
-    "lat": 42.359573,
-    "long": -71.101295
+    "lat": 42.35957320109044,
+    "long": -71.10129475593567
   },
   {
     "id": 179,
     "name": "MIT Vassar St",
-    "lat": 42.355601,
-    "long": -71.103945,
+    "lat": 42.355601213279265,
+    "long": -71.10394477844238,
     "photo": "photos/mit-at-vassar-st.jpg"
   },
   {
     "id": 180,
     "name": "Mt Auburn",
-    "lat": 42.374786,
-    "long": -71.133202
+    "lat": 42.37478628706384,
+    "long": -71.13320231437683
   },
   {
     "id": 181,
     "name": "Huron Ave At Vassal Lane",
-    "lat": 42.381650612901,
-    "long": -71.134269814984,
+    "lat": 42.381650612901176,
+    "long": -71.13426981498378,
     "photo": "photos/huron-ave-at-vassal-lane.jpg"
   },
   {
     "id": 182,
     "name": "Museum of Science",
-    "lat": 42.36769,
-    "long": -71.071163
+    "lat": 42.36769018024484,
+    "long": -71.07116281986237
   },
   {
     "id": 183,
     "name": "Alewife MBTA at Steel Place",
-    "lat": 42.395588,
-    "long": -71.142606,
+    "lat": 42.395588457167094,
+    "long": -71.14260613918304,
     "photo": "photos/alewife-mbta-at-steel-place.jpg"
   },
   {
     "id": 184,
     "name": "Sidney Research Campus/ Erie Street at Waverly",
-    "lat": 42.357753,
-    "long": -71.103934,
+    "lat": 42.35775309465199,
+    "long": -71.10393404960632,
     "photo": "photos/sidney-research-campus.jpg"
   },
   {
     "id": 185,
     "name": "Third at Binney",
-    "lat": 42.365445,
-    "long": -71.082771,
+    "lat": 42.36544486137399,
+    "long": -71.08277142047882,
     "photo": "photos/third-at-binney-st.jpg"
   },
   {
@@ -1103,8 +1103,8 @@ var stations = [
   {
     "id": 189,
     "name": "Kendall T",
-    "lat": 42.362428,
-    "long": -71.084955
+    "lat": 42.362427842912396,
+    "long": -71.08495473861694
   },
   {
     "id": 190,
@@ -1128,40 +1128,40 @@ var stations = [
   {
     "id": 193,
     "name": "Brookline Town Hall",
-    "lat": 42.332891,
-    "long": -71.116583
+    "lat": 42.33376472623494,
+    "long": -71.12046446660315
   },
   {
     "id": 194,
     "name": "Broadway St at Mt Pleasant St",
-    "lat": 42.386141,
-    "long": -71.078281,
+    "lat": 42.386141411639564,
+    "long": -71.07828140258789,
     "photo": "photos/broadway-st-at-mt-pleasant-st.jpg"
   },
   {
     "id": 195,
     "name": "Child St at North St",
-    "lat": 42.37206,
-    "long": -71.072026,
+    "lat": 42.37150494100319,
+    "long": -71.07249312120985,
     "photo": "photos/brian-p-murphy-staircase-at-child-st.jpg"
   },
   {
     "id": 196,
     "name": "Roxbury YMCA - Warren St at MLK Blvd",
-    "lat": 42.317873,
-    "long": -71.082431
+    "lat": 42.31787329345602,
+    "long": -71.08243077993393
   },
   {
     "id": 197,
     "name": "MLK Blvd at Washington St",
-    "lat": 42.321438,
-    "long": -71.091261
+    "lat": 42.32143814183195,
+    "long": -71.09126061201096
   },
   {
     "id": 199,
     "name": "Upham's Corner T Stop - Magnolia St at Dudley St",
-    "lat": 42.318697,
-    "long": -71.069781
+    "lat": 42.318697341722434,
+    "long": -71.0697814822197
   },
   {
     "id": 200,
@@ -1196,8 +1196,8 @@ var stations = [
   {
     "id": 205,
     "name": "Bowdoin St at Quincy St",
-    "lat": 42.307852,
-    "long": -71.065122
+    "lat": 42.30785224238503,
+    "long": -71.06512248516083
   },
   {
     "id": 206,
@@ -1228,22 +1228,22 @@ var stations = [
   {
     "id": 210,
     "name": "Bennington St at Byron St",
-    "lat": 42.383378,
-    "long": -71.01612,
+    "lat": 42.383532520117896,
+    "long": -71.01619094610214,
     "photo": "photos/bennington-st-at-byron-st.jpg"
   },
   {
     "id": 211,
     "name": "Piers Park",
-    "lat": 42.365432,
-    "long": -71.036257,
+    "lat": 42.3648929326648,
+    "long": -71.03497177362442,
     "photo": "photos/piers-park.jpg"
   },
   {
     "id": 212,
     "name": "Maverick Square - Lewis Mall",
-    "lat": 42.368844,
-    "long": -71.039778,
+    "lat": 42.368844082898356,
+    "long": -71.03977829217911,
     "photo": "photos/maverick-square-lewis-mall.jpg"
   },
   {
@@ -1256,8 +1256,8 @@ var stations = [
   {
     "id": 214,
     "name": "Airport T Stop - Bremen St at Brooks St",
-    "lat": 42.375339,
-    "long": -71.031304,
+    "lat": 42.37533522545788,
+    "long": -71.03131584841321,
     "photo": "photos/airport-t-stop.jpg"
   },
   {
@@ -1270,8 +1270,8 @@ var stations = [
   {
     "id": 216,
     "name": "Glendon St at Condor St",
-    "lat": 42.382404,
-    "long": -71.030243,
+    "lat": 42.38240377674137,
+    "long": -71.03024303913116,
     "photo": "photos/glendon-st-at-condor-st.jpg"
   },
   {
@@ -1284,22 +1284,22 @@ var stations = [
   {
     "id": 218,
     "name": "Watermark Seaport - Boston Wharf Rd at Seaport Blvd",
-    "lat": 42.351586,
-    "long": -71.045693,
+    "lat": 42.351586001198456,
+    "long": -71.04569256305693,
     "photo": "photos/watermark-seaport.jpg"
   },
   {
     "id": 219,
     "name": "Boston East - 126 Border St",
-    "lat": 42.374307,
-    "long": -71.038078,
+    "lat": 42.373312125824704,
+    "long": -71.0410200806291,
     "photo": "photos/boston-east.jpg"
   },
   {
     "id": 221,
     "name": "Verizon Innovation Hub 10 Ware Street",
-    "lat": 42.372508649973,
-    "long": -71.113053560257,
+    "lat": 42.37250864997261,
+    "long": -71.11305356025696,
     "photo": "photos/verizon-innovation-hub-10-ware-st.jpg"
   },
   {
@@ -1312,42 +1312,42 @@ var stations = [
   {
     "id": 224,
     "name": "Fresh Pond Reservation",
-    "lat": 42.382678275219,
+    "lat": 42.38267827521855,
     "long": -71.143478951426,
     "photo": "photos/fresh-pond-reservation.jpg"
   },
   {
     "id": 225,
     "name": "Cambridge Dept. of Public Works -147 Hampshire St.",
-    "lat": 42.371197277594,
-    "long": -71.097598671913,
+    "lat": 42.37119727759414,
+    "long": -71.09759867191315,
     "photo": "photos/cambridge-department-of-public-works.jpg"
   },
   {
     "id": 226,
     "name": "Commonwealth Ave At Babcock St",
-    "lat": 42.351547347914,
-    "long": -71.121262460947,
+    "lat": 42.35154734791375,
+    "long": -71.12126246094704,
     "photo": "photos/commonwealth-ave-at-babcock-st.jpg"
   },
   {
     "id": 227,
     "name": "Silber Way",
-    "lat": 42.34949599514,
-    "long": -71.10057592392,
+    "lat": 42.34949599514002,
+    "long": -71.10057592391968,
     "photo": "photos/silber-way.jpg"
   },
   {
     "id": 228,
     "name": "One Memorial Drive",
-    "lat": 42.361619320767,
-    "long": -71.08043550521
+    "lat": 42.361619320766856,
+    "long": -71.0804355052096
   },
   {
     "id": 232,
     "name": "Four Corners - 157 Washington St",
-    "lat": 42.30412792739,
-    "long": -71.079295277596
+    "lat": 42.304127927390155,
+    "long": -71.07929527759552
   },
   {
     "id": 233,
@@ -1396,8 +1396,8 @@ var stations = [
   {
     "id": 259,
     "name": "Washington St at Bradlee St",
-    "lat": 42.297722,
-    "long": -71.073
+    "lat": 42.299164979365884,
+    "long": -71.07345871645519
   },
   {
     "id": 260,
@@ -1801,8 +1801,8 @@ var stations = [
   {
     "id": 384,
     "name": "Clarendon St at Commonwealth Ave",
-    "lat": 42.35219035145307,
-    "long": -71.0760041699723
+    "lat": 42.35155308466532,
+    "long": -71.0756903143556
   },
   {
     "id": 385,
@@ -1993,6 +1993,7 @@ var trips = [
 function diffStations() {
   var changesDetected = false;
   var numNameChanged = 0;
+  var numLocationChanged = 0;
   var unaccounted = [];
 
   if ((typeof newStations == 'undefined') || !newStations || !newStations.stations) {
@@ -2014,6 +2015,15 @@ function diffStations() {
       console.log('station ' + newStation.id + ' name changed from "' + found.name + '" to "' + newStation.s + '"');
       found.name = newStation.s;
       numNameChanged++;
+    } else if (found.lat !== newStation.la || found.long !== newStation.lo) {
+      const calcPercentChange = (a, b) => Math.abs((b - a) / a) * 100;
+      const percentChangeLat = calcPercentChange(found.lat, newStation.la);
+      const percentChangeLong = calcPercentChange(found.long, newStation.lo);
+      const avgPercentChange = (percentChangeLat + percentChangeLong) / 2;
+      console.log('station "' + found.name + '" location has changed from (' + found.lat + ', ' + found.long + ') to (' + newStation.la + ', ' + newStation.lo + '), percent change ' + avgPercentChange);
+      found.lat = newStation.la;
+      found.long = newStation.lo;
+      numLocationChanged++;
     }
   });
 
@@ -2060,6 +2070,13 @@ function diffStations() {
     changesDetected = true;
   } else {
     console.log('no station name changes detected');
+  }
+
+  if (numLocationChanged > 0) {
+    console.log(numLocationChanged + ' station location changes detected');
+    changesDetected = true;
+  } else {
+    console.log('no station location changes detected');
   }
 
   if (changesDetected) {
