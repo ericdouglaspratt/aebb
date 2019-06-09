@@ -426,7 +426,8 @@ var stations = [
     "id": 71,
     "name": "Conway Park - Somerville Avenue",
     "lat": 42.383405,
-    "long": -71.107593
+    "long": -71.107593,
+    "photo": "photos/conway-park-somerville-ave.jpg"
   },
   {
     "id": 72,
@@ -467,7 +468,8 @@ var stations = [
     "id": 77,
     "name": "Somerville City Hall",
     "lat": 42.386844,
-    "long": -71.09812
+    "long": -71.09812,
+    "photo": "photos/somerville-city-hall.jpg"
   },
   {
     "id": 78,
@@ -480,7 +482,8 @@ var stations = [
     "id": 79,
     "name": "Beacon St at Washington / Kirkland",
     "lat": 42.37842,
-    "long": -71.105668
+    "long": -71.105668,
+    "photo": "photos/beacon-st-at-washington-st-kirkland-st.jpg"
   },
   {
     "id": 80,
@@ -615,7 +618,8 @@ var stations = [
     "id": 100,
     "name": "Davis Square",
     "lat": 42.396969,
-    "long": -71.123024
+    "long": -71.123024,
+    "photo": "photos/davis-square.jpg"
   },
   {
     "id": 102,
@@ -926,7 +930,8 @@ var stations = [
     "id": 156,
     "name": "Somerville Hospital",
     "lat": 42.39088801721338,
-    "long": -71.10962569713591
+    "long": -71.10962569713591,
+    "photo": "photos/somerville-hospital.jpg"
   },
   {
     "id": 157,
@@ -1098,7 +1103,8 @@ var stations = [
     "id": 188,
     "name": "Foss Park",
     "lat": 42.39108438146733,
-    "long": -71.09039425849915
+    "long": -71.09039425849915,
+    "photo": "photos/foss-park.jpg"
   },
   {
     "id": 189,
@@ -1359,7 +1365,8 @@ var stations = [
     "id": 234,
     "name": "Broadway at Central St",
     "lat": 42.39517150121575,
-    "long": -71.09850591982195
+    "long": -71.09850591982195,
+    "photo": "photos/broadway-at-central-st.jpg"
   },
   {
     "id": 235,
@@ -1379,7 +1386,8 @@ var stations = [
     "id": 239,
     "name": "Community Path at Cedar Street",
     "lat": 42.39407223665884,
-    "long": -71.11133694648743
+    "long": -71.11133694648743,
+    "photo": "photos/community-path-at-cedar-st.jpg"
   },
   {
     "id": 255,
@@ -1475,7 +1483,8 @@ var stations = [
     "id": 328,
     "name": "Grove St at Community Path",
     "lat": 42.396386809455,
-    "long": -71.12011306006025
+    "long": -71.12011306006025,
+    "photo": "photos/grove-st-at-community-path.jpg"
   },
   {
     "id": 329,
@@ -1488,7 +1497,8 @@ var stations = [
     "id": 330,
     "name": "30 Dane St",
     "lat": 42.38100143038052,
-    "long": -71.10402522613185
+    "long": -71.10402522613185,
+    "photo": "photos/30-dane-st.jpg"
   },
   {
     "id": 331,
@@ -1772,13 +1782,15 @@ var stations = [
     "id": 377,
     "name": "Perry Park",
     "lat": 42.37927324600841,
-    "long": -71.10341902831351
+    "long": -71.10341902831351,
+    "photo": "photos/perry-park.jpg"
   },
   {
     "id": 378,
     "name": "191 Beacon St",
     "lat": 42.38032335045416,
-    "long": -71.10878612855231
+    "long": -71.10878612855231,
+    "photo": "photos/191-beacon-st.jpg"
   },
   {
     "id": 379,
@@ -1987,6 +1999,11 @@ var trips = [
     color: '#f39c12',
     date: '2019-06-01',
     stations: [336, 340, 353, 343, 347, 350, 349, 348, 259, 232, 202, 196, 204, 56, 200, 51, 39, 26, 363, 365]
+  },
+  {
+    color: '#8e44ad',
+    date: '2019-06-08',
+    stations: [100, 328, 239, 156, 234, 188, 77, 330, 377, 79, 378, 71]
   }
 ];
 
