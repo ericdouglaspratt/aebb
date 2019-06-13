@@ -524,7 +524,8 @@ var stations = [
     "id": 86,
     "name": "Brookline Village - Pearl Street at MBTA",
     "lat": 42.3329989199507,
-    "long": -71.11634425762531
+    "long": -71.11634425762531,
+    "photo": "photos/brookline-village-pearl-st-at-mbta.jpg"
   },
   {
     "id": 87,
@@ -765,19 +766,22 @@ var stations = [
     "id": 124,
     "name": "Curtis Hall - South St at Centre St",
     "lat": 42.309054,
-    "long": -71.11543
+    "long": -71.11543,
+    "photo": "photos/curtis-hall.jpg"
   },
   {
     "id": 125,
     "name": "Hyde Square - Barbara St at Centre St",
     "lat": 42.32176525723952,
-    "long": -71.10984160567114
+    "long": -71.10984160567114,
+    "photo": "photos/hyde-square.jpg"
   },
   {
     "id": 126,
     "name": "Egleston Square - Atherton St at Washington St",
     "lat": 42.315692,
-    "long": -71.098634
+    "long": -71.098634,
+    "photo": "photos/egleston-square.jpg"
   },
   {
     "id": 128,
@@ -944,7 +948,8 @@ var stations = [
     "id": 159,
     "name": "S Huntington Ave at Heath St",
     "lat": 42.32760387040573,
-    "long": -71.11089169979095
+    "long": -71.11089169979095,
+    "photo": "photos/s-huntington-ave-at-heath-st.jpg"
   },
   {
     "id": 160,
@@ -1441,7 +1446,8 @@ var stations = [
     "id": 279,
     "name": "Williams St at Washington St",
     "lat": 42.306539,
-    "long": -71.107669
+    "long": -71.107669,
+    "photo": "photos/williams-st-at-washington-st.jpg"
   },
   {
     "id": 280,
@@ -1453,7 +1459,8 @@ var stations = [
     "id": 282,
     "name": "Stony Brook T Stop",
     "lat": 42.316966,
-    "long": -71.104374
+    "long": -71.104374,
+    "photo": "photos/stony-brook-t-stop.jpg"
   },
   {
     "id": 296,
@@ -1667,7 +1674,8 @@ var stations = [
     "id": 357,
     "name": "Centre St at Seaverns Ave",
     "lat": 42.3121203,
-    "long": -71.1142981
+    "long": -71.1142981,
+    "photo": "photos/centre-st-at-seaverns-ave.jpg"
   },
   {
     "id": 358,
@@ -2004,6 +2012,11 @@ var trips = [
     color: '#8e44ad',
     date: '2019-06-08',
     stations: [100, 328, 239, 156, 234, 188, 77, 330, 377, 79, 378, 71]
+  },
+  {
+    color: '#2c3e50',
+    date: '2019-06-12',
+    stations: [133, 357, 124, 279, 126, 282, 125, 159, 86]
   }
 ];
 
