@@ -275,8 +275,8 @@ var stations = [
   {
     "id": 48,
     "name": "Post Office Square - Pearl St at Milk St",
-    "lat": 42.356755,
-    "long": -71.055407
+    "lat": 42.35585435522005,
+    "long": -71.05459745998814
   },
   {
     "id": 49,
@@ -725,8 +725,8 @@ var stations = [
   {
     "id": 117,
     "name": "Binney St / Sixth St",
-    "lat": 42.36616223459919,
-    "long": -71.08688293667001
+    "lat": 42.36608797388682,
+    "long": -71.08633603909765
   },
   {
     "id": 118,
@@ -1820,7 +1820,7 @@ var stations = [
   },
   {
     "id": 384,
-    "name": "Clarendon St at Commonwealth Ave",
+    "name": "Clarendon St at Newbury St",
     "lat": 42.35155308466532,
     "long": -71.0756903143556
   },
@@ -1835,6 +1835,72 @@ var stations = [
     "name": "Sennott Park  Broadway at Norfolk Street",
     "lat": 42.36860524248197,
     "long": -71.09930185605663
+  },
+  {
+    "id": 387,
+    "name": "Norman St at Kelvin St",
+    "lat": 42.40581171700586,
+    "long": -71.06708850720679
+  },
+  {
+    "id": 388,
+    "name": "Main Street at Carter Street",
+    "lat": 42.40413,
+    "long": -71.0613
+  },
+  {
+    "id": 389,
+    "name": "Everett Square (Broadway at Chelsea St)",
+    "lat": 42.40725945172653,
+    "long": -71.05546381333625
+  },
+  {
+    "id": 390,
+    "name": "Broadway at Lynde St",
+    "lat": 42.39648358247693,
+    "long": -71.06546759905541
+  },
+  {
+    "id": 391,
+    "name": "Encore",
+    "lat": 42.39329263225162,
+    "long": -71.0724475979805
+  },
+  {
+    "id": 392,
+    "name": "Glendale Square (Ferry St at Broadway)",
+    "lat": 42.41480160999569,
+    "long": -71.04772560316633
+  },
+  {
+    "id": 393,
+    "name": "Ferry St at Pleasantview Ave",
+    "lat": 42.40914877754532,
+    "long": -71.04597684005057
+  },
+  {
+    "id": 394,
+    "name": "Broadway at Maple St",
+    "lat": 42.410346909767846,
+    "long": -71.05260457852637
+  },
+  {
+    "id": 395,
+    "name": "Chelsea St at Vine St",
+    "lat": 42.40328056972533,
+    "long": -71.04762639859473
+  },
+  {
+    "id": 396,
+    "name": "Main St at Beacon St",
+    "lat": 42.41072713868097,
+    "long": -71.06266822675025
+  },
+  {
+    "id": 397,
+    "name": "Broadway at Beacham St",
+    "lat": 42.39836059620832,
+    "long": -71.06373842814719
   }
 ];
 
