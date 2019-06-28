@@ -1840,31 +1840,36 @@ var stations = [
     "id": 387,
     "name": "Norman St at Kelvin St",
     "lat": 42.40581171700586,
-    "long": -71.06708850720679
+    "long": -71.06708850720679,
+    "photo": "photos/norman-st-at-kelvin-st.jpg"
   },
   {
     "id": 388,
     "name": "Main Street at Carter Street",
     "lat": 42.40413,
-    "long": -71.0613
+    "long": -71.0613,
+    "photo": "photos/main-st-at-carter-st.jpg"
   },
   {
     "id": 389,
     "name": "Everett Square (Broadway at Chelsea St)",
     "lat": 42.40725945172653,
-    "long": -71.05546381333625
+    "long": -71.05546381333625,
+    "photo": "photos/everett-square.jpg"
   },
   {
     "id": 390,
     "name": "Broadway at Lynde St",
     "lat": 42.39648358247693,
-    "long": -71.06546759905541
+    "long": -71.06546759905541,
+    "photo": "photos/broadway-at-lynde-st.jpg"
   },
   {
     "id": 391,
     "name": "Encore",
     "lat": 42.39329263225162,
-    "long": -71.0724475979805
+    "long": -71.0724475979805,
+    "photo": "photos/encore.jpg"
   },
   {
     "id": 392,
@@ -1894,13 +1899,15 @@ var stations = [
     "id": 396,
     "name": "Main St at Beacon St",
     "lat": 42.41072713868097,
-    "long": -71.06266822675025
+    "long": -71.06266822675025,
+    "photo": "photos/main-st-at-beacon-st.jpg"
   },
   {
     "id": 397,
     "name": "Broadway at Beacham St",
     "lat": 42.39836059620832,
-    "long": -71.06373842814719
+    "long": -71.06373842814719,
+    "photo": "photos/broadway-at-beacham-st.jpg"
   }
 ];
 
@@ -2083,6 +2090,11 @@ var trips = [
     color: '#2c3e50',
     date: '2019-06-12',
     stations: [133, 357, 124, 279, 126, 282, 125, 159, 86]
+  },
+  {
+    color: '#fdcb6e',
+    date: '2019-06-27',
+    stations: [236, 391, 390, 397, 388, 387, 396, 389]
   }
 ];
 
