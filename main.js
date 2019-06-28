@@ -150,7 +150,8 @@ var stations = [
     "id": 26,
     "name": "Washington St at Waltham St",
     "lat": 42.341522,
-    "long": -71.068922
+    "long": -71.068922,
+    "photo": "photos/washington-st-at-waltham-st.jpg"
   },
   {
     "id": 27,
@@ -215,7 +216,8 @@ var stations = [
     "id": 39,
     "name": "Washington St at Rutland St",
     "lat": 42.338514601785995,
-    "long": -71.07404083013535
+    "long": -71.07404083013535,
+    "photo": "photos/washington-st-at-rutland-st.jpg"
   },
   {
     "id": 40,
@@ -296,7 +298,8 @@ var stations = [
     "id": 51,
     "name": "Washington St at Lenox St",
     "lat": 42.3350989929096,
-    "long": -71.07903778553009
+    "long": -71.07903778553009,
+    "photo": "photos/washington-st-at-lenox-st.jpg"
   },
   {
     "id": 52,
@@ -329,7 +332,8 @@ var stations = [
     "id": 56,
     "name": "Dudley Square - Dudley St at Warren St",
     "lat": 42.32854046293402,
-    "long": -71.08416482806204
+    "long": -71.08416482806204,
+    "photo": "photos/dudley-square.jpg"
   },
   {
     "id": 57,
@@ -1160,7 +1164,8 @@ var stations = [
     "id": 196,
     "name": "Roxbury YMCA - Warren St at MLK Blvd",
     "lat": 42.31787329345602,
-    "long": -71.08243077993393
+    "long": -71.08243077993393,
+    "photo": "photos/roxbury-ymca.jpg"
   },
   {
     "id": 197,
@@ -1178,7 +1183,8 @@ var stations = [
     "id": 200,
     "name": "Washington St at Melnea Cass Blvd",
     "lat": 42.332817,
-    "long": -71.081198
+    "long": -71.081198,
+    "photo": "photos/washington-st-at-melnea-cass-blvd.jpg"
   },
   {
     "id": 201,
@@ -1190,7 +1196,8 @@ var stations = [
     "id": 202,
     "name": "Grove Hall Library - 41 Geneva Ave",
     "lat": 42.30791,
-    "long": -71.080952
+    "long": -71.080952,
+    "photo": "photos/grove-hall-library.jpg"
   },
   {
     "id": 203,
@@ -1202,7 +1209,8 @@ var stations = [
     "id": 204,
     "name": "Walnut Ave at Warren St",
     "lat": 42.324081,
-    "long": -71.083235
+    "long": -71.083235,
+    "photo": "photos/walnut-ave-at-warren-st.jpg"
   },
   {
     "id": 205,
@@ -1358,7 +1366,8 @@ var stations = [
     "id": 232,
     "name": "Four Corners - 157 Washington St",
     "lat": 42.304127927390155,
-    "long": -71.07929527759552
+    "long": -71.07929527759552,
+    "photo": "photos/four-corners.jpg"
   },
   {
     "id": 233,
@@ -1410,7 +1419,8 @@ var stations = [
     "id": 259,
     "name": "Washington St at Bradlee St",
     "lat": 42.299164979365884,
-    "long": -71.07345871645519
+    "long": -71.07345871645519,
+    "photo": "photos/washington-st-at-bradlee-st.jpg"
   },
   {
     "id": 260,
@@ -1567,7 +1577,8 @@ var stations = [
     "id": 340,
     "name": "Blue Hill Ave at Almont St",
     "lat": 42.274620671812244,
-    "long": -71.09372552493369
+    "long": -71.09372552493369,
+    "photo": "photos/blue-hill-ave-at-almont-st.jpg"
   },
   {
     "id": 341,
@@ -1585,7 +1596,8 @@ var stations = [
     "id": 343,
     "name": "Morton St T",
     "lat": 42.280725142920296,
-    "long": -71.08617242434775
+    "long": -71.08617242434775,
+    "photo": "photos/morton-st-t-stop.jpg"
   },
   {
     "id": 344,
@@ -1611,25 +1623,29 @@ var stations = [
     "id": 347,
     "name": "Thetford Ave at Norfolk St",
     "lat": 42.286212948246096,
-    "long": -71.07942931372236
+    "long": -71.07942931372236,
+    "photo": "photos/thetford-ave-at-norfolk-st.jpg"
   },
   {
     "id": 348,
     "name": "Talbot Ave At Blue Hill Ave",
     "lat": 42.2945833,
-    "long": -71.087111
+    "long": -71.087111,
+    "photo": "photos/talbot-ave-at-blue-hill-ave.jpg"
   },
   {
     "id": 349,
     "name": "Washington St at Talbot Ave",
     "lat": 42.290333,
-    "long": -71.071806
+    "long": -71.071806,
+    "photo": "photos/washington-st-at-talbot-ave.jpg"
   },
   {
     "id": 350,
     "name": "Codman Square Library",
     "lat": 42.2873611,
-    "long": -71.071111
+    "long": -71.071111,
+    "photo": "photos/codman-square-library.jpg"
   },
   {
     "id": 351,
@@ -1648,7 +1664,8 @@ var stations = [
     "id": 353,
     "name": "Mattapan Library",
     "lat": 42.2773889,
-    "long": -71.09325
+    "long": -71.09325,
+    "photo": "photos/mattapan-library.jpg"
   },
   {
     "id": 354,
@@ -1711,7 +1728,8 @@ var stations = [
     "id": 363,
     "name": "Harrison Ave at Mullins Way",
     "lat": 42.34521562115022,
-    "long": -71.0638403149278
+    "long": -71.0638403149278,
+    "photo": "photos/harrison-ave-at-mullins-way.jpg"
   },
   {
     "id": 364,
@@ -1723,7 +1741,8 @@ var stations = [
     "id": 365,
     "name": "Harrison Ave at Bennet St",
     "lat": 42.34942609892521,
-    "long": -71.06209959843909
+    "long": -71.06209959843909,
+    "photo": "photos/harrison-ave-at-bennet-st.jpg"
   },
   {
     "id": 366,
