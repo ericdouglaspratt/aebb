@@ -29,7 +29,8 @@ var stations = [
     "id": 6,
     "name": "Cambridge St at Joy St",
     "lat": 42.36121165307985,
-    "long": -71.06530619789737
+    "long": -71.06530619789737,
+    "photo": "photos/cambridge-st-at-joy-st.jpg"
   },
   {
     "id": 7,
@@ -130,7 +131,8 @@ var stations = [
     "id": 23,
     "name": "Boston City Hall - 28 State St",
     "lat": 42.35892,
-    "long": -71.057629
+    "long": -71.057629,
+    "photo": "photos/28-state-st.jpg"
   },
   {
     "id": 24,
@@ -196,7 +198,8 @@ var stations = [
     "id": 35,
     "name": "Arch St at Franklin St",
     "lat": 42.355335019412564,
-    "long": -71.0582291708306
+    "long": -71.0582291708306,
+    "photo": "photos/arch-st-at-franklin-st.jpg"
   },
   {
     "id": 36,
@@ -278,7 +281,8 @@ var stations = [
     "id": 48,
     "name": "Post Office Square - Pearl St at Milk St",
     "lat": 42.35585435522005,
-    "long": -71.05459745998814
+    "long": -71.05459745998814,
+    "photo": "photos/post-office-square.jpg"
   },
   {
     "id": 49,
@@ -319,7 +323,8 @@ var stations = [
     "id": 54,
     "name": "Tremont St at West St",
     "lat": 42.354979,
-    "long": -71.063348
+    "long": -71.063348,
+    "photo": "photos/tremont-st-at-west-st.jpg"
   },
   {
     "id": 55,
@@ -677,7 +682,8 @@ var stations = [
     "id": 109,
     "name": "West End Park",
     "lat": 42.36590788445084,
-    "long": -71.06446668505669
+    "long": -71.06446668505669,
+    "photo": "photos/west-end-park.jpg"
   },
   {
     "id": 110,
@@ -1125,7 +1131,8 @@ var stations = [
     "id": 190,
     "name": "Nashua Street at Red Auerbach Way",
     "lat": 42.365673,
-    "long": -71.064263
+    "long": -71.064263,
+    "photo": "photos/nashua-st-at-red-auerbach-way.jpg"
   },
   {
     "id": 191,
@@ -1222,7 +1229,8 @@ var stations = [
     "id": 206,
     "name": "Government Center - Cambridge St at Court St",
     "lat": 42.359802515995526,
-    "long": -71.05960782626425
+    "long": -71.05960782626425,
+    "photo": "photos/government-center.jpg"
   },
   {
     "id": 207,
@@ -1610,7 +1618,8 @@ var stations = [
     "id": 345,
     "name": "Park Plaza at Charles St S.",
     "lat": 42.351828068920675,
-    "long": -71.06781138111728
+    "long": -71.06781138111728,
+    "photo": "photos/park-plaza-at-charles-st-s.jpg"
   },
   {
     "id": 346,
@@ -1767,7 +1776,8 @@ var stations = [
     "id": 369,
     "name": "Boston Public Market",
     "lat": 42.36254854409333,
-    "long": -71.0573735833168
+    "long": -71.0573735833168,
+    "photo": "photos/boston-public-market.jpg"
   },
   {
     "id": 370,
@@ -1797,7 +1807,8 @@ var stations = [
     "id": 374,
     "name": "Tremont St at Hamilton Pl",
     "lat": 42.35668334969929,
-    "long": -71.06166645884514
+    "long": -71.06166645884514,
+    "photo": "photos/tremont-st-at-hamilton-pl.jpg"
   },
   {
     "id": 376,
@@ -2114,6 +2125,11 @@ var trips = [
     color: '#fdcb6e',
     date: '2019-06-27',
     stations: [236, 391, 390, 397, 388, 387, 396, 389]
+  },
+  {
+    color: '#ff7675',
+    date: '2019-07-02',
+    stations: [59, 35, 48, 23, 206, 369, 190, 109, 6, 374, 54, 345]
   }
 ];
 
