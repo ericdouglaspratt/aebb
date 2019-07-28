@@ -75,6 +75,12 @@ var stations = [
     "photo": "photos/ruggles-t-stop.jpg"
   },
   {
+    "id": 13,
+    "name": "Boston Medical Center - E Concord St at Harrison Ave",
+    "lat": 42.33639915372498,
+    "long": -71.07306711393903
+  },
+  {
     "id": 14,
     "name": "HMS/HSPH - Avenue Louis Pasteur at Longwood Ave",
     "lat": 42.3374174845973,
@@ -279,7 +285,7 @@ var stations = [
   },
   {
     "id": 48,
-    "name": "Post Office Square - Pearl St at Milk St",
+    "name": "Post Office Square",
     "lat": 42.35585435522005,
     "long": -71.05459745998814,
     "photo": "photos/post-office-square.jpg"
@@ -531,7 +537,7 @@ var stations = [
   },
   {
     "id": 86,
-    "name": "Brookline Village - Pearl Street at MBTA",
+    "name": "Brookline Village - Station Street at MBTA",
     "lat": 42.3329989199507,
     "long": -71.11634425762531,
     "photo": "photos/brookline-village-pearl-st-at-mbta.jpg"
@@ -630,6 +636,12 @@ var stations = [
     "lat": 42.396969,
     "long": -71.123024,
     "photo": "photos/davis-square.jpg"
+  },
+  {
+    "id": 101,
+    "name": "Ball Sq",
+    "lat": 42.39915588714573,
+    "long": -71.11102573591778
   },
   {
     "id": 102,
@@ -1938,6 +1950,78 @@ var stations = [
     "lat": 42.39836059620832,
     "long": -71.06373842814719,
     "photo": "photos/broadway-at-beacham-st.jpg"
+  },
+  {
+    "id": 398,
+    "name": "75 Binney St",
+    "lat": 42.36550728505653,
+    "long": -71.0801375997653
+  },
+  {
+    "id": 399,
+    "name": "Shawmut at Tremont St",
+    "lat": 42.34854543411198,
+    "long": -71.06559185315746
+  },
+  {
+    "id": 400,
+    "name": "Big Papi Station",
+    "lat": 42.34734473177431,
+    "long": -71.1001680795016
+  },
+  {
+    "id": 401,
+    "name": "High St at Cypress St",
+    "lat": 42.32538435700882,
+    "long": -71.12177595532557
+  },
+  {
+    "id": 402,
+    "name": "Washington St at Griggs Rd",
+    "lat": 42.338334237199014,
+    "long": -71.13050930220197
+  },
+  {
+    "id": 403,
+    "name": "Marion St at Harvard St",
+    "lat": 42.33978052668946,
+    "long": -71.12133350232398
+  },
+  {
+    "id": 404,
+    "name": "Mass Ave T Station",
+    "lat": 42.34135615767354,
+    "long": -71.08336953450817
+  },
+  {
+    "id": 405,
+    "name": "Sydney St at Carson St",
+    "lat": 42.32039374304257,
+    "long": -71.05355408051764
+  },
+  {
+    "id": 406,
+    "name": "Somerville City Hall Annex",
+    "lat": 42.39189811591863,
+    "long": -71.09745375830244
+  },
+  {
+    "id": 407,
+    "name": "Craigie at Summer St",
+    "lat": 42.38828872616418,
+    "long": -71.11071459967206
+  },
+  {
+    "id": 408,
+    "name": "Edgerly Education Center",
+    "lat": 42.3875797016865,
+    "long": -71.08675247991867
+  },
+  {
+    "id": 409,
+    "name": "Elm St at White St",
+    "lat": 42.38952436305763,
+    "long": -71.11694140364307
   }
 ];
 
