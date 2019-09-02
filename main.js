@@ -342,8 +342,8 @@ var stations = [
   {
     "id": 56,
     "name": "Dudley Square - Dudley St at Warren St",
-    "lat": 42.32854046293402,
-    "long": -71.08416482806204,
+    "lat": 42.329842993518085,
+    "long": -71.08386572459494,
     "photo": "photos/dudley-square.jpg"
   },
   {
@@ -774,8 +774,8 @@ var stations = [
   {
     "id": 121,
     "name": "W Broadway at Dorchester St",
-    "lat": 42.335693,
-    "long": -71.045859,
+    "lat": 42.335958979433094,
+    "long": -71.04622899561036,
     "photo": "photos/w-broadway-at-dorchester-st.jpg"
   },
   {
@@ -1483,7 +1483,8 @@ var stations = [
     "id": 280,
     "name": "Main St at Baldwin St",
     "lat": 42.380857,
-    "long": -71.070629
+    "long": -71.070629,
+    "photo": "photos/main-st-at-baldwin-st.jpg"
   },
   {
     "id": 282,
@@ -1514,7 +1515,8 @@ var stations = [
     "id": 327,
     "name": "Main St at Thompson Sq",
     "lat": 42.374878467440965,
-    "long": -71.06383498767171
+    "long": -71.06383498767171,
+    "photo": "photos/main-st-at-thompson-sq.jpg"
   },
   {
     "id": 328,
@@ -1706,7 +1708,8 @@ var stations = [
     "id": 356,
     "name": "Charlestown Navy Yard",
     "lat": 42.374124549426526,
-    "long": -71.05481199938367
+    "long": -71.05481199938367,
+    "photo": "photos/charlestown-navy-yard.jpg"
   },
   {
     "id": 357,
@@ -1719,7 +1722,8 @@ var stations = [
     "id": 358,
     "name": "Medford St at Charlestown BCYF",
     "lat": 42.380429474494896,
-    "long": -71.06055721676967
+    "long": -71.06055721676967,
+    "photo": "photos/medford-st-at-charlestown-bcyf.jpg"
   },
   {
     "id": 359,
@@ -1959,7 +1963,7 @@ var stations = [
   },
   {
     "id": 399,
-    "name": "Shawmut at Tremont St",
+    "name": "Shawmut Ave at Oak St W",
     "lat": 42.34854543411198,
     "long": -71.06559185315746
   },
@@ -2014,14 +2018,122 @@ var stations = [
   {
     "id": 408,
     "name": "Edgerly Education Center",
-    "lat": 42.3875797016865,
-    "long": -71.08675247991867
+    "lat": 42.38717463348314,
+    "long": -71.08714388528824
   },
   {
     "id": 409,
     "name": "Elm St at White St",
     "lat": 42.38952436305763,
     "long": -71.11694140364307
+  },
+  {
+    "id": 410,
+    "name": "Adams St at Lonsdale St",
+    "lat": 42.291679428741226,
+    "long": -71.05726346409938
+  },
+  {
+    "id": 411,
+    "name": "Dorchester Ave at King St",
+    "lat": 42.29175621632091,
+    "long": -71.0625918023743
+  },
+  {
+    "id": 412,
+    "name": "Washington St at Peters Park",
+    "lat": 42.34303291130257,
+    "long": -71.06688730436872
+  },
+  {
+    "id": 413,
+    "name": "Kennedy-Longfellow School 158 Spring St",
+    "lat": 42.36955297756508,
+    "long": -71.08579014980933
+  },
+  {
+    "id": 414,
+    "name": "Discovery Park - 30 Acorn Park Drive",
+    "lat": 42.39790817368333,
+    "long": -71.14797130814623
+  },
+  {
+    "id": 415,
+    "name": "Stuart St at Berkeley St",
+    "lat": 42.34954403114251,
+    "long": -71.0724207387284
+  },
+  {
+    "id": 416,
+    "name": "Blossom St at Charles St",
+    "lat": 42.36435589027983,
+    "long": -71.0695936904267
+  },
+  {
+    "id": 417,
+    "name": "Columbus Ave at W. Canton St",
+    "lat": 42.34474224772802,
+    "long": -71.07648162175792
+  },
+  {
+    "id": 419,
+    "name": "Central Square East Boston",
+    "lat": 42.37544912547037,
+    "long": -71.03918548682486
+  },
+  {
+    "id": 420,
+    "name": "Charles St at Pinckney St",
+    "lat": 42.35872530462163,
+    "long": -71.07079532006537
+  },
+  {
+    "id": 421,
+    "name": "Northbourne Rd at Hyde Park Ave",
+    "lat": 42.29118034790426,
+    "long": -71.117736660035
+  },
+  {
+    "id": 422,
+    "name": "Cummins at American Legion",
+    "lat": 42.278811581565975,
+    "long": -71.11687703062671
+  },
+  {
+    "id": 423,
+    "name": "Mt. Hope St at Hyde Park Ave",
+    "lat": 42.28484472443536,
+    "long": -71.11874517062459
+  },
+  {
+    "id": 424,
+    "name": "Jamaica St at South St",
+    "lat": 42.3060456272408,
+    "long": -71.11570891001975
+  },
+  {
+    "id": 425,
+    "name": "The Dimock Center",
+    "lat": 42.3193094317828,
+    "long": -71.09639923859504
+  },
+  {
+    "id": 426,
+    "name": "Surface Rd at Summer St",
+    "lat": 42.35294569782581,
+    "long": -71.05656400803126
+  },
+  {
+    "id": 427,
+    "name": "Washington St at Denton Terr",
+    "lat": 42.280728147169015,
+    "long": -71.13423757273267
+  },
+  {
+    "id": 428,
+    "name": "Western Ave at Richardson St",
+    "lat": 42.361787410661876,
+    "long": -71.14393111327445
   }
 ];
 
@@ -2214,6 +2326,11 @@ var trips = [
     color: '#ff7675',
     date: '2019-07-02',
     stations: [59, 35, 48, 23, 206, 369, 190, 109, 6, 374, 54, 345]
+  },
+  {
+    color: '#f6b93b',
+    date: '2019-07-28',
+    stations: [94, 327, 169, 280, 358, 85, 356, 98]
   }
 ];
 
