@@ -245,8 +245,8 @@ var stations = [
   {
     "id": 42,
     "name": "Boylston St at Arlington St",
-    "lat": 42.352054773220544,
-    "long": -71.07048687257702,
+    "lat": 42.352587795070214,
+    "long": -71.06764905172895,
     "photo": "photos/boylston-st-at-arlington-st.jpg"
   },
   {
@@ -370,8 +370,8 @@ var stations = [
   {
     "id": 60,
     "name": "Charles Circle - Charles St at Cambridge St",
-    "lat": 42.36018499796463,
-    "long": -71.07086597688976,
+    "lat": 42.36079296858265,
+    "long": -71.07118962337152,
     "photo": "photos/charles-circle-charles-st-at-cambridge-st.jpg"
   },
   {
@@ -579,7 +579,7 @@ var stations = [
   },
   {
     "id": 92,
-    "name": "University of Massachusetts Boston - Integrated Sciences Complex",
+    "name": "University of Massachusetts Boston - Campus Center",
     "lat": 42.313917,
     "long": -71.04025
   },
@@ -2134,6 +2134,90 @@ var stations = [
     "name": "Western Ave at Richardson St",
     "lat": 42.361787410661876,
     "long": -71.14393111327445
+  },
+  {
+    "id": 430,
+    "name": "Washington St at Walsh Playground",
+    "lat": 42.277194696397906,
+    "long": -71.06955613950048,
+    "discovered": 1571916631381
+  },
+  {
+    "id": 431,
+    "name": "Washington St at Fuller St",
+    "lat": 42.281986277339136,
+    "long": -71.07147924620222,
+    "discovered": 1571916631381
+  },
+  {
+    "id": 432,
+    "name": "Centre St at W. Roxbury Post Office",
+    "lat": 42.286331991127746,
+    "long": -71.15344755369732,
+    "discovered": 1571916631381
+  },
+  {
+    "id": 433,
+    "name": "Centre St at Parkway YMCA",
+    "lat": 42.28277901074054,
+    "long": -71.15728851416861,
+    "discovered": 1571916631381
+  },
+  {
+    "id": 434,
+    "name": "Spring St at Powell St",
+    "lat": 42.277484442008216,
+    "long": -71.16341467955863,
+    "discovered": 1571916631381
+  },
+  {
+    "id": 435,
+    "name": "Central Ave at River St",
+    "lat": 42.27094707029229,
+    "long": -71.07337901405117,
+    "discovered": 1571916631382
+  },
+  {
+    "id": 436,
+    "name": "Maverick St at Massport Path",
+    "lat": 42.36774122306014,
+    "long": -71.0333597474255,
+    "discovered": 1571916631382
+  },
+  {
+    "id": 437,
+    "name": "Berkshire Street at Cambridge Street",
+    "lat": 42.37207657915397,
+    "long": -71.08995433905875,
+    "discovered": 1571916631382
+  },
+  {
+    "id": 440,
+    "name": "Boston Landing",
+    "lat": 42.356560923089404,
+    "long": -71.14167537549292,
+    "discovered": 1571916631382
+  },
+  {
+    "id": 441,
+    "name": "Sullivan Square",
+    "lat": 42.384452256358436,
+    "long": -71.07514854529654,
+    "discovered": 1571916631382
+  },
+  {
+    "id": 442,
+    "name": "Hyde Park Ave at Walk Hill St",
+    "lat": 42.29606704649873,
+    "long": -71.11601199963843,
+    "discovered": 1571916631382
+  },
+  {
+    "id": 443,
+    "name": "Whittier St Health Center",
+    "lat": 42.332862884862635,
+    "long": -71.09218861916816,
+    "discovered": 1571916631382
   }
 ];
 
@@ -2352,9 +2436,10 @@ function diffStations() {
         id: newStation.id,
         name: newStation.s,
         lat: newStation.la,
-        long: newStation.lo
+        long: newStation.lo,
+        discovered: (new Date()).getTime()
       });
-      console.log('new station', newStation.s);
+      console.log('new station', newStation.s, unaccounted[unaccounted.length - 1].discovered);
     } else if (found.name !== newStation.s) {
       console.log('station ' + newStation.id + ' name changed from "' + found.name + '" to "' + newStation.s + '"');
       found.name = newStation.s;
