@@ -157,8 +157,8 @@ var stations = [
   {
     "id": 26,
     "name": "Washington St at Waltham St",
-    "lat": 42.341522,
-    "long": -71.068922,
+    "lat": 42.34155984972459,
+    "long": -71.06886953115463,
     "photo": "photos/washington-st-at-waltham-st.jpg"
   },
   {
@@ -489,8 +489,8 @@ var stations = [
   {
     "id": 78,
     "name": "Union Square - Somerville",
-    "lat": 42.37965809715277,
-    "long": -71.09394280244487,
+    "lat": 42.37967148149253,
+    "long": -71.0954931006745,
     "photo": "photos/union-square-somerville.jpg"
   },
   {
@@ -538,8 +538,8 @@ var stations = [
   {
     "id": 86,
     "name": "Brookline Village - Station Street at MBTA",
-    "lat": 42.3329989199507,
-    "long": -71.11634425762531,
+    "lat": 42.33274392304887,
+    "long": -71.11626680949485,
     "photo": "photos/brookline-village-pearl-st-at-mbta.jpg"
   },
   {
@@ -580,8 +580,8 @@ var stations = [
   {
     "id": 92,
     "name": "University of Massachusetts Boston - Campus Center",
-    "lat": 42.313917,
-    "long": -71.04025
+    "lat": 42.31218918475612,
+    "long": -71.03648586203235
   },
   {
     "id": 93,
@@ -627,8 +627,8 @@ var stations = [
   {
     "id": 99,
     "name": "Wilson Square",
-    "lat": 42.385582,
-    "long": -71.113341
+    "lat": 42.38567578752914,
+    "long": -71.11412136298895
   },
   {
     "id": 100,
@@ -640,8 +640,8 @@ var stations = [
   {
     "id": 101,
     "name": "Ball Sq",
-    "lat": 42.39915588714573,
-    "long": -71.11102573591778
+    "lat": 42.397822126245096,
+    "long": -71.1060666978301
   },
   {
     "id": 102,
@@ -955,8 +955,8 @@ var stations = [
   {
     "id": 156,
     "name": "Somerville Hospital",
-    "lat": 42.39088801721338,
-    "long": -71.10962569713591,
+    "lat": 42.396785885510184,
+    "long": -71.1023729667977,
     "photo": "photos/somerville-hospital.jpg"
   },
   {
@@ -1295,8 +1295,8 @@ var stations = [
   {
     "id": 214,
     "name": "Airport T Stop - Bremen St at Brooks St",
-    "lat": 42.37533522545788,
-    "long": -71.03131584841321,
+    "lat": 42.37408320248276,
+    "long": -71.03274185079499,
     "photo": "photos/airport-t-stop.jpg"
   },
   {
@@ -1528,8 +1528,8 @@ var stations = [
   {
     "id": 329,
     "name": "Washington St at Myrtle St",
-    "lat": 42.381699831636816,
-    "long": -71.08377588917392,
+    "lat": 42.380997997562794,
+    "long": -71.08721308428358,
     "photo": "photos/washington-st-at-myrtle-st.jpg"
   },
   {
@@ -1885,8 +1885,8 @@ var stations = [
   {
     "id": 387,
     "name": "Norman St at Kelvin St",
-    "lat": 42.40581171700586,
-    "long": -71.06708850720679,
+    "lat": 42.40985877544303,
+    "long": -71.06631867605756,
     "photo": "photos/norman-st-at-kelvin-st.jpg"
   },
   {
@@ -1920,14 +1920,14 @@ var stations = [
   {
     "id": 392,
     "name": "Glendale Square (Ferry St at Broadway)",
-    "lat": 42.41480160999569,
-    "long": -71.04772560316633
+    "lat": 42.41427294293992,
+    "long": -71.04479655659816
   },
   {
     "id": 393,
     "name": "Ferry St at Pleasantview Ave",
-    "lat": 42.40914877754532,
-    "long": -71.04597684005057
+    "lat": 42.412504507772105,
+    "long": -71.05842225271772
   },
   {
     "id": 394,
@@ -1944,8 +1944,8 @@ var stations = [
   {
     "id": 396,
     "name": "Main St at Beacon St",
-    "lat": 42.41072713868097,
-    "long": -71.06266822675025,
+    "lat": 42.4093300667225,
+    "long": -71.06381878293178,
     "photo": "photos/main-st-at-beacon-st.jpg"
   },
   {
@@ -2012,8 +2012,8 @@ var stations = [
   {
     "id": 407,
     "name": "Craigie at Summer St",
-    "lat": 42.38828872616418,
-    "long": -71.11071459967206
+    "lat": 42.383634022742875,
+    "long": -71.10855814078604
   },
   {
     "id": 408,
@@ -2218,6 +2218,20 @@ var stations = [
     "lat": 42.332862884862635,
     "long": -71.09218861916816,
     "discovered": 1571916631382
+  },
+  {
+    "id": 445,
+    "name": "Geiger Gibson Community Health Center",
+    "lat": 42.31886468217537,
+    "long": -71.04536797860419,
+    "discovered": 1578755015509
+  },
+  {
+    "id": 446,
+    "name": "700 Commonwealth Ave.",
+    "lat": 42.34960945333059,
+    "long": -71.10391523698127,
+    "discovered": 1578755015509
   }
 ];
 
@@ -2593,8 +2607,8 @@ function initialize() {
         isVisited = true;
         var marker = new google.maps.Marker({
           icon: {
-            scaledSize: new google.maps.Size(20, 20),
-            url: stations[i].photo || 'img/marker-filled.png',
+            scaledSize: new google.maps.Size(10, 10),
+            url: 'img/blue-sphere.png', // || stations[i].photo || 'img/marker-filled.png',
             strokeColor: '#000000'
           },
           map: map,
