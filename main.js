@@ -2434,6 +2434,11 @@ var trips = [
     color: '#0652DD',
     date: '2019-10-20',
     stations: [113, 362, 405, 93, 92]
+  },
+  {
+    color: '#9980FA',
+    date: '2020-01-12',
+    stations: [59, 44, 228, 189, 318, 117, 398, 144, 141, 91, 335, 386, 381, 407, 99, 334, 77]
   }
 ];
 
@@ -2534,7 +2539,7 @@ function diffStations() {
 
 diffStations();
 
-function drawDayRoute(visited, color, map) {
+function drawDayRoute(visited, color, map, strokeWeight = 2) {
   var numVisited = visited.length;
   var dayCoords = [];
 
@@ -2550,7 +2555,7 @@ function drawDayRoute(visited, color, map) {
     geodesic: true,
     strokeColor: color,
     strokeOpacity: 1.0,
-    strokeWeight: 2
+    strokeWeight
   });
 
   dayLine.setMap(map);
@@ -2612,7 +2617,8 @@ function initialize() {
         isVisited = true;
         var marker = new google.maps.Marker({
           icon: {
-            scaledSize: new google.maps.Size(10, 10),
+            anchor: new google.maps.Point(4, 4),
+            scaledSize: new google.maps.Size(8, 8),
             url: 'img/blue-sphere.png', // || stations[i].photo || 'img/marker-filled.png',
             strokeColor: '#000000'
           },
@@ -2650,7 +2656,11 @@ function initialize() {
   }
 
   for (var i = 0; i < numTrips; i++) {
-    drawDayRoute(trips[i].stations, trips[i].color, map);
+    drawDayRoute(
+      trips[i].stations,
+      (i === numTrips - 1) ? trips[i].color : '#AAAAAA',
+      map,
+      (i === numTrips - 1) ? 4 : 2);
   }
 }
 
