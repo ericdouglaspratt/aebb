@@ -28,8 +28,8 @@ var stations = [
   {
     "id": 6,
     "name": "Cambridge St at Joy St",
-    "lat": 42.36121165307985,
-    "long": -71.06530619789737,
+    "lat": 42.36125721646537,
+    "long": -71.06528744101524,
     "photo": "photos/cambridge-st-at-joy-st.jpg"
   },
   {
@@ -121,7 +121,7 @@ var stations = [
   },
   {
     "id": 21,
-    "name": "Prudential Center - Belvedere St",
+    "name": "Prudential Center - 101 Huntington Ave",
     "lat": 42.34652003998412,
     "long": -71.08065776545118,
     "photo": "photos/prudential-center.jpg"
@@ -157,8 +157,8 @@ var stations = [
   {
     "id": 26,
     "name": "Washington St at Waltham St",
-    "lat": 42.34155984972459,
-    "long": -71.06886953115463,
+    "lat": 42.341574718737476,
+    "long": -71.06890439987183,
     "photo": "photos/washington-st-at-waltham-st.jpg"
   },
   {
@@ -171,8 +171,8 @@ var stations = [
   {
     "id": 29,
     "name": "Innovation Lab - 125 Western Ave at Batten Way",
-    "lat": 42.363732,
-    "long": -71.124565
+    "lat": 42.36314498882458,
+    "long": -71.12298574307715
   },
   {
     "id": 30,
@@ -245,8 +245,8 @@ var stations = [
   {
     "id": 42,
     "name": "Boylston St at Arlington St",
-    "lat": 42.352587795070214,
-    "long": -71.06764905172895,
+    "lat": 42.35204262229712,
+    "long": -71.07057809829712,
     "photo": "photos/boylston-st-at-arlington-st.jpg"
   },
   {
@@ -258,7 +258,7 @@ var stations = [
   },
   {
     "id": 44,
-    "name": "Congress St at North St",
+    "name": "Congress St at Boston City Hall",
     "lat": 42.36041774637169,
     "long": -71.05752243543975
   },
@@ -341,14 +341,14 @@ var stations = [
   },
   {
     "id": 56,
-    "name": "Dudley Square - Dudley St at Warren St",
+    "name": "Dudley Square - Bolling Building",
     "lat": 42.329842993518085,
     "long": -71.08386572459494,
     "photo": "photos/dudley-square.jpg"
   },
   {
     "id": 57,
-    "name": "Columbus Ave at Massachusetts Ave",
+    "name": "Massachusetts Ave at Columbus Ave",
     "lat": 42.340542615516355,
     "long": -71.08138847914233,
     "photo": "photos/massachusetts-ave-at-columbus-ave.jpg"
@@ -404,7 +404,7 @@ var stations = [
   },
   {
     "id": 66,
-    "name": "Allston Green District - Griggs St at Commonwealth Ave",
+    "name": "Commonwealth Ave at Griggs St",
     "lat": 42.34922469338298,
     "long": -71.13275302578586,
     "photo": "photos/allston-green-district.jpg"
@@ -489,8 +489,8 @@ var stations = [
   {
     "id": 78,
     "name": "Union Square - Somerville",
-    "lat": 42.37967148149253,
-    "long": -71.0954931006745,
+    "lat": 42.37967448103421,
+    "long": -71.09391324240278,
     "photo": "photos/union-square-somerville.jpg"
   },
   {
@@ -640,8 +640,8 @@ var stations = [
   {
     "id": 101,
     "name": "Ball Sq",
-    "lat": 42.397822126245096,
-    "long": -71.1060666978301
+    "lat": 42.39918259930251,
+    "long": -71.11104454854285
   },
   {
     "id": 102,
@@ -699,7 +699,7 @@ var stations = [
   },
   {
     "id": 110,
-    "name": "Harvard University Gund Hall at Quincy St / Kirkland S",
+    "name": "Harvard University Gund Hall at Quincy St / Kirkland St",
     "lat": 42.376369,
     "long": -71.114025,
     "photo": "photos/harvard-university-gund-hall-quincy-kirkland.jpg"
@@ -727,8 +727,8 @@ var stations = [
   {
     "id": 114,
     "name": "Teele Square",
-    "lat": 42.40203828065014,
-    "long": -71.1265329148955
+    "lat": 42.40231703379005,
+    "long": -71.12671129423688
   },
   {
     "id": 115,
@@ -820,7 +820,7 @@ var stations = [
   },
   {
     "id": 130,
-    "name": "Upham's Corner",
+    "name": "Uphams Corner",
     "lat": 42.31727474327453,
     "long": -71.06537003967787
   },
@@ -862,8 +862,8 @@ var stations = [
   {
     "id": 137,
     "name": "Magoun Square at Trum Field",
-    "lat": 42.398365,
-    "long": -71.107818,
+    "lat": 42.39778339961249,
+    "long": -71.10594004465383,
     "photo": "photos/magoun-square-at-trum-field.jpg"
   },
   {
@@ -955,8 +955,8 @@ var stations = [
   {
     "id": 156,
     "name": "Somerville Hospital",
-    "lat": 42.396785885510184,
-    "long": -71.1023729667977,
+    "lat": 42.390449490184295,
+    "long": -71.10855950047153,
     "photo": "photos/somerville-hospital.jpg"
   },
   {
@@ -1101,7 +1101,7 @@ var stations = [
   },
   {
     "id": 184,
-    "name": "Sidney Research Campus/ Erie Street at Waverly",
+    "name": "Sidney Research Campus/Erie Street at Waverly",
     "lat": 42.35775309465199,
     "long": -71.10393404960632,
     "photo": "photos/sidney-research-campus.jpg"
@@ -1194,7 +1194,7 @@ var stations = [
   },
   {
     "id": 199,
-    "name": "Upham's Corner T Stop - Magnolia St at Dudley St",
+    "name": "Uphams Corner T Stop - Magnolia St at Dudley St",
     "lat": 42.318697341722434,
     "long": -71.0697814822197
   },
@@ -1295,8 +1295,8 @@ var stations = [
   {
     "id": 214,
     "name": "Airport T Stop - Bremen St at Brooks St",
-    "lat": 42.37408320248276,
-    "long": -71.03274185079499,
+    "lat": 42.37535497133996,
+    "long": -71.03133335709572,
     "photo": "photos/airport-t-stop.jpg"
   },
   {
@@ -1528,8 +1528,8 @@ var stations = [
   {
     "id": 329,
     "name": "Washington St at Myrtle St",
-    "lat": 42.380997997562794,
-    "long": -71.08721308428358,
+    "lat": 42.381706759208264,
+    "long": -71.0837718658604,
     "photo": "photos/washington-st-at-myrtle-st.jpg"
   },
   {
@@ -1878,7 +1878,7 @@ var stations = [
   },
   {
     "id": 386,
-    "name": "Sennott Park  Broadway at Norfolk Street",
+    "name": "Sennott Park Broadway at Norfolk Street",
     "lat": 42.36860524248197,
     "long": -71.09930185605663
   },
@@ -1969,7 +1969,7 @@ var stations = [
   },
   {
     "id": 400,
-    "name": "Big Papi Station",
+    "name": "Lansdowne T Stop",
     "lat": 42.34734473177431,
     "long": -71.1001680795016
   },
@@ -2012,8 +2012,8 @@ var stations = [
   {
     "id": 407,
     "name": "Craigie at Summer St",
-    "lat": 42.383634022742875,
-    "long": -71.10855814078604
+    "lat": 42.388305537643994,
+    "long": -71.11067976811682
   },
   {
     "id": 408,
@@ -2095,7 +2095,7 @@ var stations = [
   },
   {
     "id": 422,
-    "name": "Cummins at American Legion",
+    "name": "American Legion Hwy at Canterbury St",
     "lat": 42.278811581565975,
     "long": -71.11687703062671
   },
@@ -2439,6 +2439,11 @@ var trips = [
     color: '#9980FA',
     date: '2020-01-12',
     stations: [59, 44, 228, 189, 318, 117, 398, 144, 141, 91, 335, 386, 381, 407, 99, 334, 77]
+  },
+  {
+    color: '#1289A7',
+    date: '2020-02-23',
+    stations: [193, 191, 86, 359, 331, 342, 36]
   }
 ];
 
