@@ -26,7 +26,7 @@ function App() {
     setVisitedStations(visitedMap);
 
     // create the initial station map
-    setStationMap(createStationMap(stations));
+    setStationMap(createStationMap(cachedStationData));
 
     // load the current station data
     loadCurrentStationData(visitedMap);
@@ -37,7 +37,6 @@ function App() {
   };
 
   const handleSelectStation = stationId => {
-    console.log('selecting station', stationId);
     setSelectedStationId(stationId);
   };
 
@@ -56,6 +55,11 @@ function App() {
       });
   };
 
+  const updateStationDataWithMarkers = updatedStationList => {
+    setStations(updatedStationList);
+    setStationMap(createStationMap(updatedStationList));
+  };
+
   return (
     <div className="App">
       {isLoading ? (
@@ -67,8 +71,11 @@ function App() {
           <Map
             onClearSelectedStation={handleClearSelectedStation}
             onSelectStation={handleSelectStation}
+            selectedStationId={selectedStationId}
             stations={stations}
+            stationMap={stationMap}
             trips={trips}
+            updateStationDataWithMarkers={updateStationDataWithMarkers}
             visitedStations={visitedStations}
           />
           <InfoPane

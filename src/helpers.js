@@ -24,6 +24,7 @@ export const diffStations = (oldStations, newStations, visitedStations) => {
         bikesAvailable: newStation.ba,
         docksAvailable: newStation.da,
         id: newStation.id,
+        isInactive: newStation.m,
         name: newStation.s,
         lat: newStation.la,
         long: newStation.lo,
@@ -39,6 +40,7 @@ export const diffStations = (oldStations, newStations, visitedStations) => {
         ...matchingOldStation,
         bikesAvailable: newStation.ba,
         docksAvailable: newStation.da,
+        isInactive: newStation.m,
         name: newStation.s
       });
       numNameChanged++;
@@ -52,6 +54,7 @@ export const diffStations = (oldStations, newStations, visitedStations) => {
         ...matchingOldStation,
         bikesAvailable: newStation.ba,
         docksAvailable: newStation.da,
+        isInactive: newStation.m,
         lat: newStation.la,
         long: newStation.lo
       });
@@ -60,7 +63,8 @@ export const diffStations = (oldStations, newStations, visitedStations) => {
       updatedStationList.push({
         ...matchingOldStation,
         bikesAvailable: newStation.ba,
-        docksAvailable: newStation.da
+        docksAvailable: newStation.da,
+        isInactive: newStation.m
       });
     }
   });
@@ -96,6 +100,7 @@ export const diffStations = (oldStations, newStations, visitedStations) => {
         if (visitedStations[nonexistentStation.id]) {
           updatedStationList.push({
             ...nonexistentStation,
+            isInactive: true,
             isLegacy: true
           });
           numLegacyStations++;

@@ -2,7 +2,7 @@ import React from 'react';
 import './StationInfo.css';
 
 const StationInfo = ({station}) => {
-  const showBikeDockInfo = typeof station.bikesAvailable != 'undefined' || typeof station.docksAvailable != 'undefined';
+  const showBikeDockInfo = !station.isInactive && (typeof station.bikesAvailable != 'undefined' || typeof station.docksAvailable != 'undefined');
 
   return (
     <div className="StationInfo">
@@ -16,6 +16,11 @@ const StationInfo = ({station}) => {
         {station.isLegacy && (
           <p className="StationInfo-subheader">
             permanently removed
+          </p>
+        )}
+        {station.isInactive && !station.isLegacy && (
+          <p className="StationInfo-subheader">
+            inactive
           </p>
         )}
         {showBikeDockInfo && (

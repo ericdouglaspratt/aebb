@@ -8,14 +8,14 @@ import TripList from './TripList';
 
 const ProgressBar = withStyles({
   colorPrimary: {
-    backgroundColor: '#eed0bd',
+    backgroundColor: '#cbddf3',
   },
   barColorPrimary: {
-    backgroundColor: '#b04d00',
+    backgroundColor: '#4db546',
   },
 })(LinearProgress);
 
-const HomePane = ({stations, trips, visitedStations}) => {
+const HomePane = ({stations, stationMap, trips, visitedStations}) => {
   const [numVisited, setNumVisited] = useState(0);
 
   useEffect(() => {
@@ -34,6 +34,7 @@ const HomePane = ({stations, trips, visitedStations}) => {
         <ProgressBar variant="determinate" value={percentComplete} />
       </div>
       <TripList
+        stationMap={stationMap}
         trips={trips}
         visitedStations={visitedStations}
       />

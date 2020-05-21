@@ -16,6 +16,7 @@
   color: #fff;
   display: flex;
   flex-flow: row wrap;
+  flex-shrink: 0;
   height: 50px;
   overflow: hidden;
   padding-left: 10px;

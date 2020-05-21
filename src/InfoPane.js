@@ -48,6 +48,7 @@ function InfoPane({
         ) : (
           <HomePane
             stations={stations}
+            stationMap={stationMap}
             trips={trips}
             visitedStations={visitedStations}
           />

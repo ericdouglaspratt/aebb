@@ -1,6 +1,14 @@
 .TripList {
   display: none;
 }
+.TripList .MuiButton-root {
+  justify-content: flex-start;
+  text-transform: none;
+  width: 100%;
+}
+.TripList .MuiButton-label {
+  justify-content: space-between;
+}
 
 @media (min-width: 768px) {
   .TripList {
