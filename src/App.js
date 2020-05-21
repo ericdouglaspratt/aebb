@@ -1,36 +1,86 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 
-import stations from './data-stations';
+import { createStationMap, diffStations } from './helpers';
+import cachedStationData from './data-stations';
 import trips from './data-trips';
 
+import InfoPane from './InfoPane';
 import Map from './Map';
-import TripList from './TripList';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [selectedStationId, setSelectedStationId] = useState('');
+  const [stations, setStations] = useState(cachedStationData);
+  const [stationMap, setStationMap] = useState({});
   const [visitedStations, setVisitedStations] = useState({});
 
   useEffect(() => {
     // determine the visited stations
-    setVisitedStations(trips.reduce((result, trip) => {
+    const visitedMap = trips.reduce((result, trip) => {
       trip.stations.forEach(stationId => {
         result[stationId] = true;
       });
       return result;
-    }, {}));
+    }, {});
+    setVisitedStations(visitedMap);
+
+    // create the initial station map
+    setStationMap(createStationMap(stations));
+
+    // load the current station data
+    loadCurrentStationData(visitedMap);
   }, []);
+
+  const handleClearSelectedStation = () => {
+    setSelectedStationId('');
+  };
+
+  const handleSelectStation = stationId => {
+    console.log('selecting station', stationId);
+    setSelectedStationId(stationId);
+  };
+
+  const loadCurrentStationData = visitedMap => {
+    fetch('https://member.bluebikes.com/data/stations.json')
+      .then(response => response.json())
+      .then(data => {
+        const { updatedStationList } = diffStations(stations, data.stations, visitedMap);
+        setStations(updatedStationList);
+        setStationMap(createStationMap(updatedStationList));
+        setIsLoading(false);
+      })
+      .catch(e => {
+        console.log('error fetching current station data', e);
+        setIsLoading(false);
+      });
+  };
 
   return (
     <div className="App">
-      <Map
-        stations={stations}
-        trips={trips}
-        visitedStations={visitedStations}
-      />
-      <TripList
-        trips={trips}
-        visitedStations={visitedStations}
-      />
+      {isLoading ? (
+        <div className="App-loading">
+          Loading
+        </div>
+      ) : (
+        <>
+          <Map
+            onClearSelectedStation={handleClearSelectedStation}
+            onSelectStation={handleSelectStation}
+            stations={stations}
+            trips={trips}
+            visitedStations={visitedStations}
+          />
+          <InfoPane
+            onClearSelectedStation={handleClearSelectedStation}
+            selectedStationId={selectedStationId}
+            stations={stations}
+            stationMap={stationMap}
+            trips={trips}
+            visitedStations={visitedStations}
+          />
+        </>
+      )}
     </div>
   );
 }

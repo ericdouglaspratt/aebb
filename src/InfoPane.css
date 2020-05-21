@@ -1,0 +1,40 @@
+.InfoPane {
+  background-color: #fff;
+  border-radius: 6px;
+  bottom: 10px;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+  display: flex;
+  flex-flow: column nowrap;
+  left: 10px;
+  position: absolute;
+  right: 10px;
+}
+.InfoPane-header {
+  align-items: center;
+  background-color: #1D428A;
+  border-radius: 6px 6px 0 0;
+  color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  height: 50px;
+  overflow: hidden;
+  padding-left: 10px;
+}
+.InfoPane-header > h1 {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+}
+.InfoPane-content {
+  border-radius: 0 0 6px 6px;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+@media (min-width: 768px) {
+  .InfoPane {
+    right: auto;
+    top: 10px;
+    width: 300px;
+  }
+}

@@ -1,0 +1,48 @@
+.StationInfo-photo {
+  background-color: #ccc;
+  background-position: 50% 25%;
+  background-size: cover;
+  height: 75px;
+}
+.StationInfo-content {
+  padding: 0 10px;
+}
+.StationInfo-header {
+  font-size: 22px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+.StationInfo-subheader {
+  color: #aaa;
+  font-size: 14px;
+  margin-top: -8px;
+}
+.StationInfo-status {
+  display: flex;
+  justify-content: center;
+}
+.StationInfo-statusItem {
+  font-size: 12px;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+}
+.StationInfo-statusItem + .StationInfo-statusItem::before {
+  border-left: 1px solid #ccc;
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  top: 10px;
+}
+.StationInfo-statusNumber {
+  display: block;
+  font-size: 36px;
+}
+
+@media (min-width: 768px) {
+  .StationInfo-photo {
+    background-position: 50% 25%;
+    height: 150px;
+  }
+}

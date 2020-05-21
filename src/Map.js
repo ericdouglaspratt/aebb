@@ -14,7 +14,7 @@ const mapOptions = {
   styles: mapStyles
 };
 
-function MapComponent({ stations, trips, visitedStations }) {
+function MapComponent({ onClearSelectedStation, onSelectStation, stations, trips, visitedStations }) {
   const [map, setMap] = useState();
   const mapRef = useRef(null);
 
@@ -32,6 +32,7 @@ function MapComponent({ stations, trips, visitedStations }) {
     var infoWindow = new window.google.maps.InfoWindow();
     window.google.maps.event.addListener(marker, 'click', function() {
       var content = '<h4 style="margin: 0; width: 200px;">' + this.title + (this.isLegacy ? ' (Legacy)' : '') + '</h4>';
+      content += `<p>Bikes: ${this.bikesAvailable}, Docks: ${this.docksAvailable}</p>`;
       if (this.photo) {
         content += '<img src="' + this.photo + '" style="margin-top: 10px; height: 200px; width: 200px;" />';
       }
@@ -52,8 +53,32 @@ function MapComponent({ stations, trips, visitedStations }) {
     });
   };
 
+  const getLocation = () => {
+    navigator.geolocation.getCurrentPosition(handleLocationSuccess, handleLocationError);
+  };
+
+  const handleLocationError = e => {
+    console.log('location request error', e);
+  };
+
+  const handleLocationSuccess = ({coords}) => {
+    const position = new window.google.maps.LatLng(coords.latitude, coords.longitude);
+
+    createMarker({
+      icon: 'img/blue-sphere.png',
+      lat: coords.latitude,
+      lng: coords.longitude,
+      size: 10
+    });
+
+    map.setCenter(position);
+  };
+
   const initializeMap = () => {
     placeStationMarkers();
+    getLocation();
+
+    map.addListener('click', onClearSelectedStation);
   };
 
   const loadMapScript = () => {
@@ -75,7 +100,10 @@ function MapComponent({ stations, trips, visitedStations }) {
   const placeStationMarkers = () => {
     stations.forEach(station => {
       const marker = createMarker({
+        bikesAvailable: station.bikesAvailable,
+        docksAvailable: station.docksAvailable,
         icon: visitedStations[station.id] ? 'img/marker-filled.png' : 'img/marker-outline.png',
+        id: station.id,
         isLegacy: station.isLegacy,
         lat: station.lat,
         lng: station.long,
@@ -84,7 +112,10 @@ function MapComponent({ stations, trips, visitedStations }) {
         title: station.name
       });
 
-      createInfoWindow(marker);
+      //createInfoWindow(marker);
+      window.google.maps.event.addListener(marker, 'click', function() {
+        onSelectStation(this.id);
+      });
     });
   };
 
