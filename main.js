@@ -2449,6 +2449,11 @@ var trips = [
     color: '#78e08f',
     date: '2020-05-03',
     stations: [77, 235, 194, 441, 408, 188, 406, 137, 101, 156, 77]
+  },
+  {
+    color: '#ffdd59',
+    date: '2020-05-17',
+    stations: [149, 29, 17, 15, 428, 440, 103, 69, 149]
   }
 ];
 
@@ -2620,6 +2625,9 @@ function initialize() {
   var tripHistoryEl = document.getElementsByClassName('TripHistory')[0];
   tripHistoryEl.innerHTML = tripHtml;
 
+  //var el = document.getElementsByClassName('ProgressBar-report')[0];
+  //el.innerHTML = el.innerHTML + '<button id="aebb-locate">location</button>';
+
   for (var i = 0; i < numStations; i++) {
     let isVisited = false;
     for (var j = 0; j < numVisited; j++) {
@@ -2629,7 +2637,7 @@ function initialize() {
           icon: {
             anchor: new google.maps.Point(4, 4),
             scaledSize: new google.maps.Size(8, 8),
-            url: 'img/blue-sphere.png', // || stations[i].photo || 'img/marker-filled.png',
+            url: 'img/marker-filled.png', // || stations[i].photo || 'img/marker-filled.png',  'img/blue-sphere.png'
             strokeColor: '#000000'
           },
           map: map,
@@ -2672,6 +2680,37 @@ function initialize() {
       map,
       (i === numTrips - 1) ? 4 : 2);
   }
+
+  const onGetLocation = ({coords}) => {
+    //console.log('position', coords);
+
+    const position = new google.maps.LatLng(coords.latitude, coords.longitude);
+
+    var marker = new google.maps.Marker({
+      icon: {
+        scaledSize: new google.maps.Size(10, 10),
+        url: 'img/blue-sphere.png'
+      },
+      map: map,
+      position
+    });
+
+    map.setCenter(position);
+  }
+
+  const onLocationError = e => {
+    console.log('location request error', e);
+  }
+
+  const requestLocation = () => {
+    //console.log('requesting location');
+    navigator.geolocation.getCurrentPosition(onGetLocation, onLocationError);
+  };
+
+  requestLocation();
+
+  //const locateButton = document.getElementById('aebb-locate');
+  //locateButton.addEventListener('click', requestLocation);
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
