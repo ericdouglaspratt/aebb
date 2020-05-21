@@ -26,10 +26,10 @@ const StationInfo = ({station}) => {
         {showBikeDockInfo && (
           <div className="StationInfo-status">
             <p className="StationInfo-statusItem">
-              <span className="StationInfo-statusNumber">{station.bikesAvailable}</span> Bikes
+              <span className="StationInfo-statusNumber">{station.bikesAvailable}</span> {station.bikesAvailable === 1 ? 'Bike' : 'Bikes'}
             </p>
             <p className="StationInfo-statusItem">
-              <span className="StationInfo-statusNumber">{station.docksAvailable}</span> Docks
+              <span className="StationInfo-statusNumber">{station.docksAvailable}</span> {station.docksAvailable === 1 ? 'Dock' : 'Docks'}
             </p>
           </div>
         )}

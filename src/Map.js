@@ -1,6 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Map.css';
 
+import IconButton from '@material-ui/core/IconButton';
+import LocationDisabled from '@material-ui/icons/LocationDisabled';
+import LocationSearching from '@material-ui/icons/LocationSearching';
+
 import MAP_API_KEY from './map-api-key';
 import MAP_STYLES from './map-styles';
 
@@ -8,6 +12,8 @@ const EXPANDED_MARKER_HEIGHT = 40;
 const EXPANDED_MARKER_WIDTH = 30;
 const MARKER_HEIGHT = 27;
 const MARKER_WIDTH = 20;
+const LOCATION_MARKER_HEIGHT = 10;
+const LOCATION_MARKER_WIDTH = 10;
 
 const MARKER_Z_INDEX = {
   INACTIVE: 1,
@@ -37,6 +43,8 @@ function MapComponent({
   visitedStations
 }) {
   const [activeMarkers, setActiveMarkers] = useState([]);
+  const [isLocationError, setIsLocationError] = useState(false);
+  const [locationMarker, setLocationMarker] = useState(null);
   const [map, setMap] = useState();
   const mapRef = useRef(null);
 
@@ -107,23 +115,30 @@ function MapComponent({
 
   const getLocation = () => {
     navigator.geolocation.getCurrentPosition(handleLocationSuccess, handleLocationError);
+    setIsLocationError(false);
   };
 
   const handleLocationError = e => {
     console.log('location request error', e);
+    setIsLocationError(true);
   };
 
   const handleLocationSuccess = ({ coords }) => {
     const position = new window.google.maps.LatLng(coords.latitude, coords.longitude);
 
-    createMarker({
-      h: 10,
+    if (locationMarker) {
+      locationMarker.setMap(null);
+    }
+
+    const marker = createMarker({
+      h: LOCATION_MARKER_HEIGHT,
       icon: 'img/blue-sphere.png',
       lat: coords.latitude,
       lng: coords.longitude,
-      w: 10,
+      w: LOCATION_MARKER_WIDTH,
       zIndex: MARKER_Z_INDEX.LOCATION
     });
+    setLocationMarker(marker);
 
     map.setCenter(position);
   };
@@ -203,7 +218,14 @@ function MapComponent({
   };
 
   return (
-    <div className="Map" ref={mapRef}></div>
+    <>
+      <div className="Map" ref={mapRef}></div>
+      <div className="Map-location">
+        <IconButton onClick={getLocation}>
+          {isLocationError ? <LocationDisabled /> : <LocationSearching />}
+        </IconButton>
+      </div>
+    </>
   )
 };
 
