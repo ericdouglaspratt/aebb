@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function InfoPane({
+  diffLog,
   onClearSelectedStation,
   selectedStationId,
   stations,
@@ -47,6 +48,7 @@ function InfoPane({
           <StationInfo station={station} />
         ) : (
           <HomePane
+            diffLog={diffLog}
             stations={stations}
             stationMap={stationMap}
             trips={trips}

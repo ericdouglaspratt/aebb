@@ -1,0 +1,9 @@
+.HomeTabs {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .HomeTabs {
+    display: block;
+  }
+}

@@ -4,7 +4,7 @@ import './HomePane.css';
 import { withStyles } from '@material-ui/core/styles';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
-import TripList from './TripList';
+import HomeTabs from './HomeTabs';
 
 const ProgressBar = withStyles({
   colorPrimary: {
@@ -15,7 +15,13 @@ const ProgressBar = withStyles({
   },
 })(LinearProgress);
 
-const HomePane = ({stations, stationMap, trips, visitedStations}) => {
+const HomePane = ({
+  diffLog,
+  stations,
+  stationMap,
+  trips,
+  visitedStations
+}) => {
   const [numVisited, setNumVisited] = useState(0);
 
   useEffect(() => {
@@ -33,7 +39,8 @@ const HomePane = ({stations, stationMap, trips, visitedStations}) => {
         </p>
         <ProgressBar variant="determinate" value={percentComplete} />
       </div>
-      <TripList
+      <HomeTabs
+        diffLog={diffLog}
         stationMap={stationMap}
         trips={trips}
         visitedStations={visitedStations}

@@ -9,6 +9,7 @@ import InfoPane from './InfoPane';
 import Map from './Map';
 
 function App() {
+  const [diffLog, setDiffLog] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [selectedStationId, setSelectedStationId] = useState('');
   const [stations, setStations] = useState(cachedStationData);
@@ -44,7 +45,8 @@ function App() {
     fetch('https://member.bluebikes.com/data/stations.json')
       .then(response => response.json())
       .then(data => {
-        const { updatedStationList } = diffStations(stations, data.stations, visitedMap);
+        const { diffLog, updatedStationList } = diffStations(stations, data.stations, visitedMap);
+        setDiffLog(diffLog);
         setStations(updatedStationList);
         setStationMap(createStationMap(updatedStationList));
         setIsLoading(false);
@@ -79,6 +81,7 @@ function App() {
             visitedStations={visitedStations}
           />
           <InfoPane
+            diffLog={diffLog}
             onClearSelectedStation={handleClearSelectedStation}
             selectedStationId={selectedStationId}
             stations={stations}
