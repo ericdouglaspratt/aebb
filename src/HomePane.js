@@ -17,6 +17,7 @@ const ProgressBar = withStyles({
 
 const HomePane = ({
   diffLog,
+  onRouteMarkingActivate,
   stations,
   stationMap,
   trips,
@@ -33,14 +34,17 @@ const HomePane = ({
   return (
     <div className="HomePane">
       <div className="HomePane-progress">
-        <p className="HomePane-progressStats" style={{width: `${percentComplete}%`}}>
-          <span className="HomePane-progressPercent">{percentComplete}%</span>
-          <span className="HomePane-progressAbsolute">{`${numVisited} of ${stations.length} stations`}</span>
+        <p className="HomePane-progressPercent" style={{width: `${percentComplete}%`}}>
+          {percentComplete}%
         </p>
         <ProgressBar variant="determinate" value={percentComplete} />
+        <p className="HomePane-progressAbsolute" style={{width: `${percentComplete}%`}}>
+          {`${numVisited} of ${stations.length} stations`}
+        </p>
       </div>
       <HomeTabs
         diffLog={diffLog}
+        onRouteMarkingActivate={onRouteMarkingActivate}
         stationMap={stationMap}
         trips={trips}
         visitedStations={visitedStations}

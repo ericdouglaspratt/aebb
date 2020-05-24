@@ -4,6 +4,8 @@ import './HomeTabs.css';
 import { withStyles } from '@material-ui/core/styles';
 import BarChart from '@material-ui/icons/BarChart';
 import Code from '@material-ui/icons/Code';
+import MenuItem from '@material-ui/core/MenuItem';
+import MenuList from '@material-ui/core/MenuList';
 import History from '@material-ui/icons/History';
 import PhotoLibrary from '@material-ui/icons/PhotoLibrary';
 import Tab from '@material-ui/core/Tab';
@@ -27,7 +29,13 @@ const ACTIVE_VIEWS = {
   CONSOLE: 3
 };
 
-const HomeTabs = ({diffLog, stationMap, trips, visitedStations}) => {
+const HomeTabs = ({
+  diffLog,
+  onRouteMarkingActivate,
+  stationMap,
+  trips,
+  visitedStations
+}) => {
   const [activeTab, setActiveTab] = useState(0);
 
   const handleChange = (e, value) => {
@@ -35,7 +43,16 @@ const HomeTabs = ({diffLog, stationMap, trips, visitedStations}) => {
   };
 
   return (
+    <div className="HomeTabs"></div>
+  );
+
+  /*return (
     <div className="HomeTabs">
+      <MenuList>
+        <MenuItem onClick={onRouteMarkingActivate}>Mark a route</MenuItem>
+        <MenuItem>View stats</MenuItem>
+        <MenuItem>Logout</MenuItem>
+      </MenuList>
       <Tabs
         value={activeTab}
         onChange={handleChange}
@@ -66,7 +83,7 @@ const HomeTabs = ({diffLog, stationMap, trips, visitedStations}) => {
         <Console diffLog={diffLog} />
       )}
     </div>
-  );
+  );*/
 };
 
 export default HomeTabs;

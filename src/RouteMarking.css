@@ -1,0 +1,34 @@
+.RouteMarking {
+  border: 4px dashed #1967d2;
+  border-radius: 12px;
+  bottom: 3px;
+  left: 3px;
+  pointer-events: none;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+.RouteMarking-info {
+  align-items: center;
+  background-color: #1967d2;
+  border-radius: 6px;
+  color: #fff;
+  display: flex;
+  font-style: italic;
+  height: 48px;
+  justify-content: center;
+  left: 61px;
+  padding: 0 10px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+
+@media (min-width: 768px) {
+  .RouteMarking-info {
+    left: calc(50% + 150px);
+    padding: 0 20px;
+    right: auto;
+    transform: translateX(-50%);
+  }
+}

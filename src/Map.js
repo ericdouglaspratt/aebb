@@ -36,6 +36,7 @@ const MAP_OPTIONS = {
 function MapComponent({
   onClearSelectedStation,
   onSelectStation,
+  route,
   selectedStationId,
   stations,
   stationMap,
@@ -43,6 +44,7 @@ function MapComponent({
   visitedStations
 }) {
   const [activeMarkers, setActiveMarkers] = useState([]);
+  const [activeRoute, setActiveRoute] = useState(null);
   const [isLocationError, setIsLocationError] = useState(false);
   const [locationMarker, setLocationMarker] = useState(null);
   const [map, setMap] = useState();
@@ -94,6 +96,21 @@ function MapComponent({
     }
   }, [selectedStationId, stationMap]);
 
+  useEffect(() => {
+    if (route && route.length > 0) {
+      // remove the old route, if any
+      if (activeRoute) {
+        activeRoute.setMap(null);
+      }
+
+      // draw the new route
+      setActiveRoute(drawRoute(route));
+    } else if (activeRoute) {
+      // remove the old route, if any
+      activeRoute.setMap(null);
+    }
+  }, [route])
+
   const createMarker = ({ h, icon, lat, lng, w, ...rest }) => {
     return new window.google.maps.Marker({
       icon: {
@@ -112,6 +129,24 @@ function MapComponent({
       : visitedStations[station.id]
         ? MARKER_Z_INDEX.VISITED
         : MARKER_Z_INDEX.UNVISITED;
+
+  const drawRoute = stationIds => {
+    const path = stationIds.map(stationId => ({
+      lat: stationMap[stationId].lat,
+      lng: stationMap[stationId].long
+    }));
+
+    var route = new window.google.maps.Polyline({
+      path,
+      geodesic: true,
+      strokeColor: '#1967d2',
+      strokeOpacity: 1.0,
+      strokeWeight: 4
+    });
+
+    route.setMap(map);
+    return route;
+  };
 
   const getLocation = () => {
     navigator.geolocation.getCurrentPosition(handleLocationSuccess, handleLocationError);
@@ -203,8 +238,8 @@ function MapComponent({
         zIndex: determineMarkerZIndex(station)
       });
 
-      window.google.maps.event.addListener(marker, 'click', function () {
-        onSelectStation(this.id);
+      window.google.maps.event.addListener(marker, 'click', () => {
+        onSelectStation(station.id);
       });
 
       return {

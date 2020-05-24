@@ -34,6 +34,7 @@
 
 @media (min-width: 768px) {
   .InfoPane {
+    bottom: auto;
     right: auto;
     top: 10px;
     width: 300px;

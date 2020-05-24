@@ -16,7 +16,10 @@ const useStyles = makeStyles((theme) => ({
 
 function InfoPane({
   diffLog,
+  isRouteMarkingActive,
   onClearSelectedStation,
+  onRouteMarkingActivate,
+  onRouteMarkingDeactivate,
   selectedStationId,
   stations,
   stationMap,
@@ -37,6 +40,13 @@ function InfoPane({
           >
             Back
           </Button>
+        ) : isRouteMarkingActive ? (
+          <Button
+            className={classes.backButton}
+            onClick={onRouteMarkingDeactivate}
+          >
+            Cancel
+          </Button>
         ) : (
           <h1>
             Andy and Eric Bike Boston
@@ -49,6 +59,7 @@ function InfoPane({
         ) : (
           <HomePane
             diffLog={diffLog}
+            onRouteMarkingActivate={onRouteMarkingActivate}
             stations={stations}
             stationMap={stationMap}
             trips={trips}
