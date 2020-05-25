@@ -25,6 +25,7 @@ const MARKER_Z_INDEX = {
 
 const MAP_OPTIONS = {
   center: { lat: 42.3615287, lng: -71.0677415 },
+  clickableIcons: false,
   zoom: 14,
   disableDefaultUI: false,
   fullscreenControl: false,
@@ -123,6 +124,39 @@ function MapComponent({
     });
   };
 
+  const determineMarkerIcon = ({
+    bikesAvailable,
+    docksAvailable,
+    isInactive,
+    isLegacy,
+    isVisited
+  }) => {
+    const iconStatus = isInactive ? 'inactive' : isVisited ? 'visited' : 'unvisited';
+
+    let iconFillCount = '';
+    if (!isInactive && !isLegacy) {
+      const bikePercentage = Math.round((bikesAvailable / (bikesAvailable + docksAvailable)) * 100);
+      const multiplier = (bikePercentage <= 50) ? Math.round(bikePercentage / 25) : Math.round(bikePercentage / 25);
+      if (bikePercentage === 0) {
+        iconFillCount = '-0';
+      } else if (bikePercentage === 100) {
+        iconFillCount = '-100';
+      } else if (bikesAvailable === 1) {
+        iconFillCount = '-1';
+      } else if (docksAvailable === 1) {
+        iconFillCount = '-99';
+      } else if (multiplier === 0 && bikePercentage !== 0) {
+        iconFillCount = '-25';
+      } else if (multiplier === 4 && bikePercentage !== 100) {
+        iconFillCount = '-75';
+      } else {
+        iconFillCount = `-${multiplier * 25}`;
+      }
+    }
+
+    return `img/station-${iconStatus}${iconFillCount}.png`;
+  };
+
   const determineMarkerZIndex = station =>
     station.isInactive
       ? MARKER_Z_INDEX.INACTIVE
@@ -203,30 +237,19 @@ function MapComponent({
 
   const placeStationMarkers = () => {
     const updatedStations = stations.map(station => {
-      const iconStatus = station.isInactive ? 'inactive' : visitedStations[station.id] ? 'visited' : 'unvisited';
-
-      let iconFillCount = '';
-      if (!station.isInactive && !station.isLegacy) {
-        const bikePercentage = Math.round((station.bikesAvailable / (station.bikesAvailable + station.docksAvailable)) * 100);
-        const multiplier = (bikePercentage <= 50) ? Math.round(bikePercentage / 25) : Math.round(bikePercentage / 25);
-        if (bikePercentage === 0) {
-          iconFillCount = '-0';
-        } else if (bikePercentage === 100) {
-          iconFillCount = '-100';
-        } else if (multiplier === 0 && bikePercentage !== 0) {
-          iconFillCount = '-25';
-        } else if (multiplier === 4 && bikePercentage !== 100) {
-          iconFillCount = '-75';
-        } else {
-          iconFillCount = `-${multiplier * 25}`;
-        }
-      }
+      
 
       const marker = createMarker({
         bikesAvailable: station.bikesAvailable,
         docksAvailable: station.docksAvailable,
         h: MARKER_HEIGHT,
-        icon: `img/station-${iconStatus}${iconFillCount}.png`,
+        icon: determineMarkerIcon({
+          bikesAvailable: station.bikesAvailable,
+          docksAvailable: station.docksAvailable,
+          isInactive: station.isInactive,
+          isLegacy: station.isLegacy,
+          isVisited: !!visitedStations[station.id]
+        }),
         id: station.id,
         isInactive: station.isInactive,
         isLegacy: station.isLegacy,
