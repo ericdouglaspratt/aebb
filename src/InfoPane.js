@@ -22,12 +22,11 @@ function InfoPane({
   onRouteMarkingDeactivate,
   selectedStationId,
   stations,
-  stationMap,
   trips,
   visitedStations
 }) {
   const classes = useStyles();
-  const station = selectedStationId ? stationMap[selectedStationId] : null;
+  const station = selectedStationId ? stations.lookup[selectedStationId] : null;
 
   return (
     <div className="InfoPane">
@@ -61,7 +60,6 @@ function InfoPane({
             diffLog={diffLog}
             onRouteMarkingActivate={onRouteMarkingActivate}
             stations={stations}
-            stationMap={stationMap}
             trips={trips}
             visitedStations={visitedStations}
           />

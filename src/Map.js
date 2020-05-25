@@ -40,7 +40,6 @@ function MapComponent({
   route,
   selectedStationId,
   stations,
-  stationMap,
   updateStationDataWithMarkers,
   visitedStations
 }) {
@@ -69,20 +68,20 @@ function MapComponent({
           scaledSize: new window.google.maps.Size(MARKER_WIDTH, MARKER_HEIGHT),
           url: marker.icon.url
         });
-        marker.setZIndex(determineMarkerZIndex(stationMap[id]));
+        marker.setZIndex(determineMarkerZIndex(stations.lookup[id]));
       });
 
       // make the selected marker large and on top
-      stationMap[selectedStationId].marker.setIcon({
+      stations.lookup[selectedStationId].marker.setIcon({
         scaledSize: new window.google.maps.Size(EXPANDED_MARKER_WIDTH, EXPANDED_MARKER_HEIGHT),
-        url: stationMap[selectedStationId].marker.icon.url
+        url: stations.lookup[selectedStationId].marker.icon.url
       });
-      stationMap[selectedStationId].marker.setZIndex(MARKER_Z_INDEX.ACTIVE);
+      stations.lookup[selectedStationId].marker.setZIndex(MARKER_Z_INDEX.ACTIVE);
 
       // save this marker as the active marker
       setActiveMarkers([{
         id: selectedStationId,
-        marker: stationMap[selectedStationId].marker
+        marker: stations.lookup[selectedStationId].marker
       }]);
     } else if (activeMarkers && activeMarkers.length > 0) {
       // reset all previous markers
@@ -91,11 +90,11 @@ function MapComponent({
           scaledSize: new window.google.maps.Size(MARKER_WIDTH, MARKER_HEIGHT),
           url: marker.icon.url
         });
-        marker.setZIndex(determineMarkerZIndex(stationMap[id]));
+        marker.setZIndex(determineMarkerZIndex(stations.lookup[id]));
       });
       setActiveMarkers([]);
     }
-  }, [selectedStationId, stationMap]);
+  }, [selectedStationId, stations]);
 
   useEffect(() => {
     if (route && route.length > 0) {
@@ -166,8 +165,8 @@ function MapComponent({
 
   const drawRoute = stationIds => {
     const path = stationIds.map(stationId => ({
-      lat: stationMap[stationId].lat,
-      lng: stationMap[stationId].long
+      lat: stations.lookup[stationId].lat,
+      lng: stations.lookup[stationId].long
     }));
 
     var route = new window.google.maps.Polyline({
@@ -236,7 +235,7 @@ function MapComponent({
   };
 
   const placeStationMarkers = () => {
-    const updatedStations = stations.map(station => {
+    const updatedStations = stations.list.map(station => {
       
 
       const marker = createMarker({

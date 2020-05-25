@@ -32,7 +32,7 @@ const ACTIVE_VIEWS = {
 const HomeTabs = ({
   diffLog,
   onRouteMarkingActivate,
-  stationMap,
+  stations,
   trips,
   visitedStations
 }) => {
@@ -67,14 +67,13 @@ const HomeTabs = ({
       </Tabs>
       {activeTab === ACTIVE_VIEWS.STATS && (
         <Stats
-          stationMap={stationMap}
+          stations={stations}
           trips={trips}
           visitedStations={visitedStations}
         />
       )}
       {activeTab === ACTIVE_VIEWS.TRIPS && (
         <TripList
-          stationMap={stationMap}
           trips={trips}
           visitedStations={visitedStations}
         />

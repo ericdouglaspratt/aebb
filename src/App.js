@@ -13,7 +13,10 @@ function App() {
   const [diffLog, setDiffLog] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [selectedStationId, setSelectedStationId] = useState('');
-  const [stations, setStations] = useState(cachedStationData);
+  const [stations, setStations] = useState({
+    list: cachedStationData,
+    lookup: createStationMap(cachedStationData)
+  });
   const [stationMap, setStationMap] = useState({});
   const [visitedStations, setVisitedStations] = useState({});
 
@@ -46,9 +49,6 @@ function App() {
     }, {});
     setVisitedStations(visitedMap);
 
-    // create the initial station map
-    setStationMap(createStationMap(cachedStationData));
-
     // load the current station data
     loadCurrentStationData(visitedMap);
   }, []);
@@ -67,7 +67,6 @@ function App() {
   };
 
   const handleSelectStation = stationId => {
-    console.log('select station', isRouteMarkingActiveRef.current);
     if (isRouteMarkingActiveRef.current) {
       setMarkedRoute([
         ...markedRouteRef.current,
@@ -82,10 +81,12 @@ function App() {
     fetch('https://member.bluebikes.com/data/stations.json')
       .then(response => response.json())
       .then(data => {
-        const { diffLog, updatedStationList } = diffStations(stations, data.stations, visitedMap);
+        const { diffLog, updatedStationList } = diffStations(stations.list, data.stations, visitedMap);
         setDiffLog(diffLog);
-        setStations(updatedStationList);
-        setStationMap(createStationMap(updatedStationList));
+        setStations({
+          list: updatedStationList,
+          lookup: createStationMap(updatedStationList)
+        });
         setIsLoading(false);
       })
       .catch(e => {
@@ -95,8 +96,10 @@ function App() {
   };
 
   const updateStationDataWithMarkers = updatedStationList => {
-    setStations(updatedStationList);
-    setStationMap(createStationMap(updatedStationList));
+    setStations({
+      list: updatedStationList,
+      lookup: createStationMap(updatedStationList)
+    });
   };
 
   return (
@@ -113,7 +116,6 @@ function App() {
             route={markedRoute}
             selectedStationId={selectedStationId}
             stations={stations}
-            stationMap={stationMap}
             trips={trips}
             updateStationDataWithMarkers={updateStationDataWithMarkers}
             visitedStations={visitedStations}
@@ -126,7 +128,6 @@ function App() {
             onRouteMarkingDeactivate={handleRouteMarkingDeactivate}
             selectedStationId={selectedStationId}
             stations={stations}
-            stationMap={stationMap}
             trips={trips}
             visitedStations={visitedStations}
           />

@@ -19,7 +19,6 @@ const HomePane = ({
   diffLog,
   onRouteMarkingActivate,
   stations,
-  stationMap,
   trips,
   visitedStations
 }) => {
@@ -29,7 +28,7 @@ const HomePane = ({
     setNumVisited(Object.keys(visitedStations).length);
   }, [visitedStations]);
 
-  const percentComplete = Math.round((numVisited / stations.length) * 100);
+  const percentComplete = Math.round((numVisited / stations.list.length) * 100);
 
   return (
     <div className="HomePane">
@@ -39,13 +38,13 @@ const HomePane = ({
         </p>
         <ProgressBar variant="determinate" value={percentComplete} />
         <p className="HomePane-progressAbsolute" style={{width: `${percentComplete}%`}}>
-          {`${numVisited} of ${stations.length} stations`}
+          {`${numVisited} of ${stations.list.length} stations`}
         </p>
       </div>
       <HomeTabs
         diffLog={diffLog}
         onRouteMarkingActivate={onRouteMarkingActivate}
-        stationMap={stationMap}
+        stations={stations}
         trips={trips}
         visitedStations={visitedStations}
       />

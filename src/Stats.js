@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-const Stats = ({stationMap, trips}) => {
+const Stats = ({stations, trips}) => {
   const [averageStationsPerTrip, setAverageStationsPerTrip] = useState(0);
   const [maxStationsPerTrip, setMaxStationsPerTrip] = useState(0);
   const [minStationsPerTrip, setMinStationsPerTrip] = useState(0);
@@ -49,7 +49,7 @@ const Stats = ({stationMap, trips}) => {
       </p>
       <ol>
         {topFiveVisitedStations.map(({id, numVisits}) => (
-          <li key={id}>{`${stationMap[id].name} (${numVisits})`}</li>
+          <li key={id}>{`${stations.lookup[id].name} (${numVisits})`}</li>
         ))}
       </ol>
     </div>
