@@ -18,6 +18,7 @@
   flex-flow: row wrap;
   flex-shrink: 0;
   height: 50px;
+  justify-content: space-between;
   overflow: hidden;
   padding-left: 10px;
 }

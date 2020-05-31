@@ -1,18 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './InfoPane.css';
 
-import ArrowBack from '@material-ui/icons/ArrowBack';
-import Button from '@material-ui/core/Button';
-import { makeStyles } from '@material-ui/core/styles';
+import { BREAKPOINTS } from './constants';
+import { useBreakpoint } from './helpers';
 
+import BackButton from './BackButton';
+import CancelButton from './CancelButton';
 import HomePane from './HomePane';
+import MenuButton from './MenuButton';
 import StationInfo from './StationInfo';
-
-const useStyles = makeStyles((theme) => ({
-  backButton: {
-    color: '#ffffff'
-  }
-}));
 
 function InfoPane({
   diffLog,
@@ -25,46 +21,56 @@ function InfoPane({
   trips,
   visitedStations
 }) {
-  const classes = useStyles();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const breakpoint = useBreakpoint();
   const station = selectedStationId ? stations.lookup[selectedStationId] : null;
+
+  const handleClickMenuButton = () => {
+    setIsMenuOpen(true);
+  };
+
+  const handleCloseMenu = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <div className="InfoPane">
-      <div className="InfoPane-header">
-        {selectedStationId ? (
-          <Button
-            className={classes.backButton}
-            onClick={onClearSelectedStation}
-            startIcon={<ArrowBack />}
-          >
-            Back
-          </Button>
-        ) : isRouteMarkingActive ? (
-          <Button
-            className={classes.backButton}
-            onClick={onRouteMarkingDeactivate}
-          >
-            Cancel
-          </Button>
-        ) : (
-          <h1>
-            Andy and Eric Bike Boston
-          </h1>
-        )}
-      </div>
-      <div className="InfoPane-content">
-        {selectedStationId ? (
-          <StationInfo station={station} />
-        ) : (
-          <HomePane
-            diffLog={diffLog}
-            onRouteMarkingActivate={onRouteMarkingActivate}
-            stations={stations}
-            trips={trips}
-            visitedStations={visitedStations}
-          />
-        )}
-      </div>
+      {selectedStationId ? (
+        <>
+          <div className="InfoPane-header">
+            <BackButton onClick={onClearSelectedStation} />
+          </div>
+          <div className="InfoPane-content">
+            <StationInfo station={station} />
+          </div>
+        </>
+      ) : isRouteMarkingActive ? (
+        <div className="InfoPane-header">
+          <CancelButton onClick={onRouteMarkingDeactivate} />
+        </div>
+      ) : (
+        <>
+          <div className="InfoPane-header">
+            <h1>
+              Andy and Eric Bike Boston
+            </h1>
+            {breakpoint === BREAKPOINTS.MOBILE && (
+              <MenuButton onClick={handleClickMenuButton} />
+            )}
+          </div>
+          <div className="InfoPane-content">
+            <HomePane
+              diffLog={diffLog}
+              isMenuOpen={isMenuOpen}
+              onCloseMenu={handleCloseMenu}
+              onRouteMarkingActivate={onRouteMarkingActivate}
+              stations={stations}
+              trips={trips}
+              visitedStations={visitedStations}
+            />
+          </div>
+        </>
+      )}
     </div>
   )
 }

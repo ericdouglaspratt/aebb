@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './App.css';
 
-import { createStationMap, diffStations } from './helpers';
+import { VIEWS } from './constants';
+import { createStationMap, diffStations, useStateRef } from './helpers';
 import cachedStationData from './data-stations';
 import trips from './data-trips';
 
@@ -20,19 +21,9 @@ function App() {
   const [stationMap, setStationMap] = useState({});
   const [visitedStations, setVisitedStations] = useState({});
 
-  const [isRouteMarkingActive, _setIsRouteMarkingActive] = useState(false);
-  const isRouteMarkingActiveRef = React.useRef(isRouteMarkingActive);
-  const setIsRouteMarkingActive = val => {
-    isRouteMarkingActiveRef.current = val;
-    _setIsRouteMarkingActive(val);
-  };
-
-  const [markedRoute, _setMarkedRoute] = useState([]);
-  const markedRouteRef = React.useRef(markedRoute);
-  const setMarkedRoute = val => {
-    markedRouteRef.current = val;
-    _setMarkedRoute(val);
-  };
+  const [isRouteMarkingActiveRef, setIsRouteMarkingActive] = useStateRef(false);
+  const [markedRouteRef, setMarkedRoute] = useStateRef([]);
+  const [viewStackRef, setViewStack] = useStateRef([]);
 
   useEffect(() => {
     // redirect to secure
@@ -55,6 +46,16 @@ function App() {
 
   const handleClearSelectedStation = () => {
     setSelectedStationId('');
+  };
+
+  const handleGoToView = (view, payload) => {
+    setViewStack([
+      ...viewStackRef.current,
+      {
+        view,
+        payload
+      }
+    ]);
   };
 
   const handleRouteMarkingActivate = () => {
@@ -113,7 +114,7 @@ function App() {
           <Map
             onClearSelectedStation={handleClearSelectedStation}
             onSelectStation={handleSelectStation}
-            route={markedRoute}
+            route={markedRouteRef.current}
             selectedStationId={selectedStationId}
             stations={stations}
             trips={trips}
@@ -122,7 +123,7 @@ function App() {
           />
           <InfoPane
             diffLog={diffLog}
-            isRouteMarkingActive={isRouteMarkingActive}
+            isRouteMarkingActive={isRouteMarkingActiveRef.current}
             onClearSelectedStation={handleClearSelectedStation}
             onRouteMarkingActivate={handleRouteMarkingActivate}
             onRouteMarkingDeactivate={handleRouteMarkingDeactivate}
@@ -131,7 +132,7 @@ function App() {
             trips={trips}
             visitedStations={visitedStations}
           />
-          {isRouteMarkingActive && (
+          {isRouteMarkingActiveRef.current && (
             <RouteMarking />
           )}
         </>

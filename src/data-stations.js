@@ -17,7 +17,8 @@ export default [
     "id": 5,
     "name": "Northeastern University - North Parking Lot",
     "lat": 42.341814,
-    "long": -71.090179
+    "long": -71.090179,
+    "photo": "photos/northeastern-north-lot.jpg"
   },
   {
     "id": 6,
@@ -104,7 +105,8 @@ export default [
     "id": 19,
     "name": "Park Dr at Buswell St",
     "lat": 42.347241,
-    "long": -71.105301
+    "long": -71.105301,
+    "photo": "photos/park-dr-at-buswell-st.jpg"
   },
   {
     "id": 20,
@@ -146,7 +148,8 @@ export default [
     "name": "South End Library - Tremont St at W Newton St",
     "lat": 42.341332,
     "long": -71.076847,
-    "photo": "photos/south-end-library.jpg"
+    "photo": "photos/south-end-library-tremont-st-at-w-newton-st.jpg"
+    //"photo": "photos/south-end-library.jpg"
   },
   {
     "id": 26,
@@ -186,13 +189,15 @@ export default [
     "id": 32,
     "name": "Landmark Center - Brookline Ave at Park Dr",
     "lat": 42.34519428944095,
-    "long": -71.1016970872879
+    "long": -71.1016970872879,
+    "photo": "photos/landmark-center-brookline-ave-at-park-dr.jpg"
   },
   {
     "id": 33,
     "name": "Kenmore Square",
     "lat": 42.348706,
-    "long": -71.097009
+    "long": -71.097009,
+    "photo": "photos/kenmore-square.jpg"
   },
   {
     "id": 35,
@@ -776,7 +781,8 @@ export default [
     "id": 122,
     "name": "Burlington Ave at Brookline Ave",
     "lat": 42.345733,
-    "long": -71.100694
+    "long": -71.100694,
+    "photo": "photos/burlington-ave-at-brookline-ave.jpg"
   },
   {
     "id": 124,
@@ -1387,7 +1393,8 @@ export default [
     "id": 233,
     "name": "St Mary's",
     "lat": 42.346197076555455,
-    "long": -71.10728681087494
+    "long": -71.10728681087494,
+    "photo": "photos/st-marys.jpg"
   },
   {
     "id": 234,
@@ -1679,7 +1686,8 @@ export default [
     "id": 352,
     "name": "Ring Rd",
     "lat": 42.348278385426255,
-    "long": -71.08044855314802
+    "long": -71.08044855314802,
+    "photo": "photos/ring-rd-at-prudential-center.jpg"
   },
   {
     "id": 353,
@@ -1739,7 +1747,8 @@ export default [
     "id": 361,
     "name": "Deerfield St at Commonwealth Ave",
     "lat": 42.34924376955301,
-    "long": -71.09728209692548
+    "long": -71.09728209692548,
+    "photo": "photos/deerfield-st-at-commonwealth-ave.jpg"
   },
   {
     "id": 362,
@@ -1758,7 +1767,8 @@ export default [
     "id": 364,
     "name": "Tremont St at Northampton St",
     "lat": 42.33889559644165,
-    "long": -71.08149975611013
+    "long": -71.08149975611013,
+    "photo": "photos/tremont-st-at-northampton-st.jpg"
   },
   {
     "id": 365,
@@ -1797,7 +1807,8 @@ export default [
     "id": 370,
     "name": "Dartmouth St at Newbury St",
     "lat": 42.35096144421219,
-    "long": -71.07782810926437
+    "long": -71.07782810926437,
+    "photo": "photos/dartmouth-st-at-newbury-st.jpg"
   },
   {
     "id": 371,
@@ -1809,7 +1820,8 @@ export default [
     "id": 372,
     "name": "Boylston St at Exeter St",
     "lat": 42.349589423682445,
-    "long": -71.0794677917329
+    "long": -71.0794677917329,
+    "photo": "photos/boylston-st-at-exeter-st.jpg"
   },
   {
     "id": 373,
@@ -1848,7 +1860,8 @@ export default [
     "id": 379,
     "name": "Tremont St at W. Dedham St",
     "lat": 42.34254913737952,
-    "long": -71.07421449387857
+    "long": -71.07421449387857,
+    "photo": "photos/tremont-st-at-w-dedham-st.jpg"
   },
   {
     "id": 380,
@@ -1866,7 +1879,8 @@ export default [
     "id": 384,
     "name": "Clarendon St at Newbury St",
     "lat": 42.35155308466532,
-    "long": -71.0756903143556
+    "long": -71.0756903143556,
+    "photo": "photos/clarendon-st-at-newbury-st.jpg"
   },
   {
     "id": 385,
@@ -1969,7 +1983,8 @@ export default [
     "id": 400,
     "name": "Lansdowne T Stop",
     "lat": 42.34734473177431,
-    "long": -71.1001680795016
+    "long": -71.1001680795016,
+    "photo": "photos/lansdowne-t-stop.jpg"
   },
   {
     "id": 401,
@@ -1993,7 +2008,8 @@ export default [
     "id": 404,
     "name": "Mass Ave T Station",
     "lat": 42.34135615767354,
-    "long": -71.08336953450817
+    "long": -71.08336953450817,
+    "photo": "photos/massachusetts-ave-t-stop.jpg"
   },
   {
     "id": 405,
@@ -2061,7 +2077,8 @@ export default [
     "id": 415,
     "name": "Stuart St at Berkeley St",
     "lat": 42.34954403114251,
-    "long": -71.0724207387284
+    "long": -71.0724207387284,
+    "photo": "photos/stuart-st-at-berkeley-st.jpg"
   },
   {
     "id": 416,
@@ -2073,7 +2090,8 @@ export default [
     "id": 417,
     "name": "Columbus Ave at W. Canton St",
     "lat": 42.34474224772802,
-    "long": -71.07648162175792
+    "long": -71.07648162175792,
+    "photo": "photos/columbus-ave-at-w-canton-st.jpg"
   },
   {
     "id": 419,
@@ -2234,6 +2252,7 @@ export default [
     "name": "700 Commonwealth Ave.",
     "lat": 42.34960945333059,
     "long": -71.10391523698127,
-    "discovered": 1578755015509
+    "discovered": 1578755015509,
+    "photo": "photos/700-commonwealth-ave.jpg"
   }
 ];

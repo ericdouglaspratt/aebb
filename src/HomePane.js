@@ -1,8 +1,13 @@
 import React, {useEffect, useState} from 'react';
+import { withStyles } from '@material-ui/core/styles';
+import Drawer from '@material-ui/core/Drawer';
+import LinearProgress from '@material-ui/core/LinearProgress';
+import MenuList from '@material-ui/core/MenuList';
+import MenuItem from '@material-ui/core/MenuItem';
 import './HomePane.css';
 
-import { withStyles } from '@material-ui/core/styles';
-import LinearProgress from '@material-ui/core/LinearProgress';
+import { BREAKPOINTS } from './constants';
+import { useBreakpoint } from './helpers';
 
 import HomeTabs from './HomeTabs';
 
@@ -17,12 +22,15 @@ const ProgressBar = withStyles({
 
 const HomePane = ({
   diffLog,
+  isMenuOpen,
+  onCloseMenu,
   onRouteMarkingActivate,
   stations,
   trips,
   visitedStations
 }) => {
   const [numVisited, setNumVisited] = useState(0);
+  const breakpoint = useBreakpoint();
 
   useEffect(() => {
     setNumVisited(Object.keys(visitedStations).length);
@@ -41,13 +49,27 @@ const HomePane = ({
           {`${numVisited} of ${stations.list.length} stations`}
         </p>
       </div>
-      <HomeTabs
+      {breakpoint === BREAKPOINTS.MOBILE && (
+        <Drawer anchor="bottom" open={isMenuOpen} onClose={onCloseMenu}>
+          <MenuList>
+            <MenuItem>View trips</MenuItem>
+            {/*<MenuItem onClick={onRouteMarkingActivate}>Mark a route</MenuItem>*/}
+          </MenuList>
+        </Drawer>
+      )}
+      {breakpoint === BREAKPOINTS.DESKTOP && (
+        <MenuList>
+          <MenuItem>View trips</MenuItem>
+          <MenuItem onClick={onRouteMarkingActivate}>Mark a route</MenuItem>
+        </MenuList>
+      )}
+      {/*<HomeTabs
         diffLog={diffLog}
         onRouteMarkingActivate={onRouteMarkingActivate}
         stations={stations}
         trips={trips}
         visitedStations={visitedStations}
-      />
+      />*/}
     </div>
   );
 };
