@@ -1,20 +1,17 @@
-.HomePane {
-  padding: 0 10px;
+.Progress {
+  padding: 5px 10px 15px;
 }
-.HomePane-progress {
-  padding: 5px 0 15px;
-}
-.HomePane-progressPercent {
+.Progress-percent {
   color: #4db546;
   display: block;
   font-size: 48px;
   margin: 0;
   text-align: right;
 }
-.HomePane-progress .MuiLinearProgress-root {
+.Progress .MuiLinearProgress-root {
   margin-top: -4px;
 }
-.HomePane-progressAbsolute {
+.Progress-absolute {
   color: #4db546;
   display: block;
   font-size: 12px;
@@ -24,8 +21,8 @@
 }
 
 @media (min-width: 768px) {
-  .HomePane-progress {
+  .Progress {
     margin-bottom: 20px;
-    padding: 0;
+    padding: 0 10px;
   }
 }

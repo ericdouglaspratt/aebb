@@ -22,6 +22,14 @@
   overflow: hidden;
   padding-left: 10px;
 }
+.InfoPane-header--inDrawer {
+  border-radius: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
 .InfoPane-header > h1 {
   font-size: 20px;
   font-weight: normal;
@@ -32,6 +40,17 @@
   flex-grow: 1;
   overflow: auto;
 }
+.InfoPane-contentMain {
+  padding: 0 10px;
+}
+.InfoPane-menu::before {
+  border-top: 1px solid #DDD;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
 @media (min-width: 768px) {
   .InfoPane {
@@ -39,5 +58,8 @@
     right: auto;
     top: 10px;
     width: 320px;
+  }
+  .InfoPane--scrollable {
+    bottom: 10px;
   }
 }

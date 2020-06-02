@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 
 import { VIEWS } from './constants';
@@ -8,20 +8,16 @@ import trips from './data-trips';
 
 import InfoPane from './InfoPane';
 import Map from './Map';
-import RouteMarking from './RouteMarking';
 
 function App() {
   const [diffLog, setDiffLog] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [selectedStationId, setSelectedStationId] = useState('');
   const [stations, setStations] = useState({
     list: cachedStationData,
     lookup: createStationMap(cachedStationData)
   });
-  const [stationMap, setStationMap] = useState({});
   const [visitedStations, setVisitedStations] = useState({});
 
-  const [isRouteMarkingActiveRef, setIsRouteMarkingActive] = useStateRef(false);
   const [markedRouteRef, setMarkedRoute] = useStateRef([]);
   const [viewStackRef, setViewStack] = useStateRef([]);
 
@@ -45,36 +41,46 @@ function App() {
   }, []);
 
   const handleClearSelectedStation = () => {
-    setSelectedStationId('');
+    const viewStack = viewStackRef.current;
+    if (viewStack.length > 0 && viewStack[viewStack.length - 1].view === VIEWS.STATION) {
+      popView();
+    }
   };
 
-  const handleGoToView = (view, payload) => {
-    setViewStack([
-      ...viewStackRef.current,
-      {
-        view,
-        payload
-      }
-    ]);
+  const handleViewActivate = (view, payload) => {
+    pushView(view, payload);
   };
 
-  const handleRouteMarkingActivate = () => {
-    setIsRouteMarkingActive(true);
+  const handleViewDeactivate = view => {
+    popView();
+
+    if (view === VIEWS.ROUTE_MARKING) {
+      setMarkedRoute([]);
+    }
   };
 
-  const handleRouteMarkingDeactivate = () => {
-    setIsRouteMarkingActive(false);
-    setMarkedRoute([]);
+  const handleViewReplace = (view, payload) => {
+    const viewStack = viewStackRef.current;
+    if (viewStack.length > 0 && viewStack[viewStack.length - 1].view === view) {
+      setViewStack([
+        ...viewStack.slice(0, viewStack.length - 1),
+        {
+          view,
+          payload
+        }
+      ]);
+    }
   };
 
   const handleSelectStation = stationId => {
-    if (isRouteMarkingActiveRef.current) {
+    const viewStack = viewStackRef.current;
+    if (viewStack.length > 0 && viewStack[viewStack.length - 1].view === VIEWS.ROUTE_MARKING) {
       setMarkedRoute([
         ...markedRouteRef.current,
         stationId
       ]);
     } else {
-      setSelectedStationId(stationId);
+      pushView(VIEWS.STATION, stationId);
     }
   };
 
@@ -96,12 +102,57 @@ function App() {
       });
   };
 
+  const popView = () => {
+    const viewStack = viewStackRef.current;
+    if (viewStack.length > 0) {
+      setViewStack([
+        ...viewStack.slice(0, viewStack.length - 1)
+      ]);
+    }
+  };
+
+  const pushView = (view, payload) => {
+    const viewStack = viewStackRef.current;
+    const prevView = viewStack.length > 0 ? viewStack[viewStack.length - 1].view : null;
+    if ((view === VIEWS.STATION && prevView === VIEWS.STATION) || (view === VIEWS.TRIP_LIST && prevView === VIEWS.TRIP_LIST)) {
+      // if we're switching from one station view to another
+      // or one trip list view to one with a payload
+      // pop the old view and push the new view
+      setViewStack([
+        ...viewStack.slice(0, viewStack.length - 1),
+        {
+          view,
+          payload
+        }
+      ]);
+    } else {
+      // push the new view onto the stack
+      setViewStack([
+        ...viewStackRef.current,
+        {
+          view,
+          payload
+        }
+      ]);
+    }
+  };
+
   const updateStationDataWithMarkers = updatedStationList => {
     setStations({
       list: updatedStationList,
       lookup: createStationMap(updatedStationList)
     });
   };
+
+  const viewStack = viewStackRef.current;
+  const currentView = viewStack.length > 0 ? viewStack[viewStack.length - 1] : null;
+  const oneViewBack = viewStack.length > 1 ? viewStack[viewStack.length - 2] : null;
+  const activeTrip = currentView && (currentView.view === VIEWS.TRIP_LIST || currentView.view === VIEWS.TRIP)
+    ? currentView.payload
+    : oneViewBack && (oneViewBack.view === VIEWS.TRIP_LIST || oneViewBack.view === VIEWS.TRIP)
+    ? oneViewBack.payload
+    : null;
+  const selectedStationId = currentView && currentView.view === VIEWS.STATION ? currentView.payload : null;
 
   return (
     <div className="App">
@@ -110,33 +161,31 @@ function App() {
           Loading
         </div>
       ) : (
-        <>
-          <Map
-            onClearSelectedStation={handleClearSelectedStation}
-            onSelectStation={handleSelectStation}
-            route={markedRouteRef.current}
-            selectedStationId={selectedStationId}
-            stations={stations}
-            trips={trips}
-            updateStationDataWithMarkers={updateStationDataWithMarkers}
-            visitedStations={visitedStations}
-          />
-          <InfoPane
-            diffLog={diffLog}
-            isRouteMarkingActive={isRouteMarkingActiveRef.current}
-            onClearSelectedStation={handleClearSelectedStation}
-            onRouteMarkingActivate={handleRouteMarkingActivate}
-            onRouteMarkingDeactivate={handleRouteMarkingDeactivate}
-            selectedStationId={selectedStationId}
-            stations={stations}
-            trips={trips}
-            visitedStations={visitedStations}
-          />
-          {isRouteMarkingActiveRef.current && (
-            <RouteMarking />
-          )}
-        </>
-      )}
+          <>
+            <Map
+              activeTrip={activeTrip}
+              onClearSelectedStation={handleClearSelectedStation}
+              onSelectStation={handleSelectStation}
+              route={markedRouteRef.current}
+              selectedStationId={selectedStationId}
+              stations={stations}
+              trips={trips}
+              updateStationDataWithMarkers={updateStationDataWithMarkers}
+              visitedStations={visitedStations}
+            />
+            <InfoPane
+              diffLog={diffLog}
+              onClearSelectedStation={handleClearSelectedStation}
+              onViewActivate={handleViewActivate}
+              onViewDeactivate={handleViewDeactivate}
+              onViewReplace={handleViewReplace}
+              stations={stations}
+              trips={trips}
+              viewStack={viewStackRef.current}
+              visitedStations={visitedStations}
+            />
+          </>
+        )}
     </div>
   );
 }

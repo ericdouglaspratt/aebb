@@ -1,5 +1,5 @@
-import {useEffect, useRef, useState} from 'react';
-import {BREAKPOINTS, BREAKPOINT_MEDIA_QUERIES} from './constants';
+import { useEffect, useRef, useState } from 'react';
+import { BREAKPOINTS } from './constants';
 
 export const calcPercentChange = (a, b) => Math.abs((b - a) / a) * 100;
 

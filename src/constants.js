@@ -5,5 +5,8 @@ export const BREAKPOINTS = {
 
 export const VIEWS = {
   ROUTE: 'route',
-  STATION: 'station'
+  ROUTE_MARKING: 'route-marking',
+  STATION: 'station',
+  TRIP: 'trip',
+  TRIP_LIST: 'trip-list'
 };

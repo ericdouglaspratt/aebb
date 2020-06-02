@@ -8,6 +8,9 @@ import LocationSearching from '@material-ui/icons/LocationSearching';
 import MAP_API_KEY from './map-api-key';
 import MAP_STYLES from './map-styles';
 
+import { BREAKPOINTS } from './constants';
+import { useBreakpoint } from './helpers';
+
 const EXPANDED_MARKER_HEIGHT = 40;
 const EXPANDED_MARKER_WIDTH = 30;
 const MARKER_HEIGHT = 27;
@@ -35,6 +38,7 @@ const MAP_OPTIONS = {
 };
 
 function MapComponent({
+  activeTrip,
   onClearSelectedStation,
   onSelectStation,
   route,
@@ -49,6 +53,8 @@ function MapComponent({
   const [locationMarker, setLocationMarker] = useState(null);
   const [map, setMap] = useState();
   const mapRef = useRef(null);
+
+  const breakpoint = useBreakpoint();
 
   useEffect(() => {
     loadMapScript();
@@ -97,6 +103,24 @@ function MapComponent({
   }, [selectedStationId, stations]);
 
   useEffect(() => {
+    if (activeTrip && activeTrip.stations && activeTrip.stations.length > 0) {
+      // remove the old route, if any
+      if (activeRoute) {
+        activeRoute.setMap(null);
+      }
+
+      // draw the new route
+      setActiveRoute(drawRoute(activeTrip.stations));
+
+      // view the new route
+      viewArea(activeTrip.stations);
+    } else if (activeRoute) {
+      // remove the old route, if any
+      activeRoute.setMap(null);
+    }
+  }, [activeTrip]);
+
+  useEffect(() => {
     if (route && route.length > 0) {
       // remove the old route, if any
       if (activeRoute) {
@@ -109,7 +133,7 @@ function MapComponent({
       // remove the old route, if any
       activeRoute.setMap(null);
     }
-  }, [route])
+  }, [route]);
 
   const createMarker = ({ h, icon, lat, lng, w, ...rest }) => {
     return new window.google.maps.Marker({
@@ -236,8 +260,6 @@ function MapComponent({
 
   const placeStationMarkers = () => {
     const updatedStations = stations.list.map(station => {
-      
-
       const marker = createMarker({
         bikesAvailable: station.bikesAvailable,
         docksAvailable: station.docksAvailable,
@@ -272,6 +294,25 @@ function MapComponent({
 
     // add marker references to the station list so the rest of the app can access the markers
     updateStationDataWithMarkers(updatedStations);
+  };
+
+  const viewArea = stationIds => {
+    const lats = stationIds.map(stationId => stations.lookup[stationId].lat);
+    const lngs = stationIds.map(stationId => stations.lookup[stationId].long);
+    const minLat = Math.min(...lats);
+    const maxLat = Math.max(...lats);
+    const minLng = Math.min(...lngs);
+    const maxLng = Math.max(...lngs);
+
+    const bounds = new window.google.maps.LatLngBounds();
+    bounds.extend(new window.google.maps.LatLng(minLat, minLng));
+    bounds.extend(new window.google.maps.LatLng(maxLat, maxLng));
+    map.fitBounds(
+      bounds,
+      breakpoint === BREAKPOINTS.MOBILE
+        ? {bottom: 200, left: 20, right: 20, top: 20}
+        : {bottom: 40, left: 360, right: 40, top: 40}
+    );
   };
 
   return (

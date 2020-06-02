@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const BackButton = ({onClick}) => {
+const BackButton = ({label = 'Back', onClick}) => {
   const classes = useStyles();
 
   return (
@@ -18,7 +18,7 @@ const BackButton = ({onClick}) => {
       onClick={onClick}
       startIcon={<ArrowBack />}
     >
-      Back
+      {label}
     </Button>
   );
 };
