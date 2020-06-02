@@ -39,7 +39,10 @@ function TripList({ activeTrip, onClickTrip, trips }) {
           >
             <span className="TripList-date">{dateStr}</span>
             {!!trip.description && <span className="TripList-description">{trip.description}</span>}
-            <span className="TripList-stations">{trip.stations.length} stations</span>
+            <span className="TripList-stations">
+              <span className="TripList-stationsNew">{trip.numNew} new stations</span>
+              {` — ${trip.stations.length} total`}
+            </span>
           </Button>
         );
       })}

@@ -42,7 +42,7 @@ function MapComponent({
   onClearSelectedStation,
   onSelectStation,
   route,
-  selectedStationId,
+  selectedStation,
   stations,
   updateStationDataWithMarkers,
   visitedStations
@@ -67,7 +67,7 @@ function MapComponent({
   }, [map]);
 
   useEffect(() => {
-    if (selectedStationId) {
+    if (selectedStation) {
       // reset all previous markers, if any
       activeMarkers.forEach(({ id, marker }) => {
         marker.setIcon({
@@ -78,17 +78,22 @@ function MapComponent({
       });
 
       // make the selected marker large and on top
-      stations.lookup[selectedStationId].marker.setIcon({
+      stations.lookup[selectedStation.id].marker.setIcon({
         scaledSize: new window.google.maps.Size(EXPANDED_MARKER_WIDTH, EXPANDED_MARKER_HEIGHT),
-        url: stations.lookup[selectedStationId].marker.icon.url
+        url: stations.lookup[selectedStation.id].marker.icon.url
       });
-      stations.lookup[selectedStationId].marker.setZIndex(MARKER_Z_INDEX.ACTIVE);
+      stations.lookup[selectedStation.id].marker.setZIndex(MARKER_Z_INDEX.ACTIVE);
 
       // save this marker as the active marker
       setActiveMarkers([{
-        id: selectedStationId,
-        marker: stations.lookup[selectedStationId].marker
+        id: selectedStation.id,
+        marker: stations.lookup[selectedStation.id].marker
       }]);
+
+      // if specified, center the map on the selected station
+      if (selectedStation.moveCenter) {
+        centerOnStation(selectedStation.id);
+      }
     } else if (activeMarkers && activeMarkers.length > 0) {
       // reset all previous markers
       activeMarkers.forEach(({ id, marker }) => {
@@ -100,7 +105,7 @@ function MapComponent({
       });
       setActiveMarkers([]);
     }
-  }, [selectedStationId, stations]);
+  }, [selectedStation, stations]);
 
   useEffect(() => {
     if (activeTrip && activeTrip.stations && activeTrip.stations.length > 0) {
@@ -134,6 +139,14 @@ function MapComponent({
       activeRoute.setMap(null);
     }
   }, [route]);
+
+  const centerOnStation = stationId => {
+    const position = new window.google.maps.LatLng(
+      stations.lookup[stationId].lat,
+      stations.lookup[stationId].long
+    );
+    map.setCenter(position);
+  };
 
   const createMarker = ({ h, icon, lat, lng, w, ...rest }) => {
     return new window.google.maps.Marker({

@@ -1,0 +1,67 @@
+.Stats {
+  margin-top: 50px;
+  padding: 0 10px 10px;
+}
+.Stats-header {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 20px 0 10px;
+  text-transform: uppercase;
+}
+.Stats-subheader {
+  font-size: 12px;
+  font-weight: 400;
+  margin: -8px 0 0;
+}
+.Stats-topStations {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+}
+.Stats-topStation.MuiButton-root {
+  align-items: flex-start;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  letter-spacing: normal;
+  line-height: 1em;
+  margin-bottom: 10px;
+  padding: 0;
+  text-align: left;
+  text-transform: none;
+  width: 48%;
+}
+.Stats-topStation .MuiButton-label {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 12px;
+}
+.Stats-topStationPhoto {
+  background-color: #ddd;
+  background-size: cover;
+  background-position: 50% 25%;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  height: 70px;
+  width: 100%;
+}
+.Stats-topStationDescription {
+  padding: 4px 2px 2px;
+}
+.Stats-topStationName {
+  display: block;
+  font-weight: 500;
+}
+.Stats-topStationVisits {
+  display: block;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .Stats {
+    margin: 0;
+  }
+}

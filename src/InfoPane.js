@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import DirectionsBike from '@material-ui/icons/DirectionsBike';
 import Drawer from '@material-ui/core/Drawer';
+import Equalizer from '@material-ui/icons/Equalizer';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import MenuList from '@material-ui/core/MenuList';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -15,6 +16,7 @@ import MenuButton from './MenuButton';
 import Progress from './Progress';
 import RouteMarking from './RouteMarking';
 import StationInfo from './StationInfo';
+import Stats from './Stats';
 import Trip from './Trip';
 import TripList from './TripList';
 
@@ -48,6 +50,13 @@ function InfoPane({
     }, 225);
   };
 
+  const handleClickStation = stationId => {
+    onViewActivate(VIEWS.STATION, {
+      id: stationId,
+      moveCenter: true
+    });
+  };
+
   const handleClickTripDesktop = trip => {
     onViewActivate(VIEWS.TRIP_LIST, trip);
   };
@@ -67,7 +76,7 @@ function InfoPane({
             <BackButton onClick={onClearSelectedStation} />
           </div>
           <div className="InfoPane-content">
-            <StationInfo station={stations.lookup[activeView.payload]} />
+            <StationInfo station={stations.lookup[activeView.payload.id]} />
           </div>
         </div>
       ) : !!activeView && activeView.view === VIEWS.ROUTE_MARKING ? (
@@ -79,6 +88,19 @@ function InfoPane({
           </div>
           <RouteMarking />
         </>
+      ) : breakpoint === BREAKPOINTS.DESKTOP && !!activeView && activeView.view === VIEWS.STATS ? (
+        <div className="InfoPane InfoPane--scrollable">
+          <div className="InfoPane-header">
+            <BackButton onClick={() => onViewDeactivate(VIEWS.STATS)} />
+          </div>
+          <div className="InfoPane-content">
+            <Stats
+              onClickStation={handleClickStation}
+              stations={stations}
+              trips={trips}
+            />
+          </div>
+        </div>
       ) : breakpoint === BREAKPOINTS.DESKTOP && !!activeView && activeView.view === VIEWS.TRIP_LIST ? (
         <div className="InfoPane InfoPane--scrollable">
           <div className="InfoPane-header">
@@ -121,11 +143,13 @@ function InfoPane({
                 <Drawer anchor="bottom" open={isMenuOpen} onClose={handleCloseMenu}>
                   <MenuList>
                     <MenuItem onClick={() => handleClickMenuItem(VIEWS.TRIP_LIST)}>
-                      <ListItemIcon>
-                        <DirectionsBike />
-                      </ListItemIcon>
-                      View trips
-                      </MenuItem>
+                      <ListItemIcon><DirectionsBike /></ListItemIcon>
+                      Trips
+                    </MenuItem>
+                    <MenuItem onClick={() => handleClickMenuItem(VIEWS.STATS)}>
+                      <ListItemIcon><Equalizer /></ListItemIcon>
+                      Stats
+                    </MenuItem>
                     {/*<MenuItem onClick={() => handleClickMenuItem(VIEWS.ROUTE_MARKING)}>Mark a route</MenuItem>*/}
                   </MenuList>
                 </Drawer>
@@ -133,10 +157,12 @@ function InfoPane({
               {breakpoint === BREAKPOINTS.DESKTOP && (
                 <MenuList className="InfoPane-menu">
                   <MenuItem onClick={() => handleClickMenuItem(VIEWS.TRIP_LIST)}>
-                    <ListItemIcon>
-                      <DirectionsBike />
-                    </ListItemIcon>
-                    View trips
+                    <ListItemIcon><DirectionsBike /></ListItemIcon>
+                    Trips
+                  </MenuItem>
+                  <MenuItem onClick={() => handleClickMenuItem(VIEWS.STATS)}>
+                    <ListItemIcon><Equalizer /></ListItemIcon>
+                    Stats
                   </MenuItem>
                   {/*<MenuItem onClick={() => handleClickMenuItem(VIEWS.ROUTE_MARKING)}>Mark a route</MenuItem>*/}
                 </MenuList>
@@ -157,6 +183,22 @@ function InfoPane({
           <TripList
             activeTrip={activeView && activeView.payload}
             onClickTrip={handleClickTripMobile}
+            trips={trips}
+          />
+        </Drawer>
+      )}
+      {breakpoint === BREAKPOINTS.MOBILE && (
+        <Drawer
+          anchor="bottom"
+          open={!!activeView && activeView.view === VIEWS.STATS}
+          onClose={() => onViewDeactivate(VIEWS.STATS)}
+        >
+          <div className="InfoPane-header InfoPane-header--inDrawer">
+            <CancelButton onClick={() => onViewDeactivate(VIEWS.STATS)} />
+          </div>
+          <Stats
+            onClickStation={handleClickStation}
+            stations={stations}
             trips={trips}
           />
         </Drawer>

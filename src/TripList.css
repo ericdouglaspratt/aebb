@@ -63,6 +63,9 @@
   font-weight: 400;
   margin-top: -4px;
 }
+.TripList-stationsNew {
+  color: #4db546;
+}
 
 @media (min-width: 768px) {
   .TripList {

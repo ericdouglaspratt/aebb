@@ -4,10 +4,26 @@ import './App.css';
 import { VIEWS } from './constants';
 import { createStationMap, diffStations, useStateRef } from './helpers';
 import cachedStationData from './data-stations';
-import trips from './data-trips';
+import rawTrips from './data-trips';
 
 import InfoPane from './InfoPane';
 import Map from './Map';
+
+// create visited station map and count number of new stations per trip
+const visitedStations = {};
+const trips = rawTrips.map(trip => {
+  return {
+    ...trip,
+    numNew: trip.stations.reduce((result, stationId) => {
+      if (!visitedStations[stationId]) {
+        visitedStations[stationId] = true;
+        return result + 1;
+      } else {
+        return result;
+      }
+    }, 0)
+  };
+});
 
 function App() {
   const [diffLog, setDiffLog] = useState(null);
@@ -16,7 +32,6 @@ function App() {
     list: cachedStationData,
     lookup: createStationMap(cachedStationData)
   });
-  const [visitedStations, setVisitedStations] = useState({});
 
   const [markedRouteRef, setMarkedRoute] = useStateRef([]);
   const [viewStackRef, setViewStack] = useStateRef([]);
@@ -27,17 +42,8 @@ function App() {
       window.location = 'https://andyandericbikeboston.com';
     }
 
-    // determine the visited stations
-    const visitedMap = trips.reduce((result, trip) => {
-      trip.stations.forEach(stationId => {
-        result[stationId] = true;
-      });
-      return result;
-    }, {});
-    setVisitedStations(visitedMap);
-
     // load the current station data
-    loadCurrentStationData(visitedMap);
+    loadCurrentStationData(visitedStations);
   }, []);
 
   const handleClearSelectedStation = () => {
@@ -80,7 +86,10 @@ function App() {
         stationId
       ]);
     } else {
-      pushView(VIEWS.STATION, stationId);
+      pushView(VIEWS.STATION, {
+        id: stationId,
+        moveCenter: false
+      });
     }
   };
 
@@ -152,7 +161,7 @@ function App() {
     : oneViewBack && (oneViewBack.view === VIEWS.TRIP_LIST || oneViewBack.view === VIEWS.TRIP)
     ? oneViewBack.payload
     : null;
-  const selectedStationId = currentView && currentView.view === VIEWS.STATION ? currentView.payload : null;
+  const selectedStation = currentView && currentView.view === VIEWS.STATION ? currentView.payload : null;
 
   return (
     <div className="App">
@@ -167,14 +176,13 @@ function App() {
               onClearSelectedStation={handleClearSelectedStation}
               onSelectStation={handleSelectStation}
               route={markedRouteRef.current}
-              selectedStationId={selectedStationId}
+              selectedStation={selectedStation}
               stations={stations}
               trips={trips}
               updateStationDataWithMarkers={updateStationDataWithMarkers}
               visitedStations={visitedStations}
             />
             <InfoPane
-              diffLog={diffLog}
               onClearSelectedStation={handleClearSelectedStation}
               onViewActivate={handleViewActivate}
               onViewDeactivate={handleViewDeactivate}

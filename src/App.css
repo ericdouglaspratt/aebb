@@ -1,3 +1,6 @@
+* {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
 .App {
   bottom: 0;
   display: flex;
