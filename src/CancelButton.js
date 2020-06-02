@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const CancelButton = ({onClick}) => {
+const CancelButton = ({label = 'Cancel', onClick}) => {
   const classes = useStyles();
 
   return (
@@ -16,7 +16,7 @@ const CancelButton = ({onClick}) => {
       className={classes.button}
       onClick={onClick}
     >
-      Cancel
+      {label}
     </Button>
   );
 };

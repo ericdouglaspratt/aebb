@@ -178,7 +178,7 @@ function InfoPane({
           onClose={() => onViewDeactivate(VIEWS.TRIP_LIST)}
         >
           <div className="InfoPane-header InfoPane-header--inDrawer">
-            <CancelButton onClick={() => onViewDeactivate(VIEWS.TRIP_LIST)} />
+            <CancelButton label="Close" onClick={() => onViewDeactivate(VIEWS.TRIP_LIST)} />
           </div>
           <TripList
             activeTrip={activeView && activeView.payload}
@@ -194,7 +194,7 @@ function InfoPane({
           onClose={() => onViewDeactivate(VIEWS.STATS)}
         >
           <div className="InfoPane-header InfoPane-header--inDrawer">
-            <CancelButton onClick={() => onViewDeactivate(VIEWS.STATS)} />
+            <CancelButton label="Close" onClick={() => onViewDeactivate(VIEWS.STATS)} />
           </div>
           <Stats
             onClickStation={handleClickStation}
