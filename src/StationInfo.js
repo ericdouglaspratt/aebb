@@ -1,13 +1,15 @@
 import React from 'react';
 import './StationInfo.css';
 
-const StationInfo = ({station}) => {
+const StationInfo = ({ station, trips }) => {
   const showBikeDockInfo = !station.isInactive && (typeof station.bikesAvailable != 'undefined' || typeof station.docksAvailable != 'undefined');
+  const stationTrips = trips.filter(trip => trip.stations.indexOf(station.id) > -1);
+  const photo = station.photos && station.photos.length > 0 ? station.photos[station.photos.length - 1].photo : station.photo;
 
   return (
     <div className="StationInfo">
-      {station.photo && (
-        <div className="StationInfo-photo" style={{backgroundImage: `url(${station.photo})`}} />
+      {photo && (
+        <div className="StationInfo-photo" style={{ backgroundImage: `url(${photo})` }} />
       )}
       <div className="StationInfo-content">
         <h2 className="StationInfo-header">

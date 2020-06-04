@@ -162,6 +162,8 @@ function App() {
     ? oneViewBack.payload
     : null;
   const selectedStation = currentView && currentView.view === VIEWS.STATION ? currentView.payload : null;
+  const selectedStationTrips = selectedStation ? trips.filter(trip => trip.stations.indexOf(selectedStation.id) > -1) : null;
+  const selectedStationGhostRoutes = selectedStationTrips ? selectedStationTrips.map(trip => trip.stations) : null;
 
   return (
     <div className="App">
@@ -173,6 +175,7 @@ function App() {
           <>
             <Map
               activeTrip={activeTrip}
+              ghostRoutes={selectedStationGhostRoutes}
               onClearSelectedStation={handleClearSelectedStation}
               onSelectStation={handleSelectStation}
               route={markedRouteRef.current}

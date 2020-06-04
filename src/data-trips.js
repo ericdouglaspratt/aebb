@@ -9,7 +9,13 @@ export default [
     color: '#2980b9',
     date: '2017-08-13',
     description: 'Up the Waterfront, Down through Cambridge',
-    stations: [22, 192, 43, 151, 20, 40, 98, 85, 129, 94, 169, 171, 84, 185, 80, 67, 53, 52]
+    stations: [22, 192, 43, 151, 20, 40, 98, 85, 129, 94, 169, 171, 84, 185, 80, 67, 53, 52],
+    photos: [
+      {
+        full: 'photos/2017-08-13-001.jpg',
+        thumb: 'photos/2017-08-13-001-thumb.jpg'
+      }
+    ]
   },
   {
     color: '#e67e22',

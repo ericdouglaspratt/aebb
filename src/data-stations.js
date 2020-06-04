@@ -113,7 +113,12 @@ export default [
     "name": "Aquarium T Stop - 200 Atlantic Ave",
     "lat": 42.35991176110118,
     "long": -71.0514298081398,
-    "photo": "photos/aquarium-t-stop.jpg"
+    "photos": [
+      {
+        "date": "2017-08-13",
+        "photo": "photos/aquarium-t-stop_2017-08-13.jpg"
+      }
+    ]
   },
   {
     "id": 21,
@@ -127,7 +132,12 @@ export default [
     "name": "South Station - 700 Atlantic Ave",
     "lat": 42.352175,
     "long": -71.055547,
-    "photo": "photos/south-station.jpg"
+    "photos": [
+      {
+        "date": "2017-05-28",
+        "photo": "photos/south-station_2017-05-28.jpg"
+      }
+    ]
   },
   {
     "id": 23,
@@ -232,7 +242,12 @@ export default [
     "name": "Lewis Wharf at Atlantic Ave",
     "lat": 42.363871,
     "long": -71.050877,
-    "photo": "photos/lewis-wharf-at-atlantic-ave.jpg"
+    "photos": [
+      {
+        "date": "2017-08-13",
+        "photo": "photos/lewis-wharf-at-atlantic-ave_2017-08-13.jpg"
+      }
+    ]
   },
   {
     "id": 41,
@@ -246,14 +261,24 @@ export default [
     "name": "Boylston St at Arlington St",
     "lat": 42.35204262229712,
     "long": -71.07057809829712,
-    "photo": "photos/boylston-st-at-arlington-st.jpg"
+    "photos": [
+      {
+        "date": "2017-05-28",
+        "photo": "photos/boylston-st-at-arlington-st_2017-05-28.jpg"
+      }
+    ]
   },
   {
     "id": 43,
     "name": "Rowes Wharf at Atlantic Ave",
     "lat": 42.357143,
     "long": -71.050699,
-    "photo": "photos/rowes-wharf.jpg"
+    "photos": [
+      {
+        "date": "2017-08-13",
+        "photo": "photos/rowes-wharf_2017-08-13.jpg"
+      }
+    ]
   },
   {
     "id": 44,
@@ -315,14 +340,24 @@ export default [
     "name": "Newbury St at Hereford St",
     "lat": 42.348717,
     "long": -71.085954,
-    "photo": "photos/newbury-st-at-hereford-st.jpg"
+    "photos": [
+      {
+        "date": "2017-08-13",
+        "photo": "photos/newbury-st-at-hereford-st_2017-08-13.jpg"
+      }
+    ]
   },
   {
     "id": 53,
     "name": "Beacon St at Massachusetts Ave",
     "lat": 42.35082680669095,
     "long": -71.0898108780384,
-    "photo": "photos/beacon-st-at-mass-ave.jpg"
+    "photos": [
+      {
+        "date": "2017-08-13",
+        "photo": "photos/beacon-st-at-mass-ave_2017-08-13.jpg"
+      }
+    ]
   },
   {
     "id": 54,
@@ -357,7 +392,12 @@ export default [
     "name": "Mugar Way at Beacon St",
     "lat": 42.355536284897084,
     "long": -71.07286870479584,
-    "photo": "photos/beacon-st-arlington-st.jpg"
+    "photos": [
+      {
+        "date": "2017-05-28",
+        "photo": "photos/beacon-st-arlington-st_2017-05-28.jpg"
+      }
+    ]
   },
   {
     "id": 59,
@@ -371,7 +411,12 @@ export default [
     "name": "Charles Circle - Charles St at Cambridge St",
     "lat": 42.36079296858265,
     "long": -71.07118962337152,
-    "photo": "photos/charles-circle-charles-st-at-cambridge-st.jpg"
+    "photos": [
+      {
+        "date": "2017-05-28",
+        "photo": "photos/charles-circle-charles-st-at-cambridge-st_2017-05-28.jpg"
+      }
+    ]
   },
   {
     "id": 61,
@@ -413,7 +458,12 @@ export default [
     "name": "MIT at Mass Ave / Amherst St",
     "lat": 42.3581,
     "long": -71.093198,
-    "photo": "photos/mit-at-mass-ave-amherst-st.jpg"
+    "photos": [
+      {
+        "date": "2017-08-13",
+        "photo": "photos/mit-at-mass-ave-amherst-st_2017-08-13.jpg"
+      }
+    ]
   },
   {
     "id": 68,
@@ -448,7 +498,12 @@ export default [
     "name": "One Broadway / Kendall Sq at Main St / 3rd St",
     "lat": 42.36224178650923,
     "long": -71.0831107199192,
-    "photo": "photos/one-broadway-kendall-sq-at-main-st-third-st.jpg"
+    "photos": [
+      {
+        "date": "2017-05-28",
+        "photo": "photos/one-broadway-kendall-sq-at-main-st-third-st_2017-05-28.jpg"
+      }
+    ]
   },
   {
     "id": 73,
@@ -504,14 +559,24 @@ export default [
     "name": "MIT Stata Center at Vassar St / Main St",
     "lat": 42.3621312344991,
     "long": -71.09115600585936,
-    "photo": "photos/mit-stata-center-at-vassar-st-main-st.jpg"
+    "photos": [
+      {
+        "date": "2017-08-13",
+        "photo": "photos/mit-stata-center-at-vassar-st-main-st_2017-08-13.jpg"
+      }
+    ]
   },
   {
     "id": 81,
     "name": "Chinatown T Stop",
     "lat": 42.352409,
     "long": -71.062679,
-    "photo": "photos/boylston-st-at-washington-st.jpg"
+    "photos": [
+      {
+        "date": "2017-05-28",
+        "photo": "photos/boylston-st-at-washington-st_2017-05-28.jpg"
+      }
+    ]
   },
   {
     "id": 82,
@@ -525,14 +590,24 @@ export default [
     "name": "CambridgeSide Galleria - CambridgeSide PL at Land Blvd",
     "lat": 42.366981,
     "long": -71.076472,
-    "photo": "photos/cambridgeside-galleria-cambridgeside-pl-at-land-blvd.jpg"
+    "photos": [
+      {
+        "date": "2017-08-13",
+        "photo": "photos/cambridgeside-galleria-cambridgeside-pl-at-land-blvd_2017-08-13.jpg"
+      }
+    ]
   },
   {
     "id": 85,
     "name": "Spaulding Rehabilitation Hospital - Charlestown Navy Yard",
     "lat": 42.378338,
     "long": -71.048927,
-    "photo": "photos/spaulding-rehabilitation-hospital.jpg"
+    "photos": [
+      {
+        "date": "2017-08-13",
+        "photo": "photos/spaulding-rehabilitation-hospital_2017-08-13.jpg"
+      }
+    ]
   },
   {
     "id": 86,
@@ -593,7 +668,12 @@ export default [
     "name": "Main St at Austin St",
     "lat": 42.375603,
     "long": -71.064608,
-    "photo": "photos/main-st-at-austin-st.jpg"
+    "photos": [
+      {
+        "date": "2017-08-13",
+        "photo": "photos/main-st-at-austin-st_2017-08-13.jpg"
+      }
+    ]
   },
   {
     "id": 95,
@@ -621,7 +701,12 @@ export default [
     "name": "Warren St at Chelsea St",
     "lat": 42.371848,
     "long": -71.060292,
-    "photo": "photos/warren-st-at-chelsea-st.jpg"
+    "photos": [
+      {
+        "date": "2017-08-13",
+        "photo": "photos/warren-st-at-chelsea-st_2017-08-13.jpg"
+      }
+    ]
   },
   {
     "id": 99,
@@ -680,7 +765,12 @@ export default [
     "name": "Ames St at Main St",
     "lat": 42.3625,
     "long": -71.08822,
-    "photo": "photos/main-st-at-ames-st.jpg"
+    "photos": [
+      {
+        "date": "2017-05-28",
+        "photo": "photos/main-st-at-ames-st_2017-05-28.jpg"
+      }
+    ]
   },
   {
     "id": 108,
@@ -768,7 +858,12 @@ export default [
     "name": "Beacon St at Charles St",
     "lat": 42.356052,
     "long": -71.069849,
-    "photo": "photos/charles-st-at-beacon-st.jpg"
+    "photos": [
+      {
+        "date": "2017-05-28",
+        "photo": "photos/charles-st-at-beacon-st_2017-05-28.jpg"
+      }
+    ]
   },
   {
     "id": 121,
@@ -816,7 +911,12 @@ export default [
     "name": "Hayes Square - Vine St at Moulton St",
     "lat": 42.377022,
     "long": -71.056605,
-    "photo": "photos/hayes-square-at-vine-st.jpg"
+    "photos": [
+      {
+        "date": "2017-08-13",
+        "photo": "photos/hayes-square-at-vine-st_2017-08-13.jpg"
+      }
+    ]
   },
   {
     "id": 130,
@@ -943,7 +1043,12 @@ export default [
     "name": "Surface Rd at India St",
     "lat": 42.358155,
     "long": -71.052163,
-    "photo": "photos/surface-rd-at-india-st.jpg"
+    "photos": [
+      {
+        "date": "2017-08-13",
+        "photo": "photos/surface-rd-at-india-st_2017-08-13.jpg"
+      }
+    ]
   },
   {
     "id": 152,
@@ -1011,7 +1116,12 @@ export default [
     "name": "Edwards Playground - Main St at Eden St",
     "lat": 42.378965,
     "long": -71.068607,
-    "photo": "photos/main-st-at-eden-st.jpg"
+    "photos": [
+      {
+        "date": "2017-08-13",
+        "photo": "photos/main-st-at-eden-st_2017-08-13.jpg"
+      }
+    ]
   },
   {
     "id": 170,
@@ -1024,7 +1134,12 @@ export default [
     "name": "Bunker Hill Community College",
     "lat": 42.37408991426522,
     "long": -71.06905996799469,
-    "photo": "photos/bunker-hill-community-college.jpg"
+    "photos": [
+      {
+        "date": "2017-08-13",
+        "photo": "photos/bunker-hill-community-college_2017-08-13.jpg"
+      }
+    ]
   },
   {
     "id": 173,
@@ -1111,7 +1226,12 @@ export default [
     "name": "Third at Binney",
     "lat": 42.36544486137399,
     "long": -71.08277142047882,
-    "photo": "photos/third-at-binney-st.jpg"
+    "photos": [
+      {
+        "date": "2017-08-13",
+        "photo": "photos/third-at-binney-st_2017-08-13.jpg"
+      }
+    ]
   },
   {
     "id": 186,
@@ -1157,7 +1277,12 @@ export default [
     "name": "Purchase St at Pearl St",
     "lat": 42.354659,
     "long": -71.053181,
-    "photo": "photos/purchase-st-at-pearl-st.jpg"
+    "photos": [
+      {
+        "date": "2017-08-13",
+        "photo": "photos/purchase-st-at-pearl-st_2017-08-13.jpg"
+      }
+    ]
   },
   {
     "id": 193,

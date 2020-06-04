@@ -76,7 +76,10 @@ function InfoPane({
             <BackButton onClick={onClearSelectedStation} />
           </div>
           <div className="InfoPane-content">
-            <StationInfo station={stations.lookup[activeView.payload.id]} />
+            <StationInfo
+              station={stations.lookup[activeView.payload.id]}
+              trips={trips}
+            />
           </div>
         </div>
       ) : !!activeView && activeView.view === VIEWS.ROUTE_MARKING ? (

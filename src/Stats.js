@@ -120,20 +120,23 @@ const Stats = ({ onClickStation, stations, trips }) => {
         Top Stations
       </h6>
       <div className="Stats-topStations">
-        {topStations.map(({ id, numVisits, photo }) => (
-          <Button
-            className="Stats-topStation"
-            key={id}
-            onClick={() => onClickStation(id)}
-            size="medium"
-          >
-            <span className="Stats-topStationPhoto" style={{ backgroundImage: `url(${photo})` }} />
-            <span className="Stats-topStationDescription">
-              <span className="Stats-topStationName">{stations.lookup[id].name}</span>
-              <span className="Stats-topStationVisits">{`${numVisits} visits`}</span>
-            </span>
-          </Button>
-        ))}
+        {topStations.map(({ id, numVisits, photo, photos }) => {
+          const stationPhoto = photos && photos.length > 0 ? photos[photos.length - 1].photo : photo;
+          return (
+            <Button
+              className="Stats-topStation"
+              key={id}
+              onClick={() => onClickStation(id)}
+              size="medium"
+            >
+              <span className="Stats-topStationPhoto" style={{ backgroundImage: `url(${stationPhoto})` }} />
+              <span className="Stats-topStationDescription">
+                <span className="Stats-topStationName">{stations.lookup[id].name}</span>
+                <span className="Stats-topStationVisits">{`${numVisits} visits`}</span>
+              </span>
+            </Button>
+          );
+        })}
       </div>
 
       <h6 className="Stats-header">

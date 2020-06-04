@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import ArrowForward from '@material-ui/icons/ArrowForward';
 import Button from '@material-ui/core/Button';
 import moment from 'moment';
 import './TripList.css';

@@ -39,6 +39,7 @@ const MAP_OPTIONS = {
 
 function MapComponent({
   activeTrip,
+  ghostRoutes,
   onClearSelectedStation,
   onSelectStation,
   route,
@@ -49,6 +50,7 @@ function MapComponent({
 }) {
   const [activeMarkers, setActiveMarkers] = useState([]);
   const [activeRoute, setActiveRoute] = useState(null);
+  const [highlightedMarkers, setHighlightedMarkers] = useState([]);
   const [isLocationError, setIsLocationError] = useState(false);
   const [locationMarker, setLocationMarker] = useState(null);
   const [map, setMap] = useState();
@@ -94,6 +96,12 @@ function MapComponent({
       if (selectedStation.moveCenter) {
         centerOnStation(selectedStation.id);
       }
+
+      // show ghost routes
+      /*if (ghostRoutes) {
+        ghostRoutes.forEach(ghostRoute => drawRoute(ghostRoute, '#93aed2'));
+      }*/
+
     } else if (activeMarkers && activeMarkers.length > 0) {
       // reset all previous markers
       activeMarkers.forEach(({ id, marker }) => {
@@ -114,14 +122,63 @@ function MapComponent({
         activeRoute.setMap(null);
       }
 
+      // unhighlight all previous route markers, if any
+      highlightedMarkers.forEach(({id, marker}) => {
+        marker.setIcon({
+          scaledSize: marker.icon.scaledSize,
+          url: determineMarkerIcon({
+            bikesAvailable: stations.lookup[id].bikesAvailable,
+            docksAvailable: stations.lookup[id].docksAvailable,
+            isInactive: stations.lookup[id].isInactive,
+            isLegacy: stations.lookup[id].isLegacy,
+            isVisited: !!visitedStations[id]
+          })
+        });
+      });
+
       // draw the new route
       setActiveRoute(drawRoute(activeTrip.stations));
+
+      // highlight the route markers
+      setHighlightedMarkers(activeTrip.stations.map(id => {
+        const marker = stations.lookup[id].marker;
+        marker.setIcon({
+          scaledSize: marker.icon.scaledSize,
+          url: determineMarkerIcon({
+            bikesAvailable: stations.lookup[id].bikesAvailable,
+            docksAvailable: stations.lookup[id].docksAvailable,
+            isHighlighted: true,
+            isInactive: stations.lookup[id].isInactive,
+            isLegacy: stations.lookup[id].isLegacy,
+            isVisited: !!visitedStations[id]
+          })
+        });
+        return {
+          id,
+          marker
+        };
+      }));
 
       // view the new route
       viewArea(activeTrip.stations);
     } else if (activeRoute) {
       // remove the old route, if any
       activeRoute.setMap(null);
+
+      // unhighlight the route markers
+      highlightedMarkers.forEach(({id, marker}) => {
+        marker.setIcon({
+          scaledSize: marker.icon.scaledSize,
+          url: determineMarkerIcon({
+            bikesAvailable: stations.lookup[id].bikesAvailable,
+            docksAvailable: stations.lookup[id].docksAvailable,
+            isInactive: stations.lookup[id].isInactive,
+            isLegacy: stations.lookup[id].isLegacy,
+            isVisited: !!visitedStations[id]
+          })
+        });
+      });
+      setHighlightedMarkers([]);
     }
   }, [activeTrip]);
 
@@ -163,11 +220,12 @@ function MapComponent({
   const determineMarkerIcon = ({
     bikesAvailable,
     docksAvailable,
+    isHighlighted,
     isInactive,
     isLegacy,
     isVisited
   }) => {
-    const iconStatus = isInactive ? 'inactive' : isVisited ? 'visited' : 'unvisited';
+    const iconStatus = isHighlighted ? 'highlighted' : isInactive ? 'inactive' : isVisited ? 'visited' : 'unvisited';
 
     let iconFillCount = '';
     if (!isInactive && !isLegacy) {
@@ -200,7 +258,7 @@ function MapComponent({
         ? MARKER_Z_INDEX.VISITED
         : MARKER_Z_INDEX.UNVISITED;
 
-  const drawRoute = stationIds => {
+  const drawRoute = (stationIds, strokeColor = '#1967d2') => {
     const path = stationIds.map(stationId => ({
       lat: stations.lookup[stationId].lat,
       lng: stations.lookup[stationId].long
@@ -209,7 +267,7 @@ function MapComponent({
     var route = new window.google.maps.Polyline({
       path,
       geodesic: true,
-      strokeColor: '#1967d2',
+      strokeColor,
       strokeOpacity: 1.0,
       strokeWeight: 4
     });

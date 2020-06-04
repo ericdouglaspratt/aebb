@@ -25,6 +25,7 @@
   background: none;
   border: none;
   border-radius: 6px;
+  display: flex;
   letter-spacing: normal;
   line-height: 1em;
   margin-bottom: 10px;
