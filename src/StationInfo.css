@@ -15,7 +15,7 @@
 .StationInfo-subheader {
   color: #aaa;
   font-size: 14px;
-  margin-top: -8px;
+  margin: 0;
 }
 .StationInfo-status {
   display: flex;

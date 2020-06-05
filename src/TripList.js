@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button';
 import moment from 'moment';
 import './TripList.css';
 
-function TripList({ activeTrip, onClickTrip, trips }) {
+function TripList({ activeTrip, onClickTrip, stations, trips }) {
   const [didScroll, setDidScroll] = useState(!activeTrip);
   const [reversedTrips, setReversedTrips] = useState(trips);
   const scrollRef = useRef(null);
@@ -20,7 +20,13 @@ function TripList({ activeTrip, onClickTrip, trips }) {
   }, [scrollRef]);
 
   useEffect(() => {
-    setReversedTrips(trips.slice().reverse());
+    setReversedTrips(trips.map(trip => ({
+      ...trip,
+      numMissingPhotos: trip.stations.filter(stationId => {
+        const station = stations.lookup[stationId];
+        return !station.photo && !station.photos;
+      }).length
+    })).reverse());
   }, [trips]);
 
   return (
@@ -41,6 +47,7 @@ function TripList({ activeTrip, onClickTrip, trips }) {
             <span className="TripList-stations">
               <span className="TripList-stationsNew">{trip.numNew} new stations</span>
               {` — ${trip.stations.length} total`}
+              {/*!!trip.numMissingPhotos && ` — ${trip.numMissingPhotos} missing photos`*/}
             </span>
           </Button>
         );

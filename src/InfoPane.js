@@ -113,6 +113,7 @@ function InfoPane({
             <TripList
               activeTrip={activeView.payload}
               onClickTrip={handleClickTripDesktop}
+              stations={stations}
               trips={trips}
             />
           </div>
@@ -186,6 +187,7 @@ function InfoPane({
           <TripList
             activeTrip={activeView && activeView.payload}
             onClickTrip={handleClickTripMobile}
+            stations={stations}
             trips={trips}
           />
         </Drawer>

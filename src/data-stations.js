@@ -4,7 +4,12 @@ export default [
     "name": "Colleges of the Fenway - Fenway at Avenue Louis Pasteur",
     "lat": 42.34011512249236,
     "long": -71.10061883926392,
-    "photo": "photos/colleges-of-the-fenway.jpg"
+    "photos": [
+      {
+        "date": "2018-03-31",
+        "photo": "photos/colleges-of-the-fenway_2018-03-31.jpg"
+      }
+    ]
   },
   {
     "id": 4,
@@ -60,7 +65,12 @@ export default [
     "name": "Longwood Ave at Binney St",
     "lat": 42.338629,
     "long": -71.1065,
-    "photo": "photos/longwood-ave-at-binney-st.jpg"
+    "photos": [
+      {
+        "date": "2018-03-31",
+        "photo": "photos/longwood-ave-at-binney-st_2018-03-31.jpg"
+      }
+    ]
   },
   {
     "id": 12,
@@ -80,7 +90,12 @@ export default [
     "name": "HMS/HSPH - Avenue Louis Pasteur at Longwood Ave",
     "lat": 42.3374174845973,
     "long": -71.10286116600037,
-    "photo": "photos/avenue-louis-pasteur-at-longwood-ave.jpg"
+    "photos": [
+      {
+        "date": "2018-03-31",
+        "photo": "photos/avenue-louis-pasteur-at-longwood-ave_2018-03-31.jpg"
+      }
+    ]
   },
   {
     "id": 15,
@@ -93,7 +108,12 @@ export default [
     "name": "Back Bay T Stop - Dartmouth St at Stuart St",
     "lat": 42.34807412317439,
     "long": -71.07657015323639,
-    "photo": "photos/back-bay-t-stop.jpg"
+    "photos": [
+      {
+        "date": "2018-03-31",
+        "photo": "photos/back-bay-t-stop_2018-03-31.jpg"
+      }
+    ]
   },
   {
     "id": 17,
@@ -117,6 +137,10 @@ export default [
       {
         "date": "2017-08-13",
         "photo": "photos/aquarium-t-stop_2017-08-13.jpg"
+      },
+      {
+        "date": "2018-03-30",
+        "photo": "photos/aquarium-t-stop_2018-03-30.jpg"
       }
     ]
   },
@@ -125,7 +149,12 @@ export default [
     "name": "Prudential Center - 101 Huntington Ave",
     "lat": 42.34652003998412,
     "long": -71.08065776545118,
-    "photo": "photos/prudential-center.jpg"
+    "photos": [
+      {
+        "date": "2018-03-31",
+        "photo": "photos/prudential-center_2018-03-31.jpg"
+      }
+    ]
   },
   {
     "id": 22,
@@ -186,7 +215,12 @@ export default [
     "name": "Brigham Circle - Francis St at Huntington Ave",
     "lat": 42.33462893055976,
     "long": -71.10407917767589,
-    "photo": "photos/brigham-circle.jpg"
+    "photos": [
+      {
+        "date": "2018-03-31",
+        "photo": "photos/brigham-circle_2018-03-31.jpg"
+      }
+    ]
   },
   {
     "id": 31,
@@ -221,7 +255,12 @@ export default [
     "name": "Copley Square - Dartmouth St at Boylston St",
     "lat": 42.34992828230057,
     "long": -71.07739206866427,
-    "photo": "photos/copley-square.jpg"
+    "photos": [
+      {
+        "date": "2018-06-23",
+        "photo": "photos/copley-square_2018-06-23.jpg"
+      }
+    ]
   },
   {
     "id": 37,
@@ -265,6 +304,10 @@ export default [
       {
         "date": "2017-05-28",
         "photo": "photos/boylston-st-at-arlington-st_2017-05-28.jpg"
+      },
+      {
+        "date": "2018-06-23",
+        "photo": "photos/boylston-st-at-arlington-st_2018-06-23.jpg"
       }
     ]
   },
@@ -291,21 +334,36 @@ export default [
     "name": "Jersey St. at Boylston St.",
     "lat": 42.3446808403874,
     "long": -71.09785348176956,
-    "photo": "photos/jersey-st-at-boylston-st.jpg"
+    "photos": [
+      {
+        "date": "2018-06-23",
+        "photo": "photos/jersey-st-at-boylston-st_2018-06-23.jpg"
+      }
+    ]
   },
   {
     "id": 46,
     "name": "Christian Science Plaza - Massachusetts Ave at Westland Ave",
     "lat": 42.3436658245146,
     "long": -71.08582377433777,
-    "photo": "photos/christian-science-plaza.jpg"
+    "photos": [
+      {
+        "date": "2018-03-31",
+        "photo": "photos/christian-science-plaza_2018-03-31.jpg"
+      }
+    ]
   },
   {
     "id": 47,
     "name": "Cross St at Hanover St",
     "lat": 42.362811,
     "long": -71.056067,
-    "photo": "photos/cross-st-at-hanover-st.jpg"
+    "photos": [
+      {
+        "date": "2018-03-30",
+        "photo": "photos/cross-st-at-hanover-st_2018-03-30.jpg"
+      }
+    ]
   },
   {
     "id": 48,
@@ -319,14 +377,24 @@ export default [
     "name": "Stuart St at Charles St",
     "lat": 42.351146,
     "long": -71.066289,
-    "photo": "photos/stuart-st-at-charles-st.jpg"
+    "photos": [
+      {
+        "date": "2018-03-31",
+        "photo": "photos/stuart-st-at-charles-st_2018-03-31.jpg"
+      }
+    ]
   },
   {
     "id": 50,
     "name": "Boylston St at Berkeley St",
     "lat": 42.3511419825475,
     "long": -71.07329249382019,
-    "photo": "photos/boylston-st-at-berkeley-st.jpg"
+    "photos": [
+      {
+        "date": "2018-06-23",
+        "photo": "photos/boylston-st-at-berkeley-st_2018-06-23.jpg"
+      }
+    ]
   },
   {
     "id": 51,
@@ -371,7 +439,12 @@ export default [
     "name": "Boylston St at Massachusetts Ave",
     "lat": 42.347265,
     "long": -71.088088,
-    "photo": "photos/boylston-st-at-massachusetts-ave.jpg"
+    "photos": [
+      {
+        "date": "2018-06-23",
+        "photo": "photos/boylston-st-at-massachusetts-ave_2018-06-23.jpg"
+      }
+    ]
   },
   {
     "id": 56,
@@ -423,7 +496,12 @@ export default [
     "name": "Boylston St at Fairfield St",
     "lat": 42.348762,
     "long": -71.082383,
-    "photo": "photos/boylston-st-at-fairfield-st.jpg"
+    "photos": [
+      {
+        "date": "2018-06-23",
+        "photo": "photos/boylston-st-at-fairfield-st_2018-06-23.jpg"
+      }
+    ]
   },
   {
     "id": 63,
@@ -444,7 +522,12 @@ export default [
     "name": "Boston Convention and Exhibition Center - Summer St at West Side Dr",
     "lat": 42.347763454147454,
     "long": -71.0453599691391,
-    "photo": "photos/boston-convention-and-exhibition-center.jpg"
+    "photos": [
+      {
+        "date": "2018-03-18",
+        "photo": "photos/boston-convention-and-exhibition-center_2018-03-18.jpg"
+      }
+    ]
   },
   {
     "id": 66,
@@ -477,7 +560,12 @@ export default [
     "name": "Coolidge Corner - Beacon St at Centre St",
     "lat": 42.341598,
     "long": -71.123338,
-    "photo": "photos/coolidge-corner.jpg"
+    "photos": [
+      {
+        "date": "2018-03-31",
+        "photo": "photos/coolidge-corner_2018-03-31.jpg"
+      }
+    ]
   },
   {
     "id": 70,
@@ -575,6 +663,14 @@ export default [
       {
         "date": "2017-05-28",
         "photo": "photos/boylston-st-at-washington-st_2017-05-28.jpg"
+      },
+      {
+        "date": "2018-03-31",
+        "photo": "photos/boylston-st-at-washington-st_2018-03-31.jpg"
+      },
+      {
+        "date": "2018-06-23",
+        "photo": "photos/chinatown-t-stop_2018-06-23.jpg"
       }
     ]
   },
@@ -583,7 +679,12 @@ export default [
     "name": "Beacon St at Tappan St",
     "lat": 42.33826680058037,
     "long": -71.13894682028331,
-    "photo": "photos/washington-square.jpg"
+    "photos": [
+      {
+        "date": "2018-03-31",
+        "photo": "photos/washington-square_2018-03-31.jpg"
+      }
+    ]
   },
   {
     "id": 84,
@@ -643,7 +744,12 @@ export default [
     "name": "Lechmere Station at Cambridge St / First St",
     "lat": 42.370677,
     "long": -71.076529,
-    "photo": "photos/lechmere-station.jpg"
+    "photos": [
+      {
+        "date": "2018-03-03",
+        "photo": "photos/lechmere-station_2018-03-03.jpg"
+      }
+    ]
   },
   {
     "id": 91,
@@ -851,7 +957,12 @@ export default [
     "name": "South Boston Library - 646 E Broadway",
     "lat": 42.335741,
     "long": -71.03877,
-    "photo": "photos/south-boston-library.jpg"
+    "photos": [
+      {
+        "date": "2018-03-18",
+        "photo": "photos/south-boston-library_2018-03-18.jpg"
+      }
+    ]
   },
   {
     "id": 120,
@@ -943,7 +1054,12 @@ export default [
     "name": "Boylston St at Dartmouth St",
     "lat": 42.350413,
     "long": -71.07655,
-    "photo": "photos/boylston-st-at-dartmouth-st.jpg"
+    "photos": [
+      {
+        "date": "2018-06-23",
+        "photo": "photos/boylston-st-at-dartmouth-st_2018-06-23.jpg"
+      }
+    ]
   },
   {
     "id": 135,
@@ -1003,7 +1119,12 @@ export default [
     "name": "EF - North Point Park",
     "lat": 42.369885,
     "long": -71.069957,
-    "photo": "photos/ef-north-point-park.jpg"
+    "photos": [
+      {
+        "date": "2018-03-03",
+        "photo": "photos/ef-north-point-park_2018-03-03.jpg"
+      }
+    ]
   },
   {
     "id": 144,
@@ -1023,7 +1144,12 @@ export default [
     "name": "Murphy Skating Rink - 1880 Day Blvd",
     "lat": 42.336448,
     "long": -71.023739,
-    "photo": "photos/day-boulevard.jpg"
+    "photos": [
+      {
+        "date": "2018-03-18",
+        "photo": "photos/day-boulevard_2018-03-18.jpg"
+      }
+    ]
   },
   {
     "id": 149,
@@ -1047,6 +1173,10 @@ export default [
       {
         "date": "2017-08-13",
         "photo": "photos/surface-rd-at-india-st_2017-08-13.jpg"
+      },
+      {
+        "date": "2018-03-30",
+        "photo": "photos/surface-rd-at-india-st_2018-03-30.jpg"
       }
     ]
   },
@@ -1069,7 +1199,16 @@ export default [
     "name": "Seaport Blvd at Sleeper St",
     "lat": 42.35317809186252,
     "long": -71.04817356923377,
-    "photo": "photos/seaport-blvd-at-sleeper-st.jpg"
+    "photos": [
+      {
+        "date": "2018-03-30",
+        "photo": "photos/seaport-blvd-at-sleeper-st_2018-03-30.jpg"
+      },
+      {
+        "date": "",
+        "photo": "photos/seaport-blvd-at-sleeper-st.jpg"
+      }
+    ]
   },
   {
     "id": 159,
@@ -1083,7 +1222,12 @@ export default [
     "name": "Wentworth Institute of Technology - Huntington Ave at Vancouver St",
     "lat": 42.33758601097239,
     "long": -71.09627097845076,
-    "photo": "photos/wentworth-institute-of-technology.jpg"
+    "photos": [
+      {
+        "date": "2018-03-31",
+        "photo": "photos/wentworth-institute-of-technology_2018-03-31.jpg"
+      }
+    ]
   },
   {
     "id": 161,
@@ -1103,7 +1247,12 @@ export default [
     "name": "The Lawn on D",
     "lat": 42.344792,
     "long": -71.044024,
-    "photo": "photos/lawn-on-d.jpg"
+    "photos": [
+      {
+        "date": "2018-03-18",
+        "photo": "photos/lawn-on-d_2018-03-18.jpg"
+      }
+    ]
   },
   {
     "id": 167,
@@ -1302,7 +1451,12 @@ export default [
     "name": "Child St at North St",
     "lat": 42.37150494100319,
     "long": -71.07249312120985,
-    "photo": "photos/brian-p-murphy-staircase-at-child-st.jpg"
+    "photos": [
+      {
+        "date": "2018-03-03",
+        "photo": "photos/brian-p-murphy-staircase-at-child-st_2018-03-03.jpg"
+      }
+    ]
   },
   {
     "id": 196,
