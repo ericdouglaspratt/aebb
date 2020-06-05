@@ -56,14 +56,24 @@ export default [
     "name": "Commonwealth Ave at Agganis Way",
     "lat": 42.35169201885973,
     "long": -71.11903488636017,
-    "photo": "photos/commonwealth-at-amory-st.jpg"
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/commonwealth-ave-at-amory-st_2018-09-08.jpg"
+      }
+    ]
   },
   {
     "id": 10,
     "name": "B.U. Central - 725 Comm. Ave.",
     "lat": 42.350406,
     "long": -71.108279,
-    "photo": "photos/bu-central-725-comm-ave.jpg"
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/bu-central-725-comm-ave_2018-09-08.jpg"
+      }
+    ]
   },
   {
     "id": 11,
@@ -264,7 +274,16 @@ export default [
     "name": "Kenmore Square",
     "lat": 42.348706,
     "long": -71.097009,
-    "photo": "photos/kenmore-square.jpg"
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/kenmore-square_2018-09-08.jpg"
+      },
+      {
+        "date": "",
+        "photo": "photos/kenmore-square.jpg"
+      }
+    ]
   },
   {
     "id": 35,
@@ -581,7 +600,12 @@ export default [
     "name": "Central Square at Mass Ave / Essex St",
     "lat": 42.36507,
     "long": -71.1031,
-    "photo": "photos/central-square-at-mass-ave-essex-st.jpg"
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/central-square-at-mass-ave-essex-st_2018-09-08.jpg"
+      }
+    ]
   },
   {
     "id": 69,
@@ -645,14 +669,28 @@ export default [
     "name": "Lafayette Square at Mass Ave / Main St / Columbia St",
     "lat": 42.36346469304347,
     "long": -71.10057324171066,
-    "photo": "photos/lafayette-square-at-mass-ave-main-st.jpg"
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/lafayette-square-at-mass-ave-main-st_2018-09-08.jpg"
+      }
+    ]
   },
   {
     "id": 76,
     "name": "Central Sq Post Office / Cambridge City Hall at Mass Ave / Pleasant St",
     "lat": 42.366426,
     "long": -71.105495,
-    "photo": "photos/central-sq-po-cambridge-city-hall.jpg"
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/central-sq-po-cambridge-city-hall_2018-09-08.jpg"
+      },
+      {
+        "date": "",
+        "photo": "photos/central-sq-po-cambridge-city-hall.jpg"
+      }
+    ]
   },
   {
     "id": 77,
@@ -666,7 +704,12 @@ export default [
     "name": "Union Square - Somerville",
     "lat": 42.37967448103421,
     "long": -71.09391324240278,
-    "photo": "photos/union-square-somerville.jpg"
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/union-square-somerville_2018-09-08.jpg"
+      }
+    ]
   },
   {
     "id": 79,
@@ -762,7 +805,12 @@ export default [
     "name": "Inman Square at Vellucci Plaza / Hampshire St",
     "lat": 42.374035,
     "long": -71.101427,
-    "photo": "photos/inman-square-at-vellucci-plaza.jpg",
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/inman-square-at-vellucci-plaza_2018-09-08.jpg"
+      }
+    ],
     "isLegacy": true
   },
   {
@@ -819,7 +867,12 @@ export default [
     "name": "Cambridge St - at Columbia St / Webster Ave",
     "lat": 42.372969,
     "long": -71.094445,
-    "photo": "photos/cambridge-st-at-columbia-st.jpg"
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/cambridge-st-at-columbia-st_2018-09-08.jpg"
+      }
+    ]
   },
   {
     "id": 96,
@@ -985,7 +1038,12 @@ export default [
     "name": "359 Broadway - Broadway at Fayette Street",
     "lat": 42.370803,
     "long": -71.104412,
-    "photo": "photos/359-broadway-at-fayette-st.jpg"
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/359-broadway-at-fayette-st_2018-09-08.jpg"
+      }
+    ]
   },
   {
     "id": 117,
@@ -1410,7 +1468,12 @@ export default [
     "name": "University Park",
     "lat": 42.36264779118595,
     "long": -71.10006093978882,
-    "photo": "photos/university-park.jpg"
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/university-park_2018-09-08.jpg"
+      }
+    ]
   },
   {
     "id": 178,
@@ -1423,7 +1486,12 @@ export default [
     "name": "MIT Vassar St",
     "lat": 42.355601213279265,
     "long": -71.10394477844238,
-    "photo": "photos/mit-at-vassar-st.jpg"
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/mit-at-vassar-st_2018-09-08.jpg"
+      }
+    ]
   },
   {
     "id": 180,
@@ -1466,7 +1534,12 @@ export default [
     "name": "Sidney Research Campus/Erie Street at Waverly",
     "lat": 42.35775309465199,
     "long": -71.10393404960632,
-    "photo": "photos/sidney-research-campus.jpg"
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/sidney-research-campus_2018-09-08.jpg"
+      }
+    ]
   },
   {
     "id": 185,
@@ -1542,7 +1615,12 @@ export default [
     "name": "Broadway St at Mt Pleasant St",
     "lat": 42.386141411639564,
     "long": -71.07828140258789,
-    "photo": "photos/broadway-st-at-mt-pleasant-st.jpg"
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/broadway-st-at-mt-pleasant-st_2018-09-08.jpg"
+      }
+    ]
   },
   {
     "id": 195,
@@ -1747,7 +1825,12 @@ export default [
     "name": "Cambridge Dept. of Public Works -147 Hampshire St.",
     "lat": 42.37119727759414,
     "long": -71.09759867191315,
-    "photo": "photos/cambridge-department-of-public-works.jpg"
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/cambridge-department-of-public-works_2018-09-08.jpg"
+      }
+    ]
   },
   {
     "id": 226,
@@ -1761,7 +1844,12 @@ export default [
     "name": "Silber Way",
     "lat": 42.34949599514002,
     "long": -71.10057592391968,
-    "photo": "photos/silber-way.jpg"
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/silber-way_2018-09-08.jpg"
+      }
+    ]
   },
   {
     "id": 228,
@@ -1795,14 +1883,24 @@ export default [
     "name": "East Somerville Library (Broadway and Illinois)",
     "lat": 42.3876281075134,
     "long": -71.08318716287613,
-    "photo": "photos/east-somerville-library.jpg"
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/east-somerville-library_2018-09-08.jpg"
+      }
+    ]
   },
   {
     "id": 236,
     "name": "Assembly Square T",
     "lat": 42.392232840046276,
     "long": -71.07746601104736,
-    "photo": "photos/assembly-square-t-stop.jpg"
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/assembly-square-t-stop_2018-09-08.jpg"
+      }
+    ]
   },
   {
     "id": 239,
@@ -1922,7 +2020,12 @@ export default [
     "name": "Washington St at Myrtle St",
     "lat": 42.381706759208264,
     "long": -71.0837718658604,
-    "photo": "photos/washington-st-at-myrtle-st.jpg"
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/washington-st-at-myrtle-st_2018-09-08.jpg"
+      }
+    ]
   },
   {
     "id": 330,

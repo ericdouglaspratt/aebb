@@ -13,9 +13,11 @@
   margin: 0;
 }
 .StationInfo-subheader {
-  color: #aaa;
-  font-size: 14px;
-  margin: 0;
+  color: #777;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 4px 0 10px;
+  text-transform: uppercase;
 }
 .StationInfo-status {
   display: flex;
