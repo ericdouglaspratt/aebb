@@ -633,7 +633,12 @@ export default [
     "name": "Harvard Square at Mass Ave/ Dunster",
     "lat": 42.373268,
     "long": -71.118579,
-    "photo": "photos/harvard-square-at-mass-ave-dunster.jpg"
+    "photos": [
+      {
+        "date": "2018-06-30",
+        "photo": "photos/harvard-square-at-mass-ave-dunster_2018-06-30.jpg"
+      }
+    ]
   },
   {
     "id": 75,
@@ -866,7 +871,12 @@ export default [
     "name": "Powder House Circle - Nathan Tufts Park",
     "lat": 42.400877,
     "long": -71.116772,
-    "photo": "photos/powder-house-circle.jpg"
+    "photos": [
+      {
+        "date": "2018-06-30",
+        "photo": "photos/powder-house-circle_2018-06-30.jpg"
+      }
+    ]
   },
   {
     "id": 103,
@@ -932,14 +942,24 @@ export default [
     "name": "Packard Ave at Powderhouse Blvd",
     "lat": 42.40449,
     "long": -71.123413,
-    "photo": "photos/packard-ave-at-powderhouse-blvd.jpg"
+    "photos": [
+      {
+        "date": "2018-06-30",
+        "photo": "photos/packard-ave-at-powderhouse-blvd_2018-06-30.jpg"
+      }
+    ]
   },
   {
     "id": 112,
     "name": "Clarendon Hill at Broadway",
     "lat": 42.406302,
     "long": -71.132446,
-    "photo": "photos/clarendon-hill-at-broadway.jpg"
+    "photos": [
+      {
+        "date": "2018-06-30",
+        "photo": "photos/clarendon-hill-at-broadway_2018-06-30.jpg"
+      }
+    ]
   },
   {
     "id": 113,
@@ -978,7 +998,12 @@ export default [
     "name": "Linear Park - Mass. Ave. at Cameron Ave. ",
     "lat": 42.397828,
     "long": -71.130516,
-    "photo": "photos/linear-park-mass-ave-at-cameron-ave.jpg"
+    "photos": [
+      {
+        "date": "2018-06-30",
+        "photo": "photos/linear-park-mass-ave-at-cameron-ave_2018-06-30.jpg"
+      }
+    ]
   },
   {
     "id": 119,
@@ -1118,7 +1143,12 @@ export default [
     "name": "Magoun Square at Trum Field",
     "lat": 42.39778339961249,
     "long": -71.10594004465383,
-    "photo": "photos/magoun-square-at-trum-field.jpg"
+    "photos": [
+      {
+        "date": "2018-06-30",
+        "photo": "photos/magoun-square-at-trum-field_2018-06-30.jpg"
+      }
+    ]
   },
   {
     "id": 138,
@@ -1137,7 +1167,12 @@ export default [
     "name": "Danehy Park",
     "lat": 42.388966,
     "long": -71.132788,
-    "photo": "photos/danehy-park.jpg"
+    "photos": [
+      {
+        "date": "2018-06-30",
+        "photo": "photos/danehy-park_2018-06-30.jpg"
+      }
+    ]
   },
   {
     "id": 141,
@@ -1150,7 +1185,12 @@ export default [
     "name": "Alewife Station at Russell Field",
     "lat": 42.396105,
     "long": -71.139459,
-    "photo": "photos/alewife-station-at-russell-field.jpg"
+    "photos": [
+      {
+        "date": "2018-06-30",
+        "photo": "photos/alewife-station-at-russell-field_2018-06-30.jpg"
+      }
+    ]
   },
   {
     "id": 143,
@@ -1175,7 +1215,12 @@ export default [
     "name": "Rindge Avenue - O'Neill Library",
     "lat": 42.392766,
     "long": -71.129042,
-    "photo": "photos/rindge-avenue-oneill-library.jpg"
+    "photos": [
+      {
+        "date": "2018-06-30",
+        "photo": "photos/rindge-avenue-oneill-library_2018-06-30.jpg"
+      }
+    ]
   },
   {
     "id": 146,
@@ -1391,7 +1436,12 @@ export default [
     "name": "Huron Ave At Vassal Lane",
     "lat": 42.381650612901176,
     "long": -71.13426981498378,
-    "photo": "photos/huron-ave-at-vassal-lane.jpg"
+    "photos": [
+      {
+        "date": "2018-06-30",
+        "photo": "photos/huron-ave-at-vassal-lane_2018-06-30.jpg"
+      }
+    ]
   },
   {
     "id": 182,
@@ -1404,7 +1454,12 @@ export default [
     "name": "Alewife MBTA at Steel Place",
     "lat": 42.395588457167094,
     "long": -71.14260613918304,
-    "photo": "photos/alewife-mbta-at-steel-place.jpg"
+    "photos": [
+      {
+        "date": "2018-06-30",
+        "photo": "photos/alewife-mbta-at-steel-place_2018-06-30.jpg"
+      }
+    ]
   },
   {
     "id": 184,
@@ -1680,7 +1735,12 @@ export default [
     "name": "Fresh Pond Reservation",
     "lat": 42.38267827521855,
     "long": -71.143478951426,
-    "photo": "photos/fresh-pond-reservation.jpg"
+    "photos": [
+      {
+        "date": "2018-06-30",
+        "photo": "photos/fresh-pond-reservation_2018-06-30.jpg"
+      }
+    ]
   },
   {
     "id": 225,
