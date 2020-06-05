@@ -16,7 +16,12 @@ export default [
     "name": "Tremont St at E Berkeley St",
     "lat": 42.345392,
     "long": -71.069616,
-    "photo": "photos/tremont-st-at-e-berkeley-st.jpg"
+    "photos": [
+      {
+        "date": "2018-06-24",
+        "photo": "photos/tremont-st-at-e-berkeley-st_2018-06-24.jpg"
+      }
+    ]
   },
   {
     "id": 5,
@@ -77,7 +82,12 @@ export default [
     "name": "Ruggles T Stop - Columbus Ave at Melnea Cass Blvd",
     "lat": 42.33624444796878,
     "long": -71.08798563480377,
-    "photo": "photos/ruggles-t-stop.jpg"
+    "photos": [
+      {
+        "date": "2018-06-24",
+        "photo": "photos/ruggles-t-stop_2018-06-24.jpg"
+      }
+    ]
   },
   {
     "id": 13,
@@ -187,8 +197,16 @@ export default [
     "name": "South End Library - Tremont St at W Newton St",
     "lat": 42.341332,
     "long": -71.076847,
-    "photo": "photos/south-end-library-tremont-st-at-w-newton-st.jpg"
-    //"photo": "photos/south-end-library.jpg"
+    "photos": [
+      {
+        "date": "2018-06-24",
+        "photo": "photos/south-end-library_2018-06-24.jpg"
+      },
+      {
+        "date": "",
+        "photo": "photos/south-end-library-tremont-st-at-w-newton-st.jpg"
+      }
+    ]
   },
   {
     "id": 26,
@@ -202,7 +220,12 @@ export default [
     "name": "Roxbury Crossing T Stop - Columbus Ave at Tremont St",
     "lat": 42.331184,
     "long": -71.095171,
-    "photo": "photos/roxbury-crossing-t-stop.jpg"
+    "photos": [
+      {
+        "date": "2018-06-24",
+        "photo": "photos/roxbury-crossing-t-stop_2018-06-24.jpg"
+      }
+    ]
   },
   {
     "id": 29,
@@ -458,7 +481,12 @@ export default [
     "name": "Massachusetts Ave at Columbus Ave",
     "lat": 42.340542615516355,
     "long": -71.08138847914233,
-    "photo": "photos/massachusetts-ave-at-columbus-ave.jpg"
+    "photos": [
+      {
+        "date": "2018-06-24",
+        "photo": "photos/massachusetts-ave-at-columbus-ave_2018-06-24.jpg"
+      }
+    ]
   },
   {
     "id": 58,
@@ -1040,14 +1068,24 @@ export default [
     "name": "Jackson Square T Stop",
     "lat": 42.32293117195949,
     "long": -71.10014140605927,
-    "photo": "photos/jackson-square-t-stop.jpg"
+    "photos": [
+      {
+        "date": "2018-06-24",
+        "photo": "photos/jackson-square-t-stop_2018-06-24.jpg"
+      }
+    ]
   },
   {
     "id": 133,
     "name": "Green Street T Stop - Green St at Amory St",
     "lat": 42.310579,
     "long": -71.107341,
-    "photo": "photos/green-street-t-stop.jpg"
+    "photos": [
+      {
+        "date": "2018-06-24",
+        "photo": "photos/green-street-t-stop_2018-06-24.jpg"
+      }
+    ]
   },
   {
     "id": 134,
@@ -1185,7 +1223,12 @@ export default [
     "name": "Ink Block - Harrison Ave at Herald St",
     "lat": 42.345901,
     "long": -71.063187,
-    "photo": "photos/ink-block.jpg"
+    "photos": [
+      {
+        "date": "2018-06-24",
+        "photo": "photos/ink-block_2018-06-24.jpg"
+      }
+    ]
   },
   {
     "id": 156,
@@ -1625,7 +1668,12 @@ export default [
     "name": "Troy Boston",
     "lat": 42.343749,
     "long": -71.062256,
-    "photo": "photos/troy-boston.jpg"
+    "photos": [
+      {
+        "date": "2018-06-24",
+        "photo": "photos/troy-boston_2018-06-24.jpg"
+      }
+    ]
   },
   {
     "id": 224,
