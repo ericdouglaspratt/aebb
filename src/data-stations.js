@@ -42,7 +42,12 @@ export default [
     "name": "Fan Pier",
     "lat": 42.3533905070523,
     "long": -71.04457139968872,
-    "photo": "photos/fan-pier.jpg"
+    "photos": [
+      {
+        "date": "2019-05-17",
+        "photo": "photos/fan-pier_2019-05-17.jpg"
+      }
+    ]
   },
   {
     "id": 8,
@@ -200,7 +205,12 @@ export default [
     "name": "Seaport Square - Seaport Blvd at Northern Ave",
     "lat": 42.35148193460858,
     "long": -71.04436084628105,
-    "photo": "photos/seaport-square.jpg"
+    "photos": [
+      {
+        "date": "2019-05-17",
+        "photo": "photos/seaport-square_2019-05-17.jpg"
+      }
+    ]
   },
   {
     "id": 25,
@@ -260,7 +270,12 @@ export default [
     "name": "Seaport Hotel - Congress St at Seaport Ln",
     "lat": 42.34881026188269,
     "long": -71.04167744055303,
-    "photo": "photos/seaport-hotel.jpg"
+    "photos": [
+      {
+        "date": "2019-05-17",
+        "photo": "photos/seaport-hotel_2019-05-17.jpg"
+      }
+    ]
   },
   {
     "id": 32,
@@ -524,7 +539,12 @@ export default [
     "name": "Chinatown Gate Plaza",
     "lat": 42.351356,
     "long": -71.059367,
-    "photo": "photos/chinatown-gate-plaza.jpg"
+    "photos": [
+      {
+        "date": "2019-05-17",
+        "photo": "photos/chinatown-gate-plaza_2019-05-17.jpg"
+      }
+    ]
   },
   {
     "id": 60,
@@ -562,7 +582,12 @@ export default [
     "name": "Congress St at Sleeper St",
     "lat": 42.351004495946704,
     "long": -71.04930013418198,
-    "photo": "photos/congress-st-at-sleeper-st.jpg"
+    "photos": [
+      {
+        "date": "2019-05-17",
+        "photo": "photos/congress-st-at-sleeper-st_2019-05-17.jpg"
+      }
+    ]
   },
   {
     "id": 65,
@@ -1237,14 +1262,24 @@ export default [
     "name": "ID Building East",
     "lat": 42.344827,
     "long": -71.028664,
-    "photo": "photos/id-building-east.jpg"
+    "photos": [
+      {
+        "date": "2019-05-17",
+        "photo": "photos/id-building-east_2019-05-17.jpg"
+      }
+    ]
   },
   {
     "id": 136,
     "name": "ID Building West",
     "lat": 42.344796,
     "long": -71.031614,
-    "photo": "photos/id-building-west.jpg"
+    "photos": [
+      {
+        "date": "2019-05-17",
+        "photo": "photos/id-building-west_2019-05-17.jpg"
+      }
+    ]
   },
   {
     "id": 137,
@@ -1401,8 +1436,8 @@ export default [
         "photo": "photos/seaport-blvd-at-sleeper-st_2018-03-30.jpg"
       },
       {
-        "date": "",
-        "photo": "photos/seaport-blvd-at-sleeper-st.jpg"
+        "date": "2019-05-17",
+        "photo": "photos/seaport-blvd-at-sleeper-st_2019-05-17.jpg"
       }
     ]
   },
@@ -1613,7 +1648,12 @@ export default [
     "name": "Congress St at Northern Ave",
     "lat": 42.3481,
     "long": -71.03764,
-    "photo": "photos/congress-st-at-northern-ave.jpg"
+    "photos": [
+      {
+        "date": "2019-05-17",
+        "photo": "photos/congress-st-at-northern-ave_2019-05-17.jpg"
+      }
+    ]
   },
   {
     "id": 187,
@@ -1835,7 +1875,12 @@ export default [
     "name": "Watermark Seaport - Boston Wharf Rd at Seaport Blvd",
     "lat": 42.351586001198456,
     "long": -71.04569256305693,
-    "photo": "photos/watermark-seaport.jpg"
+    "photos": [
+      {
+        "date": "2019-05-17",
+        "photo": "photos/watermark-seaport_2019-05-17.jpg"
+      }
+    ]
   },
   {
     "id": 219,
