@@ -53,6 +53,13 @@ function InfoPane({
     }, 225);
   };
 
+  const handleClickPhoto = (photo, trip) => {
+    onViewActivate(VIEWS.PHOTO, {
+      photo,
+      trip
+    });
+  };
+
   const handleClickStation = stationId => {
     onViewActivate(VIEWS.STATION, {
       id: stationId,
@@ -61,11 +68,7 @@ function InfoPane({
     });
   };
 
-  const handleClickTripDesktop = trip => {
-    onViewActivate(VIEWS.TRIP_LIST, trip);
-  };
-
-  const handleClickTripMobile = trip => {
+  const handleClickTrip = trip => {
     onViewReplace(VIEWS.TRIP_LIST, trip);
     setTimeout(() => {
       onViewActivate(VIEWS.TRIP, trip);
@@ -86,6 +89,15 @@ function InfoPane({
             />
           </div>
         </div>
+      ) : !!activeView && activeView.view === VIEWS.ROUTE_MARKING ? (
+        <>
+          <div className="InfoPane">
+            <div className="InfoPane-header">
+              <CancelButton onClick={() => onViewDeactivate(VIEWS.ROUTE_MARKING)} />
+            </div>
+          </div>
+          <RouteMarking />
+        </>
       ) : !!activeView && activeView.view === VIEWS.STATION ? (
         <div className="InfoPane">
           <div className="InfoPane-header">
@@ -98,15 +110,19 @@ function InfoPane({
             />
           </div>
         </div>
-      ) : !!activeView && activeView.view === VIEWS.ROUTE_MARKING ? (
-        <>
-          <div className="InfoPane">
-            <div className="InfoPane-header">
-              <CancelButton onClick={() => onViewDeactivate(VIEWS.ROUTE_MARKING)} />
-            </div>
+      ) : !!activeView && activeView.view === VIEWS.TRIP ? (
+        <div className="InfoPane">
+          <div className="InfoPane-header">
+            <BackButton label="Trip List" onClick={() => onViewDeactivate(VIEWS.TRIP_LIST)} />
           </div>
-          <RouteMarking />
-        </>
+          <div className="InfoPane-content">
+            <Trip
+              onClickPhoto={handleClickPhoto}
+              trip={activeView.payload}
+              trips={trips}
+            />
+          </div>
+        </div>
       ) : breakpoint === BREAKPOINTS.DESKTOP && !!activeView && activeView.view === VIEWS.PHOTOS ? (
         <div className="InfoPane InfoPane--scrollable">
           <div className="InfoPane-header">
@@ -140,20 +156,8 @@ function InfoPane({
           <div className="InfoPane-content">
             <TripList
               activeTrip={activeView.payload}
-              onClickTrip={handleClickTripDesktop}
+              onClickTrip={handleClickTrip}
               stations={stations}
-              trips={trips}
-            />
-          </div>
-        </div>
-      ) : breakpoint === BREAKPOINTS.MOBILE && !!activeView && activeView.view === VIEWS.TRIP ? (
-        <div className="InfoPane InfoPane--scrollable">
-          <div className="InfoPane-header">
-            <BackButton label="Trip List" onClick={() => onViewDeactivate(VIEWS.TRIP_LIST)} />
-          </div>
-          <div className="InfoPane-content">
-            <Trip
-              trip={activeView.payload}
               trips={trips}
             />
           </div>
@@ -218,7 +222,7 @@ function InfoPane({
           </div>
           <TripList
             activeTrip={activeView && activeView.payload}
-            onClickTrip={handleClickTripMobile}
+            onClickTrip={handleClickTrip}
             stations={stations}
             trips={trips}
           />

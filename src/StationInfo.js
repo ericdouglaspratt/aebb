@@ -3,7 +3,7 @@ import './StationInfo.css';
 
 const StationInfo = ({ station, trips }) => {
   const showBikeDockInfo = !station.isInactive && (typeof station.bikesAvailable != 'undefined' || typeof station.docksAvailable != 'undefined');
-  const stationTrips = trips.list.filter(trip => trip.stations.indexOf(station.id) > -1);
+  // const stationTrips = trips.list.filter(trip => trip.stations.indexOf(station.id) > -1);
   const photo = station.photos && station.photos.length > 0 ? station.photos[station.photos.length - 1].photo : station.photo;
 
   return (

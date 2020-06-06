@@ -179,7 +179,7 @@ function App() {
   const viewStack = viewStackRef.current;
   const currentView = viewStack.length > 0 ? viewStack[viewStack.length - 1] : null;
   const oneViewBack = viewStack.length > 1 ? viewStack[viewStack.length - 2] : null;
-  const selectedMarker = currentView && currentView.view === VIEWS.PHOTO
+  const selectedMarker = currentView && currentView.view === VIEWS.PHOTO && currentView.payload.marker
     ? {
       marker: currentView.payload.marker,
       moveCenter: false

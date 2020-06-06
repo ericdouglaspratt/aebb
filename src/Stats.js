@@ -98,6 +98,12 @@ const Stats = ({ onClickStation, stations, trips }) => {
     }
   }, [trips]);
 
+  const handleClickStation = id => {
+    setTimeout(() => {
+      onClickStation(id);
+    }, 250);
+  }
+
   return (
     <div className="Stats">
       <h6 className="Stats-header">
@@ -126,7 +132,7 @@ const Stats = ({ onClickStation, stations, trips }) => {
             <Button
               className="Stats-topStation"
               key={id}
-              onClick={() => onClickStation(id)}
+              onClick={() => handleClickStation(id)}
               size="medium"
             >
               <span className="Stats-topStationPhoto" style={{ backgroundImage: `url(${stationPhoto})` }} />

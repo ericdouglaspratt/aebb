@@ -75,7 +75,15 @@ export default [
     color: '#27ae60',
     date: '2018-09-08',
     description: 'Somerville to BU',
-    stations: [236, 194, 235, 329, 78, 88, 95, 225, 116, 76, 68, 75, 177, 184, 179, 9, 10, 227, 33]
+    stations: [236, 194, 235, 329, 78, 88, 95, 225, 116, 76, 68, 75, 177, 184, 179, 9, 10, 227, 33],
+    photos: [
+      {
+        full: 'photos/2018-09-08-001.jpg',
+        lat: 42.392205,
+        lng: -71.077690,
+        thumb: 'photos/2018-09-08-001-thumb.jpg'
+      }
+    ]
   },
   {
     id: '11',
@@ -89,7 +97,15 @@ export default [
     color: '#16a085',
     date: '2019-05-17',
     description: 'Seaport',
-    stations: [59, 64, 157, 218, 24, 7, 31, 186, 136, 135]
+    stations: [59, 64, 157, 218, 24, 7, 31, 186, 136, 135],
+    photos: [
+      {
+        full: 'photos/2019-05-17-001.jpg',
+        lat: 42.349340,
+        lng: -71.042859,
+        thumb: 'photos/2019-05-17-001-thumb.jpg',
+      }
+    ]
   },
   {
     id: '13',
