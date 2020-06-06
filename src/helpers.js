@@ -3,14 +3,14 @@ import { BREAKPOINTS } from './constants';
 
 export const calcPercentChange = (a, b) => Math.abs((b - a) / a) * 100;
 
-export const createStationMap = stations => stations.reduce((result, station) => {
-  result[station.id] = station;
+export const createIdMap = items => items.reduce((result, item) => {
+  result[item.id] = item;
   return result;
 }, {});
 
 export const diffStations = (oldStations, newStations, visitedStations) => {
   const diffLog = [];
-  const oldStationMap = createStationMap(oldStations);
+  const oldStationMap = createIdMap(oldStations);
   const newStationsFound = [];
   const updatedStationList = [];
 

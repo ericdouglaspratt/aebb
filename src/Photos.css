@@ -1,0 +1,33 @@
+.Photos {
+  padding: 10px;
+}
+.Photos-header {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.Photos-dayImages {
+  display: flex;
+  flex-flow: row wrap;
+}
+.Photos-image,
+.Photos-noImage {
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 60px;
+}
+.Photos-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 60px;
+}
+.Photos-image--old {
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+.Photos-noImage {
+  border: 3px dashed #ccc;
+  padding-bottom: 52px;
+}

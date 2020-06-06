@@ -4,15 +4,13 @@ import moment from 'moment';
 import './TripList.css';
 
 function TripList({ activeTrip, onClickTrip, stations, trips }) {
-  const [didScroll, setDidScroll] = useState(!activeTrip);
-  const [reversedTrips, setReversedTrips] = useState(trips);
+  const [reversedTrips, setReversedTrips] = useState(trips.list);
   const scrollRef = useRef(null);
 
   useEffect(() => {
-    if (!didScroll && scrollRef && scrollRef.current) {
+    if (activeTrip && scrollRef && scrollRef.current) {
       setTimeout(() => {
         scrollRef.current.scrollIntoView({
-          behavior: 'smooth',
           block: 'start',
         });
       }, 0);
@@ -20,7 +18,7 @@ function TripList({ activeTrip, onClickTrip, stations, trips }) {
   }, [scrollRef]);
 
   useEffect(() => {
-    setReversedTrips(trips.map(trip => ({
+    setReversedTrips(trips.list.map(trip => ({
       ...trip,
       numMissingPhotos: trip.stations.filter(stationId => {
         const station = stations.lookup[stationId];

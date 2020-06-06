@@ -1,0 +1,11 @@
+.Photo {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  padding-bottom: 100%;
+}
+.Photo-description {
+  left: -9999em;
+  position: absolute;
+}

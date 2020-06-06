@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 
 import { VIEWS } from './constants';
-import { createStationMap, diffStations, useStateRef } from './helpers';
+import { createIdMap, diffStations, useStateRef } from './helpers';
 import cachedStationData from './data-stations';
 import rawTrips from './data-trips';
 
@@ -11,7 +11,7 @@ import Map from './Map';
 
 // create visited station map and count number of new stations per trip
 const visitedStations = {};
-const trips = rawTrips.map(trip => {
+const preparedTrips = rawTrips.map(trip => {
   return {
     ...trip,
     numNew: trip.stations.reduce((result, stationId) => {
@@ -24,13 +24,17 @@ const trips = rawTrips.map(trip => {
     }, 0)
   };
 });
+const trips = {
+  list: preparedTrips,
+  lookup: createIdMap(preparedTrips)
+};
 
 function App() {
   const [diffLog, setDiffLog] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [stations, setStations] = useState({
     list: cachedStationData,
-    lookup: createStationMap(cachedStationData)
+    lookup: createIdMap(cachedStationData)
   });
 
   const [markedRouteRef, setMarkedRoute] = useStateRef([]);
@@ -48,8 +52,27 @@ function App() {
 
   const handleClearSelectedStation = () => {
     const viewStack = viewStackRef.current;
-    if (viewStack.length > 0 && viewStack[viewStack.length - 1].view === VIEWS.STATION) {
+    if (
+      (viewStack.length > 0) &&
+      (viewStack[viewStack.length - 1].view === VIEWS.STATION || viewStack[viewStack.length - 1].view === VIEWS.PHOTO)
+    ) {
       popView();
+    }
+  };
+
+  const handleClickStationMarker = (stationId, marker) => {
+    const viewStack = viewStackRef.current;
+    if (viewStack.length > 0 && viewStack[viewStack.length - 1].view === VIEWS.ROUTE_MARKING) {
+      setMarkedRoute([
+        ...markedRouteRef.current,
+        stationId
+      ]);
+    } else {
+      pushView(VIEWS.STATION, {
+        id: stationId,
+        marker,
+        moveCenter: false
+      });
     }
   };
 
@@ -78,19 +101,13 @@ function App() {
     }
   };
 
-  const handleSelectStation = stationId => {
-    const viewStack = viewStackRef.current;
-    if (viewStack.length > 0 && viewStack[viewStack.length - 1].view === VIEWS.ROUTE_MARKING) {
-      setMarkedRoute([
-        ...markedRouteRef.current,
-        stationId
-      ]);
-    } else {
-      pushView(VIEWS.STATION, {
-        id: stationId,
-        moveCenter: false
-      });
-    }
+  const handleSelectPhoto = (tripId, thumbUrl, marker) => {
+    const trip = trips.lookup[tripId];
+    pushView(VIEWS.PHOTO, {
+      marker,
+      photo: trip.photos.find(photo => photo.thumb === thumbUrl),
+      trip
+    });
   };
 
   const loadCurrentStationData = visitedMap => {
@@ -101,7 +118,7 @@ function App() {
         setDiffLog(diffLog);
         setStations({
           list: updatedStationList,
-          lookup: createStationMap(updatedStationList)
+          lookup: createIdMap(updatedStationList)
         });
         setIsLoading(false);
       })
@@ -123,8 +140,14 @@ function App() {
   const pushView = (view, payload) => {
     const viewStack = viewStackRef.current;
     const prevView = viewStack.length > 0 ? viewStack[viewStack.length - 1].view : null;
-    if ((view === VIEWS.STATION && prevView === VIEWS.STATION) || (view === VIEWS.TRIP_LIST && prevView === VIEWS.TRIP_LIST)) {
-      // if we're switching from one station view to another
+    if (
+      (view === VIEWS.PHOTO && prevView === VIEWS.PHOTO) ||
+      (view === VIEWS.PHOTO && prevView === VIEWS.STATION) ||
+      (view === VIEWS.STATION && prevView === VIEWS.STATION) ||
+      (view === VIEWS.STATION && prevView === VIEWS.PHOTO) ||
+      (view === VIEWS.TRIP_LIST && prevView === VIEWS.TRIP_LIST)
+    ) {
+      // if we're switching from one station/photo view to another
       // or one trip list view to one with a payload
       // pop the old view and push the new view
       setViewStack([
@@ -149,21 +172,27 @@ function App() {
   const updateStationDataWithMarkers = updatedStationList => {
     setStations({
       list: updatedStationList,
-      lookup: createStationMap(updatedStationList)
+      lookup: createIdMap(updatedStationList)
     });
   };
 
   const viewStack = viewStackRef.current;
   const currentView = viewStack.length > 0 ? viewStack[viewStack.length - 1] : null;
   const oneViewBack = viewStack.length > 1 ? viewStack[viewStack.length - 2] : null;
+  const selectedMarker = currentView && currentView.view === VIEWS.PHOTO
+    ? {
+      marker: currentView.payload.marker,
+      moveCenter: false
+    }
+    : currentView && currentView.view === VIEWS.STATION ? currentView.payload : null;
   const activeTrip = currentView && (currentView.view === VIEWS.TRIP_LIST || currentView.view === VIEWS.TRIP)
     ? currentView.payload
     : oneViewBack && (oneViewBack.view === VIEWS.TRIP_LIST || oneViewBack.view === VIEWS.TRIP)
-    ? oneViewBack.payload
-    : null;
-  const selectedStation = currentView && currentView.view === VIEWS.STATION ? currentView.payload : null;
-  const selectedStationTrips = selectedStation ? trips.filter(trip => trip.stations.indexOf(selectedStation.id) > -1) : null;
-  const selectedStationGhostRoutes = selectedStationTrips ? selectedStationTrips.map(trip => trip.stations) : null;
+      ? oneViewBack.payload
+      : null;
+  //const selectedStation = currentView && currentView.view === VIEWS.STATION ? currentView.payload : null;
+  //const selectedStationTrips = selectedStation ? trips.list.filter(trip => trip.stations.indexOf(selectedStation.id) > -1) : null;
+  //const selectedStationGhostRoutes = selectedStationTrips ? selectedStationTrips.map(trip => trip.stations) : null;
 
   return (
     <div className="App">
@@ -175,13 +204,12 @@ function App() {
           <>
             <Map
               activeTrip={activeTrip}
-              ghostRoutes={selectedStationGhostRoutes}
               onClearSelectedStation={handleClearSelectedStation}
-              onSelectStation={handleSelectStation}
+              onSelectPhoto={handleSelectPhoto}
+              onSelectStation={handleClickStationMarker}
               route={markedRouteRef.current}
-              selectedStation={selectedStation}
+              selectedMarker={selectedMarker}
               stations={stations}
-              trips={trips}
               updateStationDataWithMarkers={updateStationDataWithMarkers}
               visitedStations={visitedStations}
             />

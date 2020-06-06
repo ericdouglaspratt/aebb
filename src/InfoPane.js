@@ -5,6 +5,7 @@ import Equalizer from '@material-ui/icons/Equalizer';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import MenuList from '@material-ui/core/MenuList';
 import MenuItem from '@material-ui/core/MenuItem';
+import PhotoCamera from '@material-ui/icons/PhotoCamera';
 import './InfoPane.css';
 
 import { BREAKPOINTS, VIEWS } from './constants';
@@ -13,6 +14,8 @@ import { useBreakpoint } from './helpers';
 import BackButton from './BackButton';
 import CancelButton from './CancelButton';
 import MenuButton from './MenuButton';
+import Photo from './Photo';
+import Photos from './Photos';
 import Progress from './Progress';
 import RouteMarking from './RouteMarking';
 import StationInfo from './StationInfo';
@@ -53,6 +56,7 @@ function InfoPane({
   const handleClickStation = stationId => {
     onViewActivate(VIEWS.STATION, {
       id: stationId,
+      marker: stations.lookup[stationId].marker,
       moveCenter: true
     });
   };
@@ -70,7 +74,19 @@ function InfoPane({
 
   return (
     <>
-      {!!activeView && activeView.view === VIEWS.STATION ? (
+      {!!activeView && activeView.view === VIEWS.PHOTO ? (
+        <div className="InfoPane">
+          <div className="InfoPane-header">
+            <BackButton onClick={() => onViewDeactivate(VIEWS.PHOTO)} />
+          </div>
+          <div className="InfoPane-content">
+            <Photo
+              photo={activeView.payload.photo}
+              trip={activeView.payload.trip}
+            />
+          </div>
+        </div>
+      ) : !!activeView && activeView.view === VIEWS.STATION ? (
         <div className="InfoPane">
           <div className="InfoPane-header">
             <BackButton onClick={onClearSelectedStation} />
@@ -91,6 +107,18 @@ function InfoPane({
           </div>
           <RouteMarking />
         </>
+      ) : breakpoint === BREAKPOINTS.DESKTOP && !!activeView && activeView.view === VIEWS.PHOTOS ? (
+        <div className="InfoPane InfoPane--scrollable">
+          <div className="InfoPane-header">
+            <BackButton onClick={() => onViewDeactivate(VIEWS.PHOTOS)} />
+          </div>
+          <div className="InfoPane-content">
+            <Photos
+              stations={stations}
+              trips={trips}
+            />
+          </div>
+        </div>
       ) : breakpoint === BREAKPOINTS.DESKTOP && !!activeView && activeView.view === VIEWS.STATS ? (
         <div className="InfoPane InfoPane--scrollable">
           <div className="InfoPane-header">
@@ -168,6 +196,10 @@ function InfoPane({
                     <ListItemIcon><Equalizer /></ListItemIcon>
                     Stats
                   </MenuItem>
+                  {/*<MenuItem onClick={() => handleClickMenuItem(VIEWS.PHOTOS)}>
+                    <ListItemIcon><PhotoCamera /></ListItemIcon>
+                    Photos
+                  </MenuItem>*/}
                   {/*<MenuItem onClick={() => handleClickMenuItem(VIEWS.ROUTE_MARKING)}>Mark a route</MenuItem>*/}
                 </MenuList>
               )}

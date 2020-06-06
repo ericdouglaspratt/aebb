@@ -17,14 +17,14 @@ const Stats = ({ onClickStation, stations, trips }) => {
   const [topStationsPerTrip, setTopStationsPerTrip] = useState(0);
 
   useEffect(() => {
-    if (trips && trips.length > 0) {
+    if (trips && trips.list.length > 0) {
       // calculate average stations per trip
-      const totalStationVisits = trips.reduce((result, trip) => result + trip.stations.length, 0);
-      setAverageStationsPerTrip(Math.round(totalStationVisits / trips.length));
+      const totalStationVisits = trips.list.reduce((result, trip) => result + trip.stations.length, 0);
+      setAverageStationsPerTrip(Math.round(totalStationVisits / trips.list.length));
 
       // calculate stations per trip
       const stationsPerTripMap = {};
-      trips.forEach(trip => {
+      trips.list.forEach(trip => {
         if (stationsPerTripMap[trip.stations.length]) {
           stationsPerTripMap[trip.stations.length]++;
         } else {
@@ -40,7 +40,7 @@ const Stats = ({ onClickStation, stations, trips }) => {
       setTopStationsPerTrip(Math.max(...Object.keys(stationsPerTripMap)));
 
       // calculate top stations
-      const stationVisitMap = trips.reduce((result, trip) => {
+      const stationVisitMap = trips.list.reduce((result, trip) => {
         trip.stations.forEach(stationId => {
           if (result[stationId]) {
             result[stationId]++;
@@ -62,7 +62,7 @@ const Stats = ({ onClickStation, stations, trips }) => {
 
       // calculate top months
       const months = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-      trips.forEach(trip => {
+      trips.list.forEach(trip => {
         const index = moment(trip.date, 'YYYY-MM-DD').month();
         months[index]++;
       });
@@ -80,7 +80,7 @@ const Stats = ({ onClickStation, stations, trips }) => {
 
       // calculate top days of week
       const daysOfWeek = [0, 0, 0, 0, 0, 0, 0];
-      trips.forEach(trip => {
+      trips.list.forEach(trip => {
         const dayOfWeek = parseInt(moment(trip.date, 'YYYY-MM-DD').format('d'));
         daysOfWeek[dayOfWeek]++;
       });
@@ -101,7 +101,7 @@ const Stats = ({ onClickStation, stations, trips }) => {
   return (
     <div className="Stats">
       <h6 className="Stats-header">
-        Total Number of Trips: {trips.length}
+        Total Number of Trips: {trips.list.length}
       </h6>
 
       <h6 className="Stats-header">

@@ -22,7 +22,9 @@ const MARKER_Z_INDEX = {
   INACTIVE: 1,
   VISITED: 2,
   UNVISITED: 3,
-  ACTIVE: 4,
+  PHOTO: 4,
+  ROUTE: 5,
+  ACTIVE: 6,
   LOCATION: 10
 };
 
@@ -41,19 +43,21 @@ function MapComponent({
   activeTrip,
   ghostRoutes,
   onClearSelectedStation,
+  onSelectPhoto,
   onSelectStation,
   route,
-  selectedStation,
+  selectedMarker,
   stations,
   updateStationDataWithMarkers,
   visitedStations
 }) {
-  const [activeMarkers, setActiveMarkers] = useState([]);
+  const [activeMarker, setActiveMarker] = useState(null);
   const [activeRoute, setActiveRoute] = useState(null);
   const [highlightedMarkers, setHighlightedMarkers] = useState([]);
   const [isLocationError, setIsLocationError] = useState(false);
   const [locationMarker, setLocationMarker] = useState(null);
   const [map, setMap] = useState();
+  const [tempMarkers, setTempMarkers] = useState([]);
   const mapRef = useRef(null);
 
   const breakpoint = useBreakpoint();
@@ -68,53 +72,7 @@ function MapComponent({
     }
   }, [map]);
 
-  useEffect(() => {
-    if (selectedStation) {
-      // reset all previous markers, if any
-      activeMarkers.forEach(({ id, marker }) => {
-        marker.setIcon({
-          scaledSize: new window.google.maps.Size(MARKER_WIDTH, MARKER_HEIGHT),
-          url: marker.icon.url
-        });
-        marker.setZIndex(determineMarkerZIndex(stations.lookup[id]));
-      });
-
-      // make the selected marker large and on top
-      stations.lookup[selectedStation.id].marker.setIcon({
-        scaledSize: new window.google.maps.Size(EXPANDED_MARKER_WIDTH, EXPANDED_MARKER_HEIGHT),
-        url: stations.lookup[selectedStation.id].marker.icon.url
-      });
-      stations.lookup[selectedStation.id].marker.setZIndex(MARKER_Z_INDEX.ACTIVE);
-
-      // save this marker as the active marker
-      setActiveMarkers([{
-        id: selectedStation.id,
-        marker: stations.lookup[selectedStation.id].marker
-      }]);
-
-      // if specified, center the map on the selected station
-      if (selectedStation.moveCenter) {
-        centerOnStation(selectedStation.id);
-      }
-
-      // show ghost routes
-      /*if (ghostRoutes) {
-        ghostRoutes.forEach(ghostRoute => drawRoute(ghostRoute, '#93aed2'));
-      }*/
-
-    } else if (activeMarkers && activeMarkers.length > 0) {
-      // reset all previous markers
-      activeMarkers.forEach(({ id, marker }) => {
-        marker.setIcon({
-          scaledSize: new window.google.maps.Size(MARKER_WIDTH, MARKER_HEIGHT),
-          url: marker.icon.url
-        });
-        marker.setZIndex(determineMarkerZIndex(stations.lookup[id]));
-      });
-      setActiveMarkers([]);
-    }
-  }, [selectedStation, stations]);
-
+  // handle active trip
   useEffect(() => {
     if (activeTrip && activeTrip.stations && activeTrip.stations.length > 0) {
       // remove the old route, if any
@@ -134,6 +92,12 @@ function MapComponent({
             isVisited: !!visitedStations[id]
           })
         });
+        marker.setZIndex(determineMarkerZIndex(stations.lookup[id]));
+      });
+
+      // remove any temp markers
+      tempMarkers.forEach(marker => {
+        marker.setMap(null);
       });
 
       // draw the new route
@@ -153,11 +117,33 @@ function MapComponent({
             isVisited: !!visitedStations[id]
           })
         });
+        marker.setZIndex(MARKER_Z_INDEX.ROUTE);
         return {
           id,
           marker
         };
       }));
+
+      // create photo markers as necessary
+      if (activeTrip.photos && activeTrip.photos.length > 0) {
+        setTempMarkers(activeTrip.photos.map(photo => {
+          const marker = createMarker({
+            date: activeTrip.date,
+            full: photo.full,
+            h: MARKER_HEIGHT,
+            icon: 'img/photo.png',
+            lat: photo.lat,
+            lng: photo.lng,
+            thumb: photo.thumb,
+            w: MARKER_WIDTH,
+            zIndex: MARKER_Z_INDEX.PHOTO
+          });
+          window.google.maps.event.addListener(marker, 'click', () => {
+            onSelectPhoto(activeTrip.id, photo.thumb, marker);
+          });
+          return marker;
+        }));
+      }
 
       // view the new route
       viewArea(activeTrip.stations);
@@ -177,10 +163,61 @@ function MapComponent({
             isVisited: !!visitedStations[id]
           })
         });
+        marker.setZIndex(determineMarkerZIndex(stations.lookup[id]));
       });
       setHighlightedMarkers([]);
+
+      // remove any temp markers
+      tempMarkers.forEach(marker => {
+        marker.setMap(null);
+      });
     }
   }, [activeTrip]);
+
+  // handle selected marker
+  useEffect(() => {
+    if (selectedMarker) {
+      const oldZIndex = selectedMarker.marker.zIndex;
+
+      // reset previous marker, if any
+      if (activeMarker) {
+        activeMarker.marker.setIcon({
+          scaledSize: new window.google.maps.Size(MARKER_WIDTH, MARKER_HEIGHT),
+          url: activeMarker.marker.icon.url
+        });
+        activeMarker.marker.setZIndex(activeMarker.oldZIndex);
+      }
+
+      // make the selected marker large and on top
+      selectedMarker.marker.setIcon({
+        scaledSize: new window.google.maps.Size(EXPANDED_MARKER_WIDTH, EXPANDED_MARKER_HEIGHT),
+        url: selectedMarker.marker.icon.url
+      });
+      selectedMarker.marker.setZIndex(MARKER_Z_INDEX.ACTIVE);
+
+      if (selectedMarker.moveCenter) {
+        map.setCenter(selectedMarker.marker.position);
+      }
+
+      // save the active marker
+      setActiveMarker({
+        marker: selectedMarker.marker,
+        oldZIndex
+      });
+    } else {
+      // reset previous marker
+      if (activeMarker) {
+        activeMarker.marker.setIcon({
+          scaledSize: new window.google.maps.Size(MARKER_WIDTH, MARKER_HEIGHT),
+          url: activeMarker.marker.icon.url
+        });
+        activeMarker.marker.setZIndex(activeMarker.oldZIndex);
+      }
+
+      // clear active marker
+      setActiveMarker(null);
+    }
+  }, [selectedMarker]);
 
   useEffect(() => {
     if (route && route.length > 0) {
@@ -196,14 +233,6 @@ function MapComponent({
       activeRoute.setMap(null);
     }
   }, [route]);
-
-  const centerOnStation = stationId => {
-    const position = new window.google.maps.LatLng(
-      stations.lookup[stationId].lat,
-      stations.lookup[stationId].long
-    );
-    map.setCenter(position);
-  };
 
   const createMarker = ({ h, icon, lat, lng, w, ...rest }) => {
     return new window.google.maps.Marker({
@@ -354,7 +383,7 @@ function MapComponent({
       });
 
       window.google.maps.event.addListener(marker, 'click', () => {
-        onSelectStation(station.id);
+        onSelectStation(station.id, marker);
       });
 
       return {

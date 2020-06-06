@@ -1812,63 +1812,108 @@ export default [
     "name": "Chelsea St at Saratoga St",
     "lat": 42.379772,
     "long": -71.027448,
-    "photo": "photos/chelsea-st-at-saratoga-st.jpg"
+    "photos": [
+      {
+        "date": "2019-05-19",
+        "photo": "photos/chelsea-st-at-saratoga-st_2019-05-19.jpg"
+      }
+    ]
   },
   {
     "id": 210,
     "name": "Bennington St at Byron St",
     "lat": 42.383532520117896,
     "long": -71.01619094610214,
-    "photo": "photos/bennington-st-at-byron-st.jpg"
+    "photos": [
+      {
+        "date": "2019-05-19",
+        "photo": "photos/bennington-st-at-byron-st_2019-05-19.jpg"
+      }
+    ]
   },
   {
     "id": 211,
     "name": "Piers Park",
     "lat": 42.3648929326648,
     "long": -71.03497177362442,
-    "photo": "photos/piers-park.jpg"
+    "photos": [
+      {
+        "date": "2019-05-19",
+        "photo": "photos/piers-park_2019-05-19.jpg"
+      }
+    ]
   },
   {
     "id": 212,
     "name": "Maverick Square - Lewis Mall",
     "lat": 42.368844082898356,
     "long": -71.03977829217911,
-    "photo": "photos/maverick-square-lewis-mall.jpg"
+    "photos": [
+      {
+        "date": "2019-05-19",
+        "photo": "photos/maverick-square-lewis-mall_2019-05-19.jpg"
+      }
+    ]
   },
   {
     "id": 213,
     "name": "East Boston Neighborhood Health Center - 20 Maverick Square",
     "lat": 42.369536,
     "long": -71.039431,
-    "photo": "photos/ebnhc-maverick-square.jpg"
+    "photos": [
+      {
+        "date": "2019-05-19",
+        "photo": "photos/ebnhc-maverick-square_2019-05-19.jpg"
+      }
+    ]
   },
   {
     "id": 214,
     "name": "Airport T Stop - Bremen St at Brooks St",
     "lat": 42.37535497133996,
     "long": -71.03133335709572,
-    "photo": "photos/airport-t-stop.jpg"
+    "photos": [
+      {
+        "date": "2019-05-19",
+        "photo": "photos/airport-t-stop_2019-05-19.jpg"
+      }
+    ]
   },
   {
     "id": 215,
     "name": "The Eddy - New St at Sumner St",
     "lat": 42.370744,
     "long": -71.044201,
-    "photo": "photos/the-eddy-new-st-at-sumner-st.jpg"
+    "photos": [
+      {
+        "date": "2019-05-19",
+        "photo": "photos/the-eddy-new-st-at-sumner-st_2019-05-19.jpg"
+      }
+    ]
   },
   {
     "id": 216,
     "name": "Glendon St at Condor St",
     "lat": 42.38240377674137,
     "long": -71.03024303913116,
-    "photo": "photos/glendon-st-at-condor-st.jpg"
+    "photos": [
+      {
+        "date": "2019-05-19",
+        "photo": "photos/glendon-st-at-condor-st_2019-05-19.jpg"
+      }
+    ]
   },
   {
     "id": 217,
     "name": "Orient Heights T Stop - Bennington St at Saratoga St",
     "lat": 42.386781,
     "long": -71.006098,
-    "photo": "photos/orient-heights-t-stop.jpg"
+    "photos": [
+      {
+        "date": "2019-05-19",
+        "photo": "photos/orient-heights-t-stop_2019-05-19.jpg"
+      }
+    ]
   },
   {
     "id": 218,
@@ -1887,7 +1932,12 @@ export default [
     "name": "Boston East - 126 Border St",
     "lat": 42.373312125824704,
     "long": -71.0410200806291,
-    "photo": "photos/boston-east.jpg"
+    "photos": [
+      {
+        "date": "2019-05-19",
+        "photo": "photos/boston-east_2019-05-19.jpg"
+      }
+    ]
   },
   {
     "id": 221,
@@ -2303,7 +2353,12 @@ export default [
     "name": "Bennington St at Constitution Beach",
     "lat": 42.385223935870535,
     "long": -71.01063068965232,
-    "photo": "photos/bennington-st-at-constitution-beach.jpg"
+    "photos": [
+      {
+        "date": "2019-05-19",
+        "photo": "photos/bennington-st-at-constitution-beach_2019-05-19.jpg"
+      }
+    ]
   },
   {
     "id": 356,
