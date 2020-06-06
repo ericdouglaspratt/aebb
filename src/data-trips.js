@@ -148,7 +148,15 @@ export default [
     color: '#9b59b6',
     date: '2019-05-26',
     description: 'D Street / West Broadway',
-    stations: [65, 163, 150, 63, 366, 161, 121]
+    stations: [65, 163, 150, 63, 366, 161, 121],
+    photos: [
+      {
+        full: 'photos/2019-05-26-001.jpg',
+        lat: 42.342664,
+        lng: -71.057328,
+        thumb: 'photos/2019-05-26-001-thumb.jpg'
+      }
+    ]
   },
   {
     id: '16',

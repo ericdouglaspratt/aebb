@@ -590,7 +590,12 @@ export default [
     "name": "Dorchester Ave at Gillette Park",
     "lat": 42.344040510016356,
     "long": -71.05737626552582,
-    "photo": "photos/dorchester-ave-at-gillette-park.jpg"
+    "photos": [
+      {
+        "date": "2019-05-26",
+        "photo": "photos/dorchester-ave-at-gillette-park_2019-05-26.jpg"
+      }
+    ]
   },
   {
     "id": 64,
@@ -613,6 +618,10 @@ export default [
       {
         "date": "2018-03-18",
         "photo": "photos/boston-convention-and-exhibition-center_2018-03-18.jpg"
+      },
+      {
+        "date": "2019-05-26",
+        "photo": "photos/boston-convention-and-exhibition-center_2019-05-26.jpg"
       }
     ]
   },
@@ -1192,7 +1201,12 @@ export default [
     "name": "W Broadway at Dorchester St",
     "lat": 42.335958979433094,
     "long": -71.04622899561036,
-    "photo": "photos/w-broadway-at-dorchester-st.jpg"
+    "photos": [
+      {
+        "date": "2019-05-26",
+        "photo": "photos/w-broadway-at-dorchester-st_2019-05-26.jpg"
+      }
+    ]
   },
   {
     "id": 122,
@@ -1413,7 +1427,12 @@ export default [
     "name": "State Street at Channel Center",
     "lat": 42.344137,
     "long": -71.052608,
-    "photo": "photos/state-street-at-channel-center.jpg"
+    "photos": [
+      {
+        "date": "2019-05-26",
+        "photo": "photos/state-street-at-channel-center_2019-05-26.jpg"
+      }
+    ]
   },
   {
     "id": 151,
@@ -1490,7 +1509,12 @@ export default [
     "name": "W Broadway at D St",
     "lat": 42.3391085,
     "long": -71.0514432,
-    "photo": "photos/w-broadway-at-d-st.jpg"
+    "photos": [
+      {
+        "date": "2019-05-26",
+        "photo": "photos/w-broadway-at-d-st_2019-05-26.jpg"
+      }
+    ]
   },
   {
     "id": 162,
@@ -1507,6 +1531,10 @@ export default [
       {
         "date": "2018-03-18",
         "photo": "photos/lawn-on-d_2018-03-18.jpg"
+      },
+      {
+        "date": "2019-05-26",
+        "photo": "photos/lawn-on-d_2019-05-26.jpg"
       }
     ]
   },
@@ -2507,7 +2535,12 @@ export default [
     "name": "Broadway T Stop",
     "lat": 42.34278116224413,
     "long": -71.05747275072645,
-    "photo": "photos/broadway-t-stop.jpg"
+    "photos": [
+      {
+        "date": "2019-05-26",
+        "photo": "photos/broadway-t-stop_2019-05-26.jpg"
+      }
+    ]
   },
   {
     "id": 367,
