@@ -163,7 +163,27 @@ export default [
     color: '#f39c12',
     date: '2019-06-01',
     description: 'Mattapan to Chinatown',
-    stations: [336, 340, 353, 343, 347, 350, 349, 348, 259, 232, 202, 196, 204, 56, 200, 51, 39, 26, 363, 365]
+    stations: [336, 340, 353, 343, 347, 350, 349, 348, 259, 232, 202, 196, 204, 56, 200, 51, 39, 26, 363, 365],
+    photos: [
+      {
+        full: 'photos/2019-06-01-001.jpg',
+        lat: 42.283730,
+        lng: -71.063173,
+        thumb: 'photos/2019-06-01-001-thumb.jpg'
+      },
+      {
+        full: 'photos/2019-06-01-002.jpg',
+        lat: 42.277140,
+        lng: -71.093269,
+        thumb: 'photos/2019-06-01-002-thumb.jpg'
+      },
+      {
+        full: 'photos/2019-06-01-003.jpg',
+        lat: 42.299486,
+        lng: -71.073634,
+        thumb: 'photos/2019-06-01-003-thumb.jpg'
+      }
+    ]
   },
   {
     id: '17',

@@ -238,7 +238,12 @@ export default [
     "name": "Washington St at Waltham St",
     "lat": 42.341574718737476,
     "long": -71.06890439987183,
-    "photo": "photos/washington-st-at-waltham-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-01",
+        "photo": "photos/washington-st-at-waltham-st_2019-06-01.jpg"
+      }
+    ]
   },
   {
     "id": 27,
@@ -341,7 +346,12 @@ export default [
     "name": "Washington St at Rutland St",
     "lat": 42.338514601785995,
     "long": -71.07404083013535,
-    "photo": "photos/washington-st-at-rutland-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-01",
+        "photo": "photos/washington-st-at-rutland-st_2019-06-01.jpg"
+      }
+    ]
   },
   {
     "id": 40,
@@ -473,7 +483,12 @@ export default [
     "name": "Washington St at Lenox St",
     "lat": 42.3350989929096,
     "long": -71.07903778553009,
-    "photo": "photos/washington-st-at-lenox-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-01",
+        "photo": "photos/washington-st-at-lenox-st_2019-06-01.jpg"
+      }
+    ]
   },
   {
     "id": 52,
@@ -523,7 +538,12 @@ export default [
     "name": "Dudley Square - Bolling Building",
     "lat": 42.329842993518085,
     "long": -71.08386572459494,
-    "photo": "photos/dudley-square.jpg"
+    "photos": [
+      {
+        "date": "2019-06-01",
+        "photo": "photos/dudley-square_2019-06-01.jpg"
+      }
+    ]
   },
   {
     "id": 57,
@@ -1797,7 +1817,12 @@ export default [
     "name": "Roxbury YMCA - Warren St at MLK Blvd",
     "lat": 42.31787329345602,
     "long": -71.08243077993393,
-    "photo": "photos/roxbury-ymca.jpg"
+    "photos": [
+      {
+        "date": "2019-06-01",
+        "photo": "photos/roxbury-ymca_2019-06-01.jpg"
+      }
+    ]
   },
   {
     "id": 197,
@@ -1816,7 +1841,12 @@ export default [
     "name": "Washington St at Melnea Cass Blvd",
     "lat": 42.332817,
     "long": -71.081198,
-    "photo": "photos/washington-st-at-melnea-cass-blvd.jpg"
+    "photos": [
+      {
+        "date": "2019-06-01",
+        "photo": "photos/washington-st-at-melnea-cass-blvd_2019-06-01.jpg"
+      }
+    ]
   },
   {
     "id": 201,
@@ -1829,7 +1859,12 @@ export default [
     "name": "Grove Hall Library - 41 Geneva Ave",
     "lat": 42.30791,
     "long": -71.080952,
-    "photo": "photos/grove-hall-library.jpg"
+    "photos": [
+      {
+        "date": "2019-06-01",
+        "photo": "photos/grove-hall-library_2019-06-01.jpg"
+      }
+    ]
   },
   {
     "id": 203,
@@ -1842,7 +1877,12 @@ export default [
     "name": "Walnut Ave at Warren St",
     "lat": 42.324081,
     "long": -71.083235,
-    "photo": "photos/walnut-ave-at-warren-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-01",
+        "photo": "photos/walnut-ave-at-warren-st_2019-06-01.jpg"
+      }
+    ]
   },
   {
     "id": 205,
@@ -2090,7 +2130,12 @@ export default [
     "name": "Four Corners - 157 Washington St",
     "lat": 42.304127927390155,
     "long": -71.07929527759552,
-    "photo": "photos/four-corners.jpg"
+    "photos": [
+      {
+        "date": "2019-06-01",
+        "photo": "photos/four-corners_2019-06-01.jpg"
+      }
+    ]
   },
   {
     "id": 233,
@@ -2155,7 +2200,12 @@ export default [
     "name": "Washington St at Bradlee St",
     "lat": 42.299164979365884,
     "long": -71.07345871645519,
-    "photo": "photos/washington-st-at-bradlee-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-01",
+        "photo": "photos/washington-st-at-bradlee-st_2019-06-01.jpg"
+      }
+    ]
   },
   {
     "id": 260,
@@ -2333,7 +2383,12 @@ export default [
     "name": "Blue Hill Ave at Almont St",
     "lat": 42.274620671812244,
     "long": -71.09372552493369,
-    "photo": "photos/blue-hill-ave-at-almont-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-01",
+        "photo": "photos/blue-hill-ave-at-almont-st_2019-06-01.jpg"
+      }
+    ]
   },
   {
     "id": 341,
@@ -2352,7 +2407,12 @@ export default [
     "name": "Morton St T",
     "lat": 42.280725142920296,
     "long": -71.08617242434775,
-    "photo": "photos/morton-st-t-stop.jpg"
+    "photos": [
+      {
+        "date": "2019-06-01",
+        "photo": "photos/morton-st-t-stop_2019-06-01.jpg"
+      }
+    ]
   },
   {
     "id": 344,
@@ -2390,28 +2450,48 @@ export default [
     "name": "Thetford Ave at Norfolk St",
     "lat": 42.286212948246096,
     "long": -71.07942931372236,
-    "photo": "photos/thetford-ave-at-norfolk-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-01",
+        "photo": "photos/thetford-ave-at-norfolk-st_2019-06-01.jpg"
+      }
+    ]
   },
   {
     "id": 348,
     "name": "Talbot Ave At Blue Hill Ave",
     "lat": 42.2945833,
     "long": -71.087111,
-    "photo": "photos/talbot-ave-at-blue-hill-ave.jpg"
+    "photos": [
+      {
+        "date": "2019-06-01",
+        "photo": "photos/talbot-ave-at-blue-hill-ave_2019-06-01.jpg"
+      }
+    ]
   },
   {
     "id": 349,
     "name": "Washington St at Talbot Ave",
     "lat": 42.290333,
     "long": -71.071806,
-    "photo": "photos/washington-st-at-talbot-ave.jpg"
+    "photos": [
+      {
+        "date": "2019-06-01",
+        "photo": "photos/washington-st-at-talbot-ave_2019-06-01.jpg"
+      }
+    ]
   },
   {
     "id": 350,
     "name": "Codman Square Library",
     "lat": 42.2873611,
     "long": -71.071111,
-    "photo": "photos/codman-square-library.jpg"
+    "photos": [
+      {
+        "date": "2019-06-01",
+        "photo": "photos/codman-square-library_2019-06-01.jpg"
+      }
+    ]
   },
   {
     "id": 351,
@@ -2437,7 +2517,12 @@ export default [
     "name": "Mattapan Library",
     "lat": 42.2773889,
     "long": -71.09325,
-    "photo": "photos/mattapan-library.jpg"
+    "photos": [
+      {
+        "date": "2019-06-01",
+        "photo": "photos/mattapan-library_2019-06-01.jpg"
+      }
+    ]
   },
   {
     "id": 354,
@@ -2514,7 +2599,12 @@ export default [
     "name": "Harrison Ave at Mullins Way",
     "lat": 42.34521562115022,
     "long": -71.0638403149278,
-    "photo": "photos/harrison-ave-at-mullins-way.jpg"
+    "photos": [
+      {
+        "date": "2019-06-01",
+        "photo": "photos/harrison-ave-at-mullins-way_2019-06-01.jpg"
+      }
+    ]
   },
   {
     "id": 364,
@@ -2528,7 +2618,12 @@ export default [
     "name": "Harrison Ave at Bennet St",
     "lat": 42.34942609892521,
     "long": -71.06209959843909,
-    "photo": "photos/harrison-ave-at-bennet-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-01",
+        "photo": "photos/harrison-ave-at-bennet-st_2019-06-01.jpg"
+      }
+    ]
   },
   {
     "id": 366,
