@@ -624,7 +624,12 @@ export default [
     "name": "Harvard Kennedy School at Bennett St / Eliot St",
     "lat": 42.3722168027866,
     "long": -71.12188071012497,
-    "photo": "photos/harvard-kennedy-school-at-bennett-st.jpg"
+    "photos": [
+      {
+        "date": "2019-05-11",
+        "photo": "photos/harvard-kennedy-school-at-bennett-st_2019-05-11.jpg"
+      }
+    ]
   },
   {
     "id": 71,
@@ -650,7 +655,12 @@ export default [
     "name": "Harvard Square at Brattle St / Eliot St",
     "lat": 42.373231,
     "long": -71.120886,
-    "photo": "photos/harvard-square-at-brattle-st-eliot-st.jpg"
+    "photos": [
+      {
+        "date": "2019-05-11",
+        "photo": "photos/harvard-square-at-brattle-st-eliot-st_2019-05-11.jpg"
+      }
+    ]
   },
   {
     "id": 74,
@@ -687,8 +697,8 @@ export default [
         "photo": "photos/central-sq-po-cambridge-city-hall_2018-09-08.jpg"
       },
       {
-        "date": "",
-        "photo": "photos/central-sq-po-cambridge-city-hall.jpg"
+        "date": "2019-05-11",
+        "photo": "photos/central-sq-po-cambridge-city-hall_2019-05-11.jpg"
       }
     ]
   },
@@ -798,7 +808,12 @@ export default [
     "name": "Harvard University Housing - 115 Putnam Ave at Peabody Terrace",
     "lat": 42.366621,
     "long": -71.114214,
-    "photo": "photos/harvard-university-housing-putnam-ave-at-peabody-terrace"
+    "photos": [
+      {
+        "date": "2019-05-11",
+        "photo": "photos/harvard-university-housing-putnam-ave-at-peabody-terrace_2019-05-11.jpg"
+      }
+    ]
   },
   {
     "id": 88,
@@ -818,7 +833,12 @@ export default [
     "name": "Harvard Law School at Mass Ave / Jarvis St",
     "lat": 42.379011,
     "long": -71.119945,
-    "photo": "photos/harvard-law-school-at-mass-ave-jarvis-st.jpg"
+    "photos": [
+      {
+        "date": "2019-05-11",
+        "photo": "photos/harvard-law-school-at-mass-ave-jarvis-st_2019-05-11.jpg"
+      }
+    ]
   },
   {
     "id": 90,
@@ -879,14 +899,24 @@ export default [
     "name": "Cambridge Main Library at Broadway / Trowbridge St",
     "lat": 42.373379,
     "long": -71.111075,
-    "photo": "photos/cambridge-main-library-at-broadway-trowbridge-st.jpg"
+    "photos": [
+      {
+        "date": "2019-05-11",
+        "photo": "photos/cambridge-main-library-at-broadway-trowbridge-st_2019-05-11.jpg"
+      }
+    ]
   },
   {
     "id": 97,
     "name": "Harvard University River Houses at DeWolfe St / Cowperthwaite St",
     "lat": 42.36919031768079,
     "long": -71.11714124679565,
-    "photo": "photos/harvard-river-houses-at-dewolfe-st.jpg"
+    "photos": [
+      {
+        "date": "2019-05-11",
+        "photo": "photos/harvard-river-houses-at-dewolfe-st_2019-05-11.jpg"
+      }
+    ]
   },
   {
     "id": 98,
@@ -943,7 +973,12 @@ export default [
     "name": "Harvard University Radcliffe Quadrangle at Shepard St / Garden St",
     "lat": 42.380287,
     "long": -71.125107,
-    "photo": "photos/harvard-radcliffe-quadrangle-shepard-st-garden-st.jpg"
+    "photos": [
+      {
+        "date": "2019-05-11",
+        "photo": "photos/harvard-radcliffe-quadrangle-shepard-st-garden-st_2019-05-11.jpg"
+      }
+    ]
   },
   {
     "id": 105,
@@ -974,7 +1009,12 @@ export default [
     "name": "Harvard University / SEAS Cruft-Pierce Halls at 29 Oxford St",
     "lat": 42.377945,
     "long": -71.116865,
-    "photo": "photos/harvard-university-seas-cruft-pierce-halls.jpg"
+    "photos": [
+      {
+        "date": "2019-05-11",
+        "photo": "photos/harvard-university-seas-cruft-pierce-halls_2019-05-11.jpg"
+      }
+    ]
   },
   {
     "id": 109,
@@ -988,7 +1028,12 @@ export default [
     "name": "Harvard University Gund Hall at Quincy St / Kirkland St",
     "lat": 42.376369,
     "long": -71.114025,
-    "photo": "photos/harvard-university-gund-hall-quincy-kirkland.jpg"
+    "photos": [
+      {
+        "date": "2019-05-11",
+        "photo": "photos/harvard-university-gund-hall-quincy-kirkland_2019-05-11.jpg"
+      }
+    ]
   },
   {
     "id": 111,
@@ -1031,7 +1076,12 @@ export default [
     "name": "Porter Square Station",
     "lat": 42.387995,
     "long": -71.119084,
-    "photo": "photos/porter-square-station.jpg"
+    "photos": [
+      {
+        "date": "2019-05-11",
+        "photo": "photos/porter-square-station_2019-05-11.jpg"
+      }
+    ]
   },
   {
     "id": 116,
@@ -1461,7 +1511,12 @@ export default [
     "name": "Lesley University",
     "lat": 42.38674802045056,
     "long": -71.11901879310608,
-    "photo": "photos/lesley-university.jpg"
+    "photos": [
+      {
+        "date": "2019-05-11",
+        "photo": "photos/lesley-university_2019-05-11.jpg"
+      }
+    ]
   },
   {
     "id": 177,
@@ -1794,7 +1849,12 @@ export default [
     "name": "Verizon Innovation Hub 10 Ware Street",
     "lat": 42.37250864997261,
     "long": -71.11305356025696,
-    "photo": "photos/verizon-innovation-hub-10-ware-st.jpg"
+    "photos": [
+      {
+        "date": "2019-05-11",
+        "photo": "photos/verizon-innovation-hub-10-ware-st_2019-05-11.jpg"
+      }
+    ]
   },
   {
     "id": 222,
