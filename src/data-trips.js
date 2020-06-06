@@ -61,7 +61,15 @@ export default [
     color: '#ff0000',
     date: '2018-06-24',
     description: 'JP to Chinatown',
-    stations: [124, 133, 131, 27, 12, 57, 25, 4, 152, 222, 81]
+    stations: [124, 133, 131, 27, 12, 57, 25, 4, 152, 222, 81],
+    photos: [
+      {
+        full: 'photos/2018-06-24-001.jpg',
+        lat: 42.331291,
+        lng: -71.095034,
+        thumb: 'photos/2018-06-24-001-thumb.jpg'
+      }
+    ]
   },
   {
     id: '9',

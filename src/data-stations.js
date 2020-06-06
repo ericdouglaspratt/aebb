@@ -54,7 +54,12 @@ export default [
     "name": "Union Square - Brighton Ave at Cambridge St",
     "lat": 42.353334,
     "long": -71.137313,
-    "photo": "photos/union-square-allston.jpg"
+    "photos": [
+      {
+        "date": "2019-05-25",
+        "photo": "photos/union-square-allston_2019-05-25.jpg"
+      }
+    ]
   },
   {
     "id": 9,
@@ -324,7 +329,12 @@ export default [
     "name": "New Balance - 20 Guest St",
     "lat": 42.35732921867706,
     "long": -71.14673539996147,
-    "photo": "photos/new-balance.jpg"
+    "photos": [
+      {
+        "date": "2019-05-25",
+        "photo": "photos/new-balance_2019-05-25.jpg"
+      }
+    ]
   },
   {
     "id": 39,
@@ -350,7 +360,12 @@ export default [
     "name": "Packard's Corner - Commonwealth Ave at Brighton Ave",
     "lat": 42.352261,
     "long": -71.123831,
-    "photo": "photos/packards-corner.jpg"
+    "photos": [
+      {
+        "date": "2019-05-25",
+        "photo": "photos/packards-corner_2019-05-25.jpg"
+      }
+    ]
   },
   {
     "id": 42,
@@ -606,7 +621,12 @@ export default [
     "name": "Commonwealth Ave at Griggs St",
     "lat": 42.34922469338298,
     "long": -71.13275302578586,
-    "photo": "photos/allston-green-district.jpg"
+    "photos": [
+      {
+        "date": "2019-05-25",
+        "photo": "photos/allston-green-district_2019-05-25.jpg"
+      }
+    ]
   },
   {
     "id": 67,
@@ -991,7 +1011,12 @@ export default [
     "name": "JFK Crossing at Harvard St. / Thorndike St.",
     "lat": 42.346563,
     "long": -71.128374,
-    "photo": "photos/jfk-crossing-at-harvard-st-thorndike-st.jpg"
+    "photos": [
+      {
+        "date": "2019-05-25",
+        "photo": "photos/jfk-crossing-at-harvard-st-thorndike-st_2019-05-25.jpg"
+      }
+    ]
   },
   {
     "id": 104,
@@ -1532,14 +1557,24 @@ export default [
     "name": "Washington St at Brock St",
     "lat": 42.3489528466951,
     "long": -71.16031676530838,
-    "photo": "photos/washington-st-at-brock-st.jpg"
+    "photos": [
+      {
+        "date": "2019-05-25",
+        "photo": "photos/washington-st-at-brock-st_2019-05-25.jpg"
+      }
+    ]
   },
   {
     "id": 175,
     "name": "Brighton Center - Washington St at Cambridge St",
     "lat": 42.34894857235593,
     "long": -71.15027189254761,
-    "photo": "photos/brighton-center.jpg"
+    "photos": [
+      {
+        "date": "2019-05-25",
+        "photo": "photos/brighton-center_2019-05-25.jpg"
+      }
+    ]
   },
   {
     "id": 176,
@@ -1805,7 +1840,12 @@ export default [
     "name": "Oak Square - 615 Washington St",
     "lat": 42.35057,
     "long": -71.166491,
-    "photo": "photos/oak-square.jpg"
+    "photos": [
+      {
+        "date": "2019-05-25",
+        "photo": "photos/oak-square_2019-05-25.jpg"
+      }
+    ]
   },
   {
     "id": 209,
@@ -1992,7 +2032,12 @@ export default [
     "name": "Commonwealth Ave At Babcock St",
     "lat": 42.35154734791375,
     "long": -71.12126246094704,
-    "photo": "photos/commonwealth-ave-at-babcock-st.jpg"
+    "photos": [
+      {
+        "date": "2019-05-25",
+        "photo": "photos/commonwealth-ave-at-babcock-st_2019-05-25.jpg"
+      }
+    ]
   },
   {
     "id": 227,
@@ -2200,7 +2245,12 @@ export default [
     "name": "Harvard Ave at Brainerd Rd",
     "lat": 42.34953016890375,
     "long": -71.13022770741735,
-    "photo": "photos/harvard-ave-at-brainerd-rd.jpg"
+    "photos": [
+      {
+        "date": "2019-05-25",
+        "photo": "photos/harvard-ave-at-brainerd-rd_2019-05-25.jpg"
+      }
+    ]
   },
   {
     "id": 333,
@@ -2237,7 +2287,12 @@ export default [
     "name": "Commonwealth Ave at Kelton St",
     "lat": 42.348358628170445,
     "long": -71.13997217276847,
-    "photo": "photos/commonwealth-ave-at-kelton-st.jpg"
+    "photos": [
+      {
+        "date": "2019-05-25",
+        "photo": "photos/commonwealth-ave-at-kelton-st_2019-05-25.jpg"
+      }
+    ]
   },
   {
     "id": 339,
@@ -2276,7 +2331,12 @@ export default [
     "name": "Commonwealth Ave at Chiswick Rd",
     "lat": 42.34024644768889,
     "long": -71.15168806174552,
-    "photo": "photos/commonwealth-ave-at-chiswick-rd.jpg"
+    "photos": [
+      {
+        "date": "2019-05-25",
+        "photo": "photos/commonwealth-ave-at-chiswick-rd_2019-05-25.jpg"
+      }
+    ]
   },
   {
     "id": 345,
@@ -2290,7 +2350,12 @@ export default [
     "name": "Cleveland Circle",
     "lat": 42.335543083570826,
     "long": -71.15061519672052,
-    "photo": "photos/cleveland-circle.jpg"
+    "photos": [
+      {
+        "date": "2019-05-25",
+        "photo": "photos/cleveland-circle_2019-05-25.jpg"
+      }
+    ]
   },
   {
     "id": 347,
@@ -2325,7 +2390,12 @@ export default [
     "name": "Faneuil St at Arlington St",
     "lat": 42.35276620545606,
     "long": -71.15988485533308,
-    "photo": "photos/faneuil-st-at-arlington-st.jpg"
+    "photos": [
+      {
+        "date": "2019-05-25",
+        "photo": "photos/faneuil-st-at-arlington-st_2019-05-25.jpg"
+      }
+    ]
   },
   {
     "id": 352,
@@ -2346,7 +2416,12 @@ export default [
     "name": "Washington St at Egremont Rd",
     "lat": 42.34286835071959,
     "long": -71.14127840855872,
-    "photo": "photos/washington-st-at-egremont-rd.jpg"
+    "photos": [
+      {
+        "date": "2019-05-25",
+        "photo": "photos/washington-st-at-egremont-rd_2019-05-25.jpg"
+      }
+    ]
   },
   {
     "id": 355,
