@@ -194,6 +194,12 @@ function App() {
   //const selectedStationTrips = selectedStation ? trips.list.filter(trip => trip.stations.indexOf(selectedStation.id) > -1) : null;
   //const selectedStationGhostRoutes = selectedStationTrips ? selectedStationTrips.map(trip => trip.stations) : null;
 
+  // miles per trip
+  // stats for highest mileage
+  // stats for top stations expand from 4 to 6
+  // top stations per trip, link to trip
+  // on mobile devices - try to grab location again as soon as they update, and give visual indication of recency
+
   return (
     <div className="App">
       {isLoading ? (

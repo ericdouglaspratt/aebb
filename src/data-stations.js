@@ -720,7 +720,12 @@ export default [
     "name": "Conway Park - Somerville Avenue",
     "lat": 42.383405,
     "long": -71.107593,
-    "photo": "photos/conway-park-somerville-ave.jpg"
+    "photos": [
+      {
+        "date": "2019-06-08",
+        "photo": "photos/conway-park-somerville-ave_2019-06-08.jpg"
+      }
+    ]
   },
   {
     "id": 72,
@@ -791,7 +796,12 @@ export default [
     "name": "Somerville City Hall",
     "lat": 42.386844,
     "long": -71.09812,
-    "photo": "photos/somerville-city-hall.jpg"
+    "photos": [
+      {
+        "date": "2019-06-08",
+        "photo": "photos/somerville-city-hall_2019-06-08.jpg"
+      }
+    ]
   },
   {
     "id": 78,
@@ -810,7 +820,12 @@ export default [
     "name": "Beacon St at Washington / Kirkland",
     "lat": 42.37842,
     "long": -71.105668,
-    "photo": "photos/beacon-st-at-washington-st-kirkland-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-08",
+        "photo": "photos/beacon-st-at-washington-st-kirkland-st_2019-06-08.jpg"
+      }
+    ]
   },
   {
     "id": 80,
@@ -1031,7 +1046,12 @@ export default [
     "name": "Davis Square",
     "lat": 42.396969,
     "long": -71.123024,
-    "photo": "photos/davis-square.jpg"
+    "photos": [
+      {
+        "date": "2019-06-08",
+        "photo": "photos/davis-square_2019-06-08.jpg"
+      }
+    ]
   },
   {
     "id": 101,
@@ -1521,7 +1541,12 @@ export default [
     "name": "Somerville Hospital",
     "lat": 42.390449490184295,
     "long": -71.10855950047153,
-    "photo": "photos/somerville-hospital.jpg"
+    "photos": [
+      {
+        "date": "2019-06-08",
+        "photo": "photos/somerville-hospital_2019-06-08.jpg"
+      }
+    ]
   },
   {
     "id": 157,
@@ -1799,7 +1824,12 @@ export default [
     "name": "Foss Park",
     "lat": 42.39108438146733,
     "long": -71.09039425849915,
-    "photo": "photos/foss-park.jpg"
+    "photos": [
+      {
+        "date": "2019-06-08",
+        "photo": "photos/foss-park_2019-06-08.jpg"
+      }
+    ]
   },
   {
     "id": 189,
@@ -2211,7 +2241,12 @@ export default [
     "name": "Broadway at Central St",
     "lat": 42.39517150121575,
     "long": -71.09850591982195,
-    "photo": "photos/broadway-at-central-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-08",
+        "photo": "photos/broadway-at-central-st_2019-06-08.jpg"
+      }
+    ]
   },
   {
     "id": 235,
@@ -2242,7 +2277,12 @@ export default [
     "name": "Community Path at Cedar Street",
     "lat": 42.39407223665884,
     "long": -71.11133694648743,
-    "photo": "photos/community-path-at-cedar-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-08",
+        "photo": "photos/community-path-at-cedar-st_2019-06-08.jpg"
+      }
+    ]
   },
   {
     "id": 255,
@@ -2359,7 +2399,12 @@ export default [
     "name": "Grove St at Community Path",
     "lat": 42.396386809455,
     "long": -71.12011306006025,
-    "photo": "photos/grove-st-at-community-path.jpg"
+    "photos": [
+      {
+        "date": "2019-06-08",
+        "photo": "photos/grove-st-at-community-path_2019-06-08.jpg"
+      }
+    ]
   },
   {
     "id": 329,
@@ -2378,7 +2423,12 @@ export default [
     "name": "30 Dane St",
     "lat": 42.38100143038052,
     "long": -71.10402522613185,
-    "photo": "photos/30-dane-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-08",
+        "photo": "photos/30-dane-st_2019-06-08.jpg"
+      }
+    ]
   },
   {
     "id": 331,
@@ -2768,14 +2818,24 @@ export default [
     "name": "Perry Park",
     "lat": 42.37927324600841,
     "long": -71.10341902831351,
-    "photo": "photos/perry-park.jpg"
+    "photos": [
+      {
+        "date": "2019-06-08",
+        "photo": "photos/perry-park_2019-06-08.jpg"
+      }
+    ]
   },
   {
     "id": 378,
     "name": "191 Beacon St",
     "lat": 42.38032335045416,
     "long": -71.10878612855231,
-    "photo": "photos/191-beacon-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-08",
+        "photo": "photos/191-beacon-st_2019-06-08.jpg"
+      }
+    ]
   },
   {
     "id": 379,
