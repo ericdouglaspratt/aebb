@@ -275,5 +275,25 @@ export default [
     date: '2020-05-31',
     description: 'Fenway / South End / Back Bay Loop',
     stations: [33, 361, 446, 233, 19, 32, 122, 400, 5, 404, 364, 25, 379, 417, 415, 370, 384, 372, 352, 361]
+  },
+  {
+    id: '30',
+    date: '2020-06-07',
+    description: 'Seaport / Dorchester Loop',
+    stations: [157, 296, 92, 445, 167, 173, 205, 203, 130, 128, 138, 13, 385, 26, 412, 399, 426, 157],
+    photos: [
+      {
+        full: 'photos/2020-06-07-001.jpg',
+        lat: 42.321121,
+        lng: -71.042030,
+        thumb: 'photos/2020-06-07-001-thumb.jpg'
+      },
+      {
+        full: 'photos/2020-06-07-002.jpg',
+        lat: 42.324650,
+        lng: -71.065274,
+        thumb: 'photos/2020-06-07-002-thumb.jpg'
+      }
+    ]
   }
 ];

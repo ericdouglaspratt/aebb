@@ -113,7 +113,13 @@ export default [
     "id": 13,
     "name": "Boston Medical Center - E Concord St at Harrison Ave",
     "lat": 42.33639915372498,
-    "long": -71.07306711393903
+    "long": -71.07306711393903,
+    "photos": [
+      {
+        "date": "2020-06-07",
+        "photo": "photos/e-concord-st-at-harrison-ave_2020-06-07.jpg"
+      }
+    ]
   },
   {
     "id": 14,
@@ -242,6 +248,10 @@ export default [
       {
         "date": "2019-06-01",
         "photo": "photos/washington-st-at-waltham-st_2019-06-01.jpg"
+      },
+      {
+        "date": "2020-06-07",
+        "photo": "photos/washington-st-at-waltham-st_2020-06-07.jpg"
       }
     ]
   },
@@ -936,7 +946,13 @@ export default [
     "id": 92,
     "name": "University of Massachusetts Boston - Campus Center",
     "lat": 42.31218918475612,
-    "long": -71.03648586203235
+    "long": -71.03648586203235,
+    "photos": [
+      {
+        "date": "2020-06-07",
+        "photo": "photos/umass-boston_2020-06-07.jpg"
+      }
+    ]
   },
   {
     "id": 93,
@@ -1260,7 +1276,13 @@ export default [
     "id": 128,
     "name": "E Cottage St at Columbia Rd",
     "lat": 42.320561,
-    "long": -71.06198
+    "long": -71.06198,
+    "photos": [
+      {
+        "date": "2020-06-07",
+        "photo": "photos/e-cottage-st-at-columbia-rd_2020-06-07.jpg"
+      }
+    ]
   },
   {
     "id": 129,
@@ -1278,7 +1300,13 @@ export default [
     "id": 130,
     "name": "Uphams Corner",
     "lat": 42.31727474327453,
-    "long": -71.06537003967787
+    "long": -71.06537003967787,
+    "photos": [
+      {
+        "date": "2020-06-07",
+        "photo": "photos/uphams-corner_2020-06-07.jpg"
+      }
+    ]
   },
   {
     "id": 131,
@@ -1356,7 +1384,13 @@ export default [
     "id": 138,
     "name": "Newmarket Square T Stop - Massachusetts Ave at Newmarket Square",
     "lat": 42.326599,
-    "long": -71.066498
+    "long": -71.066498,
+    "photos": [
+      {
+        "date": "2020-06-07",
+        "photo": "photos/newmarket-square-t-stop_2020-06-07.jpg"
+      }
+    ]
   },
   {
     "id": 139,
@@ -1502,6 +1536,10 @@ export default [
       {
         "date": "2019-05-17",
         "photo": "photos/seaport-blvd-at-sleeper-st_2019-05-17.jpg"
+      },
+      {
+        "date": "2020-06-07",
+        "photo": "photos/seaport-blvd-at-sleeper-st_2020-06-07.jpg"
       }
     ]
   },
@@ -1562,7 +1600,13 @@ export default [
     "id": 167,
     "name": "Ryan Playground - Dorchester Ave at Harbor View St",
     "lat": 42.317642,
-    "long": -71.056664
+    "long": -71.056664,
+    "photos": [
+      {
+        "date": "2020-06-07",
+        "photo": "photos/dorchester-ave-at-harbor-view-st_2020-06-07.jpg"
+      }
+    ]
   },
   {
     "id": 169,
@@ -1598,7 +1642,13 @@ export default [
     "id": 173,
     "name": "Savin Hill T Stop - S Sydney St at Bay St",
     "lat": 42.3106,
-    "long": -71.0539
+    "long": -71.0539,
+    "photos": [
+      {
+        "date": "2020-06-07",
+        "photo": "photos/savin-hill-t-stop_2020-06-07.jpg"
+      }
+    ]
   },
   {
     "id": 174,
@@ -1870,7 +1920,13 @@ export default [
     "id": 203,
     "name": "Columbia Rd at Ceylon St",
     "lat": 42.309572,
-    "long": -71.0729
+    "long": -71.0729,
+    "photos": [
+      {
+        "date": "2020-06-07",
+        "photo": "photos/columbia-rd-at-ceylon-st_2020-06-07.jpg"
+      }
+    ]
   },
   {
     "id": 204,
@@ -1888,7 +1944,13 @@ export default [
     "id": 205,
     "name": "Bowdoin St at Quincy St",
     "lat": 42.30785224238503,
-    "long": -71.06512248516083
+    "long": -71.06512248516083,
+    "photos": [
+      {
+        "date": "2020-06-07",
+        "photo": "photos/bowdoin-st-at-quincy-st_2020-06-07.jpg"
+      }
+    ]
   },
   {
     "id": 206,
@@ -2265,7 +2327,13 @@ export default [
     "id": 296,
     "name": "Farragut Rd at E. 6th St",
     "lat": 42.3334,
-    "long": -71.02495
+    "long": -71.02495,
+    "photos": [
+      {
+        "date": "2020-06-07",
+        "photo": "photos/farragut-rd-at-e-6th-st_2020-06-07.jpg"
+      }
+    ]
   },
   {
     "id": 318,
@@ -2739,7 +2807,13 @@ export default [
     "id": 385,
     "name": "Albany St at E. Brookline St",
     "lat": 42.33664795427071,
-    "long": -71.0689445958451
+    "long": -71.0689445958451,
+    "photos": [
+      {
+        "date": "2020-06-07",
+        "photo": "photos/albany-st-at-e-brookline-st_2020-06-07.jpg"
+      }
+    ]
   },
   {
     "id": 386,
@@ -2830,7 +2904,13 @@ export default [
     "id": 399,
     "name": "Shawmut Ave at Oak St W",
     "lat": 42.34854543411198,
-    "long": -71.06559185315746
+    "long": -71.06559185315746,
+    "photos": [
+      {
+        "date": "2020-06-07",
+        "photo": "photos/shawmut-ave-at-oak-st-w_2020-06-07.jpg"
+      }
+    ]
   },
   {
     "id": 400,
@@ -2912,7 +2992,13 @@ export default [
     "id": 412,
     "name": "Washington St at Peters Park",
     "lat": 42.34303291130257,
-    "long": -71.06688730436872
+    "long": -71.06688730436872,
+    "photos": [
+      {
+        "date": "2020-06-07",
+        "photo": "photos/washington-st-at-peters-park_2020-06-07.jpg"
+      }
+    ]
   },
   {
     "id": 413,
@@ -2992,7 +3078,13 @@ export default [
     "id": 426,
     "name": "Surface Rd at Summer St",
     "lat": 42.35294569782581,
-    "long": -71.05656400803126
+    "long": -71.05656400803126,
+    "photos": [
+      {
+        "date": "2020-06-07",
+        "photo": "photos/surface-rd-at-summer-st_2020-06-07.jpg"
+      }
+    ]
   },
   {
     "id": 427,
@@ -3098,7 +3190,13 @@ export default [
     "name": "Geiger Gibson Community Health Center",
     "lat": 42.31886468217537,
     "long": -71.04536797860419,
-    "discovered": 1578755015509
+    "discovered": 1578755015509,
+    "photos": [
+      {
+        "date": "2020-06-07",
+        "photo": "photos/geiger-gibson-community-health-center_2020-06-07.jpg"
+      }
+    ]
   },
   {
     "id": 446,

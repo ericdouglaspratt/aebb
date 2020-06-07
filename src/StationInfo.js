@@ -6,6 +6,9 @@ const StationInfo = ({ station, trips }) => {
   // const stationTrips = trips.list.filter(trip => trip.stations.indexOf(station.id) > -1);
   const photo = station.photos && station.photos.length > 0 ? station.photos[station.photos.length - 1].photo : station.photo;
 
+  // make it easy to see id of stations for trip marking
+  // console.log(`${station.name} (${station.id})`);
+
   return (
     <div className="StationInfo">
       {photo && (
