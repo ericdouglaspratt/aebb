@@ -28,7 +28,12 @@ export default [
     "name": "Northeastern University - North Parking Lot",
     "lat": 42.341814,
     "long": -71.090179,
-    "photo": "photos/northeastern-north-lot.jpg"
+    "photos": [
+      {
+        "date": "2020-05-31",
+        "photo": "photos/northeastern-north-lot_2020-05-31.jpg"
+      }
+    ]
   },
   {
     "id": 6,
@@ -162,7 +167,12 @@ export default [
     "name": "Park Dr at Buswell St",
     "lat": 42.347241,
     "long": -71.105301,
-    "photo": "photos/park-dr-at-buswell-st.jpg"
+    "photos": [
+      {
+        "date": "2020-05-31",
+        "photo": "photos/park-dr-at-buswell-st_2020-05-31.jpg"
+      }
+    ]
   },
   {
     "id": 20,
@@ -234,8 +244,8 @@ export default [
         "photo": "photos/south-end-library_2018-06-24.jpg"
       },
       {
-        "date": "",
-        "photo": "photos/south-end-library-tremont-st-at-w-newton-st.jpg"
+        "date": "2020-05-31",
+        "photo": "photos/south-end-library-tremont-st-at-w-newton-st_2020-05-31.jpg"
       }
     ]
   },
@@ -302,7 +312,12 @@ export default [
     "name": "Landmark Center - Brookline Ave at Park Dr",
     "lat": 42.34519428944095,
     "long": -71.1016970872879,
-    "photo": "photos/landmark-center-brookline-ave-at-park-dr.jpg"
+    "photos": [
+      {
+        "date": "2020-05-31",
+        "photo": "photos/landmark-center-brookline-ave-at-park-dr_2020-05-31.jpg"
+      }
+    ]
   },
   {
     "id": 33,
@@ -315,8 +330,8 @@ export default [
         "photo": "photos/kenmore-square_2018-09-08.jpg"
       },
       {
-        "date": "",
-        "photo": "photos/kenmore-square.jpg"
+        "date": "2020-05-31",
+        "photo": "photos/kenmore-square_2020-05-31.jpg"
       }
     ]
   },
@@ -1269,7 +1284,12 @@ export default [
     "name": "Burlington Ave at Brookline Ave",
     "lat": 42.345733,
     "long": -71.100694,
-    "photo": "photos/burlington-ave-at-brookline-ave.jpg"
+    "photos": [
+      {
+        "date": "2020-05-31",
+        "photo": "photos/burlington-ave-at-brookline-ave_2020-05-31.jpg"
+      }
+    ]
   },
   {
     "id": 124,
@@ -2234,7 +2254,12 @@ export default [
     "name": "St Mary's",
     "lat": 42.346197076555455,
     "long": -71.10728681087494,
-    "photo": "photos/st-marys.jpg"
+    "photos": [
+      {
+        "date": "2020-05-31",
+        "photo": "photos/st-marys_2020-05-31.jpg"
+      }
+    ]
   },
   {
     "id": 234,
@@ -2628,7 +2653,12 @@ export default [
     "name": "Ring Rd",
     "lat": 42.348278385426255,
     "long": -71.08044855314802,
-    "photo": "photos/ring-rd-at-prudential-center.jpg"
+    "photos": [
+      {
+        "date": "2020-05-31",
+        "photo": "photos/ring-rd-at-prudential-center_2020-05-31.jpg"
+      }
+    ]
   },
   {
     "id": 353,
@@ -2704,7 +2734,12 @@ export default [
     "name": "Deerfield St at Commonwealth Ave",
     "lat": 42.34924376955301,
     "long": -71.09728209692548,
-    "photo": "photos/deerfield-st-at-commonwealth-ave.jpg"
+    "photos": [
+      {
+        "date": "2020-05-31",
+        "photo": "photos/deerfield-st-at-commonwealth-ave_2020-05-31.jpg"
+      }
+    ]
   },
   {
     "id": 362,
@@ -2729,7 +2764,12 @@ export default [
     "name": "Tremont St at Northampton St",
     "lat": 42.33889559644165,
     "long": -71.08149975611013,
-    "photo": "photos/tremont-st-at-northampton-st.jpg"
+    "photos": [
+      {
+        "date": "2020-05-31",
+        "photo": "photos/tremont-st-at-northampton-st_2020-05-31.jpg"
+      }
+    ]
   },
   {
     "id": 365,
@@ -2779,7 +2819,12 @@ export default [
     "name": "Dartmouth St at Newbury St",
     "lat": 42.35096144421219,
     "long": -71.07782810926437,
-    "photo": "photos/dartmouth-st-at-newbury-st.jpg"
+    "photos": [
+      {
+        "date": "2020-05-31",
+        "photo": "photos/dartmouth-st-at-newbury-st_2020-05-31.jpg"
+      }
+    ]
   },
   {
     "id": 371,
@@ -2792,7 +2837,12 @@ export default [
     "name": "Boylston St at Exeter St",
     "lat": 42.349589423682445,
     "long": -71.0794677917329,
-    "photo": "photos/boylston-st-at-exeter-st.jpg"
+    "photos": [
+      {
+        "date": "2020-05-31",
+        "photo": "photos/boylston-st-at-exeter-st_2020-05-31.jpg"
+      }
+    ]
   },
   {
     "id": 373,
@@ -2842,7 +2892,12 @@ export default [
     "name": "Tremont St at W. Dedham St",
     "lat": 42.34254913737952,
     "long": -71.07421449387857,
-    "photo": "photos/tremont-st-at-w-dedham-st.jpg"
+    "photos": [
+      {
+        "date": "2020-05-31",
+        "photo": "photos/tremont-st-at-w-dedham-st_2020-05-31.jpg"
+      }
+    ]
   },
   {
     "id": 380,
@@ -2861,7 +2916,12 @@ export default [
     "name": "Clarendon St at Newbury St",
     "lat": 42.35155308466532,
     "long": -71.0756903143556,
-    "photo": "photos/clarendon-st-at-newbury-st.jpg"
+    "photos": [
+      {
+        "date": "2020-05-31",
+        "photo": "photos/clarendon-st-at-newbury-st_2020-05-31.jpg"
+      }
+    ]
   },
   {
     "id": 385,
@@ -2977,7 +3037,12 @@ export default [
     "name": "Lansdowne T Stop",
     "lat": 42.34734473177431,
     "long": -71.1001680795016,
-    "photo": "photos/lansdowne-t-stop.jpg"
+    "photos": [
+      {
+        "date": "2020-05-31",
+        "photo": "photos/lansdowne-t-stop_2020-05-31.jpg"
+      }
+    ]
   },
   {
     "id": 401,
@@ -3002,7 +3067,12 @@ export default [
     "name": "Mass Ave T Station",
     "lat": 42.34135615767354,
     "long": -71.08336953450817,
-    "photo": "photos/massachusetts-ave-t-stop.jpg"
+    "photos": [
+      {
+        "date": "2020-05-31",
+        "photo": "photos/massachusetts-ave-t-stop_2020-05-31.jpg"
+      }
+    ]
   },
   {
     "id": 405,
@@ -3077,7 +3147,12 @@ export default [
     "name": "Stuart St at Berkeley St",
     "lat": 42.34954403114251,
     "long": -71.0724207387284,
-    "photo": "photos/stuart-st-at-berkeley-st.jpg"
+    "photos": [
+      {
+        "date": "2020-05-31",
+        "photo": "photos/stuart-st-at-berkeley-st_2020-05-31.jpg"
+      }
+    ]
   },
   {
     "id": 416,
@@ -3090,7 +3165,12 @@ export default [
     "name": "Columbus Ave at W. Canton St",
     "lat": 42.34474224772802,
     "long": -71.07648162175792,
-    "photo": "photos/columbus-ave-at-w-canton-st.jpg"
+    "photos": [
+      {
+        "date": "2020-05-31",
+        "photo": "photos/columbus-ave-at-w-canton-st_2020-05-31.jpg"
+      }
+    ]
   },
   {
     "id": 419,
@@ -3264,6 +3344,11 @@ export default [
     "lat": 42.34960945333059,
     "long": -71.10391523698127,
     "discovered": 1578755015509,
-    "photo": "photos/700-commonwealth-ave.jpg"
+    "photos": [
+      {
+        "date": "2020-05-31",
+        "photo": "photos/700-commonwealth-ave_2020-05-31.jpg"
+      }
+    ]
   }
 ];

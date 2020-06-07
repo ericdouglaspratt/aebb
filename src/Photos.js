@@ -2,7 +2,7 @@ import React from 'react';
 import moment from 'moment';
 import './Photos.css';
 
-const Photos = ({stations, trips}) => {
+const Photos = ({ onClickStation, stations, trips }) => {
   const reversedTrips = trips.list.slice().reverse();
   return (
     <div className="Photos">
@@ -27,11 +27,19 @@ const Photos = ({stations, trips}) => {
                 if (photo) {
                   const className = photo === station.photo ? "Photos-image Photos-image--old" : "Photos-image";
                   return (
-                    <div className={className} key={`${trip.date}${photo}${index}`} style={{ backgroundImage: `url(${photo})` }} />
+                    <button
+                      className={className} key={`${trip.date}${photo}${index}`}
+                      onClick={() => onClickStation(stationId)}
+                      style={{ backgroundImage: `url(${photo})` }}
+                    />
                   );
                 } else {
                   return (
-                    <div className="Photos-noImage" key={`${stationId}${trip.date}${index}`} />
+                    <button
+                      className="Photos-noImage"
+                      key={`${stationId}${trip.date}${index}`}
+                      onClick={() => onClickStation(stationId)}
+                    />
                   );
                 }
               })}

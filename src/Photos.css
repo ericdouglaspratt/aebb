@@ -13,10 +13,28 @@
 }
 .Photos-image,
 .Photos-noImage {
+  border: none;
   border-radius: 4px;
+  cursor: pointer;
   margin-bottom: 10px;
   margin-right: 10px;
+  position: relative;
   width: 60px;
+}
+.Photos-image:focus,
+.Photos-noImage:focus {
+  outline: none;
+}
+.Photos-image:focus::after,
+.Photos-noImage:focus::after {
+  border: 2px solid #1967d2;
+  border-radius: 4px;
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .Photos-image {
   background-position: center center;

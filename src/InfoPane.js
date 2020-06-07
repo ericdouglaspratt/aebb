@@ -130,6 +130,7 @@ function InfoPane({
           </div>
           <div className="InfoPane-content">
             <Photos
+              onClickStation={handleClickStation}
               stations={stations}
               trips={trips}
             />
@@ -226,6 +227,7 @@ function InfoPane({
             <CancelButton label="Close" onClick={() => onViewDeactivate(VIEWS.PHOTOS)} />
           </div>
           <Photos
+            onClickStation={handleClickStation}
             stations={stations}
             trips={trips}
           />
