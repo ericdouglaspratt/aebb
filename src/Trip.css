@@ -9,12 +9,14 @@
 .Trip-description {
   font-size: 16px;
   font-weight: 500;
-  margin: 0;
+  margin: 2px 0 0;
 }
-.Trip-stations {
-  font-size: 16px;
-  font-weight: 400;
-  margin: 0;
+.Trip-stat {
+  font-size: 14px;
+  margin-top: 2px;
+}
+.Trip-statStationsNew {
+  color: #4db546;
 }
 .Trip-photos {
   display: flex;

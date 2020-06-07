@@ -10,7 +10,17 @@ const Trip = ({onClickPhoto, trip}) => {
       <div className="Trip-details">
         <h4 className="Trip-date">{dateStr}</h4>
         {!!trip.description && <p className="Trip-description">{trip.description}</p>}
-        <p className="Trip-stations">{trip.stations.length} stations</p>
+        <div className="Trip-stats">
+          <div className="Trip-stat">
+            <span className="Trip-statStationsNew">
+              {` ${trip.numNew} new stations`}
+            </span>
+            {` / ${trip.stations.length} total`}
+          </div>
+          <div className="Trip-stat">
+            {`${Math.round(trip.distance * 10) / 10} mi`}
+          </div>
+        </div>
       </div>
       {trip.photos && trip.photos.length > 0 && (
         <div className="Trip-photos">

@@ -2,18 +2,33 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 
 import { VIEWS } from './constants';
-import { createIdMap, diffStations, useStateRef } from './helpers';
+import { calculateDistance, createIdMap, diffStations, useStateRef } from './helpers';
 import cachedStationData from './data-stations';
 import rawTrips from './data-trips';
 
 import InfoPane from './InfoPane';
 import Map from './Map';
 
+// create initial stations pair
+const initialStations = {
+  list: cachedStationData,
+  lookup: createIdMap(cachedStationData)
+};
+
 // create visited station map and count number of new stations per trip
 const visitedStations = {};
-const preparedTrips = rawTrips.map(trip => {
+const processedTrips = rawTrips.map(trip => {
   return {
     ...trip,
+    distance: trip.stations.reduce((result, stationId, index) => {
+      if (index === 0) {
+        return result;
+      } else {
+        const prevStation = initialStations.lookup[trip.stations[index - 1]];
+        const currStation = initialStations.lookup[stationId];
+        return result + calculateDistance(prevStation.lat, prevStation.long, currStation.lat, currStation.long);
+      }
+    }, 0),
     numNew: trip.stations.reduce((result, stationId) => {
       if (!visitedStations[stationId]) {
         visitedStations[stationId] = true;
@@ -25,17 +40,14 @@ const preparedTrips = rawTrips.map(trip => {
   };
 });
 const trips = {
-  list: preparedTrips,
-  lookup: createIdMap(preparedTrips)
+  list: processedTrips,
+  lookup: createIdMap(processedTrips)
 };
 
 function App() {
   const [diffLog, setDiffLog] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [stations, setStations] = useState({
-    list: cachedStationData,
-    lookup: createIdMap(cachedStationData)
-  });
+  const [stations, setStations] = useState(initialStations);
 
   const [markedRouteRef, setMarkedRoute] = useStateRef([]);
   const [viewStackRef, setViewStack] = useStateRef([]);

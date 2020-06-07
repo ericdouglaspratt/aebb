@@ -5,19 +5,28 @@ import './Stats.css';
 
 import {indexOfMax} from './helpers';
 import StatsChart from './StatsChart';
+import TripButton from './TripButton';
 
-const Stats = ({ onClickStation, stations, trips }) => {
+const Stats = ({ onClickStation, onClickTrip, stations, trips }) => {
+  const [averageDistancePerTrip, setAverageDistancePerTrip] = useState(0);
   const [averageStationsPerTrip, setAverageStationsPerTrip] = useState(0);
   const [dayOfWeekFrequencies, setDayOfWeekFrequencies] = useState([]);
+  const [distancePerTripFrequencies, setDistancePerTripFrequencies] = useState([]);
   const [monthFrequencies, setMonthFrequencies] = useState([]);
   const [stationsPerTripFrequencies, setStationsPerTripFrequencies] = useState([]);
   const [topDayOfWeek, setTopDayOfWeek] = useState({});
   const [topMonth, setTopMonth] = useState({});
   const [topStations, setTopStations] = useState([]);
   const [topStationsPerTrip, setTopStationsPerTrip] = useState(0);
+  const [topTripsByDistance, setTopTripsByDistance] = useState([]);
+  const [topTripsByNumStations, setTopTripsByNumStations] = useState([]);
 
   useEffect(() => {
     if (trips && trips.list.length > 0) {
+      // calculate average stations per trip
+      const totalDistance = trips.list.reduce((result, trip) => result + trip.distance, 0);
+      setAverageDistancePerTrip(Math.round((totalDistance / trips.list.length) * 10) / 10);
+
       // calculate average stations per trip
       const totalStationVisits = trips.list.reduce((result, trip) => result + trip.stations.length, 0);
       setAverageStationsPerTrip(Math.round(totalStationVisits / trips.list.length));
@@ -35,6 +44,33 @@ const Stats = ({ onClickStation, stations, trips }) => {
         stationsPerTrip,
         numTrips: stationsPerTripMap[stationsPerTrip]
       })));
+
+      // calculate top trips by stations
+      const tripsSortedByNumStations = trips.list.slice().sort((a, b) => {
+        return a.stations.length > b.stations.length ? -1 : a.stations.length < b.stations.length ? 1 : 0;
+      });
+      setTopTripsByNumStations(tripsSortedByNumStations.slice(0, 4));
+
+      // calculate trips by distance
+      const tripsByDistanceMap = {};
+      trips.list.forEach(trip => {
+        const distance = Math.round(trip.distance);
+        if (tripsByDistanceMap[distance]) {
+          tripsByDistanceMap[distance]++;
+        } else {
+          tripsByDistanceMap[distance] = 1;
+        }
+      });
+      setDistancePerTripFrequencies(Object.keys(tripsByDistanceMap).map(tripsPerDistance => ({
+        tripsPerDistance,
+        numTrips: tripsByDistanceMap[tripsPerDistance]
+      })));
+
+      // calculate top trips by distance
+      const tripsSortedByDistance = trips.list.slice().sort((a, b) => {
+        return a.distance > b.distance ? -1 : a.distance < b.distance ? 1 : 0;
+      });
+      setTopTripsByDistance(tripsSortedByDistance.slice(0, 4));
 
       // calculate top stations per trip
       setTopStationsPerTrip(Math.max(...Object.keys(stationsPerTripMap)));
@@ -58,7 +94,7 @@ const Stats = ({ onClickStation, stations, trips }) => {
       stationVisits.sort((a, b) => {
         return a.numVisits > b.numVisits ? -1 : a.numVisits < b.numVisits ? 1 : 0;
       });
-      setTopStations(stationVisits.slice(0, 4));
+      setTopStations(stationVisits.slice(0, 6));
 
       // calculate top months
       const months = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -107,11 +143,11 @@ const Stats = ({ onClickStation, stations, trips }) => {
   return (
     <div className="Stats">
       <h6 className="Stats-header">
-        Total Number of Trips: {trips.list.length}
+        Total Trips: {trips.list.length}
       </h6>
 
       <h6 className="Stats-header">
-        Stations Per Trip
+        Top Trips by Stations
       </h6>
       <p className="Stats-subheader">
         Most is {topStationsPerTrip} stations, average is {averageStationsPerTrip}
@@ -121,6 +157,42 @@ const Stats = ({ onClickStation, stations, trips }) => {
         x="stationsPerTrip"
         y="numTrips"
       />
+      <div className="Stats-topTrips">
+        {topTripsByNumStations.map(trip => (
+          <TripButton
+            {...trip}
+            condensed
+            hideDistance
+            hidePhotos
+            key={trip.date}
+            onClick={() => onClickTrip(trip)}
+          />
+        ))}
+      </div>
+
+      <h6 className="Stats-header">
+        Top Trips by Distance
+      </h6>
+      <p className="Stats-subheader">
+        {`Most is ${topTripsByDistance.length && (Math.round(topTripsByDistance[0].distance * 10) / 10)} mi, average is ${averageDistancePerTrip} mi`}
+      </p>
+      <StatsChart
+        data={distancePerTripFrequencies}
+        x="tripsPerDistance"
+        y="numTrips"
+      />
+      <div className="Stats-topTrips">
+        {topTripsByDistance.map(trip => (
+          <TripButton
+            {...trip}
+            condensed
+            hidePhotos
+            hideStations
+            key={trip.date}
+            onClick={() => onClickTrip(trip)}
+          />
+        ))}
+      </div>
 
       <h6 className="Stats-header">
         Top Stations

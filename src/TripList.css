@@ -15,77 +15,6 @@
 .TripList-yearTrips {
   padding: 0 10px;
 }
-.TripList-trip.MuiButton-root {
-  border-radius: 0;
-  justify-content: flex-start;
-  margin: 4px 0;
-  position: relative;
-  scroll-margin: 70px;
-  text-transform: none;
-  width: 100%;
-}
-.TripList-trip.MuiButton-root + .TripList-trip.MuiButton-root::before {
-  border-top: 1px solid #DDD;
-  content: '';
-  position: absolute;
-  left: 8px;
-  right: 8px;
-  top: -4px;
-}
-.TripList-trip.MuiButton-root::after {
-  bottom: 0;
-  content: '';
-  position: absolute;
-  left: -4px;
-  top: 0;
-}
-.TripList-trip.MuiButton-root.TripList-trip:active::after {
-  border-right: 4px solid #1967d2;
-}
-.TripList-trip.MuiButton-root.TripList-trip--active::after {
-  border-right: 4px solid #1967d2;
-}
-.TripList-trip .MuiButton-label {
-  align-items: flex-start;
-  flex-flow: column nowrap;
-}
-.TripList-date {
-  font-size: 18px;
-  font-weight: 400;
-}
-.TripList-description {
-  font-size: 12px;
-  font-weight: 500;
-  margin-top: -6px;
-}
-.TripList-stats {
-  display: flex;
-  flex-flow: column wrap;
-  font-size: 12px;
-  font-weight: 400;
-  margin-top: 4px;
-  text-align: left;
-}
-.TripList-stat {
-  color: #808080;
-  margin-top: -4px;
-}
-.TripList-stat .MuiSvgIcon-root {
-  height: 14px;
-  position: relative;
-  margin-right: 2px;
-  top: -1px;
-  vertical-align: middle;
-  width: 14px;
-}
-.TripList-stat.TripList-statPhotos .MuiSvgIcon-root {
-  height: 12px;
-  margin: 0 3px 0 1px;
-  width: 12px;
-}
-.TripList-stationsNew {
-  color: #4db546;
-}
 
 @media (min-width: 768px) {
   .TripList {
@@ -93,11 +22,5 @@
   }
   .TripList-yearHeader {
     top: 0;
-  }
-  .TripList-trip.MuiButton-root::after {
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  }
-  .TripList-trip.MuiButton-root.TripList-trip:active::after {
-    border-right: none;
   }
 }

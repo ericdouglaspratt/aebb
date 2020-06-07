@@ -3,7 +3,7 @@
   padding: 0 10px 10px;
 }
 .Stats-header {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   margin: 20px 0 10px;
   text-transform: uppercase;
@@ -58,6 +58,7 @@
 .Stats-topStationName {
   display: block;
   font-weight: 500;
+  padding-right: 14px;
 }
 .Stats-topStationVisits {
   display: block;

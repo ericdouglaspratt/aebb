@@ -113,7 +113,7 @@ function InfoPane({
       ) : !!activeView && activeView.view === VIEWS.TRIP ? (
         <div className="InfoPane">
           <div className="InfoPane-header">
-            <BackButton label="Trip List" onClick={() => onViewDeactivate(VIEWS.TRIP_LIST)} />
+            <BackButton onClick={() => onViewDeactivate(VIEWS.TRIP_LIST)} />
           </div>
           <div className="InfoPane-content">
             <Trip
@@ -143,6 +143,7 @@ function InfoPane({
           <div className="InfoPane-content">
             <Stats
               onClickStation={handleClickStation}
+              onClickTrip={handleClickTrip}
               stations={stations}
               trips={trips}
             />
@@ -241,6 +242,7 @@ function InfoPane({
           </div>
           <Stats
             onClickStation={handleClickStation}
+            onClickTrip={handleClickTrip}
             stations={stations}
             trips={trips}
           />
