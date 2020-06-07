@@ -3,9 +3,10 @@ import moment from 'moment';
 import './Photos.css';
 
 const Photos = ({stations, trips}) => {
+  const reversedTrips = trips.list.slice().reverse();
   return (
     <div className="Photos">
-      {trips.list.map(trip => {
+      {reversedTrips.map(trip => {
         const dateStr = moment(trip.date, 'YYYY-MM-DD').format('MMM D, YYYY');
         return (
           <div className="Photos-day" key={trip.date}>

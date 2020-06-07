@@ -1,4 +1,5 @@
 .Photos {
+  margin-top: 50px;
   padding: 10px;
 }
 .Photos-header {
@@ -30,4 +31,11 @@
 .Photos-noImage {
   border: 3px dashed #ccc;
   padding-bottom: 52px;
+}
+
+@media (min-width: 768px) {
+  .Photos {
+    margin: 0;
+    padding: 10px;
+  }
 }

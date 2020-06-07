@@ -186,6 +186,10 @@ function InfoPane({
                       <ListItemIcon><Equalizer /></ListItemIcon>
                       Stats
                     </MenuItem>
+                    <MenuItem onClick={() => handleClickMenuItem(VIEWS.PHOTOS)}>
+                      <ListItemIcon><PhotoCamera /></ListItemIcon>
+                      Photos
+                    </MenuItem>
                     {/*<MenuItem onClick={() => handleClickMenuItem(VIEWS.ROUTE_MARKING)}>Mark a route</MenuItem>*/}
                   </MenuList>
                 </Drawer>
@@ -200,10 +204,10 @@ function InfoPane({
                     <ListItemIcon><Equalizer /></ListItemIcon>
                     Stats
                   </MenuItem>
-                  {/*<MenuItem onClick={() => handleClickMenuItem(VIEWS.PHOTOS)}>
+                  <MenuItem onClick={() => handleClickMenuItem(VIEWS.PHOTOS)}>
                     <ListItemIcon><PhotoCamera /></ListItemIcon>
                     Photos
-                  </MenuItem>*/}
+                  </MenuItem>
                   {/*<MenuItem onClick={() => handleClickMenuItem(VIEWS.ROUTE_MARKING)}>Mark a route</MenuItem>*/}
                 </MenuList>
               )}
@@ -214,15 +218,13 @@ function InfoPane({
       {breakpoint === BREAKPOINTS.MOBILE && (
         <Drawer
           anchor="bottom"
-          open={!!activeView && activeView.view === VIEWS.TRIP_LIST}
-          onClose={() => onViewDeactivate(VIEWS.TRIP_LIST)}
+          open={!!activeView && activeView.view === VIEWS.PHOTOS}
+          onClose={() => onViewDeactivate(VIEWS.PHOTOS)}
         >
           <div className="InfoPane-header InfoPane-header--inDrawer">
-            <CancelButton label="Close" onClick={() => onViewDeactivate(VIEWS.TRIP_LIST)} />
+            <CancelButton label="Close" onClick={() => onViewDeactivate(VIEWS.PHOTOS)} />
           </div>
-          <TripList
-            activeTrip={activeView && activeView.payload}
-            onClickTrip={handleClickTrip}
+          <Photos
             stations={stations}
             trips={trips}
           />
@@ -239,6 +241,23 @@ function InfoPane({
           </div>
           <Stats
             onClickStation={handleClickStation}
+            stations={stations}
+            trips={trips}
+          />
+        </Drawer>
+      )}
+      {breakpoint === BREAKPOINTS.MOBILE && (
+        <Drawer
+          anchor="bottom"
+          open={!!activeView && activeView.view === VIEWS.TRIP_LIST}
+          onClose={() => onViewDeactivate(VIEWS.TRIP_LIST)}
+        >
+          <div className="InfoPane-header InfoPane-header--inDrawer">
+            <CancelButton label="Close" onClick={() => onViewDeactivate(VIEWS.TRIP_LIST)} />
+          </div>
+          <TripList
+            activeTrip={activeView && activeView.payload}
+            onClickTrip={handleClickTrip}
             stations={stations}
             trips={trips}
           />
