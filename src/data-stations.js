@@ -2320,7 +2320,12 @@ export default [
     "name": "Gallivan Blvd at Adams St",
     "lat": 42.28297567840305,
     "long": -71.05466698296368,
-    "photo": "photos/gallivan-blvd-at-adams-st.jpg"
+    "photos": [
+      {
+        "date": "2020-05-24",
+        "photo": "photos/gallivan-blvd-at-adams-st_2020-05-24.jpg"
+      }
+    ]
   },
   {
     "id": 259,
@@ -2339,7 +2344,12 @@ export default [
     "name": "Fields Corner T Stop",
     "lat": 42.2996667,
     "long": -71.0605833,
-    "photo": "photos/fields-corner-t-stop.jpg"
+    "photos": [
+      {
+        "date": "2020-05-24",
+        "photo": "photos/fields-corner-t-stop_2020-05-24.jpg"
+      }
+    ]
   },
   {
     "id": 268,
@@ -2352,14 +2362,24 @@ export default [
     "name": "Ashmont T Stop",
     "lat": 42.2856944,
     "long": -71.0641389,
-    "photo": "photos/ashmont-t-stop.jpg"
+    "photos": [
+      {
+        "date": "2020-05-24",
+        "photo": "photos/ashmont-t-stop_2020-05-24.jpg"
+      }
+    ]
   },
   {
     "id": 272,
     "name": "Shawmut T Stop",
     "lat": 42.292917,
     "long": -71.06575,
-    "photo": "photos/shawmut-t-stop.jpg"
+    "photos": [
+      {
+        "date": "2020-05-24",
+        "photo": "photos/shawmut-t-stop_2020-05-24.jpg"
+      }
+    ]
   },
   {
     "id": 273,
@@ -3109,14 +3129,24 @@ export default [
     "name": "Adams St at Lonsdale St",
     "lat": 42.291679428741226,
     "long": -71.05726346409938,
-    "photo": "photos/adams-st-at-lonsdale-st.jpg"
+    "photos": [
+      {
+        "date": "2020-05-24",
+        "photo": "photos/adams-st-at-lonsdale-st_2020-05-24.jpg"
+      }
+    ]
   },
   {
     "id": 411,
     "name": "Dorchester Ave at King St",
     "lat": 42.29175621632091,
     "long": -71.0625918023743,
-    "photo": "photos/dorchester-ave-at-king-st.jpg"
+    "photos": [
+      {
+        "date": "2020-05-24",
+        "photo": "photos/dorchester-ave-at-king-st_2020-05-24.jpg"
+      }
+    ]
   },
   {
     "id": 412,
@@ -3244,7 +3274,12 @@ export default [
     "lat": 42.277194696397906,
     "long": -71.06955613950048,
     "discovered": 1571916631381,
-    "photo": "photos/washington-st-at-walsh-playground.jpg"
+    "photos": [
+      {
+        "date": "2020-05-24",
+        "photo": "photos/washington-st-at-walsh-playground_2020-05-24.jpg"
+      }
+    ]
   },
   {
     "id": 431,
@@ -3252,7 +3287,12 @@ export default [
     "lat": 42.281986277339136,
     "long": -71.07147924620222,
     "discovered": 1571916631381,
-    "photo": "photos/washington-st-at-fuller-st.jpg"
+    "photos": [
+      {
+        "date": "2020-05-24",
+        "photo": "photos/washington-st-at-fuller-st_2020-05-24.jpg"
+      }
+    ]
   },
   {
     "id": 432,
@@ -3281,7 +3321,12 @@ export default [
     "lat": 42.27094707029229,
     "long": -71.07337901405117,
     "discovered": 1571916631382,
-    "photo": "photos/river-st-at-central-ave.jpg"
+    "photos": [
+      {
+        "date": "2020-05-24",
+        "photo": "photos/river-st-at-central-ave_2020-05-24.jpg"
+      }
+    ]
   },
   {
     "id": 436,

@@ -206,11 +206,10 @@ function App() {
   //const selectedStationTrips = selectedStation ? trips.list.filter(trip => trip.stations.indexOf(selectedStation.id) > -1) : null;
   //const selectedStationGhostRoutes = selectedStationTrips ? selectedStationTrips.map(trip => trip.stations) : null;
 
-  // miles per trip
-  // stats for highest mileage
-  // stats for top stations expand from 4 to 6
-  // top stations per trip, link to trip
   // on mobile devices - try to grab location again as soon as they update, and give visual indication of recency
+  // in trip list, on right side, auto-generate an SVG of what the route looks like
+  // fix mobile view-centering padding when selecting a station
+  // fix mobile route-centering padding when trip has photos vs. when it doesn't
 
   return (
     <div className="App">

@@ -2,7 +2,9 @@ import React from 'react';
 import moment from 'moment';
 import './Photos.css';
 
-const Photos = ({ onClickStation, stations, trips }) => {
+import TripButton from './TripButton';
+
+const Photos = ({ onClickStation, onClickTrip, stations, trips }) => {
   const reversedTrips = trips.list.slice().reverse();
   return (
     <div className="Photos">
@@ -10,9 +12,13 @@ const Photos = ({ onClickStation, stations, trips }) => {
         const dateStr = moment(trip.date, 'YYYY-MM-DD').format('MMM D, YYYY');
         return (
           <div className="Photos-day" key={trip.date}>
-            <h6 className="Photos-header">
-              {dateStr}
-            </h6>
+            <TripButton
+              {...trip}
+              hideDistance
+              hidePhotos
+              hideStations
+              onClick={() => onClickTrip(trip)}
+            />
             <div className="Photos-dayImages">
               {trip.stations.map((stationId, index) => {
                 const station = stations.lookup[stationId];

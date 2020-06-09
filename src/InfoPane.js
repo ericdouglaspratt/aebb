@@ -131,6 +131,7 @@ function InfoPane({
           <div className="InfoPane-content">
             <Photos
               onClickStation={handleClickStation}
+              onClickTrip={handleClickTrip}
               stations={stations}
               trips={trips}
             />
@@ -228,6 +229,7 @@ function InfoPane({
           </div>
           <Photos
             onClickStation={handleClickStation}
+            onClickTrip={handleClickTrip}
             stations={stations}
             trips={trips}
           />
