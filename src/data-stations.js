@@ -915,7 +915,12 @@ export default [
     "name": "Brookline Village - Station Street at MBTA",
     "lat": 42.33274392304887,
     "long": -71.11626680949485,
-    "photo": "photos/brookline-village-pearl-st-at-mbta.jpg"
+    "photos": [
+      {
+        "date": "2019-06-12",
+        "photo": "photos/brookline-village-pearl-st-at-mbta_2019-06-12.jpg"
+      }
+    ]
   },
   {
     "id": 87,
@@ -1296,21 +1301,36 @@ export default [
     "name": "Curtis Hall - South St at Centre St",
     "lat": 42.309054,
     "long": -71.11543,
-    "photo": "photos/curtis-hall.jpg"
+    "photos": [
+      {
+        "date": "2019-06-12",
+        "photo": "photos/curtis-hall_2019-06-12.jpg"
+      }
+    ]
   },
   {
     "id": 125,
     "name": "Hyde Square - Barbara St at Centre St",
     "lat": 42.32176525723952,
     "long": -71.10984160567114,
-    "photo": "photos/hyde-square.jpg"
+    "photos": [
+      {
+        "date": "2019-06-12",
+        "photo": "photos/hyde-square_2019-06-12.jpg"
+      }
+    ]
   },
   {
     "id": 126,
     "name": "Egleston Square - Atherton St at Washington St",
     "lat": 42.315692,
     "long": -71.098634,
-    "photo": "photos/egleston-square.jpg"
+    "photos": [
+      {
+        "date": "2019-06-12",
+        "photo": "photos/egleston-square_2019-06-12.jpg"
+      }
+    ]
   },
   {
     "id": 128,
@@ -1369,6 +1389,10 @@ export default [
       {
         "date": "2018-06-24",
         "photo": "photos/green-street-t-stop_2018-06-24.jpg"
+      },
+      {
+        "date": "2019-06-12",
+        "photo": "photos/green-street-t-stop_2019-06-12.jpg"
       }
     ]
   },
@@ -1593,7 +1617,12 @@ export default [
     "name": "S Huntington Ave at Heath St",
     "lat": 42.32760387040573,
     "long": -71.11089169979095,
-    "photo": "photos/s-huntington-ave-at-heath-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-12",
+        "photo": "photos/s-huntington-ave-at-heath-st_2019-06-12.jpg"
+      }
+    ]
   },
   {
     "id": 160,
@@ -2392,7 +2421,12 @@ export default [
     "name": "Williams St at Washington St",
     "lat": 42.306539,
     "long": -71.107669,
-    "photo": "photos/williams-st-at-washington-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-12",
+        "photo": "photos/williams-st-at-washington-st_2019-06-12.jpg"
+      }
+    ]
   },
   {
     "id": 280,
@@ -2406,7 +2440,12 @@ export default [
     "name": "Stony Brook T Stop",
     "lat": 42.316966,
     "long": -71.104374,
-    "photo": "photos/stony-brook-t-stop.jpg"
+    "photos": [
+      {
+        "date": "2019-06-12",
+        "photo": "photos/stony-brook-t-stop_2019-06-12.jpg"
+      }
+    ]
   },
   {
     "id": 296,
@@ -2728,7 +2767,12 @@ export default [
     "name": "Centre St at Seaverns Ave",
     "lat": 42.3121203,
     "long": -71.1142981,
-    "photo": "photos/centre-st-at-seaverns-ave.jpg"
+    "photos": [
+      {
+        "date": "2019-06-12",
+        "photo": "photos/centre-st-at-seaverns-ave_2019-06-12.jpg"
+      }
+    ]
   },
   {
     "id": 358,
