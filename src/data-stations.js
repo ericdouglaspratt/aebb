@@ -2323,6 +2323,10 @@ export default [
       {
         "date": "2018-09-08",
         "photo": "photos/assembly-square-t-stop_2018-09-08.jpg"
+      },
+      {
+        "date": "2019-06-27",
+        "photo": "photos/assembly-square-t_2019-06-27.jpg"
       }
     ]
   },
@@ -3010,35 +3014,60 @@ export default [
     "name": "Norman St at Kelvin St",
     "lat": 42.40985877544303,
     "long": -71.06631867605756,
-    "photo": "photos/norman-st-at-kelvin-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-27",
+        "photo": "photos/norman-st-at-kelvin-st_2019-06-27.jpg"
+      }
+    ]
   },
   {
     "id": 388,
     "name": "Main Street at Carter Street",
     "lat": 42.40413,
     "long": -71.0613,
-    "photo": "photos/main-st-at-carter-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-27",
+        "photo": "photos/main-st-at-carter-st_2019-06-27.jpg"
+      }
+    ]
   },
   {
     "id": 389,
     "name": "Everett Square (Broadway at Chelsea St)",
     "lat": 42.40725945172653,
     "long": -71.05546381333625,
-    "photo": "photos/everett-square.jpg"
+    "photos": [
+      {
+        "date": "2019-06-27",
+        "photo": "photos/everett-square_2019-06-27.jpg"
+      }
+    ]
   },
   {
     "id": 390,
     "name": "Broadway at Lynde St",
     "lat": 42.39648358247693,
     "long": -71.06546759905541,
-    "photo": "photos/broadway-at-lynde-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-27",
+        "photo": "photos/broadway-at-lynde-st_2019-06-27.jpg"
+      }
+    ]
   },
   {
     "id": 391,
     "name": "Encore",
     "lat": 42.39329263225162,
     "long": -71.0724475979805,
-    "photo": "photos/encore.jpg"
+    "photos": [
+      {
+        "date": "2019-06-27",
+        "photo": "photos/encore_2019-06-27.jpg"
+      }
+    ]
   },
   {
     "id": 392,
@@ -3069,14 +3098,24 @@ export default [
     "name": "Main St at Beacon St",
     "lat": 42.4093300667225,
     "long": -71.06381878293178,
-    "photo": "photos/main-st-at-beacon-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-27",
+        "photo": "photos/main-st-at-beacon-st_2019-06-27.jpg"
+      }
+    ]
   },
   {
     "id": 397,
     "name": "Broadway at Beacham St",
     "lat": 42.39836059620832,
     "long": -71.06373842814719,
-    "photo": "photos/broadway-at-beacham-st.jpg"
+    "photos": [
+      {
+        "date": "2019-06-27",
+        "photo": "photos/broadway-at-beacham-st_2019-06-27.jpg"
+      }
+    ]
   },
   {
     "id": 398,

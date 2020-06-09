@@ -204,7 +204,27 @@ export default [
     color: '#fdcb6e',
     date: '2019-06-27',
     description: 'Assembly Square to Everett Square',
-    stations: [236, 391, 390, 397, 388, 387, 396, 389]
+    stations: [236, 391, 390, 397, 388, 387, 396, 389],
+    photos: [
+      {
+        full: 'photos/2019-06-27-001.jpg',
+        lat: 42.394293,
+        lng: -71.070602,
+        thumb: 'photos/2019-06-27-001-thumb.jpg'
+      },
+      {
+        full: 'photos/2019-06-27-002.jpg',
+        lat: 42.396735,
+        lng: -71.065267,
+        thumb: 'photos/2019-06-27-002-thumb.jpg'
+      },
+      {
+        full: 'photos/2019-06-27-003.jpg',
+        lat: 42.405230,
+        lng: -71.066686,
+        thumb: 'photos/2019-06-27-003-thumb.jpg'
+      }
+    ]
   },
   {
     id: '20',

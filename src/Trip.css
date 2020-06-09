@@ -26,13 +26,28 @@
 .Trip-photo {
   background-color: #ddd;
   background-position: center center;
+  background-repeat: no-repeat;
   background-size: contain;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  margin: 0 10px 10px 0;
+  margin: 10px 10px 0 0;
   padding-top: 25%;
+  position: relative;
   width: 25%;
+}
+.Trip-photo:focus {
+  outline: none;
+}
+.Trip-photo:focus::after {
+  border: 2px solid #1967d2;
+  border-radius: 4px;
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 @media (min-width: 768px) {
@@ -44,7 +59,7 @@
   }
   .Trip-photos {
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 0;
   }
   .Trip-photo {
