@@ -703,6 +703,10 @@ export default [
       {
         "date": "2018-09-08",
         "photo": "photos/central-square-at-mass-ave-essex-st_2018-09-08.jpg"
+      },
+      {
+        "date": "2020-06-14",
+        "photo": "photos/central-square-at-mass-ave-essex-st_2020-06-14.jpg"
       }
     ]
   },
@@ -1119,7 +1123,13 @@ export default [
     "id": 105,
     "name": "Lower Cambridgeport at Magazine St / Riverside Rd",
     "lat": 42.357218503176526,
-    "long": -71.1138716340065
+    "long": -71.1138716340065,
+    "photos": [
+      {
+        "date": "2020-06-14",
+        "photo": "photos/lower-cambridgeport-at-magazine-st-riverside-rd_2020-06-14.jpg"
+      }
+    ]
   },
   {
     "id": 106,
@@ -1460,7 +1470,13 @@ export default [
     "id": 139,
     "name": "Dana Park",
     "lat": 42.361780439606044,
-    "long": -71.10809952020645
+    "long": -71.10809952020645,
+    "photos": [
+      {
+        "date": "2020-06-14",
+        "photo": "photos/dana-park_2020-06-14.jpg"
+      }
+    ]
   },
   {
     "id": 140,
@@ -1609,6 +1625,10 @@ export default [
       {
         "date": "2020-06-07",
         "photo": "photos/seaport-blvd-at-sleeper-st_2020-06-07.jpg"
+      },
+      {
+        "date": "2020-06-14",
+        "photo": "photos/seaport-blvd-at-sleeper-st_2020-06-14.jpg"
       }
     ]
   },
@@ -1776,7 +1796,13 @@ export default [
     "id": 178,
     "name": "MIT Pacific St at Purrington St",
     "lat": 42.35957320109044,
-    "long": -71.10129475593567
+    "long": -71.10129475593567,
+    "photos": [
+      {
+        "date": "2020-06-14",
+        "photo": "photos/mit-at-pacific-st-purrington-st_2020-06-14.jpg"
+      }
+    ]
   },
   {
     "id": 179,
@@ -2971,7 +2997,13 @@ export default [
     "id": 380,
     "name": "Mass Ave at Albany St",
     "lat": 42.36135837662249,
-    "long": -71.09670273977825
+    "long": -71.09670273977825,
+    "photos": [
+      {
+        "date": "2020-06-14",
+        "photo": "photos/mass-ave-at-albany-st_2020-06-14.jpg"
+      }
+    ]
   },
   {
     "id": 381,
@@ -3247,7 +3279,13 @@ export default [
     "id": 413,
     "name": "Kennedy-Longfellow School 158 Spring St",
     "lat": 42.36955297756508,
-    "long": -71.08579014980933
+    "long": -71.08579014980933,
+    "photos": [
+      {
+        "date": "2020-06-14",
+        "photo": "photos/kennedy-longfellow-school-158-spring-st_2020-06-14.jpg"
+      }
+    ]
   },
   {
     "id": 414,
@@ -3271,7 +3309,13 @@ export default [
     "id": 416,
     "name": "Blossom St at Charles St",
     "lat": 42.36435589027983,
-    "long": -71.0695936904267
+    "long": -71.0695936904267,
+    "photos": [
+      {
+        "date": "2020-06-14",
+        "photo": "photos/blossom-st-at-charles-st_2020-06-14.jpg"
+      }
+    ]
   },
   {
     "id": 417,
@@ -3423,7 +3467,13 @@ export default [
     "name": "Berkshire Street at Cambridge Street",
     "lat": 42.37207657915397,
     "long": -71.08995433905875,
-    "discovered": 1571916631382
+    "discovered": 1571916631382,
+    "photos": [
+      {
+        "date": "2020-06-14",
+        "photo": "photos/berkshire-st-at-cambridge-st_2020-06-14.jpg"
+      }
+    ]
   },
   {
     "id": 440,

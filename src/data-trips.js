@@ -315,5 +315,25 @@ export default [
         thumb: 'photos/2020-06-07-002-thumb.jpg'
       }
     ]
+  },
+  {
+    id: '31',
+    date: '2020-06-14',
+    description: 'West End / Cambridge Loop',
+    stations: [426, 416, 413, 437, 380, 178, 139, 105, 68, 380, 416, 157, 59],
+    photos: [
+      {
+        full: 'photos/2020-06-14-001.jpg',
+        lat: 42.367951,
+        lng: -71.071168,
+        thumb: 'photos/2020-06-14-001-thumb.jpg'
+      },
+      {
+        full: 'photos/2020-06-14-002.jpg',
+        lat: 42.372009,
+        lng: -71.090179,
+        thumb: 'photos/2020-06-14-002-thumb.jpg'
+      }
+    ]
   }
 ];
