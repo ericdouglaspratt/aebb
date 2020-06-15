@@ -936,6 +936,10 @@ export default [
       {
         "date": "2017-08-13",
         "photo": "photos/spaulding-rehabilitation-hospital_2017-08-13.jpg"
+      },
+      {
+        "date": "2019-07-28",
+        "photo": "photos/spaulding-rehabilitation-hospital_2019-07-28.jpg"
       }
     ]
   },
@@ -1033,6 +1037,10 @@ export default [
       {
         "date": "2017-08-13",
         "photo": "photos/main-st-at-austin-st_2017-08-13.jpg"
+      },
+      {
+        "date": "2019-07-28",
+        "photo": "photos/main-st-at-austin-st_2019-07-28.jpg"
       }
     ]
   },
@@ -1081,6 +1089,10 @@ export default [
       {
         "date": "2017-08-13",
         "photo": "photos/warren-st-at-chelsea-st_2017-08-13.jpg"
+      },
+      {
+        "date": "2019-07-28",
+        "photo": "photos/warren-st-at-chelsea-st_2019-07-28.jpg"
       }
     ]
   },
@@ -1741,6 +1753,10 @@ export default [
       {
         "date": "2017-08-13",
         "photo": "photos/main-st-at-eden-st_2017-08-13.jpg"
+      },
+      {
+        "date": "2019-07-28",
+        "photo": "photos/main-st-at-eden-st_2019-07-28.jpg"
       }
     ]
   },
@@ -2503,7 +2519,12 @@ export default [
     "name": "Main St at Baldwin St",
     "lat": 42.380857,
     "long": -71.070629,
-    "photo": "photos/main-st-at-baldwin-st.jpg"
+    "photos": [
+      {
+        "date": "2019-07-28",
+        "photo": "photos/main-st-at-baldwin-st_2019-07-28.jpg"
+      }
+    ]
   },
   {
     "id": 282,
@@ -2546,7 +2567,12 @@ export default [
     "name": "Main St at Thompson Sq",
     "lat": 42.374878467440965,
     "long": -71.06383498767171,
-    "photo": "photos/main-st-at-thompson-sq.jpg"
+    "photos": [
+      {
+        "date": "2019-07-28",
+        "photo": "photos/main-st-at-thompson-sq_2019-07-28.jpg"
+      }
+    ]
   },
   {
     "id": 328,
@@ -2835,7 +2861,12 @@ export default [
     "name": "Charlestown Navy Yard",
     "lat": 42.374124549426526,
     "long": -71.05481199938367,
-    "photo": "photos/charlestown-navy-yard.jpg"
+    "photos": [
+      {
+        "date": "2019-07-28",
+        "photo": "photos/charlestown-navy-yard_2019-07-28.jpg"
+      }
+    ]
   },
   {
     "id": 357,
@@ -2854,7 +2885,12 @@ export default [
     "name": "Medford St at Charlestown BCYF",
     "lat": 42.380429474494896,
     "long": -71.06055721676967,
-    "photo": "photos/medford-st-at-charlestown-bcyf.jpg"
+    "photos": [
+      {
+        "date": "2019-07-28",
+        "photo": "photos/medford-st-at-charlestown-bcyf_2019-07-28.jpg"
+      }
+    ]
   },
   {
     "id": 359,
