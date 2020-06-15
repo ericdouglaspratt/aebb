@@ -40,7 +40,12 @@ export default [
     "name": "Cambridge St at Joy St",
     "lat": 42.36125721646537,
     "long": -71.06528744101524,
-    "photo": "photos/cambridge-st-at-joy-st.jpg"
+    "photos": [
+      {
+        "date": "2019-07-02",
+        "photo": "photos/cambridge-st-at-joy-st_2019-07-02.jpg"
+      }
+    ]
   },
   {
     "id": 7,
@@ -219,7 +224,12 @@ export default [
     "name": "Boston City Hall - 28 State St",
     "lat": 42.35892,
     "long": -71.057629,
-    "photo": "photos/28-state-st.jpg"
+    "photos": [
+      {
+        "date": "2019-07-02",
+        "photo": "photos/28-state-st_2019-07-02.jpg"
+      }
+    ]
   },
   {
     "id": 24,
@@ -340,7 +350,12 @@ export default [
     "name": "Arch St at Franklin St",
     "lat": 42.355335019412564,
     "long": -71.0582291708306,
-    "photo": "photos/arch-st-at-franklin-st.jpg"
+    "photos": [
+      {
+        "date": "2019-07-02",
+        "photo": "photos/arch-st-at-franklin-st_2019-07-02.jpg"
+      }
+    ]
   },
   {
     "id": 36,
@@ -477,7 +492,12 @@ export default [
     "name": "Post Office Square",
     "lat": 42.35585435522005,
     "long": -71.05459745998814,
-    "photo": "photos/post-office-square.jpg"
+    "photos": [
+      {
+        "date": "2019-07-02",
+        "photo": "photos/post-office-square_2019-07-02.jpg"
+      }
+    ]
   },
   {
     "id": 49,
@@ -544,7 +564,12 @@ export default [
     "name": "Tremont St at West St",
     "lat": 42.354979,
     "long": -71.063348,
-    "photo": "photos/tremont-st-at-west-st.jpg"
+    "photos": [
+      {
+        "date": "2019-07-02",
+        "photo": "photos/tremont-st-at-west-st_2019-07-02.jpg"
+      }
+    ]
   },
   {
     "id": 55,
@@ -1166,7 +1191,12 @@ export default [
     "name": "West End Park",
     "lat": 42.36590788445084,
     "long": -71.06446668505669,
-    "photo": "photos/west-end-park.jpg"
+    "photos": [
+      {
+        "date": "2019-07-02",
+        "photo": "photos/west-end-park_2019-07-02.jpg"
+      }
+    ]
   },
   {
     "id": 110,
@@ -1917,7 +1947,12 @@ export default [
     "name": "Nashua Street at Red Auerbach Way",
     "lat": 42.365673,
     "long": -71.064263,
-    "photo": "photos/nashua-st-at-red-auerbach-way.jpg"
+    "photos": [
+      {
+        "date": "2019-07-02",
+        "photo": "photos/nashua-st-at-red-auerbach-way_2019-07-02.jpg"
+      }
+    ]
   },
   {
     "id": 191,
@@ -2062,7 +2097,12 @@ export default [
     "name": "Government Center - Cambridge St at Court St",
     "lat": 42.359802515995526,
     "long": -71.05960782626425,
-    "photo": "photos/government-center.jpg"
+    "photos": [
+      {
+        "date": "2019-07-02",
+        "photo": "photos/government-center_2019-07-02.jpg"
+      }
+    ]
   },
   {
     "id": 207,
@@ -2663,7 +2703,12 @@ export default [
     "name": "Park Plaza at Charles St S.",
     "lat": 42.351828068920675,
     "long": -71.06781138111728,
-    "photo": "photos/park-plaza-at-charles-st-s.jpg"
+    "photos": [
+      {
+        "date": "2019-07-02",
+        "photo": "photos/park-plaza-at-charles-st-s_2019-07-02.jpg"
+      }
+    ]
   },
   {
     "id": 346,
@@ -2906,7 +2951,12 @@ export default [
     "name": "Boston Public Market",
     "lat": 42.36254854409333,
     "long": -71.0573735833168,
-    "photo": "photos/boston-public-market.jpg"
+    "photos": [
+      {
+        "date": "2019-07-02",
+        "photo": "photos/boston-public-market_2019-07-02.jpg"
+      }
+    ]
   },
   {
     "id": 370,
@@ -2949,7 +2999,12 @@ export default [
     "name": "Tremont St at Hamilton Pl",
     "lat": 42.35668334969929,
     "long": -71.06166645884514,
-    "photo": "photos/tremont-st-at-hamilton-pl.jpg"
+    "photos": [
+      {
+        "date": "2019-07-02",
+        "photo": "photos/tremont-st-at-hamilton-pl_2019-07-02.jpg"
+      }
+    ]
   },
   {
     "id": 376,
