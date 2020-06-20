@@ -128,6 +128,16 @@ function App() {
       .then(data => {
         const { diffLog, updatedStationList } = diffStations(stations.list, data.stations, visitedMap);
         setDiffLog(diffLog);
+        /*const output = updatedStationList.map(item => {
+          const a = {
+            ...item
+          };
+          delete a.bikesAvailable;
+          delete a.docksAvailable;
+          delete a.isInactive;
+          return a;
+        });
+        console.log(JSON.stringify(output));*/
         setStations({
           list: updatedStationList,
           lookup: createIdMap(updatedStationList)

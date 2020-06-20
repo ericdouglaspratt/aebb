@@ -320,8 +320,8 @@ export default [
   {
     "id": 32,
     "name": "Landmark Center - Brookline Ave at Park Dr",
-    "lat": 42.34519428944095,
-    "long": -71.1016970872879,
+    "lat": 42.343690557197476,
+    "long": -71.10235286881107,
     "photos": [
       {
         "date": "2020-05-31",
@@ -452,18 +452,6 @@ export default [
     "long": -71.05752243543975
   },
   {
-    "id": 45,
-    "name": "Jersey St. at Boylston St.",
-    "lat": 42.3446808403874,
-    "long": -71.09785348176956,
-    "photos": [
-      {
-        "date": "2018-06-23",
-        "photo": "photos/jersey-st-at-boylston-st_2018-06-23.jpg"
-      }
-    ]
-  },
-  {
     "id": 46,
     "name": "Christian Science Plaza - Massachusetts Ave at Westland Ave",
     "lat": 42.3436658245146,
@@ -574,8 +562,8 @@ export default [
   {
     "id": 55,
     "name": "Boylston St at Massachusetts Ave",
-    "lat": 42.347265,
-    "long": -71.088088,
+    "lat": 42.34740620525209,
+    "long": -71.08678414955648,
     "photos": [
       {
         "date": "2018-06-23",
@@ -966,19 +954,6 @@ export default [
         "photo": "photos/harvard-university-housing-putnam-ave-at-peabody-terrace_2019-05-11.jpg"
       }
     ]
-  },
-  {
-    "id": 88,
-    "name": "Inman Square at Vellucci Plaza / Hampshire St",
-    "lat": 42.374035,
-    "long": -71.101427,
-    "photos": [
-      {
-        "date": "2018-09-08",
-        "photo": "photos/inman-square-at-vellucci-plaza_2018-09-08.jpg"
-      }
-    ],
-    "isLegacy": true
   },
   {
     "id": 89,
@@ -2121,12 +2096,6 @@ export default [
     ]
   },
   {
-    "id": 207,
-    "name": "Faneuil St at Market St",
-    "lat": 42.35484,
-    "long": -71.150226
-  },
-  {
     "id": 208,
     "name": "Oak Square - 615 Washington St",
     "lat": 42.35057,
@@ -2465,12 +2434,6 @@ export default [
         "photo": "photos/fields-corner-t-stop_2020-05-24.jpg"
       }
     ]
-  },
-  {
-    "id": 268,
-    "name": "Centre St at Knoll St",
-    "lat": 42.2938,
-    "long": -71.136941
   },
   {
     "id": 271,
@@ -3135,8 +3098,8 @@ export default [
   {
     "id": 387,
     "name": "Norman St at Kelvin St",
-    "lat": 42.40985877544303,
-    "long": -71.06631867605756,
+    "lat": 42.41143222973408,
+    "long": -71.06823265090497,
     "photos": [
       {
         "date": "2019-06-27",
@@ -3147,8 +3110,8 @@ export default [
   {
     "id": 388,
     "name": "Main Street at Carter Street",
-    "lat": 42.40413,
-    "long": -71.0613,
+    "lat": 42.406151572663504,
+    "long": -71.0604074504954,
     "photos": [
       {
         "date": "2019-06-27",
@@ -3165,6 +3128,10 @@ export default [
       {
         "date": "2019-06-27",
         "photo": "photos/everett-square_2019-06-27.jpg"
+      },
+      {
+        "date": "2020-06-20",
+        "photo": "photos/everett-square_2020-06-20.jpg"
       }
     ]
   },
@@ -3196,25 +3163,49 @@ export default [
     "id": 392,
     "name": "Glendale Square (Ferry St at Broadway)",
     "lat": 42.41427294293992,
-    "long": -71.04479655659816
+    "long": -71.04479655659816,
+    "photos": [
+      {
+        "date": "2020-06-20",
+        "photo": "photos/glendale-square_2020-06-20.jpg"
+      }
+    ]
   },
   {
     "id": 393,
     "name": "Ferry St at Pleasantview Ave",
     "lat": 42.412504507772105,
-    "long": -71.05842225271772
+    "long": -71.05842225271772,
+    "photos": [
+      {
+        "date": "2020-06-20",
+        "photo": "photos/ferry-st-at-pleasantview-ave_2020-06-20.jpg"
+      }
+    ]
   },
   {
     "id": 394,
     "name": "Broadway at Maple St",
     "lat": 42.410346909767846,
-    "long": -71.05260457852637
+    "long": -71.05260457852637,
+    "photos": [
+      {
+        "date": "2020-06-20",
+        "photo": "photos/broadway-at-maple-st_2020-06-20.jpg"
+      }
+    ]
   },
   {
     "id": 395,
     "name": "Chelsea St at Vine St",
     "lat": 42.40328056972533,
-    "long": -71.04762639859473
+    "long": -71.04762639859473,
+    "photos": [
+      {
+        "date": "2020-06-20",
+        "photo": "photos/chelsea-st-at-vine-st_2020-06-20.jpg"
+      }
+    ]
   },
   {
     "id": 396,
@@ -3619,5 +3610,58 @@ export default [
         "photo": "photos/700-commonwealth-ave_2020-05-31.jpg"
       }
     ]
+  },
+  {
+    "id": 447,
+    "name": "The Overlook at St. Gabriel's",
+    "lat": 42.34679008347347,
+    "long": -71.14549813806661,
+    "discovered": 1592690778175
+  },
+  {
+    "id": 448,
+    "name": "Hale Park",
+    "lat": 42.414962648832656,
+    "long": -71.05279301009432,
+    "discovered": 1592690778175,
+    "photos": [
+      {
+        "date": "2020-06-20",
+        "photo": "photos/hale-park_2020-06-20.jpg"
+      }
+    ]
+  },
+  {
+    "id": 449,
+    "name": "Test 6",
+    "lat": 0,
+    "long": 0,
+    "discovered": 1592690778175
+  },
+  {
+    "id": 45,
+    "name": "Jersey St. at Boylston St.",
+    "lat": 42.3446808403874,
+    "long": -71.09785348176956,
+    "photos": [
+      {
+        "date": "2018-06-23",
+        "photo": "photos/jersey-st-at-boylston-st_2018-06-23.jpg"
+      }
+    ],
+    "isLegacy": true
+  },
+  {
+    "id": 88,
+    "name": "Inman Square at Vellucci Plaza / Hampshire St",
+    "lat": 42.374035,
+    "long": -71.101427,
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/inman-square-at-vellucci-plaza_2018-09-08.jpg"
+      }
+    ],
+    "isLegacy": true
   }
 ];

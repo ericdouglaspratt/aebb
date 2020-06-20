@@ -335,5 +335,11 @@ export default [
         thumb: 'photos/2020-06-14-002-thumb.jpg'
       }
     ]
+  },
+  {
+    id: '32',
+    date: '2020-06-20',
+    description: 'Everett',
+    stations: [389, 394, 393, 448, 392, 395, 389]
   }
 ];
