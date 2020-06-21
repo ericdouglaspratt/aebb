@@ -2463,7 +2463,13 @@ export default [
     "id": 273,
     "name": "Forest Hills",
     "lat": 42.300923,
-    "long": -71.114249
+    "long": -71.114249,
+    "photos": [
+      {
+        "date": "2020-05-22",
+        "photo": "photos/forest-hills-t-stop_2020-05-22.jpg"
+      }
+    ]
   },
   {
     "id": 279,
@@ -2619,7 +2625,13 @@ export default [
     "id": 337,
     "name": "Roslindale Village - South St",
     "lat": 42.287072,
-    "long": -71.127754
+    "long": -71.127754,
+    "photos": [
+      {
+        "date": "2020-05-22",
+        "photo": "photos/roslindale-village-south-st_2020-05-22.jpg"
+      }
+    ]
   },
   {
     "id": 338,
@@ -2637,7 +2649,13 @@ export default [
     "id": 339,
     "name": "Archdale Rd at Washington St",
     "lat": 42.29266592872725,
-    "long": -71.12119538714069
+    "long": -71.12119538714069,
+    "photos": [
+      {
+        "date": "2020-05-22",
+        "photo": "photos/archdale-rd-at-washington-st_2020-05-22.jpg"
+      }
+    ]
   },
   {
     "id": 340,
@@ -2655,7 +2673,13 @@ export default [
     "id": 341,
     "name": "Roslindale Village - Washington St",
     "lat": 42.28630716010807,
-    "long": -71.12820532182013
+    "long": -71.12820532182013,
+    "photos": [
+      {
+        "date": "2020-05-22",
+        "photo": "photos/roslindale-village-washington-st_2020-05-24.jpg"
+      }
+    ]
   },
   {
     "id": 342,
@@ -3427,25 +3451,49 @@ export default [
     "id": 421,
     "name": "Northbourne Rd at Hyde Park Ave",
     "lat": 42.29118034790426,
-    "long": -71.117736660035
+    "long": -71.117736660035,
+    "photos": [
+      {
+        "date": "2020-05-22",
+        "photo": "photos/northbourne-rd-at-hyde-park-ave_2020-05-22.jpg"
+      }
+    ]
   },
   {
     "id": 422,
     "name": "American Legion Hwy at Canterbury St",
     "lat": 42.278811581565975,
-    "long": -71.11687703062671
+    "long": -71.11687703062671,
+    "photos": [
+      {
+        "date": "2020-05-22",
+        "photo": "photos/american-legion-hwy-at-canterbury-st_2020-05-22.jpg"
+      }
+    ]
   },
   {
     "id": 423,
     "name": "Mt. Hope St at Hyde Park Ave",
     "lat": 42.28484472443536,
-    "long": -71.11874517062459
+    "long": -71.11874517062459,
+    "photos": [
+      {
+        "date": "2020-05-22",
+        "photo": "photos/mt-hope-st-at-hyde-park-ave_2020-05-22.jpg"
+      }
+    ]
   },
   {
     "id": 424,
     "name": "Jamaica St at South St",
     "lat": 42.3060456272408,
-    "long": -71.11570891001975
+    "long": -71.11570891001975,
+    "photos": [
+      {
+        "date": "2020-05-22",
+        "photo": "photos/jamaica-st-at-south-st_2020-05-22.jpg"
+      }
+    ]
   },
   {
     "id": 425,
@@ -3576,7 +3624,13 @@ export default [
     "name": "Hyde Park Ave at Walk Hill St",
     "lat": 42.29606704649873,
     "long": -71.11601199963843,
-    "discovered": 1571916631382
+    "discovered": 1571916631382,
+    "photos": [
+      {
+        "date": "2020-05-22",
+        "photo": "photos/hyde-park-ave-at-walk-hill-st_2020-05-22.jpg"
+      }
+    ]
   },
   {
     "id": 443,
