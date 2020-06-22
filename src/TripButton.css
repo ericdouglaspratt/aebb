@@ -70,6 +70,9 @@
   vertical-align: middle;
   width: 14px;
 }
+.TripButton-stat.TripButton-statStations .MuiSvgIcon-root {
+  margin-right: 5px;
+}
 .TripButton-stat.TripButton-statPhotos .MuiSvgIcon-root {
   height: 12px;
   margin: 0 3px 0 1px;

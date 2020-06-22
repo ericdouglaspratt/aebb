@@ -18,6 +18,7 @@ const TripButton = React.forwardRef((
     isActive,
     numNew,
     onClick,
+    percentage,
     photos,
     stations
   },
@@ -38,10 +39,10 @@ const TripButton = React.forwardRef((
       {!!description && <span className="TripButton-description">{description}</span>}
       <span className="TripButton-stats">
         {!hideStations && (
-          <span className="TripButton-stat">
+          <span className="TripButton-stat TripButton-statStations">
             <Room />
             <span className="TripButton-stationsNew">
-              {` ${numNew} new`}
+              {`${percentage}% / ${numNew} new`}
             </span>
             {` / ${numTotal} total`}
           </span>

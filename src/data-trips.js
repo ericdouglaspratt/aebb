@@ -341,5 +341,11 @@ export default [
     date: '2020-06-20',
     description: 'Everett',
     stations: [389, 394, 393, 448, 392, 395, 389]
+  },
+  {
+    id: '33',
+    date: '2020-06-21',
+    description: 'West Roxbury',
+    stations: [373, 432, 433, 434, 427, 373]
   }
 ];

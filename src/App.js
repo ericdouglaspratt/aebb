@@ -17,7 +17,17 @@ const initialStations = {
 
 // create visited station map and count number of new stations per trip
 const visitedStations = {};
+let totalSoFar = 0;
 const processedTrips = rawTrips.map(trip => {
+  let numNew = trip.stations.reduce((result, stationId) => {
+    if (!visitedStations[stationId]) {
+      visitedStations[stationId] = true;
+      return result + 1;
+    } else {
+      return result;
+    }
+  }, 0);
+  totalSoFar += numNew;
   return {
     ...trip,
     distance: trip.stations.reduce((result, stationId, index) => {
@@ -29,14 +39,8 @@ const processedTrips = rawTrips.map(trip => {
         return result + calculateDistance(prevStation.lat, prevStation.long, currStation.lat, currStation.long);
       }
     }, 0),
-    numNew: trip.stations.reduce((result, stationId) => {
-      if (!visitedStations[stationId]) {
-        visitedStations[stationId] = true;
-        return result + 1;
-      } else {
-        return result;
-      }
-    }, 0)
+    numNew,
+    percentage: Math.round(totalSoFar * 100 / cachedStationData.length)
   };
 });
 const trips = {

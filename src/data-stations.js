@@ -3015,7 +3015,13 @@ export default [
     "id": 373,
     "name": "Belgrade Ave at Walworth St",
     "lat": 42.28634589486312,
-    "long": -71.13672129828046
+    "long": -71.13672129828046,
+    "photos": [
+      {
+        "date": "2020-06-21",
+        "photo": "photos/belgrade-ave-at-walworth-st_2020-06-21.jpg"
+      }
+    ]
   },
   {
     "id": 374,
@@ -3517,7 +3523,13 @@ export default [
     "id": 427,
     "name": "Washington St at Denton Terr",
     "lat": 42.280728147169015,
-    "long": -71.13423757273267
+    "long": -71.13423757273267,
+    "photos": [
+      {
+        "date": "2020-06-21",
+        "photo": "photos/washington-st-at-denton-terr_2020-06-21.jpg"
+      }
+    ]
   },
   {
     "id": 428,
@@ -3556,21 +3568,39 @@ export default [
     "name": "Centre St at W. Roxbury Post Office",
     "lat": 42.286331991127746,
     "long": -71.15344755369732,
-    "discovered": 1571916631381
+    "discovered": 1571916631381,
+    "photos": [
+      {
+        "date": "2020-06-21",
+        "photo": "photos/centre-st-at-w-roxbury-post-office_2020-06-21.jpg"
+      }
+    ]
   },
   {
     "id": 433,
     "name": "Centre St at Parkway YMCA",
     "lat": 42.28277901074054,
     "long": -71.15728851416861,
-    "discovered": 1571916631381
+    "discovered": 1571916631381,
+    "photos": [
+      {
+        "date": "2020-06-21",
+        "photo": "photos/centre-st-at-parkway-ymca_2020-06-21.jpg"
+      }
+    ]
   },
   {
     "id": 434,
     "name": "Spring St at Powell St",
     "lat": 42.277484442008216,
     "long": -71.16341467955863,
-    "discovered": 1571916631381
+    "discovered": 1571916631381,
+    "photos": [
+      {
+        "date": "2020-06-21",
+        "photo": "photos/spring-st-at-powell-st_2020-06-21.jpg"
+      }
+    ]
   },
   {
     "id": 435,
