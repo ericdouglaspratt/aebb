@@ -850,6 +850,10 @@ export default [
       {
         "date": "2020-01-11",
         "photo": "photos/somerville-city-hall_2020-01-11.jpg"
+      },
+      {
+        "date": "2020-05-03",
+        "photo": "photos/somerville-city-hall_2020-05-03.jpg"
       }
     ]
   },
@@ -1137,7 +1141,13 @@ export default [
     "id": 101,
     "name": "Ball Sq",
     "lat": 42.39918259930251,
-    "long": -71.11104454854285
+    "long": -71.11104454854285,
+    "photos": [
+      {
+        "date": "2020-05-03",
+        "photo": "photos/ball-sq_2020-05-03.jpg"
+      }
+    ]
   },
   {
     "id": 102,
@@ -1524,6 +1534,10 @@ export default [
       {
         "date": "2018-06-30",
         "photo": "photos/magoun-square-at-trum-field_2018-06-30.jpg"
+      },
+      {
+        "date": "2020-05-03",
+        "photo": "photos/magoun-square-at-trum-field_2020-05-03.jpg"
       }
     ]
   },
@@ -1690,6 +1704,10 @@ export default [
       {
         "date": "2019-06-08",
         "photo": "photos/somerville-hospital_2019-06-08.jpg"
+      },
+      {
+        "date": "2020-05-03",
+        "photo": "photos/somerville-hospital_2020-05-03.jpg"
       }
     ]
   },
@@ -1992,6 +2010,10 @@ export default [
       {
         "date": "2019-06-08",
         "photo": "photos/foss-park_2019-06-08.jpg"
+      },
+      {
+        "date": "2020-05-03",
+        "photo": "photos/foss-park_2020-05-03.jpg"
       }
     ]
   },
@@ -2064,6 +2086,10 @@ export default [
       {
         "date": "2018-09-08",
         "photo": "photos/broadway-st-at-mt-pleasant-st_2018-09-08.jpg"
+      },
+      {
+        "date": "2020-05-03",
+        "photo": "photos/broadway-st-at-mt-pleasant-st_2020-05-03.jpg"
       }
     ]
   },
@@ -2454,6 +2480,10 @@ export default [
       {
         "date": "2018-09-08",
         "photo": "photos/east-somerville-library_2018-09-08.jpg"
+      },
+      {
+        "date": "2020-05-03",
+        "photo": "photos/east-somerville-library_2020-05-03.jpg"
       }
     ]
   },
@@ -3489,7 +3519,13 @@ export default [
     "id": 406,
     "name": "Somerville City Hall Annex",
     "lat": 42.39189811591863,
-    "long": -71.09745375830244
+    "long": -71.09745375830244,
+    "photos": [
+      {
+        "date": "2020-05-03",
+        "photo": "photos/somerville-city-hall-annex_2020-05-03.jpg"
+      }
+    ]
   },
   {
     "id": 407,
@@ -3507,7 +3543,13 @@ export default [
     "id": 408,
     "name": "Edgerly Education Center",
     "lat": 42.38717463348314,
-    "long": -71.08714388528824
+    "long": -71.08714388528824,
+    "photos": [
+      {
+        "date": "2020-05-03",
+        "photo": "photos/edgerly-education-center_2020-05-03.jpg"
+      }
+    ]
   },
   {
     "id": 409,
@@ -3811,7 +3853,13 @@ export default [
     "name": "Sullivan Square",
     "lat": 42.384452256358436,
     "long": -71.07514854529654,
-    "discovered": 1571916631382
+    "discovered": 1571916631382,
+    "photos": [
+      {
+        "date": "2020-05-03",
+        "photo": "photos/sullivan-circle-mbta_2020-05-03.jpg"
+      }
+    ]
   },
   {
     "id": 442,
