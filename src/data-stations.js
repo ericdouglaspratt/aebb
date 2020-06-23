@@ -147,7 +147,13 @@ export default [
     "id": 15,
     "name": "Brighton Mills - 370 Western Ave",
     "lat": 42.3615457081725,
-    "long": -71.13776206970215
+    "long": -71.13776206970215,
+    "photos": [
+      {
+        "date": "2020-05-17",
+        "photo": "photos/brighton-mills_2020-05-17.jpg"
+      }
+    ]
   },
   {
     "id": 16,
@@ -165,7 +171,13 @@ export default [
     "id": 17,
     "name": "Soldiers Field Park - 111 Western Ave",
     "lat": 42.364263440638524,
-    "long": -71.1182756971175
+    "long": -71.1182756971175,
+    "photos": [
+      {
+        "date": "2020-05-17",
+        "photo": "photos/soldiers-field-park_2020-05-17.jpg"
+      }
+    ]
   },
   {
     "id": 19,
@@ -291,7 +303,13 @@ export default [
     "id": 29,
     "name": "Innovation Lab - 125 Western Ave at Batten Way",
     "lat": 42.36314498882458,
-    "long": -71.12298574307715
+    "long": -71.12298574307715,
+    "photos": [
+      {
+        "date": "2020-05-17",
+        "photo": "photos/innovation-lab_2020-05-17.jpg"
+      }
+    ]
   },
   {
     "id": 30,
@@ -742,6 +760,10 @@ export default [
       {
         "date": "2018-03-31",
         "photo": "photos/coolidge-corner_2018-03-31.jpg"
+      },
+      {
+        "date": "2020-05-17",
+        "photo": "photos/coolidge-corner-beacon-st-at-centre-st_2020-05-17.jpg"
       }
     ]
   },
@@ -1170,6 +1192,10 @@ export default [
       {
         "date": "2019-05-25",
         "photo": "photos/jfk-crossing-at-harvard-st-thorndike-st_2019-05-25.jpg"
+      },
+      {
+        "date": "2020-05-17",
+        "photo": "photos/jfk-crossing-at-harvard-st-thorndike-st_2020-05-17.jpg"
       }
     ]
   },
@@ -1653,7 +1679,13 @@ export default [
     "id": 149,
     "name": "175 N Harvard St",
     "lat": 42.363796,
-    "long": -71.129164
+    "long": -71.129164,
+    "photos": [
+      {
+        "date": "2020-05-17",
+        "photo": "photos/175-n-harvard-st_2020-05-17.jpg"
+      }
+    ]
   },
   {
     "id": 150,
@@ -3741,7 +3773,13 @@ export default [
     "id": 428,
     "name": "Western Ave at Richardson St",
     "lat": 42.361787410661876,
-    "long": -71.14393111327445
+    "long": -71.14393111327445,
+    "photos": [
+      {
+        "date": "2020-05-17",
+        "photo": "photos/western-ave-at-richardson-st_2020-05-17.jpg"
+      }
+    ]
   },
   {
     "id": 430,
@@ -3846,7 +3884,13 @@ export default [
     "name": "Boston Landing",
     "lat": 42.356560923089404,
     "long": -71.14167537549292,
-    "discovered": 1571916631382
+    "discovered": 1571916631382,
+    "photos": [
+      {
+        "date": "2020-05-17",
+        "photo": "photos/boston-landing_2020-05-17.jpg"
+      }
+    ]
   },
   {
     "id": 441,
