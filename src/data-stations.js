@@ -366,6 +366,10 @@ export default [
       {
         "date": "2018-06-23",
         "photo": "photos/copley-square_2018-06-23.jpg"
+      },
+      {
+        "date": "2020-02-23",
+        "photo": "photos/copley-square_2020-02-23.jpg"
       }
     ]
   },
@@ -954,6 +958,10 @@ export default [
       {
         "date": "2019-06-12",
         "photo": "photos/brookline-village-pearl-st-at-mbta_2019-06-12.jpg"
+      },
+      {
+        "date": "2020-02-23",
+        "photo": "photos/brookline-village-pearl-st-at-mbta_2020-02-23.jpg"
       }
     ]
   },
@@ -2015,7 +2023,13 @@ export default [
     "id": 191,
     "name": "Tappan St at Brookline Hills MBTA",
     "lat": 42.332096063019364,
-    "long": -71.128458827734
+    "long": -71.128458827734,
+    "photos": [
+      {
+        "date": "2020-02-23",
+        "photo": "photos/tappan-st-at-brookline-hills-mbta_2020-02-23.jpg"
+      }
+    ]
   },
   {
     "id": 192,
@@ -2033,7 +2047,13 @@ export default [
     "id": 193,
     "name": "Brookline Town Hall",
     "lat": 42.33376472623494,
-    "long": -71.12046446660315
+    "long": -71.12046446660315,
+    "photos": [
+      {
+        "date": "2020-02-23",
+        "photo": "photos/brookline-town-hall_2020-02-23.jpg"
+      }
+    ]
   },
   {
     "id": 194,
@@ -2661,7 +2681,13 @@ export default [
     "id": 331,
     "name": "Huntington Ave at Mass Art",
     "lat": 42.336585554561154,
-    "long": -71.0988699646623
+    "long": -71.0988699646623,
+    "photos": [
+      {
+        "date": "2020-02-23",
+        "photo": "photos/huntington-ave-at-mass-art_2020-02-23.jpg"
+      }
+    ]
   },
   {
     "id": 332,
@@ -2775,7 +2801,13 @@ export default [
     "id": 342,
     "name": "Boylston St at Jersey St",
     "lat": 42.344650628878306,
-    "long": -71.09732501226972
+    "long": -71.09732501226972,
+    "photos": [
+      {
+        "date": "2020-02-23",
+        "photo": "photos/boylston-st-at-jersey-st_2020-02-23.jpg"
+      }
+    ]
   },
   {
     "id": 343,
@@ -2973,7 +3005,13 @@ export default [
     "id": 359,
     "name": "One Brigham Circle",
     "lat": 42.333922701369964,
-    "long": -71.10446508982932
+    "long": -71.10446508982932,
+    "photos": [
+      {
+        "date": "2020-02-23",
+        "photo": "photos/one-brigham-circle_2020-02-23.jpg"
+      }
+    ]
   },
   {
     "id": 360,
