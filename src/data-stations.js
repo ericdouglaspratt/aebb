@@ -992,6 +992,10 @@ export default [
     "long": -71.03648586203235,
     "photos": [
       {
+        "date": "2019-10-20",
+        "photo": "photos/umass-boston_2019-10-20.jpg"
+      },
+      {
         "date": "2020-06-07",
         "photo": "photos/umass-boston_2020-06-07.jpg"
       }
@@ -1001,7 +1005,13 @@ export default [
     "id": 93,
     "name": "JFK/UMass T Stop",
     "lat": 42.32033973515723,
-    "long": -71.05118036270142
+    "long": -71.05118036270142,
+    "photos": [
+      {
+        "date": "2019-10-20",
+        "photo": "photos/jfk-umass-t-stop_2019-10-20.jpg"
+      }
+    ]
   },
   {
     "id": 94,
@@ -1225,7 +1235,13 @@ export default [
     "id": 113,
     "name": "Andrew T Stop - Dorchester Ave at Dexter St",
     "lat": 42.330473650415165,
-    "long": -71.05701684951782
+    "long": -71.05701684951782,
+    "photos": [
+      {
+        "date": "2019-10-20",
+        "photo": "photos/andrew-t-stop_2019-10-20.jpg"
+      }
+    ]
   },
   {
     "id": 114,
@@ -2907,7 +2923,13 @@ export default [
     "id": 362,
     "name": "Columbia Rd at Tierney Community Center",
     "lat": 42.33023070528729,
-    "long": -71.05060093123029
+    "long": -71.05060093123029,
+    "photos": [
+      {
+        "date": "2019-10-20",
+        "photo": "photos/columbia-rd-at-tierney-learning-center_2019-10-20.jpg"
+      }
+    ]
   },
   {
     "id": 363,
@@ -3325,7 +3347,13 @@ export default [
     "id": 405,
     "name": "Sydney St at Carson St",
     "lat": 42.32039374304257,
-    "long": -71.05355408051764
+    "long": -71.05355408051764,
+    "photos": [
+      {
+        "date": "2019-10-20",
+        "photo": "photos/sydney-st-at-carson-st_2019-10-20.jpg"
+      }
+    ]
   },
   {
     "id": 406,
