@@ -449,7 +449,13 @@ export default [
     "id": 44,
     "name": "Congress St at Boston City Hall",
     "lat": 42.36041774637169,
-    "long": -71.05752243543975
+    "long": -71.05752243543975,
+    "photos": [
+      {
+        "date": "2020-01-11",
+        "photo": "photos/congress-st-at-boston-city-hall_2020-01-11.jpg"
+      }
+    ]
   },
   {
     "id": 46,
@@ -768,6 +774,10 @@ export default [
       {
         "date": "2017-05-28",
         "photo": "photos/one-broadway-kendall-sq-at-main-st-third-st_2017-05-28.jpg"
+      },
+      {
+        "date": "2020-01-11",
+        "photo": "photos/one-broadway-kendall-sq-at-main-st-third-st_2020-01-11.jpg"
       }
     ]
   },
@@ -832,6 +842,10 @@ export default [
       {
         "date": "2019-06-08",
         "photo": "photos/somerville-city-hall_2019-06-08.jpg"
+      },
+      {
+        "date": "2020-01-11",
+        "photo": "photos/somerville-city-hall_2020-01-11.jpg"
       }
     ]
   },
@@ -983,7 +997,13 @@ export default [
     "id": 91,
     "name": "One Kendall Square at Hampshire St / Portland St",
     "lat": 42.366277,
-    "long": -71.09169
+    "long": -71.09169,
+    "photos": [
+      {
+        "date": "2020-01-11",
+        "photo": "photos/one-kendall-square-at-hampshire-st-portland-st_2020-01-11.jpg"
+      }
+    ]
   },
   {
     "id": 92,
@@ -1085,7 +1105,13 @@ export default [
     "id": 99,
     "name": "Wilson Square",
     "lat": 42.38567578752914,
-    "long": -71.11412136298895
+    "long": -71.11412136298895,
+    "photos": [
+      {
+        "date": "2020-01-11",
+        "photo": "photos/wilson-square_2020-01-11.jpg"
+      }
+    ]
   },
   {
     "id": 100,
@@ -1277,7 +1303,13 @@ export default [
     "id": 117,
     "name": "Binney St / Sixth St",
     "lat": 42.36608797388682,
-    "long": -71.08633603909765
+    "long": -71.08633603909765,
+    "photos": [
+      {
+        "date": "2020-01-11",
+        "photo": "photos/binney-st-sixth-st_2020-01-11.jpg"
+      }
+    ]
   },
   {
     "id": 118,
@@ -1527,7 +1559,13 @@ export default [
     "id": 141,
     "name": "Kendall Street",
     "lat": 42.363560158429884,
-    "long": -71.08216792345047
+    "long": -71.08216792345047,
+    "photos": [
+      {
+        "date": "2020-01-11",
+        "photo": "photos/kendall-street_2020-01-11.jpg"
+      }
+    ]
   },
   {
     "id": 142,
@@ -1557,7 +1595,13 @@ export default [
     "id": 144,
     "name": "Rogers St & Land Blvd",
     "lat": 42.36575798214837,
-    "long": -71.07699394226073
+    "long": -71.07699394226073,
+    "photos": [
+      {
+        "date": "2020-01-11",
+        "photo": "photos/rogers-st-at-land-blvd_2020-01-11.jpg"
+      }
+    ]
   },
   {
     "id": 145,
@@ -1947,7 +1991,13 @@ export default [
     "id": 189,
     "name": "Kendall T",
     "lat": 42.362427842912396,
-    "long": -71.08495473861694
+    "long": -71.08495473861694,
+    "photos": [
+      {
+        "date": "2020-01-11",
+        "photo": "photos/kendall-t_2020-01-11.jpg"
+      }
+    ]
   },
   {
     "id": 190,
@@ -2331,7 +2381,13 @@ export default [
     "id": 228,
     "name": "One Memorial Drive",
     "lat": 42.361619320766856,
-    "long": -71.0804355052096
+    "long": -71.0804355052096,
+    "photos": [
+      {
+        "date": "2020-01-11",
+        "photo": "photos/one-memorial-drive_2020-01-11.jpg"
+      }
+    ]
   },
   {
     "id": 232,
@@ -2539,7 +2595,13 @@ export default [
     "id": 318,
     "name": "Ames St at Broadway",
     "lat": 42.3636929,
-    "long": -71.0875672
+    "long": -71.0875672,
+    "photos": [
+      {
+        "date": "2020-01-11",
+        "photo": "photos/ames-st-at-broadway_2020-01-11.jpg"
+      }
+    ]
   },
   {
     "id": 319,
@@ -2623,13 +2685,25 @@ export default [
     "id": 334,
     "name": "Mass Ave at Hadley/Walden",
     "lat": 42.39120971915856,
-    "long": -71.12260755160605
+    "long": -71.12260755160605,
+    "photos": [
+      {
+        "date": "2020-01-11",
+        "photo": "photos/mass-ave-at-hadley-st-walden-st_2020-01-11.jpg"
+      }
+    ]
   },
   {
     "id": 335,
     "name": "Harvard St at Greene-Rose Heritage Park",
     "lat": 42.36599432867437,
-    "long": -71.09522221614498
+    "long": -71.09522221614498,
+    "photos": [
+      {
+        "date": "2020-01-11",
+        "photo": "photos/harvard-st-at-greene-rose-heritage-park_2020-01-11.jpg"
+      }
+    ]
   },
   {
     "id": 336,
@@ -3115,7 +3189,13 @@ export default [
     "id": 381,
     "name": "Inman Square at Springfield St.",
     "lat": 42.37438408515815,
-    "long": -71.1001574621514
+    "long": -71.1001574621514,
+    "photos": [
+      {
+        "date": "2020-01-11",
+        "photo": "photos/inman-square-at-springfield-st_2020-01-11.jpg"
+      }
+    ]
   },
   {
     "id": 384,
@@ -3145,7 +3225,13 @@ export default [
     "id": 386,
     "name": "Sennott Park Broadway at Norfolk Street",
     "lat": 42.36860524248197,
-    "long": -71.09930185605663
+    "long": -71.09930185605663,
+    "photos": [
+      {
+        "date": "2020-01-11",
+        "photo": "photos/sennott-park-broadway-at-norfolk-street_2020-01-11.jpg"
+      }
+    ]
   },
   {
     "id": 387,
@@ -3287,7 +3373,13 @@ export default [
     "id": 398,
     "name": "75 Binney St",
     "lat": 42.36550728505653,
-    "long": -71.0801375997653
+    "long": -71.0801375997653,
+    "photos": [
+      {
+        "date": "2020-01-11",
+        "photo": "photos/75-binney-st_2020-01-11.jpg"
+      }
+    ]
   },
   {
     "id": 399,
@@ -3365,7 +3457,13 @@ export default [
     "id": 407,
     "name": "Craigie at Summer St",
     "lat": 42.388305537643994,
-    "long": -71.11067976811682
+    "long": -71.11067976811682,
+    "photos": [
+      {
+        "date": "2020-01-11",
+        "photo": "photos/craigie-st-at-summer-st_2020-01-11.jpg"
+      }
+    ]
   },
   {
     "id": 408,

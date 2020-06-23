@@ -250,7 +250,7 @@ export default [
   {
     id: '23',
     color: '#9980FA',
-    date: '2020-01-12',
+    date: '2020-01-11',
     description: 'Chinatown to Winter Hill',
     stations: [59, 44, 228, 189, 318, 117, 398, 144, 141, 91, 335, 386, 381, 407, 99, 334, 77]
   },
