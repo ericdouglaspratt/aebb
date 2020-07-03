@@ -357,7 +357,7 @@ export default [
   {
     id: '35',
     date: '2020-07-03',
-    description: '',
-    stations: [191, 187, 401, 402]
+    description: 'Brookline / Beacon St Loop',
+    stations: [191, 187, 401, 402, 450, 354, 447, 451, 403, 452, 453, 191]
   }
 ];

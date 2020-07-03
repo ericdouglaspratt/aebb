@@ -117,26 +117,24 @@ export const diffStations = (oldStations, newStations, visitedStations) => {
   }
 
   // find stations that no longer exist
-  if (newStations.length < oldStations.length) {
-    const nonexistentStations = oldStations.filter(station => !newStations.find(newStation => station.id === newStation.id));
-    if (nonexistentStations.length) {
-      let numLegacyStations = 0;
+  const nonexistentStations = oldStations.filter(station => !newStations.find(newStation => station.id === newStation.id));
+  if (nonexistentStations.length) {
+    let numLegacyStations = 0;
 
-      nonexistentStations.forEach(nonexistentStation => {
-        // if we've visited this station, preserve it
-        if (visitedStations[nonexistentStation.id]) {
-          updatedStationList.push({
-            ...nonexistentStation,
-            isInactive: true,
-            isLegacy: true
-          });
-          numLegacyStations++;
-        }
-      });
+    nonexistentStations.forEach(nonexistentStation => {
+      // if we've visited this station, preserve it
+      if (visitedStations[nonexistentStation.id]) {
+        updatedStationList.push({
+          ...nonexistentStation,
+          isInactive: true,
+          isLegacy: true
+        });
+        numLegacyStations++;
+      }
+    });
 
-      diffLog.push(`${numLegacyStations} legacy stations have been preserved`);
-      diffLog.push(`${nonexistentStations.length - numLegacyStations} stations have been removed`);
-    }
+    diffLog.push(`${numLegacyStations} legacy stations have been preserved`);
+    diffLog.push(`${nonexistentStations.length - numLegacyStations} stations have been removed`);
   }
 
   // summary report on new stations found
@@ -168,7 +166,14 @@ export const diffStations = (oldStations, newStations, visitedStations) => {
 
   if (changesDetected) {
     diffLog.forEach(log => console.log(log));
-    //console.log(JSON.stringify(updatedStationList));
+    /*const newList = updatedStationList.map(item => {
+      const newItem = {...item};
+      delete newItem.bikesAvailable;
+      delete newItem.docksAvailable;
+      delete newItem.isInactive;
+      return newItem;
+    })
+    console.log(JSON.stringify(newList));*/
   }
 
   return {

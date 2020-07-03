@@ -480,6 +480,19 @@ export default [
     ]
   },
   {
+    "id": 45,
+    "name": "Jersey St. at Boylston St.",
+    "lat": 42.3446808403874,
+    "long": -71.09785348176956,
+    "photos": [
+      {
+        "date": "2018-06-23",
+        "photo": "photos/jersey-st-at-boylston-st_2018-06-23.jpg"
+      }
+    ],
+    "isLegacy": true
+  },
+  {
     "id": 46,
     "name": "Christian Science Plaza - Massachusetts Ave at Westland Ave",
     "lat": 42.3436658245146,
@@ -1002,6 +1015,19 @@ export default [
         "photo": "photos/harvard-university-housing-putnam-ave-at-peabody-terrace_2019-05-11.jpg"
       }
     ]
+  },
+  {
+    "id": 88,
+    "name": "Inman Square at Vellucci Plaza / Hampshire St",
+    "lat": 42.374035,
+    "long": -71.101427,
+    "photos": [
+      {
+        "date": "2018-09-08",
+        "photo": "photos/inman-square-at-vellucci-plaza_2018-09-08.jpg"
+      }
+    ],
+    "isLegacy": true
   },
   {
     "id": 89,
@@ -2047,7 +2073,13 @@ export default [
     "id": 187,
     "name": "Cypress St at Clark Playground",
     "lat": 42.32784317478686,
-    "long": -71.1253622174263
+    "long": -71.1253622174263,
+    "photos": [
+      {
+        "date": "2020-07-03",
+        "photo": "photos/cypress-st-at-clark-playground_2020-07-03.jpg"
+      }
+    ]
   },
   {
     "id": 188,
@@ -2098,6 +2130,10 @@ export default [
       {
         "date": "2020-02-23",
         "photo": "photos/tappan-st-at-brookline-hills-mbta_2020-02-23.jpg"
+      },
+      {
+        "date": "2020-07-03",
+        "photo": "photos/tappan-st-at-brookline-hills-mbta_2020-07-03.jpg"
       }
     ]
   },
@@ -3038,6 +3074,10 @@ export default [
       {
         "date": "2019-05-25",
         "photo": "photos/washington-st-at-egremont-rd_2019-05-25.jpg"
+      },
+      {
+        "date": "2020-07-03",
+        "photo": "photos/washington-st-at-egremont-rd_2020-07-03.jpg"
       }
     ]
   },
@@ -3535,19 +3575,37 @@ export default [
     "id": 401,
     "name": "High St at Cypress St",
     "lat": 42.32538435700882,
-    "long": -71.12177595532557
+    "long": -71.12177595532557,
+    "photos": [
+      {
+        "date": "2020-07-03",
+        "photo": "photos/cypress-st-at-high-st_2020-07-03.jpg"
+      }
+    ]
   },
   {
     "id": 402,
     "name": "Washington St at Griggs Rd",
     "lat": 42.338334237199014,
-    "long": -71.13050930220197
+    "long": -71.13050930220197,
+    "photos": [
+      {
+        "date": "2020-07-03",
+        "photo": "photos/washington-st-at-griggs-rd_2020-07-03.jpg"
+      }
+    ]
   },
   {
     "id": 403,
     "name": "Marion St at Harvard St",
     "lat": 42.33978052668946,
-    "long": -71.12133350232398
+    "long": -71.12133350232398,
+    "photos": [
+      {
+        "date": "2020-07-03",
+        "photo": "photos/marion-st-at-harvard-st_2020-07-03.jpg"
+      }
+    ]
   },
   {
     "id": 404,
@@ -3982,7 +4040,13 @@ export default [
     "name": "The Overlook at St. Gabriel's",
     "lat": 42.34679008347347,
     "long": -71.14549813806661,
-    "discovered": 1592690778175
+    "discovered": 1592690778175,
+    "photos": [
+      {
+        "date": "2020-07-03",
+        "photo": "photos/the-overlook-at-st-gabriels_2020-07-03.jpg"
+      }
+    ]
   },
   {
     "id": 448,
@@ -4005,29 +4069,56 @@ export default [
     "discovered": 1592690778175
   },
   {
-    "id": 45,
-    "name": "Jersey St. at Boylston St.",
-    "lat": 42.3446808403874,
-    "long": -71.09785348176956,
+    "id": 450,
+    "name": "Beacon St at Englewood Ave",
+    "lat": 42.337369153709254,
+    "long": -71.14485977232107,
+    "discovered": 1593815150850,
     "photos": [
       {
-        "date": "2018-06-23",
-        "photo": "photos/jersey-st-at-boylston-st_2018-06-23.jpg"
+        "date": "2020-07-03",
+        "photo": "photos/beacon-st-at-englewood-ave_2020-07-03.jpg"
       }
-    ],
-    "isLegacy": true
+    ]
   },
   {
-    "id": 88,
-    "name": "Inman Square at Vellucci Plaza / Hampshire St",
-    "lat": 42.374035,
-    "long": -71.101427,
+    "id": 451,
+    "name": "Washington Sq",
+    "lat": 42.33940659197945,
+    "long": -71.13489642273635,
+    "discovered": 1593815150850,
     "photos": [
       {
-        "date": "2018-09-08",
-        "photo": "photos/inman-square-at-vellucci-plaza_2018-09-08.jpg"
+        "date": "2020-07-03",
+        "photo": "photos/washington-sq_2020-07-03.jpg"
       }
-    ],
-    "isLegacy": true
+    ]
+  },
+  {
+    "id": 452,
+    "name": "Beacon St at St. Paul St",
+    "lat": 42.34373094998716,
+    "long": -71.11614107161584,
+    "discovered": 1593815150850,
+    "photos": [
+      {
+        "date": "2020-07-03",
+        "photo": "photos/beacon-st-at-st-paul-st_2020-07-03.jpg"
+      }
+    ]
+  },
+  {
+    "id": 453,
+    "name": "Beacon St at Hawes St",
+    "lat": 42.34496783328529,
+    "long": -71.11040176903771,
+    "discovered": 1593815150850,
+    "photos": [
+      {
+        "date": "2020-07-03",
+        "photo": "photos/beacon-st-at-hawes-st_2020-07-03.jpg"
+      }
+    ]
   }
 ];
+
