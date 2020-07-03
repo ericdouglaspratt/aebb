@@ -1448,6 +1448,10 @@ export default [
       {
         "date": "2019-06-12",
         "photo": "photos/egleston-square_2019-06-12.jpg"
+      },
+      {
+        "date": "2020-06-27",
+        "photo": "photos/egleston-square_2020-06-27.jpg"
       }
     ]
   },
@@ -1807,7 +1811,13 @@ export default [
     "id": 162,
     "name": "Franklin Park - Seaver St at Humbolt Ave",
     "lat": 42.309796,
-    "long": -71.092225
+    "long": -71.092225,
+    "photos": [
+      {
+        "date": "2020-06-27",
+        "photo": "photos/seaver-st-at-humboldt-ave_2020-06-27.jpg"
+      }
+    ]
   },
   {
     "id": 163,
@@ -1857,7 +1867,13 @@ export default [
     "id": 170,
     "name": "Franklin Park Zoo - Franklin Park Rd at Blue Hill Ave",
     "lat": 42.303469,
-    "long": -71.085347
+    "long": -71.085347,
+    "photos": [
+      {
+        "date": "2020-06-27",
+        "photo": "photos/franklin-park-zoo_2020-06-27.jpg"
+      }
+    ]
   },
   {
     "id": 171,
@@ -2551,7 +2567,13 @@ export default [
     "id": 255,
     "name": "Park St at Norwell St",
     "lat": 42.2944167,
-    "long": -71.0783056
+    "long": -71.0783056,
+    "photos": [
+      {
+        "date": "2020-06-27",
+        "photo": "photos/park-st-at-norwell-st_2020-06-27.jpg"
+      }
+    ]
   },
   {
     "id": 258,
@@ -2658,6 +2680,10 @@ export default [
       {
         "date": "2019-06-12",
         "photo": "photos/stony-brook-t-stop_2019-06-12.jpg"
+      },
+      {
+        "date": "2020-06-27",
+        "photo": "photos/stony-brook-t-stop_2020-06-27.jpg"
       }
     ]
   },

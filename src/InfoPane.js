@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import DirectionsBike from '@material-ui/icons/DirectionsBike';
 import Drawer from '@material-ui/core/Drawer';
 import Equalizer from '@material-ui/icons/Equalizer';
+import History from '@material-ui/icons/History';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import MenuList from '@material-ui/core/MenuList';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -20,6 +21,7 @@ import Progress from './Progress';
 import RouteMarking from './RouteMarking';
 import StationInfo from './StationInfo';
 import Stats from './Stats';
+import TimeTravel from './TimeTravel';
 import Trip from './Trip';
 import TripList from './TripList';
 
@@ -151,6 +153,16 @@ function InfoPane({
             />
           </div>
         </div>
+      ) : breakpoint === BREAKPOINTS.DESKTOP && !!activeView && activeView.view === VIEWS.TIME_TRAVEL ? (
+        <div className="InfoPane InfoPane--scrollable">
+          <div className="InfoPane-header">
+            <BackButton onClick={() => onViewDeactivate(VIEWS.TIME_TRAVEL)} />
+          </div>
+          <div className="InfoPane-content">
+            <Progress stations={stations} visitedStations={visitedStations} />
+            <TimeTravel />
+          </div>
+        </div>
       ) : breakpoint === BREAKPOINTS.DESKTOP && !!activeView && activeView.view === VIEWS.TRIP_LIST ? (
         <div className="InfoPane InfoPane--scrollable">
           <div className="InfoPane-header">
@@ -211,6 +223,10 @@ function InfoPane({
                     <ListItemIcon><PhotoCamera /></ListItemIcon>
                     Photos
                   </MenuItem>
+                  {/*<MenuItem onClick={() => handleClickMenuItem(VIEWS.TIME_TRAVEL)}>
+                    <ListItemIcon><History /></ListItemIcon>
+                    Time Travel
+                  </MenuItem>*/}
                   {/*<MenuItem onClick={() => handleClickMenuItem(VIEWS.ROUTE_MARKING)}>Mark a route</MenuItem>*/}
                 </MenuList>
               )}

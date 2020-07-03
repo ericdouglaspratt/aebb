@@ -10,6 +10,7 @@ export const VIEWS = {
   ROUTE_MARKING: 'route-marking',
   STATION: 'station',
   STATS: 'stats',
+  TIME_TRAVEL: 'time-travel',
   TRIP: 'trip',
   TRIP_LIST: 'trip-list'
 };
