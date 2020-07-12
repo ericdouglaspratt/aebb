@@ -47,19 +47,21 @@ export const diffStations = (oldStations, newStations, visitedStations) => {
 
     if (!matchingOldStation) {
       // if we discovered a new station
-      const newStationFound = {
-        bikesAvailable: newStation.ba,
-        docksAvailable: newStation.da,
-        id: newStation.id,
-        isInactive: newStation.m,
-        name: newStation.s,
-        lat: newStation.la,
-        long: newStation.lo,
-        discovered: (new Date()).getTime()
-      };
-      newStationsFound.push(newStationFound);
-      updatedStationList.push(newStationFound);
-      diffLog.push(`new station '${newStation.s}' found`);
+      if (newStation.la && newStation.lo) {
+        const newStationFound = {
+          bikesAvailable: newStation.ba,
+          docksAvailable: newStation.da,
+          id: newStation.id,
+          isInactive: newStation.m,
+          name: newStation.s,
+          lat: newStation.la,
+          long: newStation.lo,
+          discovered: (new Date()).getTime()
+        };
+        newStationsFound.push(newStationFound);
+        updatedStationList.push(newStationFound);
+        diffLog.push(`new station '${newStation.s}' found`);
+      }
     } else if (matchingOldStation.name !== newStation.s) {
       // if a known station changed its name
       diffLog.push(`station ${newStation.id} name changed from "${matchingOldStation.name}" to "${newStation.s}"`);

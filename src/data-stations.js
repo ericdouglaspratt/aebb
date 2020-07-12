@@ -4062,13 +4062,6 @@ export default [
     ]
   },
   {
-    "id": 449,
-    "name": "Test 6",
-    "lat": 0,
-    "long": 0,
-    "discovered": 1592690778175
-  },
-  {
     "id": 450,
     "name": "Beacon St at Englewood Ave",
     "lat": 42.337369153709254,
