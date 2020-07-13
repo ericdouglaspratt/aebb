@@ -351,13 +351,47 @@ export default [
   {
     id: '34',
     date: '2020-06-27',
-    description: 'Top Franklin Park',
+    description: 'Stony Brook / Franklin Park',
     stations: [282, 126, 162, 170, 255, 126, 282]
   },
   {
     id: '35',
     date: '2020-07-03',
     description: 'Brookline / Beacon St Loop',
-    stations: [191, 187, 401, 402, 450, 354, 447, 451, 403, 452, 453, 191]
+    stations: [191, 187, 401, 402, 450, 354, 447, 451, 403, 452, 453, 191],
+    photos: [
+      {
+        full: 'photos/2020-07-03-001.jpg',
+        lat: 42.325269,
+        lng: -71.121660,
+        thumb: 'photos/2020-07-03-001-thumb.jpg'
+      },
+      {
+        full: 'photos/2020-07-03-002.jpg',
+        lat: 42.339928,
+        lng: -71.110922,
+        thumb: 'photos/2020-07-03-002-thumb.jpg'
+      }
+    ]
+  },
+  {
+    id: '36',
+    date: '2020-07-12',
+    description: 'Eastie',
+    stations: [213, 419, 211, 436, 213],
+    photos: [
+      {
+        full: 'photos/2020-07-12-001.jpg',
+        lat: 42.369764,
+        lng: -71.044247,
+        thumb: 'photos/2020-07-12-001-thumb.jpg'
+      },
+      {
+        full: 'photos/2020-07-12-002.jpg',
+        lat: 42.363648,
+        lng: -71.029579,
+        thumb: 'photos/2020-07-12-002-thumb.jpg'
+      }
+    ]
   }
 ];

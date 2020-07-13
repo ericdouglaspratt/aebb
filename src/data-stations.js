@@ -2336,6 +2336,10 @@ export default [
       {
         "date": "2019-05-19",
         "photo": "photos/piers-park_2019-05-19.jpg"
+      },
+      {
+        "date": "2020-07-12",
+        "photo": "photos/piers-park_2020-07-12.jpg"
       }
     ]
   },
@@ -2360,6 +2364,10 @@ export default [
       {
         "date": "2019-05-19",
         "photo": "photos/ebnhc-maverick-square_2019-05-19.jpg"
+      },
+      {
+        "date": "2020-07-12",
+        "photo": "photos/ebnhc-maverick-square_2020-07-12.jpg"
       }
     ]
   },
@@ -3767,7 +3775,13 @@ export default [
     "id": 419,
     "name": "Central Square East Boston",
     "lat": 42.37544912547037,
-    "long": -71.03918548682486
+    "long": -71.03918548682486,
+    "photos": [
+      {
+        "date": "2020-07-12",
+        "photo": "photos/central-square-east-boston_2020-07-12.jpg"
+      }
+    ]
   },
   {
     "id": 420,
@@ -3948,7 +3962,13 @@ export default [
     "name": "Maverick St at Massport Path",
     "lat": 42.36774122306014,
     "long": -71.0333597474255,
-    "discovered": 1571916631382
+    "discovered": 1571916631382,
+    "photos": [
+      {
+        "date": "2020-07-12",
+        "photo": "photos/maverick-st-at-massport-path_2020-07-12.jpg"
+      }
+    ]
   },
   {
     "id": 437,
