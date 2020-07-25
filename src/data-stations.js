@@ -627,8 +627,8 @@ export default [
   {
     "id": 57,
     "name": "Massachusetts Ave at Columbus Ave",
-    "lat": 42.340542615516355,
-    "long": -71.08138847914233,
+    "lat": 42.33949453726166,
+    "long": -71.0802078062261,
     "photos": [
       {
         "date": "2018-06-24",
@@ -1253,7 +1253,13 @@ export default [
     "id": 106,
     "name": "Dudley Town Common - Mt Pleasant Ave at Blue Hill Ave",
     "lat": 42.325333,
-    "long": -71.075354
+    "long": -71.075354,
+    "photos": [
+      {
+        "date": "2020-07-24",
+        "photo": "photos/dudley-town-common_2020-07-24.jpg"
+      }
+    ]
   },
   {
     "id": 107,
@@ -1606,6 +1612,10 @@ export default [
       {
         "date": "2020-06-07",
         "photo": "photos/newmarket-square-t-stop_2020-06-07.jpg"
+      },
+      {
+        "date": "2020-07-24",
+        "photo": "photos/newmarket-square-t-stop_2020-07-24.jpg"
       }
     ]
   },
@@ -2282,8 +2292,8 @@ export default [
   {
     "id": 206,
     "name": "Government Center - Cambridge St at Court St",
-    "lat": 42.359802515995526,
-    "long": -71.05960782626425,
+    "lat": 42.3598253979878,
+    "long": -71.05979576244862,
     "photos": [
       {
         "date": "2019-07-02",
@@ -2610,8 +2620,8 @@ export default [
   {
     "id": 255,
     "name": "Park St at Norwell St",
-    "lat": 42.2944167,
-    "long": -71.0783056,
+    "lat": 42.29208959672596,
+    "long": -71.0784115619208,
     "photos": [
       {
         "date": "2020-06-27",
@@ -3153,7 +3163,13 @@ export default [
     "id": 360,
     "name": "Bartlett St at John Elliot Sq",
     "lat": 42.3294633,
-    "long": -71.0901582
+    "long": -71.0901582,
+    "photos": [
+      {
+        "date": "2020-07-24",
+        "photo": "photos/bartlett-st-at-john-elliot-sq_2020-07-24.jpg"
+      }
+    ]
   },
   {
     "id": 361,
@@ -3200,6 +3216,10 @@ export default [
       {
         "date": "2020-05-31",
         "photo": "photos/tremont-st-at-northampton-st_2020-05-31.jpg"
+      },
+      {
+        "date": "2020-07-24",
+        "photo": "photos/tremont-st-at-northampton-st_2020-07-24.jpg"
       }
     ]
   },
@@ -3409,7 +3429,7 @@ export default [
   },
   {
     "id": 387,
-    "name": "Norman St at Kelvin St",
+    "name": "7 Acre Park",
     "lat": 42.41143222973408,
     "long": -71.06823265090497,
     "photos": [
@@ -3485,7 +3505,7 @@ export default [
   },
   {
     "id": 393,
-    "name": "Ferry St at Pleasantview Ave",
+    "name": "Swan St. Park",
     "lat": 42.412504507772105,
     "long": -71.05842225271772,
     "photos": [
@@ -3521,7 +3541,7 @@ export default [
   },
   {
     "id": 396,
-    "name": "Main St at Beacon St",
+    "name": "Wasgatt Playground",
     "lat": 42.4093300667225,
     "long": -71.06381878293178,
     "photos": [
@@ -4027,7 +4047,13 @@ export default [
     "name": "Whittier St Health Center",
     "lat": 42.332862884862635,
     "long": -71.09218861916816,
-    "discovered": 1571916631382
+    "discovered": 1571916631382,
+    "photos": [
+      {
+        "date": "2020-07-24",
+        "photo": "photos/whittier-st-health-center_2020-07-24.jpg"
+      }
+    ]
   },
   {
     "id": 445,
@@ -4134,4 +4160,5 @@ export default [
     ]
   }
 ];
+
 

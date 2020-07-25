@@ -168,7 +168,10 @@ export const diffStations = (oldStations, newStations, visitedStations) => {
 
   if (changesDetected) {
     diffLog.forEach(log => console.log(log));
-    /*const newList = updatedStationList.map(item => {
+    /*updatedStationList.sort((a, b) => {
+      return (a.id < b.id) ? -1 : ((a.id > b.id) ? 1 : 0);
+    });
+    const newList = updatedStationList.map(item => {
       const newItem = {...item};
       delete newItem.bikesAvailable;
       delete newItem.docksAvailable;

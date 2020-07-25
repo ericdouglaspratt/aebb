@@ -393,5 +393,11 @@ export default [
         thumb: 'photos/2020-07-12-002-thumb.jpg'
       }
     ]
+  },
+  {
+    id: '37',
+    date: '2020-07-24',
+    description: 'East Roxbury',
+    stations: [138, 106, 360, 443, 364, 138]
   }
 ];
