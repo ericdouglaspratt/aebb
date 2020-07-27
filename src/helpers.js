@@ -32,6 +32,23 @@ export const createIdMap = items => items.reduce((result, item) => {
   return result;
 }, {});
 
+export const csvToJson = csv => {
+  var lines=csv.split("\n");
+  var result = [];
+  var headers=lines[0].split(",").map(header => header.replace(/\s/g, '').replace(/\"/g, ''));
+
+  for(var i=1;i<lines.length;i++){
+	  var obj = {};
+	  var currentline=lines[i].split(",");
+	  for(var j=0;j<headers.length;j++){
+      obj[headers[j]] = currentline[j] ? currentline[j].replace(/\"/g, '') : currentline[j];
+	  }
+	  result.push(obj);
+  }
+
+  return result;
+};
+
 export const diffStations = (oldStations, newStations, visitedStations) => {
   const diffLog = [];
   const oldStationMap = createIdMap(oldStations);

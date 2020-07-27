@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import moment from 'moment';
 import './App.css';
 
 import { VIEWS } from './constants';
-import { calculateDistance, createIdMap, diffStations, useStateRef } from './helpers';
+import { calculateDistance, createIdMap, csvToJson, diffStations, useStateRef } from './helpers';
 import cachedStationData from './data-stations';
 import rawTrips from './data-trips';
 
@@ -204,6 +205,47 @@ function App() {
       list: updatedStationList,
       lookup: createIdMap(updatedStationList)
     });
+  };
+
+  const validateStationHistory = stations => {
+    fetch('/202006-bluebikes-tripdata.csv')
+      .then(response => response.text())
+      .then(csv => {
+        //console.log('csv', csv);
+        const json = csvToJson(csv);
+        console.log('json', json);
+
+        const firstTripTimes = json.reduce((result, trip) => {
+          if (trip.startstationid && stations.lookup[trip.startstationid] && !stations.lookup[trip.startstationid].firstSeen && !result[trip.startstationid]) {
+            result[trip.startstationid] = moment(trip.starttime).unix();
+          }
+          if (trip.endstationid && stations.lookup[trip.endstationid] && !stations.lookup[trip.endstationid].firstSeen && !result[trip.endstationid]) {
+            result[trip.endstationid] = moment(trip.stoptime).unix();
+          }
+          return result;
+        }, {});
+
+        console.log('firstTripTimes', firstTripTimes);
+
+        if (Object.keys(firstTripTimes).length > 0) {
+          const updatedStations = stations.list.map(station => {
+            if (firstTripTimes[station.id]) {
+              return {
+                ...station,
+                firstSeen: firstTripTimes[station.id]
+              };
+            } else {
+              return station;
+            }
+          });
+
+          console.log('update', updatedStations);
+          console.log(JSON.stringify(updatedStations));
+        }
+      })
+      .catch(e => {
+        console.log('error fetching station history data', e);
+      });
   };
 
   const viewStack = viewStackRef.current;
