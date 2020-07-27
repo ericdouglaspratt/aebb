@@ -4079,13 +4079,15 @@ export default [
         "date": "2020-06-14",
         "photo": "photos/kennedy-longfellow-school-158-spring-st_2020-06-14.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1565711742
   },
   {
     "id": 414,
     "name": "Discovery Park - 30 Acorn Park Drive",
     "lat": 42.39790817368333,
-    "long": -71.14797130814623
+    "long": -71.14797130814623,
+    "firstSeen": 1565808774
   },
   {
     "id": 415,
@@ -4097,7 +4099,8 @@ export default [
         "date": "2020-05-31",
         "photo": "photos/stuart-st-at-berkeley-st_2020-05-31.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1565815776
   },
   {
     "id": 416,
@@ -4109,7 +4112,8 @@ export default [
         "date": "2020-06-14",
         "photo": "photos/blossom-st-at-charles-st_2020-06-14.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1565818432
   },
   {
     "id": 417,
@@ -4121,7 +4125,8 @@ export default [
         "date": "2020-05-31",
         "photo": "photos/columbus-ave-at-w-canton-st_2020-05-31.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1565819738
   },
   {
     "id": 419,
@@ -4133,13 +4138,15 @@ export default [
         "date": "2020-07-12",
         "photo": "photos/central-square-east-boston_2020-07-12.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1566919387
   },
   {
     "id": 420,
     "name": "Charles St at Pinckney St",
     "lat": 42.35872530462163,
-    "long": -71.07079532006537
+    "long": -71.07079532006537,
+    "firstSeen": 1566417276
   },
   {
     "id": 421,
@@ -4151,7 +4158,8 @@ export default [
         "date": "2020-05-22",
         "photo": "photos/northbourne-rd-at-hyde-park-ave_2020-05-22.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1566524340
   },
   {
     "id": 422,
@@ -4163,7 +4171,8 @@ export default [
         "date": "2020-05-22",
         "photo": "photos/american-legion-hwy-at-canterbury-st_2020-05-22.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1566537710
   },
   {
     "id": 423,
@@ -4175,7 +4184,8 @@ export default [
         "date": "2020-05-22",
         "photo": "photos/mt-hope-st-at-hyde-park-ave_2020-05-22.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1566677007
   },
   {
     "id": 424,
@@ -4187,13 +4197,15 @@ export default [
         "date": "2020-05-22",
         "photo": "photos/jamaica-st-at-south-st_2020-05-22.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1566941915
   },
   {
     "id": 425,
     "name": "The Dimock Center",
     "lat": 42.3193094317828,
-    "long": -71.09639923859504
+    "long": -71.09639923859504,
+    "firstSeen": 1566934380
   },
   {
     "id": 426,
@@ -4205,7 +4217,8 @@ export default [
         "date": "2020-06-07",
         "photo": "photos/surface-rd-at-summer-st_2020-06-07.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1567225957
   },
   {
     "id": 427,
@@ -4217,7 +4230,8 @@ export default [
         "date": "2020-06-21",
         "photo": "photos/washington-st-at-denton-terr_2020-06-21.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1567128012
   },
   {
     "id": 428,
@@ -4229,7 +4243,8 @@ export default [
         "date": "2020-05-17",
         "photo": "photos/western-ave-at-richardson-st_2020-05-17.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1567112307
   },
   {
     "id": 430,
@@ -4281,7 +4296,8 @@ export default [
         "date": "2020-06-21",
         "photo": "photos/centre-st-at-parkway-ymca_2020-06-21.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1568541133
   },
   {
     "id": 434,
@@ -4492,6 +4508,7 @@ export default [
     ]
   }
 ];
+
 
 
 
