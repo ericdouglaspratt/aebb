@@ -2380,19 +2380,22 @@ export default [
         "date": "2019-06-01",
         "photo": "photos/roxbury-ymca_2019-06-01.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1469109626
   },
   {
     "id": 197,
     "name": "MLK Blvd at Washington St",
     "lat": 42.32143814183195,
-    "long": -71.09126061201096
+    "long": -71.09126061201096,
+    "firstSeen": 1468690201
   },
   {
     "id": 199,
     "name": "Uphams Corner T Stop - Magnolia St at Dudley St",
     "lat": 42.318697341722434,
-    "long": -71.0697814822197
+    "long": -71.0697814822197,
+    "firstSeen": 1469480496
   },
   {
     "id": 200,
@@ -2404,7 +2407,8 @@ export default [
         "date": "2019-06-01",
         "photo": "photos/washington-st-at-melnea-cass-blvd_2019-06-01.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1469122357
   },
   {
     "id": 201,
@@ -4349,6 +4353,7 @@ export default [
     ]
   }
 ];
+
 
 
 
