@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 import './StationInfo.css';
 
 const StationInfo = ({ station, trips }) => {
@@ -26,6 +27,11 @@ const StationInfo = ({ station, trips }) => {
         {station.isInactive && !station.isLegacy && (
           <p className="StationInfo-subheader">
             inactive
+          </p>
+        )}
+        {station.firstSeen && (
+          <p className="StationInfo-operatingSince">
+            operating since {moment(station.firstSeen * 1000).format('MMM YYYY')}
           </p>
         )}
         {showBikeDockInfo && (

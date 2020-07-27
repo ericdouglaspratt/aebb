@@ -19,6 +19,11 @@
   margin: 4px 0 10px;
   text-transform: uppercase;
 }
+.StationInfo-operatingSince {
+  color: #777;
+  font-size: 12px;
+  margin: 4px 0 10px;
+}
 .StationInfo-status {
   display: flex;
   justify-content: center;
