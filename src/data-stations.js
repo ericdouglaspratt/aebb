@@ -2752,7 +2752,8 @@ export default [
         "date": "2019-06-01",
         "photo": "photos/four-corners_2019-06-01.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1513699569
   },
   {
     "id": 233,
@@ -4383,6 +4384,7 @@ export default [
     ]
   }
 ];
+
 
 
 
