@@ -2193,7 +2193,8 @@ export default [
     "id": 182,
     "name": "Museum of Science",
     "lat": 42.36769018024484,
-    "long": -71.07116281986237
+    "long": -71.07116281986237,
+    "firstSeen": 1494525549
   },
   {
     "id": 183,
@@ -4373,6 +4374,7 @@ export default [
     ]
   }
 ];
+
 
 
 
