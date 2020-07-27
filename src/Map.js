@@ -10,6 +10,7 @@ import MAP_STYLES from './map-styles';
 
 import { BREAKPOINTS } from './constants';
 import { useBreakpoint } from './helpers';
+import StationInfo from './StationInfo';
 
 const EXPANDED_MARKER_HEIGHT = 40;
 const EXPANDED_MARKER_WIDTH = 30;
@@ -17,6 +18,9 @@ const MARKER_HEIGHT = 27;
 const MARKER_WIDTH = 20;
 const LOCATION_MARKER_HEIGHT = 10;
 const LOCATION_MARKER_WIDTH = 10;
+
+const MARKER_TIME_TRAVEL_VISITED = 'img/station-visited.png';
+const MARKER_TIME_TRAVEL_UNVISITED = 'img/station-unvisited.png';
 
 const MARKER_Z_INDEX = {
   INACTIVE: 1,
@@ -40,6 +44,7 @@ const MAP_OPTIONS = {
 };
 
 function MapComponent({
+  activeTravelTimestamp,
   activeTrip,
   ghostRoutes,
   onClearSelectedStation,
@@ -173,6 +178,53 @@ function MapComponent({
       });
     }
   }, [activeTrip]);
+
+  // handle time travel
+  useEffect(() => {
+    if (activeTravelTimestamp) {
+      stations.list.forEach(station => {
+        if (station.firstSeen > activeTravelTimestamp && station.marker.map) {
+          station.marker.setMap(null);
+        } else if (station.firstSeen <= activeTravelTimestamp && !station.marker.map) {
+          station.marker.setMap(map);
+        }
+
+        if (visitedStations[station.id] && activeTravelTimestamp >= visitedStations[station.id] && station.marker.icon.url !== MARKER_TIME_TRAVEL_VISITED) {
+          station.marker.setIcon({
+            scaledSize: station.marker.icon.scaledSize,
+            url: MARKER_TIME_TRAVEL_VISITED
+          });
+        } else if (visitedStations[station.id] && activeTravelTimestamp < visitedStations[station.id] && station.marker.icon.url !== MARKER_TIME_TRAVEL_UNVISITED) {
+          station.marker.setIcon({
+            scaledSize: station.marker.icon.scaledSize,
+            url: MARKER_TIME_TRAVEL_UNVISITED
+          });
+        } else if (!visitedStations[station.id] && station.marker.icon.url !== MARKER_TIME_TRAVEL_UNVISITED) {
+          station.marker.setIcon({
+            scaledSize: station.marker.icon.scaledSize,
+            url: MARKER_TIME_TRAVEL_UNVISITED
+          });
+        }
+      });
+    } else {
+      // restore map to regular
+      stations.list.forEach(station => {
+        if (station.marker) {
+          station.marker.setIcon({
+            scaledSize: station.marker.icon.scaledSize,
+            url: determineMarkerIcon({
+              bikesAvailable: stations.lookup[station.id].bikesAvailable,
+              docksAvailable: stations.lookup[station.id].docksAvailable,
+              isInactive: stations.lookup[station.id].isInactive,
+              isLegacy: stations.lookup[station.id].isLegacy,
+              isVisited: !!visitedStations[station.id]
+            })
+          });
+          station.marker.setMap(map);
+        }
+      });
+    }
+  }, [activeTravelTimestamp]);
 
   // handle selected marker
   useEffect(() => {

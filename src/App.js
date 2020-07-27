@@ -3,7 +3,7 @@ import moment from 'moment';
 import './App.css';
 
 import { VIEWS } from './constants';
-import { calculateDistance, createIdMap, csvToJson, diffStations, useStateRef } from './helpers';
+import { calculateDistance, createIdMap, createTimeline, csvToJson, diffStations, useStateRef } from './helpers';
 import cachedStationData from './data-stations';
 import rawTrips from './data-trips';
 
@@ -22,7 +22,7 @@ let totalSoFar = 0;
 const processedTrips = rawTrips.map(trip => {
   let numNew = trip.stations.reduce((result, stationId) => {
     if (!visitedStations[stationId]) {
-      visitedStations[stationId] = true;
+      visitedStations[stationId] = moment(trip.date, 'YYYY-MM-DD').unix();
       return result + 1;
     } else {
       return result;
@@ -54,9 +54,11 @@ const trips = {
 };
 
 function App() {
+  const [activeTravelTimestamp, setActiveTravelTimestamp] = useState(null);
   const [diffLog, setDiffLog] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [stations, setStations] = useState(initialStations);
+  const [timeline, setTimeline] = useState([]);
 
   const [markedRouteRef, setMarkedRoute] = useStateRef([]);
   const [viewStackRef, setViewStack] = useStateRef([]);
@@ -106,6 +108,8 @@ function App() {
 
     if (view === VIEWS.ROUTE_MARKING) {
       setMarkedRoute([]);
+    } else if (view === VIEWS.TIME_TRAVEL) {
+      setActiveTravelTimestamp(null);
     }
   };
 
@@ -151,6 +155,7 @@ function App() {
           list: updatedStationList,
           lookup: createIdMap(updatedStationList)
         });
+        setTimeline(createTimeline(updatedStationList, trips));
         setIsLoading(false);
       })
       .catch(e => {
@@ -208,14 +213,44 @@ function App() {
   };
 
   const validateStationHistory = stations => {
-    fetch('/202006-bluebikes-tripdata.csv')
+    fetch('/hubway_Trips_2014_2.csv')
       .then(response => response.text())
       .then(csv => {
         //console.log('csv', csv);
         const json = csvToJson(csv);
-        console.log('json', json);
+        /*json.sort((a, b) => {
+          const am = moment(a.Startdate, 'M/D/YYYY H:mm').unix();
+          const bm = moment(b.Startdate, 'M/D/YYYY H:mm').unix();
+          return am < bm ? -1 : am > bm ? 1 : 0;
+        });*/
+        //console.log('json', json);
 
-        const firstTripTimes = json.reduce((result, trip) => {
+        /*const firstTripTimes = json.reduce((result, trip) => {
+          if (trip.Startdate && !result[trip.Startstationnumber]) {
+            result[trip.Startstationnumber] = moment(trip.Startdate, 'M/D/YYYY H:mm').unix();
+          }
+          if (trip.Enddate && !result[trip.Endstationnumber]) {
+            result[trip.Endstationnumber] = moment(trip.Enddate, 'M/D/YYYY H:mm').unix();
+          }
+          return result;
+        }, {});
+        console.log('first trip times', firstTripTimes);
+
+        const updatedStations = stations.list.map(station => {
+          if (firstTripTimes[station.oldId] < station.firstSeen) {
+            return {
+              ...station,
+              firstSeen: firstTripTimes[station.oldId]
+            };
+          } else {
+            return station;
+          }
+        });
+
+        console.log('update', updatedStations);
+        console.log(JSON.stringify(updatedStations));*/
+
+        /*const firstTripTimes = json.reduce((result, trip) => {
           if (trip.startstationid && stations.lookup[trip.startstationid] && !stations.lookup[trip.startstationid].firstSeen && !result[trip.startstationid]) {
             result[trip.startstationid] = moment(trip.starttime).unix();
           }
@@ -241,7 +276,7 @@ function App() {
 
           console.log('update', updatedStations);
           console.log(JSON.stringify(updatedStations));
-        }
+        }*/
       })
       .catch(e => {
         console.log('error fetching station history data', e);
@@ -280,6 +315,7 @@ function App() {
       ) : (
           <>
             <Map
+              activeTravelTimestamp={activeTravelTimestamp}
               activeTrip={activeTrip}
               onClearSelectedStation={handleClearSelectedStation}
               onSelectPhoto={handleSelectPhoto}
@@ -291,11 +327,14 @@ function App() {
               visitedStations={visitedStations}
             />
             <InfoPane
+              activeTravelTimestamp={activeTravelTimestamp}
               onClearSelectedStation={handleClearSelectedStation}
               onViewActivate={handleViewActivate}
               onViewDeactivate={handleViewDeactivate}
               onViewReplace={handleViewReplace}
+              setActiveTravelTimestamp={setActiveTravelTimestamp}
               stations={stations}
+              timeline={timeline}
               trips={trips}
               viewStack={viewStackRef.current}
               visitedStations={visitedStations}

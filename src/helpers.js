@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
+import moment from 'moment';
+
 import { BREAKPOINTS } from './constants';
 
 export const calcPercentChange = (a, b) => Math.abs((b - a) / a) * 100;
@@ -6,7 +8,7 @@ export const calcPercentChange = (a, b) => Math.abs((b - a) / a) * 100;
 // from https://www.geodatasource.com/developers/javascript
 // unit: 'M' is statute miles (default), 'K' is kilometers, 'N' is nautical miles
 export const calculateDistance = (lat1, lon1, lat2, lon2, unit) => {
-	if ((lat1 == lat2) && (lon1 == lon2)) {
+	if ((lat1 === lat2) && (lon1 === lon2)) {
 		return 0;
 	}
 	else {
@@ -21,8 +23,8 @@ export const calculateDistance = (lat1, lon1, lat2, lon2, unit) => {
 		dist = Math.acos(dist);
 		dist = dist * 180/Math.PI;
 		dist = dist * 60 * 1.1515;
-		if (unit=="K") { dist = dist * 1.609344 }
-		if (unit=="N") { dist = dist * 0.8684 }
+		if (unit==="K") { dist = dist * 1.609344 }
+		if (unit==="N") { dist = dist * 0.8684 }
 		return dist;
 	}
 };
@@ -31,6 +33,47 @@ export const createIdMap = items => items.reduce((result, item) => {
   result[item.id] = item;
   return result;
 }, {});
+
+export const createTimeline = (stations, trips) => {
+  const earliestFirstSeen = stations.reduce((result, station) => {
+    return station.firstSeen && station.firstSeen < result ? station.firstSeen : result;
+  }, 9999999999);
+
+  const months = [];
+  const monthIterator = moment(earliestFirstSeen * 1000).endOf('month').subtract(5, 'seconds');
+  const now = moment();
+  while (monthIterator < now) {
+    months.push({
+      description: monthIterator.format('MMM YYYY'),
+      timestamp: monthIterator.unix()
+    });
+    monthIterator.add(1, 'month');
+  }
+
+  const timeline = months.map(month => {
+    const stationsPresent = stations.filter(station => station.firstSeen && station.firstSeen < month.timestamp);
+    const numVisited = trips.list.filter(trip => moment(trip.date, 'YYYY-M-DD').unix() < month.timestamp).reduce((sumNew, trip) => {
+      return sumNew + trip.numNew;
+    }, 0);
+    return {
+      ...month,
+      numStations: stationsPresent.length,
+      numVisited,
+      percentComplete: Math.round((numVisited / stationsPresent.length) * 100)
+    };
+  });
+
+  timeline.push({
+    description: now.format('MMM YYYY'),
+    timestamp: now.unix(),
+    numStations: stations.length,
+    numVisited: trips.list.reduce((sumNew, trip) => {
+      return sumNew + trip.numNew;
+    }, 0)
+  });
+
+  return timeline;
+};
 
 export const csvToJson = csv => {
   var lines=csv.split("\n");

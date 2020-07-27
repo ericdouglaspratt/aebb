@@ -31,7 +31,7 @@ const StationInfo = ({ station, trips }) => {
         )}
         {station.firstSeen && (
           <p className="StationInfo-operatingSince">
-            operating since {moment(station.firstSeen * 1000).format('MMM YYYY')}
+            est. {moment(station.firstSeen * 1000).format('MMM YYYY')}
           </p>
         )}
         {showBikeDockInfo && (

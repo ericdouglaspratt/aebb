@@ -12,9 +12,8 @@ const ProgressBar = withStyles({
   },
 })(LinearProgress);
 
-const Progress = ({stations, visitedStations}) => {
-  const numVisited = Object.keys(visitedStations).length;
-  const percentComplete = Math.round((numVisited / stations.list.length) * 100);
+const Progress = ({numStations, numVisited}) => {
+  const percentComplete = Math.round((numVisited / numStations) * 100);
   return (
     <div className="Progress">
       <p className="Progress-percent" style={{width: `${percentComplete}%`}}>
@@ -22,7 +21,7 @@ const Progress = ({stations, visitedStations}) => {
       </p>
       <ProgressBar variant="determinate" value={percentComplete} />
       <p className="Progress-absolute" style={{width: `${percentComplete}%`}}>
-        {`${numVisited} of ${stations.list.length} stations`}
+        {`${numVisited} of ${numStations} stations`}
       </p>
     </div>
   );

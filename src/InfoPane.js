@@ -22,15 +22,19 @@ import RouteMarking from './RouteMarking';
 import StationInfo from './StationInfo';
 import Stats from './Stats';
 import TimeTravel from './TimeTravel';
+import TimeTravelPane from './TimeTravelPane';
 import Trip from './Trip';
 import TripList from './TripList';
 
 function InfoPane({
+  activeTravelTimestamp,
   onClearSelectedStation,
   onViewActivate,
   onViewDeactivate,
   onViewReplace,
+  setActiveTravelTimestamp,
   stations,
+  timeline,
   trips,
   viewStack,
   visitedStations
@@ -154,15 +158,26 @@ function InfoPane({
           </div>
         </div>
       ) : breakpoint === BREAKPOINTS.DESKTOP && !!activeView && activeView.view === VIEWS.TIME_TRAVEL ? (
-        <div className="InfoPane InfoPane--scrollable">
-          <div className="InfoPane-header">
-            <BackButton onClick={() => onViewDeactivate(VIEWS.TIME_TRAVEL)} />
+        <>
+          <div className="InfoPane">
+            <div className="InfoPane-header">
+              <BackButton onClick={() => onViewDeactivate(VIEWS.TIME_TRAVEL)} />
+            </div>
+            <div className="InfoPane-content">
+              <TimeTravelPane
+                activeTravelTimestamp={activeTravelTimestamp}
+                timeline={timeline}
+              />
+            </div>
           </div>
-          <div className="InfoPane-content">
-            <Progress stations={stations} visitedStations={visitedStations} />
-            <TimeTravel />
-          </div>
-        </div>
+          <TimeTravel
+            activeTravelTimestamp={activeTravelTimestamp}
+            setActiveTravelTimestamp={setActiveTravelTimestamp}
+            stations={stations}
+            timeline={timeline}
+            trips={trips}
+          />
+        </>
       ) : breakpoint === BREAKPOINTS.DESKTOP && !!activeView && activeView.view === VIEWS.TRIP_LIST ? (
         <div className="InfoPane InfoPane--scrollable">
           <div className="InfoPane-header">
@@ -189,7 +204,7 @@ function InfoPane({
           </div>
           <div className="InfoPane-content">
             <div className="InfoPane-contentMain">
-              <Progress stations={stations} visitedStations={visitedStations} />
+              <Progress numStations={stations.list.length} numVisited={Object.keys(visitedStations).length} />
               {breakpoint === BREAKPOINTS.MOBILE && (
                 <Drawer anchor="bottom" open={isMenuOpen} onClose={handleCloseMenu}>
                   <MenuList>
@@ -223,10 +238,10 @@ function InfoPane({
                     <ListItemIcon><PhotoCamera /></ListItemIcon>
                     Photos
                   </MenuItem>
-                  {/*<MenuItem onClick={() => handleClickMenuItem(VIEWS.TIME_TRAVEL)}>
+                  <MenuItem onClick={() => handleClickMenuItem(VIEWS.TIME_TRAVEL)}>
                     <ListItemIcon><History /></ListItemIcon>
-                    Time Travel
-                  </MenuItem>*/}
+                    Time Travel (beta)
+                  </MenuItem>
                   {/*<MenuItem onClick={() => handleClickMenuItem(VIEWS.ROUTE_MARKING)}>Mark a route</MenuItem>*/}
                 </MenuList>
               )}
