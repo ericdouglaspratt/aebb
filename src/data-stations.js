@@ -10,7 +10,8 @@ export default [
         "photo": "photos/colleges-of-the-fenway_2018-03-31.jpg"
       }
     ],
-    "firstSeen": 1429273014
+    "firstSeen": 1429273014,
+    "oldId": "B32006"
   },
   {
     "id": 4,
@@ -23,7 +24,8 @@ export default [
         "photo": "photos/tremont-st-at-e-berkeley-st_2018-06-24.jpg"
       }
     ],
-    "firstSeen": 1420240587
+    "firstSeen": 1420240587,
+    "oldId": "C32000"
   },
   {
     "id": 5,
@@ -36,7 +38,8 @@ export default [
         "photo": "photos/northeastern-north-lot_2020-05-31.jpg"
       }
     ],
-    "firstSeen": 1429279915
+    "firstSeen": 1429279915,
+    "oldId": "B32012"
   },
   {
     "id": 6,
@@ -49,7 +52,8 @@ export default [
         "photo": "photos/cambridge-st-at-joy-st_2019-07-02.jpg"
       }
     ],
-    "firstSeen": 1420128610
+    "firstSeen": 1420128610,
+    "oldId": "D32000"
   },
   {
     "id": 7,
@@ -62,7 +66,8 @@ export default [
         "photo": "photos/fan-pier_2019-05-17.jpg"
       }
     ],
-    "firstSeen": 1429266533
+    "firstSeen": 1429266533,
+    "oldId": "A32000"
   },
   {
     "id": 8,
@@ -75,7 +80,8 @@ export default [
         "photo": "photos/union-square-allston_2019-05-25.jpg"
       }
     ],
-    "firstSeen": 1429272679
+    "firstSeen": 1429272679,
+    "oldId": "A32001"
   },
   {
     "id": 9,
@@ -88,7 +94,8 @@ export default [
         "photo": "photos/commonwealth-ave-at-amory-st_2018-09-08.jpg"
       }
     ],
-    "firstSeen": 1428674074
+    "firstSeen": 1428674074,
+    "oldId": "A32002"
   },
   {
     "id": 10,
@@ -101,7 +108,8 @@ export default [
         "photo": "photos/bu-central-725-comm-ave_2018-09-08.jpg"
       }
     ],
-    "firstSeen": 1428784407
+    "firstSeen": 1428784407,
+    "oldId": "A32003"
   },
   {
     "id": 11,
@@ -114,7 +122,8 @@ export default [
         "photo": "photos/longwood-ave-at-binney-st_2018-03-31.jpg"
       }
     ],
-    "firstSeen": 1421073658
+    "firstSeen": 1421073658,
+    "oldId": "A32004"
   },
   {
     "id": 12,
@@ -127,7 +136,8 @@ export default [
         "photo": "photos/ruggles-t-stop_2018-06-24.jpg"
       }
     ],
-    "firstSeen": 1429271716
+    "firstSeen": 1429271716,
+    "oldId": "B32002"
   },
   {
     "id": 13,
@@ -140,7 +150,8 @@ export default [
         "photo": "photos/e-concord-st-at-harrison-ave_2020-06-07.jpg"
       }
     ],
-    "firstSeen": 1429270969
+    "firstSeen": 1429270969,
+    "oldId": "C32002"
   },
   {
     "id": 14,
@@ -153,7 +164,8 @@ export default [
         "photo": "photos/avenue-louis-pasteur-at-longwood-ave_2018-03-31.jpg"
       }
     ],
-    "firstSeen": 1420462937
+    "firstSeen": 1420462937,
+    "oldId": "B32003"
   },
   {
     "id": 15,
@@ -166,7 +178,8 @@ export default [
         "photo": "photos/brighton-mills_2020-05-17.jpg"
       }
     ],
-    "firstSeen": 1420577476
+    "firstSeen": 1420577476,
+    "oldId": "A32005"
   },
   {
     "id": 16,
@@ -179,7 +192,8 @@ export default [
         "photo": "photos/back-bay-t-stop_2018-03-31.jpg"
       }
     ],
-    "firstSeen": 1420234677
+    "firstSeen": 1420234677,
+    "oldId": "C32003"
   },
   {
     "id": 17,
@@ -192,7 +206,8 @@ export default [
         "photo": "photos/soldiers-field-park_2020-05-17.jpg"
       }
     ],
-    "firstSeen": 1420503691
+    "firstSeen": 1420503691,
+    "oldId": "A32006"
   },
   {
     "id": 19,
@@ -205,7 +220,8 @@ export default [
         "photo": "photos/park-dr-at-buswell-st_2020-05-31.jpg"
       }
     ],
-    "firstSeen": 1429252423
+    "firstSeen": 1429252423,
+    "oldId": "A32008"
   },
   {
     "id": 20,
@@ -222,7 +238,8 @@ export default [
         "photo": "photos/aquarium-t-stop_2018-03-30.jpg"
       }
     ],
-    "firstSeen": 1420214341
+    "firstSeen": 1420214341,
+    "oldId": "B32004"
   },
   {
     "id": 21,
@@ -235,7 +252,8 @@ export default [
         "photo": "photos/prudential-center_2018-03-31.jpg"
       }
     ],
-    "firstSeen": 1420289650
+    "firstSeen": 1420289650,
+    "oldId": "C32007"
   },
   {
     "id": 22,
@@ -248,7 +266,8 @@ export default [
         "photo": "photos/south-station_2017-05-28.jpg"
       }
     ],
-    "firstSeen": 1429218882
+    "firstSeen": 1429218882,
+    "oldId": "A32010"
   },
   {
     "id": 23,
@@ -261,7 +280,8 @@ export default [
         "photo": "photos/28-state-st_2019-07-02.jpg"
       }
     ],
-    "firstSeen": 1420121792
+    "firstSeen": 1420121792,
+    "oldId": "B32008"
   },
   {
     "id": 24,
@@ -274,7 +294,8 @@ export default [
         "photo": "photos/seaport-square_2019-05-17.jpg"
       }
     ],
-    "firstSeen": 1429265824
+    "firstSeen": 1429265824,
+    "oldId": "B32007"
   },
   {
     "id": 25,
@@ -291,7 +312,8 @@ export default [
         "photo": "photos/south-end-library-tremont-st-at-w-newton-st_2020-05-31.jpg"
       }
     ],
-    "firstSeen": 1429277708
+    "firstSeen": 1429277708,
+    "oldId": "A32009"
   },
   {
     "id": 26,
@@ -308,7 +330,8 @@ export default [
         "photo": "photos/washington-st-at-waltham-st_2020-06-07.jpg"
       }
     ],
-    "firstSeen": 1429273145
+    "firstSeen": 1429273145,
+    "oldId": "D32002"
   },
   {
     "id": 27,
@@ -321,7 +344,8 @@ export default [
         "photo": "photos/roxbury-crossing-t-stop_2018-06-24.jpg"
       }
     ],
-    "firstSeen": 1429272780
+    "firstSeen": 1429272780,
+    "oldId": "C32001"
   },
   {
     "id": 29,
@@ -334,7 +358,8 @@ export default [
         "photo": "photos/innovation-lab_2020-05-17.jpg"
       }
     ],
-    "firstSeen": 1420230411
+    "firstSeen": 1420230411,
+    "oldId": "A32011"
   },
   {
     "id": 30,
@@ -347,7 +372,8 @@ export default [
         "photo": "photos/brigham-circle_2018-03-31.jpg"
       }
     ],
-    "firstSeen": 1429276916
+    "firstSeen": 1429276916,
+    "oldId": "B32013"
   },
   {
     "id": 31,
@@ -360,7 +386,8 @@ export default [
         "photo": "photos/seaport-hotel_2019-05-17.jpg"
       }
     ],
-    "firstSeen": 1429285145
+    "firstSeen": 1429285145,
+    "oldId": "B32014"
   },
   {
     "id": 32,
@@ -373,7 +400,8 @@ export default [
         "photo": "photos/landmark-center-brookline-ave-at-park-dr_2020-05-31.jpg"
       }
     ],
-    "firstSeen": 1420243916
+    "firstSeen": 1420243916,
+    "oldId": "B32015"
   },
   {
     "id": 33,
@@ -390,7 +418,8 @@ export default [
         "photo": "photos/kenmore-square_2020-05-31.jpg"
       }
     ],
-    "firstSeen": 1420243787
+    "firstSeen": 1420243787,
+    "oldId": "B32010"
   },
   {
     "id": 35,
@@ -403,7 +432,8 @@ export default [
         "photo": "photos/arch-st-at-franklin-st_2019-07-02.jpg"
       }
     ],
-    "firstSeen": 1429628230
+    "firstSeen": 1429628230,
+    "oldId": "D32004"
   },
   {
     "id": 36,
@@ -420,7 +450,8 @@ export default [
         "photo": "photos/copley-square_2020-02-23.jpg"
       }
     ],
-    "firstSeen": 1420120422
+    "firstSeen": 1420120422,
+    "oldId": "D32005"
   },
   {
     "id": 37,
@@ -433,7 +464,8 @@ export default [
         "photo": "photos/new-balance_2019-05-25.jpg"
       }
     ],
-    "firstSeen": 1429272998
+    "firstSeen": 1429272998,
+    "oldId": "D32001"
   },
   {
     "id": 39,
@@ -446,7 +478,8 @@ export default [
         "photo": "photos/washington-st-at-rutland-st_2019-06-01.jpg"
       }
     ],
-    "firstSeen": 1429245995
+    "firstSeen": 1429245995,
+    "oldId": "C32006"
   },
   {
     "id": 40,
@@ -459,7 +492,8 @@ export default [
         "photo": "photos/lewis-wharf-at-atlantic-ave_2017-08-13.jpg"
       }
     ],
-    "firstSeen": 1429221513
+    "firstSeen": 1429221513,
+    "oldId": "D32006"
   },
   {
     "id": 41,
@@ -472,7 +506,8 @@ export default [
         "photo": "photos/packards-corner_2019-05-25.jpg"
       }
     ],
-    "firstSeen": 1428700900
+    "firstSeen": 1428700900,
+    "oldId": "A32012"
   },
   {
     "id": 42,
@@ -489,7 +524,8 @@ export default [
         "photo": "photos/boylston-st-at-arlington-st_2018-06-23.jpg"
       }
     ],
-    "firstSeen": 1420460359
+    "firstSeen": 1420460359,
+    "oldId": "D32007"
   },
   {
     "id": 43,
@@ -502,7 +538,8 @@ export default [
         "photo": "photos/rowes-wharf_2017-08-13.jpg"
       }
     ],
-    "firstSeen": 1429265230
+    "firstSeen": 1429265230,
+    "oldId": "D32008"
   },
   {
     "id": 44,
@@ -515,7 +552,8 @@ export default [
         "photo": "photos/congress-st-at-boston-city-hall_2020-01-11.jpg"
       }
     ],
-    "firstSeen": 1428872904
+    "firstSeen": 1428872904,
+    "oldId": "D32009"
   },
   {
     "id": 45,
@@ -529,7 +567,8 @@ export default [
       }
     ],
     "isLegacy": true,
-    "firstSeen": 1429252663
+    "firstSeen": 1429252663,
+    "oldId": "B32011"
   },
   {
     "id": 46,
@@ -542,7 +581,8 @@ export default [
         "photo": "photos/christian-science-plaza_2018-03-31.jpg"
       }
     ],
-    "firstSeen": 1420125811
+    "firstSeen": 1420125811,
+    "oldId": "B32005"
   },
   {
     "id": 47,
@@ -555,7 +595,8 @@ export default [
         "photo": "photos/cross-st-at-hanover-st_2018-03-30.jpg"
       }
     ],
-    "firstSeen": 1429272898
+    "firstSeen": 1429272898,
+    "oldId": "D32010"
   },
   {
     "id": 48,
@@ -568,7 +609,8 @@ export default [
         "photo": "photos/post-office-square_2019-07-02.jpg"
       }
     ],
-    "firstSeen": 1429265459
+    "firstSeen": 1429265459,
+    "oldId": "D32012"
   },
   {
     "id": 49,
@@ -581,7 +623,8 @@ export default [
         "photo": "photos/stuart-st-at-charles-st_2018-03-31.jpg"
       }
     ],
-    "firstSeen": 1429271712
+    "firstSeen": 1429271712,
+    "oldId": "D32011"
   },
   {
     "id": 50,
@@ -594,7 +637,8 @@ export default [
         "photo": "photos/boylston-st-at-berkeley-st_2018-06-23.jpg"
       }
     ],
-    "firstSeen": 1430242214
+    "firstSeen": 1430242214,
+    "oldId": "D32013"
   },
   {
     "id": 51,
@@ -607,7 +651,8 @@ export default [
         "photo": "photos/washington-st-at-lenox-st_2019-06-01.jpg"
       }
     ],
-    "firstSeen": 1420141626
+    "firstSeen": 1420141626,
+    "oldId": "C32005"
   },
   {
     "id": 52,
@@ -620,7 +665,8 @@ export default [
         "photo": "photos/newbury-st-at-hereford-st_2017-08-13.jpg"
       }
     ],
-    "firstSeen": 1430245773
+    "firstSeen": 1430245773,
+    "oldId": "B32000"
   },
   {
     "id": 53,
@@ -633,7 +679,8 @@ export default [
         "photo": "photos/beacon-st-at-mass-ave_2017-08-13.jpg"
       }
     ],
-    "firstSeen": 1428950095
+    "firstSeen": 1428950095,
+    "oldId": "B32016"
   },
   {
     "id": 54,
@@ -646,7 +693,8 @@ export default [
         "photo": "photos/tremont-st-at-west-st_2019-07-02.jpg"
       }
     ],
-    "firstSeen": 1420582846
+    "firstSeen": 1420582846,
+    "oldId": "D32014"
   },
   {
     "id": 55,
@@ -659,7 +707,8 @@ export default [
         "photo": "photos/boylston-st-at-massachusetts-ave_2018-06-23.jpg"
       }
     ],
-    "firstSeen": 1429124924
+    "firstSeen": 1429124924,
+    "oldId": "B32018"
   },
   {
     "id": 56,
@@ -672,7 +721,8 @@ export default [
         "photo": "photos/dudley-square_2019-06-01.jpg"
       }
     ],
-    "firstSeen": 1429702638
+    "firstSeen": 1429702638,
+    "oldId": "B32017"
   },
   {
     "id": 57,
@@ -685,7 +735,8 @@ export default [
         "photo": "photos/massachusetts-ave-at-columbus-ave_2018-06-24.jpg"
       }
     ],
-    "firstSeen": 1429265625
+    "firstSeen": 1429265625,
+    "oldId": "C32004"
   },
   {
     "id": 58,
@@ -698,7 +749,8 @@ export default [
         "photo": "photos/beacon-st-arlington-st_2017-05-28.jpg"
       }
     ],
-    "firstSeen": 1428875721
+    "firstSeen": 1428875721,
+    "oldId": "D32017"
   },
   {
     "id": 59,
@@ -711,7 +763,8 @@ export default [
         "photo": "photos/chinatown-gate-plaza_2019-05-17.jpg"
       }
     ],
-    "firstSeen": 1420810406
+    "firstSeen": 1420810406,
+    "oldId": "D32015"
   },
   {
     "id": 60,
@@ -724,7 +777,8 @@ export default [
         "photo": "photos/charles-circle-charles-st-at-cambridge-st_2017-05-28.jpg"
       }
     ],
-    "firstSeen": 1428949776
+    "firstSeen": 1428949776,
+    "oldId": "D32016"
   },
   {
     "id": 61,
@@ -737,7 +791,8 @@ export default [
         "photo": "photos/boylston-st-at-fairfield-st_2018-06-23.jpg"
       }
     ],
-    "firstSeen": 1429894671
+    "firstSeen": 1429894671,
+    "oldId": "C32008"
   },
   {
     "id": 63,
@@ -750,7 +805,8 @@ export default [
         "photo": "photos/dorchester-ave-at-gillette-park_2019-05-26.jpg"
       }
     ],
-    "firstSeen": 1429290005
+    "firstSeen": 1429290005,
+    "oldId": "C32009"
   },
   {
     "id": 64,
@@ -763,7 +819,8 @@ export default [
         "photo": "photos/congress-st-at-sleeper-st_2019-05-17.jpg"
       }
     ],
-    "firstSeen": 1429266799
+    "firstSeen": 1429266799,
+    "oldId": "C32010"
   },
   {
     "id": 65,
@@ -780,7 +837,8 @@ export default [
         "photo": "photos/boston-convention-and-exhibition-center_2019-05-26.jpg"
       }
     ],
-    "firstSeen": 1429272964
+    "firstSeen": 1429272964,
+    "oldId": "D32018"
   },
   {
     "id": 66,
@@ -793,7 +851,8 @@ export default [
         "photo": "photos/allston-green-district_2019-05-25.jpg"
       }
     ],
-    "firstSeen": 1429143476
+    "firstSeen": 1429143476,
+    "oldId": "A32017"
   },
   {
     "id": 67,
@@ -806,7 +865,8 @@ export default [
         "photo": "photos/mit-at-mass-ave-amherst-st_2017-08-13.jpg"
       }
     ],
-    "firstSeen": 1420117215
+    "firstSeen": 1420117215,
+    "oldId": "M32006"
   },
   {
     "id": 68,
@@ -823,7 +883,8 @@ export default [
         "photo": "photos/central-square-at-mass-ave-essex-st_2020-06-14.jpg"
       }
     ],
-    "firstSeen": 1420090546
+    "firstSeen": 1420090546,
+    "oldId": "M32011"
   },
   {
     "id": 69,
@@ -840,7 +901,8 @@ export default [
         "photo": "photos/coolidge-corner-beacon-st-at-centre-st_2020-05-17.jpg"
       }
     ],
-    "firstSeen": 1429640383
+    "firstSeen": 1429640383,
+    "oldId": "K32001"
   },
   {
     "id": 70,
@@ -853,7 +915,8 @@ export default [
         "photo": "photos/harvard-kennedy-school-at-bennett-st_2019-05-11.jpg"
       }
     ],
-    "firstSeen": 1420136413
+    "firstSeen": 1420136413,
+    "oldId": "M32016"
   },
   {
     "id": 71,
@@ -866,7 +929,8 @@ export default [
         "photo": "photos/conway-park-somerville-ave_2019-06-08.jpg"
       }
     ],
-    "firstSeen": 1429036498
+    "firstSeen": 1429036498,
+    "oldId": "S32004"
   },
   {
     "id": 72,
@@ -883,7 +947,8 @@ export default [
         "photo": "photos/one-broadway-kendall-sq-at-main-st-third-st_2020-01-11.jpg"
       }
     ],
-    "firstSeen": 1420138635
+    "firstSeen": 1420138635,
+    "oldId": "M32003"
   },
   {
     "id": 73,
@@ -896,7 +961,8 @@ export default [
         "photo": "photos/harvard-square-at-brattle-st-eliot-st_2019-05-11.jpg"
       }
     ],
-    "firstSeen": 1420127623
+    "firstSeen": 1420127623,
+    "oldId": "M32017"
   },
   {
     "id": 74,
@@ -909,7 +975,8 @@ export default [
         "photo": "photos/harvard-square-at-mass-ave-dunster_2018-06-30.jpg"
       }
     ],
-    "firstSeen": 1420130990
+    "firstSeen": 1420130990,
+    "oldId": "M32018"
   },
   {
     "id": 75,
@@ -922,7 +989,8 @@ export default [
         "photo": "photos/lafayette-square-at-mass-ave-main-st_2018-09-08.jpg"
       }
     ],
-    "firstSeen": 1420117504
+    "firstSeen": 1420117504,
+    "oldId": "M32009"
   },
   {
     "id": 76,
@@ -939,7 +1007,8 @@ export default [
         "photo": "photos/central-sq-po-cambridge-city-hall_2019-05-11.jpg"
       }
     ],
-    "firstSeen": 1420094018
+    "firstSeen": 1420094018,
+    "oldId": "M32012"
   },
   {
     "id": 77,
@@ -960,7 +1029,8 @@ export default [
         "photo": "photos/somerville-city-hall_2020-05-03.jpg"
       }
     ],
-    "firstSeen": 1429271801
+    "firstSeen": 1429271801,
+    "oldId": "S32001"
   },
   {
     "id": 78,
@@ -973,7 +1043,8 @@ export default [
         "photo": "photos/union-square-somerville_2018-09-08.jpg"
       }
     ],
-    "firstSeen": 1429200970
+    "firstSeen": 1429200970,
+    "oldId": "S32002"
   },
   {
     "id": 79,
@@ -986,7 +1057,8 @@ export default [
         "photo": "photos/beacon-st-at-washington-st-kirkland-st_2019-06-08.jpg"
       }
     ],
-    "firstSeen": 1433978156
+    "firstSeen": 1433978156,
+    "oldId": "S32003"
   },
   {
     "id": 80,
@@ -999,7 +1071,8 @@ export default [
         "photo": "photos/mit-stata-center-at-vassar-st-main-st_2017-08-13.jpg"
       }
     ],
-    "firstSeen": 1420090023
+    "firstSeen": 1420090023,
+    "oldId": "M32005"
   },
   {
     "id": 81,
@@ -1020,7 +1093,8 @@ export default [
         "photo": "photos/chinatown-t-stop_2018-06-23.jpg"
       }
     ],
-    "firstSeen": 1420205034
+    "firstSeen": 1420205034,
+    "oldId": "D32019"
   },
   {
     "id": 82,
@@ -1033,7 +1107,8 @@ export default [
         "photo": "photos/washington-square_2018-03-31.jpg"
       }
     ],
-    "firstSeen": 1430257745
+    "firstSeen": 1430257745,
+    "oldId": "K32002"
   },
   {
     "id": 84,
@@ -1046,7 +1121,8 @@ export default [
         "photo": "photos/cambridgeside-galleria-cambridgeside-pl-at-land-blvd_2017-08-13.jpg"
       }
     ],
-    "firstSeen": 1420140304
+    "firstSeen": 1420140304,
+    "oldId": "M32019"
   },
   {
     "id": 85,
@@ -1063,7 +1139,8 @@ export default [
         "photo": "photos/spaulding-rehabilitation-hospital_2019-07-28.jpg"
       }
     ],
-    "firstSeen": 1420147586
+    "firstSeen": 1420147586,
+    "oldId": "D32023"
   },
   {
     "id": 86,
@@ -1080,7 +1157,8 @@ export default [
         "photo": "photos/brookline-village-pearl-st-at-mbta_2020-02-23.jpg"
       }
     ],
-    "firstSeen": 1429149324
+    "firstSeen": 1429149324,
+    "oldId": "K32003"
   },
   {
     "id": 87,
@@ -1093,7 +1171,8 @@ export default [
         "photo": "photos/harvard-university-housing-putnam-ave-at-peabody-terrace_2019-05-11.jpg"
       }
     ],
-    "firstSeen": 1420131266
+    "firstSeen": 1420131266,
+    "oldId": "M32014"
   },
   {
     "id": 88,
@@ -1107,7 +1186,8 @@ export default [
       }
     ],
     "isLegacy": true,
-    "firstSeen": 1420093161
+    "firstSeen": 1420093161,
+    "oldId": "M32010"
   },
   {
     "id": 89,
@@ -1120,7 +1200,8 @@ export default [
         "photo": "photos/harvard-law-school-at-mass-ave-jarvis-st_2019-05-11.jpg"
       }
     ],
-    "firstSeen": 1420133476
+    "firstSeen": 1420133476,
+    "oldId": "M32020"
   },
   {
     "id": 90,
@@ -1133,7 +1214,8 @@ export default [
         "photo": "photos/lechmere-station_2018-03-03.jpg"
       }
     ],
-    "firstSeen": 1420121726
+    "firstSeen": 1420121726,
+    "oldId": "M32001"
   },
   {
     "id": 91,
@@ -1146,7 +1228,8 @@ export default [
         "photo": "photos/one-kendall-square-at-hampshire-st-portland-st_2020-01-11.jpg"
       }
     ],
-    "firstSeen": 1420090291
+    "firstSeen": 1420090291,
+    "oldId": "M32002"
   },
   {
     "id": 92,
@@ -1163,7 +1246,8 @@ export default [
         "photo": "photos/umass-boston_2020-06-07.jpg"
       }
     ],
-    "firstSeen": 1434025587
+    "firstSeen": 1434025587,
+    "oldId": "C32014"
   },
   {
     "id": 93,
@@ -1176,7 +1260,8 @@ export default [
         "photo": "photos/jfk-umass-t-stop_2019-10-20.jpg"
       }
     ],
-    "firstSeen": 1429272887
+    "firstSeen": 1429272887,
+    "oldId": "C32013"
   },
   {
     "id": 94,
@@ -1193,7 +1278,8 @@ export default [
         "photo": "photos/main-st-at-austin-st_2019-07-28.jpg"
       }
     ],
-    "firstSeen": 1429282334
+    "firstSeen": 1429282334,
+    "oldId": "D32020"
   },
   {
     "id": 95,
@@ -1206,7 +1292,8 @@ export default [
         "photo": "photos/cambridge-st-at-columbia-st_2018-09-08.jpg"
       }
     ],
-    "firstSeen": 1420090461
+    "firstSeen": 1420090461,
+    "oldId": "M32007"
   },
   {
     "id": 96,
@@ -1219,7 +1306,8 @@ export default [
         "photo": "photos/cambridge-main-library-at-broadway-trowbridge-st_2019-05-11.jpg"
       }
     ],
-    "firstSeen": 1420090247
+    "firstSeen": 1420090247,
+    "oldId": "M32013"
   },
   {
     "id": 97,
@@ -1232,7 +1320,8 @@ export default [
         "photo": "photos/harvard-river-houses-at-dewolfe-st_2019-05-11.jpg"
       }
     ],
-    "firstSeen": 1420138036
+    "firstSeen": 1420138036,
+    "oldId": "M32038"
   },
   {
     "id": 98,
@@ -1249,7 +1338,8 @@ export default [
         "photo": "photos/warren-st-at-chelsea-st_2019-07-28.jpg"
       }
     ],
-    "firstSeen": 1420493693
+    "firstSeen": 1420493693,
+    "oldId": "D32021"
   },
   {
     "id": 99,
@@ -1262,7 +1352,8 @@ export default [
         "photo": "photos/wilson-square_2020-01-11.jpg"
       }
     ],
-    "firstSeen": 1428947694
+    "firstSeen": 1428947694,
+    "oldId": "S32005"
   },
   {
     "id": 100,
@@ -1275,7 +1366,8 @@ export default [
         "photo": "photos/davis-square_2019-06-08.jpg"
       }
     ],
-    "firstSeen": 1429119386
+    "firstSeen": 1429119386,
+    "oldId": "S32006"
   },
   {
     "id": 101,
@@ -1288,7 +1380,8 @@ export default [
         "photo": "photos/ball-sq_2020-05-03.jpg"
       }
     ],
-    "firstSeen": 1563310233
+    "firstSeen": 1563310233,
+    "oldId": "S32007"
   },
   {
     "id": 102,
@@ -1301,7 +1394,8 @@ export default [
         "photo": "photos/powder-house-circle_2018-06-30.jpg"
       }
     ],
-    "firstSeen": 1429274872
+    "firstSeen": 1429274872,
+    "oldId": "S32008"
   },
   {
     "id": 103,
@@ -1318,7 +1412,8 @@ export default [
         "photo": "photos/jfk-crossing-at-harvard-st-thorndike-st_2020-05-17.jpg"
       }
     ],
-    "firstSeen": 1429304625
+    "firstSeen": 1429304625,
+    "oldId": "K32004"
   },
   {
     "id": 104,
@@ -1331,7 +1426,8 @@ export default [
         "photo": "photos/harvard-radcliffe-quadrangle-shepard-st-garden-st_2019-05-11.jpg"
       }
     ],
-    "firstSeen": 1420127655
+    "firstSeen": 1420127655,
+    "oldId": "M32024"
   },
   {
     "id": 105,
@@ -1344,7 +1440,8 @@ export default [
         "photo": "photos/lower-cambridgeport-at-magazine-st-riverside-rd_2020-06-14.jpg"
       }
     ],
-    "firstSeen": 1420092426
+    "firstSeen": 1420092426,
+    "oldId": "M32022"
   },
   {
     "id": 106,
@@ -1357,7 +1454,8 @@ export default [
         "photo": "photos/dudley-town-common_2020-07-24.jpg"
       }
     ],
-    "firstSeen": 1429294230
+    "firstSeen": 1429294230,
+    "oldId": "C32015"
   },
   {
     "id": 107,
@@ -1370,7 +1468,8 @@ export default [
         "photo": "photos/main-st-at-ames-st_2017-05-28.jpg"
       }
     ],
-    "firstSeen": 1420130620
+    "firstSeen": 1420130620,
+    "oldId": "M32037"
   },
   {
     "id": 108,
@@ -1383,7 +1482,8 @@ export default [
         "photo": "photos/harvard-university-seas-cruft-pierce-halls_2019-05-11.jpg"
       }
     ],
-    "firstSeen": 1420144383
+    "firstSeen": 1420144383,
+    "oldId": "M32023"
   },
   {
     "id": 109,
@@ -1396,7 +1496,8 @@ export default [
         "photo": "photos/west-end-park_2019-07-02.jpg"
       }
     ],
-    "firstSeen": 1420233799
+    "firstSeen": 1420233799,
+    "oldId": "D32022"
   },
   {
     "id": 110,
@@ -1409,7 +1510,8 @@ export default [
         "photo": "photos/harvard-university-gund-hall-quincy-kirkland_2019-05-11.jpg"
       }
     ],
-    "firstSeen": 1420127290
+    "firstSeen": 1420127290,
+    "oldId": "M32021"
   },
   {
     "id": 111,
@@ -1422,7 +1524,8 @@ export default [
         "photo": "photos/packard-ave-at-powderhouse-blvd_2018-06-30.jpg"
       }
     ],
-    "firstSeen": 1429274546
+    "firstSeen": 1429274546,
+    "oldId": "S32009"
   },
   {
     "id": 112,
@@ -1435,7 +1538,8 @@ export default [
         "photo": "photos/clarendon-hill-at-broadway_2018-06-30.jpg"
       }
     ],
-    "firstSeen": 1429142644
+    "firstSeen": 1429142644,
+    "oldId": "S32010"
   },
   {
     "id": 113,
@@ -1448,14 +1552,16 @@ export default [
         "photo": "photos/andrew-t-stop_2019-10-20.jpg"
       }
     ],
-    "firstSeen": 1429295673
+    "firstSeen": 1429295673,
+    "oldId": "C32012"
   },
   {
     "id": 114,
     "name": "Teele Square",
     "lat": 42.40231703379005,
     "long": -71.12671129423688,
-    "firstSeen": 1429223437
+    "firstSeen": 1429223437,
+    "oldId": "S32011"
   },
   {
     "id": 115,
@@ -1468,7 +1574,8 @@ export default [
         "photo": "photos/porter-square-station_2019-05-11.jpg"
       }
     ],
-    "firstSeen": 1420089704
+    "firstSeen": 1420089704,
+    "oldId": "M32029"
   },
   {
     "id": 116,
@@ -1481,7 +1588,8 @@ export default [
         "photo": "photos/359-broadway-at-fayette-st_2018-09-08.jpg"
       }
     ],
-    "firstSeen": 1420122381
+    "firstSeen": 1420122381,
+    "oldId": "M32026"
   },
   {
     "id": 117,
@@ -1494,7 +1602,8 @@ export default [
         "photo": "photos/binney-st-sixth-st_2020-01-11.jpg"
       }
     ],
-    "firstSeen": 1420105318
+    "firstSeen": 1420105318,
+    "oldId": "M32027"
   },
   {
     "id": 118,
@@ -1507,7 +1616,8 @@ export default [
         "photo": "photos/linear-park-mass-ave-at-cameron-ave_2018-06-30.jpg"
       }
     ],
-    "firstSeen": 1420095354
+    "firstSeen": 1420095354,
+    "oldId": "M32025"
   },
   {
     "id": 119,
@@ -1520,7 +1630,8 @@ export default [
         "photo": "photos/south-boston-library_2018-03-18.jpg"
       }
     ],
-    "firstSeen": 1429272498
+    "firstSeen": 1429272498,
+    "oldId": "C32017"
   },
   {
     "id": 120,
@@ -1533,7 +1644,8 @@ export default [
         "photo": "photos/charles-st-at-beacon-st_2017-05-28.jpg"
       }
     ],
-    "firstSeen": 1428691774
+    "firstSeen": 1428691774,
+    "oldId": "D32024"
   },
   {
     "id": 121,
@@ -1546,7 +1658,8 @@ export default [
         "photo": "photos/w-broadway-at-dorchester-st_2019-05-26.jpg"
       }
     ],
-    "firstSeen": 1429270794
+    "firstSeen": 1429270794,
+    "oldId": "C32016"
   },
   {
     "id": 122,
@@ -1559,7 +1672,8 @@ export default [
         "photo": "photos/burlington-ave-at-brookline-ave_2020-05-31.jpg"
       }
     ],
-    "firstSeen": 1429217702
+    "firstSeen": 1429217702,
+    "oldId": "B32020"
   },
   {
     "id": 124,
@@ -1572,7 +1686,8 @@ export default [
         "photo": "photos/curtis-hall_2019-06-12.jpg"
       }
     ],
-    "firstSeen": 1429277169
+    "firstSeen": 1429277169,
+    "oldId": "E32001"
   },
   {
     "id": 125,
@@ -1585,7 +1700,8 @@ export default [
         "photo": "photos/hyde-square_2019-06-12.jpg"
       }
     ],
-    "firstSeen": 1429225307
+    "firstSeen": 1429225307,
+    "oldId": "E32003"
   },
   {
     "id": 126,
@@ -1602,7 +1718,8 @@ export default [
         "photo": "photos/egleston-square_2020-06-27.jpg"
       }
     ],
-    "firstSeen": 1429302635
+    "firstSeen": 1429302635,
+    "oldId": "E32004"
   },
   {
     "id": 128,
@@ -1615,7 +1732,8 @@ export default [
         "photo": "photos/e-cottage-st-at-columbia-rd_2020-06-07.jpg"
       }
     ],
-    "firstSeen": 1429313797
+    "firstSeen": 1429313797,
+    "oldId": "C32018"
   },
   {
     "id": 129,
@@ -1628,7 +1746,8 @@ export default [
         "photo": "photos/hayes-square-at-vine-st_2017-08-13.jpg"
       }
     ],
-    "firstSeen": 1429267519
+    "firstSeen": 1429267519,
+    "oldId": "D32026"
   },
   {
     "id": 130,
@@ -1641,7 +1760,8 @@ export default [
         "photo": "photos/uphams-corner_2020-06-07.jpg"
       }
     ],
-    "firstSeen": 1429281227
+    "firstSeen": 1429281227,
+    "oldId": "C32019"
   },
   {
     "id": 131,
@@ -1654,7 +1774,8 @@ export default [
         "photo": "photos/jackson-square-t-stop_2018-06-24.jpg"
       }
     ],
-    "firstSeen": 1429273808
+    "firstSeen": 1429273808,
+    "oldId": "E32006"
   },
   {
     "id": 133,
@@ -1671,7 +1792,8 @@ export default [
         "photo": "photos/green-street-t-stop_2019-06-12.jpg"
       }
     ],
-    "firstSeen": 1429274183
+    "firstSeen": 1429274183,
+    "oldId": "E32005"
   },
   {
     "id": 134,
@@ -1684,7 +1806,8 @@ export default [
         "photo": "photos/boylston-st-at-dartmouth-st_2018-06-23.jpg"
       }
     ],
-    "firstSeen": 1429918714
+    "firstSeen": 1429918714,
+    "oldId": "D32027"
   },
   {
     "id": 135,
@@ -1697,7 +1820,8 @@ export default [
         "photo": "photos/id-building-east_2019-05-17.jpg"
       }
     ],
-    "firstSeen": 1429267764
+    "firstSeen": 1429267764,
+    "oldId": "C32020"
   },
   {
     "id": 136,
@@ -1710,7 +1834,8 @@ export default [
         "photo": "photos/id-building-west_2019-05-17.jpg"
       }
     ],
-    "firstSeen": 1429276113
+    "firstSeen": 1429276113,
+    "oldId": "C32021"
   },
   {
     "id": 137,
@@ -1727,7 +1852,8 @@ export default [
         "photo": "photos/magoun-square-at-trum-field_2020-05-03.jpg"
       }
     ],
-    "firstSeen": 1429297743
+    "firstSeen": 1429297743,
+    "oldId": "S32013"
   },
   {
     "id": 138,
@@ -1744,7 +1870,8 @@ export default [
         "photo": "photos/newmarket-square-t-stop_2020-07-24.jpg"
       }
     ],
-    "firstSeen": 1429290808
+    "firstSeen": 1429290808,
+    "oldId": "C32022"
   },
   {
     "id": 139,
@@ -1757,7 +1884,8 @@ export default [
         "photo": "photos/dana-park_2020-06-14.jpg"
       }
     ],
-    "firstSeen": 1429289638
+    "firstSeen": 1429289638,
+    "oldId": "M32030"
   },
   {
     "id": 140,
@@ -1770,7 +1898,8 @@ export default [
         "photo": "photos/danehy-park_2018-06-30.jpg"
       }
     ],
-    "firstSeen": 1420130273
+    "firstSeen": 1420130273,
+    "oldId": "M32031"
   },
   {
     "id": 141,
@@ -1783,7 +1912,8 @@ export default [
         "photo": "photos/kendall-street_2020-01-11.jpg"
       }
     ],
-    "firstSeen": 1420127473
+    "firstSeen": 1420127473,
+    "oldId": "M32032"
   },
   {
     "id": 142,
@@ -1796,7 +1926,8 @@ export default [
         "photo": "photos/alewife-station-at-russell-field_2018-06-30.jpg"
       }
     ],
-    "firstSeen": 1420145263
+    "firstSeen": 1420145263,
+    "oldId": "M32033"
   },
   {
     "id": 143,
@@ -1809,7 +1940,8 @@ export default [
         "photo": "photos/ef-north-point-park_2018-03-03.jpg"
       }
     ],
-    "firstSeen": 1420133746
+    "firstSeen": 1420133746,
+    "oldId": "M32034"
   },
   {
     "id": 144,
@@ -1822,7 +1954,8 @@ export default [
         "photo": "photos/rogers-st-at-land-blvd_2020-01-11.jpg"
       }
     ],
-    "firstSeen": 1533849583
+    "firstSeen": 1533849583,
+    "oldId": "M32035"
   },
   {
     "id": 145,
@@ -1835,7 +1968,8 @@ export default [
         "photo": "photos/rindge-avenue-oneill-library_2018-06-30.jpg"
       }
     ],
-    "firstSeen": 1420163591
+    "firstSeen": 1420163591,
+    "oldId": "M32036"
   },
   {
     "id": 146,
@@ -1848,7 +1982,8 @@ export default [
         "photo": "photos/day-boulevard_2018-03-18.jpg"
       }
     ],
-    "firstSeen": 1458231488
+    "firstSeen": 1458231488,
+    "oldId": "C32023"
   },
   {
     "id": 149,
@@ -1861,7 +1996,8 @@ export default [
         "photo": "photos/175-n-harvard-st_2020-05-17.jpg"
       }
     ],
-    "firstSeen": 1420164783
+    "firstSeen": 1420164783,
+    "oldId": "A32019"
   },
   {
     "id": 150,
@@ -1874,7 +2010,8 @@ export default [
         "photo": "photos/state-street-at-channel-center_2019-05-26.jpg"
       }
     ],
-    "firstSeen": 1429271258
+    "firstSeen": 1429271258,
+    "oldId": "C32024"
   },
   {
     "id": 151,
@@ -1891,7 +2028,8 @@ export default [
         "photo": "photos/surface-rd-at-india-st_2018-03-30.jpg"
       }
     ],
-    "firstSeen": 1429272614
+    "firstSeen": 1429272614,
+    "oldId": "A32013"
   },
   {
     "id": 152,
@@ -1904,7 +2042,8 @@ export default [
         "photo": "photos/ink-block_2018-06-24.jpg"
       }
     ],
-    "firstSeen": 1429275740
+    "firstSeen": 1429275740,
+    "oldId": "C32025"
   },
   {
     "id": 156,
@@ -1921,7 +2060,8 @@ export default [
         "photo": "photos/somerville-hospital_2020-05-03.jpg"
       }
     ],
-    "firstSeen": 1533079967
+    "firstSeen": 1533079967,
+    "oldId": "S32020"
   },
   {
     "id": 157,
@@ -1946,7 +2086,8 @@ export default [
         "photo": "photos/seaport-blvd-at-sleeper-st_2020-06-14.jpg"
       }
     ],
-    "firstSeen": 1509029086
+    "firstSeen": 1509029086,
+    "oldId": "C32036"
   },
   {
     "id": 159,
@@ -1959,7 +2100,8 @@ export default [
         "photo": "photos/s-huntington-ave-at-heath-st_2019-06-12.jpg"
       }
     ],
-    "firstSeen": 1444941469
+    "firstSeen": 1444941469,
+    "oldId": "E32007"
   },
   {
     "id": 160,
@@ -1972,7 +2114,8 @@ export default [
         "photo": "photos/wentworth-institute-of-technology_2018-03-31.jpg"
       }
     ],
-    "firstSeen": 1443831047
+    "firstSeen": 1443831047,
+    "oldId": "B32021"
   },
   {
     "id": 161,
@@ -1985,7 +2128,8 @@ export default [
         "photo": "photos/w-broadway-at-d-st_2019-05-26.jpg"
       }
     ],
-    "firstSeen": 1443823245
+    "firstSeen": 1443823245,
+    "oldId": "C32029"
   },
   {
     "id": 162,
@@ -1998,7 +2142,8 @@ export default [
         "photo": "photos/seaver-st-at-humboldt-ave_2020-06-27.jpg"
       }
     ],
-    "firstSeen": 1444039477
+    "firstSeen": 1444039477,
+    "oldId": "C32027"
   },
   {
     "id": 163,
@@ -2015,7 +2160,8 @@ export default [
         "photo": "photos/lawn-on-d_2019-05-26.jpg"
       }
     ],
-    "firstSeen": 1444132446
+    "firstSeen": 1444132446,
+    "oldId": "C32028"
   },
   {
     "id": 167,
@@ -2028,7 +2174,8 @@ export default [
         "photo": "photos/dorchester-ave-at-harbor-view-st_2020-06-07.jpg"
       }
     ],
-    "firstSeen": 1444078860
+    "firstSeen": 1444078860,
+    "oldId": "C32031"
   },
   {
     "id": 169,
@@ -2045,7 +2192,8 @@ export default [
         "photo": "photos/main-st-at-eden-st_2019-07-28.jpg"
       }
     ],
-    "firstSeen": 1444165414
+    "firstSeen": 1444165414,
+    "oldId": "A32022"
   },
   {
     "id": 170,
@@ -2058,7 +2206,8 @@ export default [
         "photo": "photos/franklin-park-zoo_2020-06-27.jpg"
       }
     ],
-    "firstSeen": 1444153920
+    "firstSeen": 1444153920,
+    "oldId": "C32030"
   },
   {
     "id": 171,
@@ -2071,7 +2220,8 @@ export default [
         "photo": "photos/bunker-hill-community-college_2017-08-13.jpg"
       }
     ],
-    "firstSeen": 1444941964
+    "firstSeen": 1444941964,
+    "oldId": "A32023"
   },
   {
     "id": 173,
@@ -2084,7 +2234,8 @@ export default [
         "photo": "photos/savin-hill-t-stop_2020-06-07.jpg"
       }
     ],
-    "firstSeen": 1460910715
+    "firstSeen": 1460910715,
+    "oldId": "C32033"
   },
   {
     "id": 174,
@@ -2097,7 +2248,8 @@ export default [
         "photo": "photos/washington-st-at-brock-st_2019-05-25.jpg"
       }
     ],
-    "firstSeen": 1444420764
+    "firstSeen": 1444420764,
+    "oldId": "D32029"
   },
   {
     "id": 175,
@@ -2110,7 +2262,8 @@ export default [
         "photo": "photos/brighton-center_2019-05-25.jpg"
       }
     ],
-    "firstSeen": 1444587614
+    "firstSeen": 1444587614,
+    "oldId": "D32028"
   },
   {
     "id": 176,
@@ -2123,7 +2276,8 @@ export default [
         "photo": "photos/lesley-university_2019-05-11.jpg"
       }
     ],
-    "firstSeen": 1446674217
+    "firstSeen": 1446674217,
+    "oldId": "M32039"
   },
   {
     "id": 177,
@@ -2136,7 +2290,8 @@ export default [
         "photo": "photos/university-park_2018-09-08.jpg"
       }
     ],
-    "firstSeen": 1446676212
+    "firstSeen": 1446676212,
+    "oldId": "M32040"
   },
   {
     "id": 178,
@@ -2149,7 +2304,8 @@ export default [
         "photo": "photos/mit-at-pacific-st-purrington-st_2020-06-14.jpg"
       }
     ],
-    "firstSeen": 1446668578
+    "firstSeen": 1446668578,
+    "oldId": "M32041"
   },
   {
     "id": 179,
@@ -2162,7 +2318,8 @@ export default [
         "photo": "photos/mit-at-vassar-st_2018-09-08.jpg"
       }
     ],
-    "firstSeen": 1446684891
+    "firstSeen": 1446684891,
+    "oldId": "M32042"
   },
   {
     "id": 180,
@@ -2175,7 +2332,8 @@ export default [
         "photo": "photos/mt-auburn_2020-07-26.jpg"
       }
     ],
-    "firstSeen": 1446731928
+    "firstSeen": 1446731928,
+    "oldId": "M32043"
   },
   {
     "id": 181,
@@ -2192,14 +2350,16 @@ export default [
         "photo": "photos/huron-ave-at-vassal-lane_2020-07-26.jpg"
       }
     ],
-    "firstSeen": 1509106336
+    "firstSeen": 1509106336,
+    "oldId": "M32044"
   },
   {
     "id": 182,
     "name": "Museum of Science",
     "lat": 42.36769018024484,
     "long": -71.07116281986237,
-    "firstSeen": 1494525549
+    "firstSeen": 1494525549,
+    "oldId": "M32045"
   },
   {
     "id": 183,
@@ -2212,7 +2372,8 @@ export default [
         "photo": "photos/alewife-mbta-at-steel-place_2018-06-30.jpg"
       }
     ],
-    "firstSeen": 1472591977
+    "firstSeen": 1472591977,
+    "oldId": "M32046"
   },
   {
     "id": 184,
@@ -2225,7 +2386,8 @@ export default [
         "photo": "photos/sidney-research-campus_2018-09-08.jpg"
       }
     ],
-    "firstSeen": 1475700885
+    "firstSeen": 1475700885,
+    "oldId": "M32047"
   },
   {
     "id": 185,
@@ -2238,7 +2400,8 @@ export default [
         "photo": "photos/third-at-binney-st_2017-08-13.jpg"
       }
     ],
-    "firstSeen": 1477587118
+    "firstSeen": 1477587118,
+    "oldId": "M32048"
   },
   {
     "id": 186,
@@ -2251,7 +2414,8 @@ export default [
         "photo": "photos/congress-st-at-northern-ave_2019-05-17.jpg"
       }
     ],
-    "firstSeen": 1460411250
+    "firstSeen": 1460411250,
+    "oldId": "C32032"
   },
   {
     "id": 187,
@@ -2264,7 +2428,8 @@ export default [
         "photo": "photos/cypress-st-at-clark-playground_2020-07-03.jpg"
       }
     ],
-    "firstSeen": 1532625116
+    "firstSeen": 1532625116,
+    "oldId": "K32009"
   },
   {
     "id": 188,
@@ -2281,7 +2446,8 @@ export default [
         "photo": "photos/foss-park_2020-05-03.jpg"
       }
     ],
-    "firstSeen": 1533056044
+    "firstSeen": 1533056044,
+    "oldId": "S32015"
   },
   {
     "id": 189,
@@ -2294,7 +2460,8 @@ export default [
         "photo": "photos/kendall-t_2020-01-11.jpg"
       }
     ],
-    "firstSeen": 1458594307
+    "firstSeen": 1458594307,
+    "oldId": "M32004"
   },
   {
     "id": 190,
@@ -2307,7 +2474,8 @@ export default [
         "photo": "photos/nashua-st-at-red-auerbach-way_2019-07-02.jpg"
       }
     ],
-    "firstSeen": 1457041627
+    "firstSeen": 1457041627,
+    "oldId": "A32025"
   },
   {
     "id": 191,
@@ -2324,7 +2492,8 @@ export default [
         "photo": "photos/tappan-st-at-brookline-hills-mbta_2020-07-03.jpg"
       }
     ],
-    "firstSeen": 1532540526
+    "firstSeen": 1532540526,
+    "oldId": "K32008"
   },
   {
     "id": 192,
@@ -2337,7 +2506,8 @@ export default [
         "photo": "photos/purchase-st-at-pearl-st_2017-08-13.jpg"
       }
     ],
-    "firstSeen": 1460750192
+    "firstSeen": 1460750192,
+    "oldId": "A32026"
   },
   {
     "id": 193,
@@ -2350,7 +2520,8 @@ export default [
         "photo": "photos/brookline-town-hall_2020-02-23.jpg"
       }
     ],
-    "firstSeen": 1461870950
+    "firstSeen": 1461870950,
+    "oldId": "K32005"
   },
   {
     "id": 194,
@@ -2367,7 +2538,8 @@ export default [
         "photo": "photos/broadway-st-at-mt-pleasant-st_2020-05-03.jpg"
       }
     ],
-    "firstSeen": 1461940218
+    "firstSeen": 1461940218,
+    "oldId": "S32014"
   },
   {
     "id": 195,
@@ -2380,7 +2552,8 @@ export default [
         "photo": "photos/brian-p-murphy-staircase-at-child-st_2018-03-03.jpg"
       }
     ],
-    "firstSeen": 1467325390
+    "firstSeen": 1467325390,
+    "oldId": "M32049"
   },
   {
     "id": 196,
@@ -2393,21 +2566,24 @@ export default [
         "photo": "photos/roxbury-ymca_2019-06-01.jpg"
       }
     ],
-    "firstSeen": 1469109626
+    "firstSeen": 1469109626,
+    "oldId": "B32022"
   },
   {
     "id": 197,
     "name": "MLK Blvd at Washington St",
     "lat": 42.32143814183195,
     "long": -71.09126061201096,
-    "firstSeen": 1468690201
+    "firstSeen": 1468690201,
+    "oldId": "B32023"
   },
   {
     "id": 199,
     "name": "Uphams Corner T Stop - Magnolia St at Dudley St",
     "lat": 42.318697341722434,
     "long": -71.0697814822197,
-    "firstSeen": 1469480496
+    "firstSeen": 1469480496,
+    "oldId": "B32025"
   },
   {
     "id": 200,
@@ -2420,14 +2596,16 @@ export default [
         "photo": "photos/washington-st-at-melnea-cass-blvd_2019-06-01.jpg"
       }
     ],
-    "firstSeen": 1469122357
+    "firstSeen": 1469122357,
+    "oldId": "B32026"
   },
   {
     "id": 201,
     "name": "NCAAA - Walnut Ave at Crawford St",
     "lat": 42.316902,
     "long": -71.091946,
-    "firstSeen": 1470591910
+    "firstSeen": 1470591910,
+    "oldId": "B32027"
   },
   {
     "id": 202,
@@ -2440,7 +2618,8 @@ export default [
         "photo": "photos/grove-hall-library_2019-06-01.jpg"
       }
     ],
-    "firstSeen": 1471562392
+    "firstSeen": 1471562392,
+    "oldId": "B32028"
   },
   {
     "id": 203,
@@ -2453,7 +2632,8 @@ export default [
         "photo": "photos/columbia-rd-at-ceylon-st_2020-06-07.jpg"
       }
     ],
-    "firstSeen": 1470694872
+    "firstSeen": 1470694872,
+    "oldId": "B32029"
   },
   {
     "id": 204,
@@ -2466,7 +2646,8 @@ export default [
         "photo": "photos/walnut-ave-at-warren-st_2019-06-01.jpg"
       }
     ],
-    "firstSeen": 1470699665
+    "firstSeen": 1470699665,
+    "oldId": "B32030"
   },
   {
     "id": 205,
@@ -2479,7 +2660,8 @@ export default [
         "photo": "photos/bowdoin-st-at-quincy-st_2020-06-07.jpg"
       }
     ],
-    "firstSeen": 1471376480
+    "firstSeen": 1471376480,
+    "oldId": "B32031"
   },
   {
     "id": 206,
@@ -2492,7 +2674,8 @@ export default [
         "photo": "photos/government-center_2019-07-02.jpg"
       }
     ],
-    "firstSeen": 1524089822
+    "firstSeen": 1524089822,
+    "oldId": "B32032"
   },
   {
     "id": 208,
@@ -2505,7 +2688,8 @@ export default [
         "photo": "photos/oak-square_2019-05-25.jpg"
       }
     ],
-    "firstSeen": 1472670990
+    "firstSeen": 1472670990,
+    "oldId": "D32031"
   },
   {
     "id": 209,
@@ -2518,7 +2702,8 @@ export default [
         "photo": "photos/chelsea-st-at-saratoga-st_2019-05-19.jpg"
       }
     ],
-    "firstSeen": 1475021838
+    "firstSeen": 1475021838,
+    "oldId": "A32027"
   },
   {
     "id": 210,
@@ -2531,7 +2716,8 @@ export default [
         "photo": "photos/bennington-st-at-byron-st_2019-05-19.jpg"
       }
     ],
-    "firstSeen": 1474994484
+    "firstSeen": 1474994484,
+    "oldId": "A32028"
   },
   {
     "id": 211,
@@ -2548,7 +2734,8 @@ export default [
         "photo": "photos/piers-park_2020-07-12.jpg"
       }
     ],
-    "firstSeen": 1475188584
+    "firstSeen": 1475188584,
+    "oldId": "A32029"
   },
   {
     "id": 212,
@@ -2561,7 +2748,8 @@ export default [
         "photo": "photos/maverick-square-lewis-mall_2019-05-19.jpg"
       }
     ],
-    "firstSeen": 1475101634
+    "firstSeen": 1475101634,
+    "oldId": "A32030"
   },
   {
     "id": 213,
@@ -2578,7 +2766,8 @@ export default [
         "photo": "photos/ebnhc-maverick-square_2020-07-12.jpg"
       }
     ],
-    "firstSeen": 1475174063
+    "firstSeen": 1475174063,
+    "oldId": "A32031"
   },
   {
     "id": 214,
@@ -2591,7 +2780,8 @@ export default [
         "photo": "photos/airport-t-stop_2019-05-19.jpg"
       }
     ],
-    "firstSeen": 1475079932
+    "firstSeen": 1475079932,
+    "oldId": "A32032"
   },
   {
     "id": 215,
@@ -2604,7 +2794,8 @@ export default [
         "photo": "photos/the-eddy-new-st-at-sumner-st_2019-05-19.jpg"
       }
     ],
-    "firstSeen": 1475190403
+    "firstSeen": 1475190403,
+    "oldId": "A32033"
   },
   {
     "id": 216,
@@ -2617,7 +2808,8 @@ export default [
         "photo": "photos/glendon-st-at-condor-st_2019-05-19.jpg"
       }
     ],
-    "firstSeen": 1475250191
+    "firstSeen": 1475250191,
+    "oldId": "A32034"
   },
   {
     "id": 217,
@@ -2630,7 +2822,8 @@ export default [
         "photo": "photos/orient-heights-t-stop_2019-05-19.jpg"
       }
     ],
-    "firstSeen": 1475186918
+    "firstSeen": 1475186918,
+    "oldId": "A32035"
   },
   {
     "id": 218,
@@ -2643,7 +2836,8 @@ export default [
         "photo": "photos/watermark-seaport_2019-05-17.jpg"
       }
     ],
-    "firstSeen": 1475696347
+    "firstSeen": 1475696347,
+    "oldId": "C32034"
   },
   {
     "id": 219,
@@ -2656,7 +2850,8 @@ export default [
         "photo": "photos/boston-east_2019-05-19.jpg"
       }
     ],
-    "firstSeen": 1479301223
+    "firstSeen": 1479301223,
+    "oldId": "A32036"
   },
   {
     "id": 221,
@@ -2669,7 +2864,8 @@ export default [
         "photo": "photos/verizon-innovation-hub-10-ware-st_2019-05-11.jpg"
       }
     ],
-    "firstSeen": 1496836026
+    "firstSeen": 1496836026,
+    "oldId": "M32050"
   },
   {
     "id": 222,
@@ -2682,7 +2878,8 @@ export default [
         "photo": "photos/troy-boston_2018-06-24.jpg"
       }
     ],
-    "firstSeen": 1509148096
+    "firstSeen": 1509148096,
+    "oldId": "C32035"
   },
   {
     "id": 224,
@@ -2695,7 +2892,8 @@ export default [
         "photo": "photos/fresh-pond-reservation_2018-06-30.jpg"
       }
     ],
-    "firstSeen": 1498577114
+    "firstSeen": 1498577114,
+    "oldId": "M32051"
   },
   {
     "id": 225,
@@ -2708,7 +2906,8 @@ export default [
         "photo": "photos/cambridge-department-of-public-works_2018-09-08.jpg"
       }
     ],
-    "firstSeen": 1502396993
+    "firstSeen": 1502396993,
+    "oldId": "M32052"
   },
   {
     "id": 226,
@@ -2721,7 +2920,8 @@ export default [
         "photo": "photos/commonwealth-ave-at-babcock-st_2019-05-25.jpg"
       }
     ],
-    "firstSeen": 1501023805
+    "firstSeen": 1501023805,
+    "oldId": "K32006"
   },
   {
     "id": 227,
@@ -2734,7 +2934,8 @@ export default [
         "photo": "photos/silber-way_2018-09-08.jpg"
       }
     ],
-    "firstSeen": 1501095235
+    "firstSeen": 1501095235,
+    "oldId": "D32032"
   },
   {
     "id": 228,
@@ -2747,7 +2948,8 @@ export default [
         "photo": "photos/one-memorial-drive_2020-01-11.jpg"
       }
     ],
-    "firstSeen": 1506017929
+    "firstSeen": 1506017929,
+    "oldId": "M32053"
   },
   {
     "id": 232,
@@ -2760,7 +2962,8 @@ export default [
         "photo": "photos/four-corners_2019-06-01.jpg"
       }
     ],
-    "firstSeen": 1513699569
+    "firstSeen": 1513699569,
+    "oldId": "C32037"
   },
   {
     "id": 233,
@@ -2773,7 +2976,8 @@ export default [
         "photo": "photos/st-marys_2020-05-31.jpg"
       }
     ],
-    "firstSeen": 1534189922
+    "firstSeen": 1534189922,
+    "oldId": "K32007"
   },
   {
     "id": 234,
@@ -2786,7 +2990,8 @@ export default [
         "photo": "photos/broadway-at-central-st_2019-06-08.jpg"
       }
     ],
-    "firstSeen": 1532650437
+    "firstSeen": 1532650437,
+    "oldId": "S32016"
   },
   {
     "id": 235,
@@ -2803,7 +3008,8 @@ export default [
         "photo": "photos/east-somerville-library_2020-05-03.jpg"
       }
     ],
-    "firstSeen": 1533059581
+    "firstSeen": 1533059581,
+    "oldId": "S32017"
   },
   {
     "id": 236,
@@ -2820,7 +3026,8 @@ export default [
         "photo": "photos/assembly-square-t_2019-06-27.jpg"
       }
     ],
-    "firstSeen": 1533078908
+    "firstSeen": 1533078908,
+    "oldId": "S32018"
   },
   {
     "id": 239,
@@ -2833,7 +3040,8 @@ export default [
         "photo": "photos/community-path-at-cedar-st_2019-06-08.jpg"
       }
     ],
-    "firstSeen": 1534436061
+    "firstSeen": 1534436061,
+    "oldId": "S32022"
   },
   {
     "id": 255,
@@ -2846,7 +3054,8 @@ export default [
         "photo": "photos/park-st-at-norwell-st_2020-06-27.jpg"
       }
     ],
-    "firstSeen": 1535143018
+    "firstSeen": 1535143018,
+    "oldId": "C32039"
   },
   {
     "id": 258,
@@ -2859,7 +3068,8 @@ export default [
         "photo": "photos/gallivan-blvd-at-adams-st_2020-05-24.jpg"
       }
     ],
-    "firstSeen": 1535107508
+    "firstSeen": 1535107508,
+    "oldId": "C32040"
   },
   {
     "id": 259,
@@ -2872,7 +3082,8 @@ export default [
         "photo": "photos/washington-st-at-bradlee-st_2019-06-01.jpg"
       }
     ],
-    "firstSeen": 1535160103
+    "firstSeen": 1535160103,
+    "oldId": "C32042"
   },
   {
     "id": 260,
@@ -2885,7 +3096,8 @@ export default [
         "photo": "photos/fields-corner-t-stop_2020-05-24.jpg"
       }
     ],
-    "firstSeen": 1535389518
+    "firstSeen": 1535389518,
+    "oldId": "C32041"
   },
   {
     "id": 271,
@@ -2898,7 +3110,8 @@ export default [
         "photo": "photos/ashmont-t-stop_2020-05-24.jpg"
       }
     ],
-    "firstSeen": 1562716385
+    "firstSeen": 1562716385,
+    "oldId": "C32062"
   },
   {
     "id": 272,
@@ -2911,7 +3124,8 @@ export default [
         "photo": "photos/shawmut-t-stop_2020-05-24.jpg"
       }
     ],
-    "firstSeen": 1562204452
+    "firstSeen": 1562204452,
+    "oldId": "E32009"
   },
   {
     "id": 273,
@@ -2924,7 +3138,8 @@ export default [
         "photo": "photos/forest-hills-t-stop_2020-05-22.jpg"
       }
     ],
-    "firstSeen": 1562103486
+    "firstSeen": 1562103486,
+    "oldId": "E32010"
   },
   {
     "id": 279,
@@ -2937,7 +3152,8 @@ export default [
         "photo": "photos/williams-st-at-washington-st_2019-06-12.jpg"
       }
     ],
-    "firstSeen": 1537477856
+    "firstSeen": 1537477856,
+    "oldId": "D32040"
   },
   {
     "id": 280,
@@ -2950,7 +3166,8 @@ export default [
         "photo": "photos/main-st-at-baldwin-st_2019-07-28.jpg"
       }
     ],
-    "firstSeen": 1537400682
+    "firstSeen": 1537400682,
+    "oldId": "D32036"
   },
   {
     "id": 282,
@@ -2967,7 +3184,8 @@ export default [
         "photo": "photos/stony-brook-t-stop_2020-06-27.jpg"
       }
     ],
-    "firstSeen": 1537491993
+    "firstSeen": 1537491993,
+    "oldId": "D32041"
   },
   {
     "id": 296,
@@ -2980,7 +3198,8 @@ export default [
         "photo": "photos/farragut-rd-at-e-6th-st_2020-06-07.jpg"
       }
     ],
-    "firstSeen": 1538070016
+    "firstSeen": 1538070016,
+    "oldId": "C32051"
   },
   {
     "id": 318,
@@ -2993,14 +3212,16 @@ export default [
         "photo": "photos/ames-st-at-broadway_2020-01-11.jpg"
       }
     ],
-    "firstSeen": 1540485059
+    "firstSeen": 1540485059,
+    "oldId": "M32059"
   },
   {
     "id": 319,
     "name": "84 Cambridgepark Dr",
     "lat": 42.3936,
     "long": -71.143941,
-    "firstSeen": 1539867164
+    "firstSeen": 1539867164,
+    "oldId": "M32058"
   },
   {
     "id": 327,
@@ -3013,7 +3234,8 @@ export default [
         "photo": "photos/main-st-at-thompson-sq_2019-07-28.jpg"
       }
     ],
-    "firstSeen": 1540326446
+    "firstSeen": 1540326446,
+    "oldId": "D32038"
   },
   {
     "id": 328,
@@ -3026,7 +3248,8 @@ export default [
         "photo": "photos/grove-st-at-community-path_2019-06-08.jpg"
       }
     ],
-    "firstSeen": 1540326330
+    "firstSeen": 1540326330,
+    "oldId": "S32019"
   },
   {
     "id": 329,
@@ -3039,7 +3262,8 @@ export default [
         "photo": "photos/washington-st-at-myrtle-st_2018-09-08.jpg"
       }
     ],
-    "firstSeen": 1540328398
+    "firstSeen": 1540328398,
+    "oldId": "S32021"
   },
   {
     "id": 330,
@@ -3052,7 +3276,8 @@ export default [
         "photo": "photos/30-dane-st_2019-06-08.jpg"
       }
     ],
-    "firstSeen": 1540325686
+    "firstSeen": 1540325686,
+    "oldId": "S32023"
   },
   {
     "id": 331,
@@ -3065,7 +3290,8 @@ export default [
         "photo": "photos/huntington-ave-at-mass-art_2020-02-23.jpg"
       }
     ],
-    "firstSeen": 1540327978
+    "firstSeen": 1540327978,
+    "oldId": "B32033"
   },
   {
     "id": 332,
@@ -3078,7 +3304,8 @@ export default [
         "photo": "photos/harvard-ave-at-brainerd-rd_2019-05-25.jpg"
       }
     ],
-    "firstSeen": 1540323371
+    "firstSeen": 1540323371,
+    "oldId": "D32035"
   },
   {
     "id": 333,
@@ -3091,7 +3318,8 @@ export default [
         "photo": "photos/699-mt-auburn-st_2020-07-26.jpg"
       }
     ],
-    "firstSeen": 1540324799
+    "firstSeen": 1540324799,
+    "oldId": "M32054"
   },
   {
     "id": 334,
@@ -3104,7 +3332,8 @@ export default [
         "photo": "photos/mass-ave-at-hadley-st-walden-st_2020-01-11.jpg"
       }
     ],
-    "firstSeen": 1540328736
+    "firstSeen": 1540328736,
+    "oldId": "M32056"
   },
   {
     "id": 335,
@@ -3117,14 +3346,16 @@ export default [
         "photo": "photos/harvard-st-at-greene-rose-heritage-park_2020-01-11.jpg"
       }
     ],
-    "firstSeen": 1540326861
+    "firstSeen": 1540326861,
+    "oldId": "M32055"
   },
   {
     "id": 336,
     "name": "Mattapan T Stop",
     "lat": 42.267902,
     "long": -71.093641,
-    "firstSeen": 1541522271
+    "firstSeen": 1541522271,
+    "oldId": "C32045"
   },
   {
     "id": 337,
@@ -3137,7 +3368,8 @@ export default [
         "photo": "photos/roslindale-village-south-st_2020-05-22.jpg"
       }
     ],
-    "firstSeen": 1540335792
+    "firstSeen": 1540335792,
+    "oldId": "C32047"
   },
   {
     "id": 338,
@@ -3150,7 +3382,8 @@ export default [
         "photo": "photos/commonwealth-ave-at-kelton-st_2019-05-25.jpg"
       }
     ],
-    "firstSeen": 1540409464
+    "firstSeen": 1540409464,
+    "oldId": "D32034"
   },
   {
     "id": 339,
@@ -3163,7 +3396,8 @@ export default [
         "photo": "photos/archdale-rd-at-washington-st_2020-05-22.jpg"
       }
     ],
-    "firstSeen": 1540407605
+    "firstSeen": 1540407605,
+    "oldId": "C32048"
   },
   {
     "id": 340,
@@ -3176,7 +3410,8 @@ export default [
         "photo": "photos/blue-hill-ave-at-almont-st_2019-06-01.jpg"
       }
     ],
-    "firstSeen": 1540514244
+    "firstSeen": 1540514244,
+    "oldId": "C32044"
   },
   {
     "id": 341,
@@ -3189,7 +3424,8 @@ export default [
         "photo": "photos/roslindale-village-washington-st_2020-05-24.jpg"
       }
     ],
-    "firstSeen": 1540589573
+    "firstSeen": 1540589573,
+    "oldId": "C32046"
   },
   {
     "id": 342,
@@ -3202,7 +3438,8 @@ export default [
         "photo": "photos/boylston-st-at-jersey-st_2020-02-23.jpg"
       }
     ],
-    "firstSeen": 1540402675
+    "firstSeen": 1540402675,
+    "oldId": "B32034"
   },
   {
     "id": 343,
@@ -3215,7 +3452,8 @@ export default [
         "photo": "photos/morton-st-t-stop_2019-06-01.jpg"
       }
     ],
-    "firstSeen": 1540516393
+    "firstSeen": 1540516393,
+    "oldId": "C23045"
   },
   {
     "id": 344,
@@ -3228,7 +3466,8 @@ export default [
         "photo": "photos/commonwealth-ave-at-chiswick-rd_2019-05-25.jpg"
       }
     ],
-    "firstSeen": 1540419384
+    "firstSeen": 1540419384,
+    "oldId": "D32033"
   },
   {
     "id": 345,
@@ -3241,7 +3480,8 @@ export default [
         "photo": "photos/park-plaza-at-charles-st-s_2019-07-02.jpg"
       }
     ],
-    "firstSeen": 1540407066
+    "firstSeen": 1540407066,
+    "oldId": "D32042"
   },
   {
     "id": 346,
@@ -3254,7 +3494,8 @@ export default [
         "photo": "photos/cleveland-circle_2019-05-25.jpg"
       }
     ],
-    "firstSeen": 1540415387
+    "firstSeen": 1540415387,
+    "oldId": "B32035"
   },
   {
     "id": 347,
@@ -3267,7 +3508,8 @@ export default [
         "photo": "photos/thetford-ave-at-norfolk-st_2019-06-01.jpg"
       }
     ],
-    "firstSeen": 1541509401
+    "firstSeen": 1541509401,
+    "oldId": "C32049"
   },
   {
     "id": 348,
@@ -3280,7 +3522,8 @@ export default [
         "photo": "photos/talbot-ave-at-blue-hill-ave_2019-06-01.jpg"
       }
     ],
-    "firstSeen": 1540408170
+    "firstSeen": 1540408170,
+    "oldId": "C32043"
   },
   {
     "id": 349,
@@ -3293,7 +3536,8 @@ export default [
         "photo": "photos/washington-st-at-talbot-ave_2019-06-01.jpg"
       }
     ],
-    "firstSeen": 1540588063
+    "firstSeen": 1540588063,
+    "oldId": "C32038"
   },
   {
     "id": 350,
@@ -3306,7 +3550,8 @@ export default [
         "photo": "photos/codman-square-library_2019-06-01.jpg"
       }
     ],
-    "firstSeen": 1540504109
+    "firstSeen": 1540504109,
+    "oldId": "C32055"
   },
   {
     "id": 351,
@@ -3319,7 +3564,8 @@ export default [
         "photo": "photos/faneuil-st-at-arlington-st_2019-05-25.jpg"
       }
     ],
-    "firstSeen": 1540411906
+    "firstSeen": 1540411906,
+    "oldId": "A32038"
   },
   {
     "id": 352,
@@ -3332,7 +3578,8 @@ export default [
         "photo": "photos/ring-rd-at-prudential-center_2020-05-31.jpg"
       }
     ],
-    "firstSeen": 1540495812
+    "firstSeen": 1540495812,
+    "oldId": "C32058"
   },
   {
     "id": 353,
@@ -3345,7 +3592,8 @@ export default [
         "photo": "photos/mattapan-library_2019-06-01.jpg"
       }
     ],
-    "firstSeen": 1540922995
+    "firstSeen": 1540922995,
+    "oldId": "C32050"
   },
   {
     "id": 354,
@@ -3362,7 +3610,8 @@ export default [
         "photo": "photos/washington-st-at-egremont-rd_2020-07-03.jpg"
       }
     ],
-    "firstSeen": 1540848852
+    "firstSeen": 1540848852,
+    "oldId": "A32037"
   },
   {
     "id": 355,
@@ -3375,7 +3624,8 @@ export default [
         "photo": "photos/bennington-st-at-constitution-beach_2019-05-19.jpg"
       }
     ],
-    "firstSeen": 1541167051
+    "firstSeen": 1541167051,
+    "oldId": "A32039"
   },
   {
     "id": 356,
@@ -3388,7 +3638,8 @@ export default [
         "photo": "photos/charlestown-navy-yard_2019-07-28.jpg"
       }
     ],
-    "firstSeen": 1540842685
+    "firstSeen": 1540842685,
+    "oldId": "D32039"
   },
   {
     "id": 357,
@@ -3401,7 +3652,8 @@ export default [
         "photo": "photos/centre-st-at-seaverns-ave_2019-06-12.jpg"
       }
     ],
-    "firstSeen": 1540930928
+    "firstSeen": 1540930928,
+    "oldId": "E32008"
   },
   {
     "id": 358,
@@ -3414,7 +3666,8 @@ export default [
         "photo": "photos/medford-st-at-charlestown-bcyf_2019-07-28.jpg"
       }
     ],
-    "firstSeen": 1540934803
+    "firstSeen": 1540934803,
+    "oldId": "D32037"
   },
   {
     "id": 359,
@@ -3427,7 +3680,8 @@ export default [
         "photo": "photos/one-brigham-circle_2020-02-23.jpg"
       }
     ],
-    "firstSeen": 1540929810
+    "firstSeen": 1540929810,
+    "oldId": "B32036"
   },
   {
     "id": 360,
@@ -3440,7 +3694,8 @@ export default [
         "photo": "photos/bartlett-st-at-john-elliot-sq_2020-07-24.jpg"
       }
     ],
-    "firstSeen": 1540936898
+    "firstSeen": 1540936898,
+    "oldId": "B32055"
   },
   {
     "id": 361,
@@ -3453,7 +3708,8 @@ export default [
         "photo": "photos/deerfield-st-at-commonwealth-ave_2020-05-31.jpg"
       }
     ],
-    "firstSeen": 1540929411
+    "firstSeen": 1540929411,
+    "oldId": "B32037"
   },
   {
     "id": 362,
@@ -3466,7 +3722,8 @@ export default [
         "photo": "photos/columbia-rd-at-tierney-learning-center_2019-10-20.jpg"
       }
     ],
-    "firstSeen": 1540934962
+    "firstSeen": 1540934962,
+    "oldId": "C32052"
   },
   {
     "id": 363,
@@ -3479,7 +3736,8 @@ export default [
         "photo": "photos/harrison-ave-at-mullins-way_2019-06-01.jpg"
       }
     ],
-    "firstSeen": 1540930988
+    "firstSeen": 1540930988,
+    "oldId": "C32057"
   },
   {
     "id": 364,
@@ -3496,7 +3754,8 @@ export default [
         "photo": "photos/tremont-st-at-northampton-st_2020-07-24.jpg"
       }
     ],
-    "firstSeen": 1540933540
+    "firstSeen": 1540933540,
+    "oldId": "C32056"
   },
   {
     "id": 365,
@@ -3509,7 +3768,8 @@ export default [
         "photo": "photos/harrison-ave-at-bennet-st_2019-06-01.jpg"
       }
     ],
-    "firstSeen": 1540932601
+    "firstSeen": 1540932601,
+    "oldId": "D32043"
   },
   {
     "id": 366,
@@ -3522,7 +3782,8 @@ export default [
         "photo": "photos/broadway-t-stop_2019-05-26.jpg"
       }
     ],
-    "firstSeen": 1540935095
+    "firstSeen": 1540935095,
+    "oldId": "C32053"
   },
   {
     "id": 367,
@@ -3535,14 +3796,16 @@ export default [
         "photo": "photos/vassal-lane-at-tobin-vlus_2020-07-26.jpg"
       }
     ],
-    "firstSeen": 1540938598
+    "firstSeen": 1540938598,
+    "oldId": "M32057"
   },
   {
     "id": 368,
     "name": "Blue Hill Ave at Southwood St",
     "lat": 42.317860205899876,
     "long": -71.07798628527235,
-    "firstSeen": 1541283291
+    "firstSeen": 1541283291,
+    "oldId": "B32057"
   },
   {
     "id": 369,
@@ -3555,7 +3818,8 @@ export default [
         "photo": "photos/boston-public-market_2019-07-02.jpg"
       }
     ],
-    "firstSeen": 1541084042
+    "firstSeen": 1541084042,
+    "oldId": "D32044"
   },
   {
     "id": 370,
@@ -3568,7 +3832,8 @@ export default [
         "photo": "photos/dartmouth-st-at-newbury-st_2020-05-31.jpg"
       }
     ],
-    "firstSeen": 1541093836
+    "firstSeen": 1541093836,
+    "oldId": "D32045"
   },
   {
     "id": 371,
@@ -3581,7 +3846,8 @@ export default [
         "photo": "photos/700-huron-ave_2020-07-26.jpg"
       }
     ],
-    "firstSeen": 1541590314
+    "firstSeen": 1541590314,
+    "oldId": "M32060"
   },
   {
     "id": 372,
@@ -3594,7 +3860,8 @@ export default [
         "photo": "photos/boylston-st-at-exeter-st_2020-05-31.jpg"
       }
     ],
-    "firstSeen": 1541700294
+    "firstSeen": 1541700294,
+    "oldId": "D32046"
   },
   {
     "id": 373,
@@ -3607,7 +3874,8 @@ export default [
         "photo": "photos/belgrade-ave-at-walworth-st_2020-06-21.jpg"
       }
     ],
-    "firstSeen": 1541956726
+    "firstSeen": 1541956726,
+    "oldId": "C32059"
   },
   {
     "id": 374,
@@ -3620,14 +3888,16 @@ export default [
         "photo": "photos/tremont-st-at-hamilton-pl_2019-07-02.jpg"
       }
     ],
-    "firstSeen": 1542826612
+    "firstSeen": 1542826612,
+    "oldId": "B32056"
   },
   {
     "id": 376,
     "name": "Honan Library",
     "lat": 42.36027370454934,
     "long": -71.12852452327388,
-    "firstSeen": 1543621353
+    "firstSeen": 1543621353,
+    "oldId": "A32040"
   },
   {
     "id": 377,
@@ -3640,7 +3910,8 @@ export default [
         "photo": "photos/perry-park_2019-06-08.jpg"
       }
     ],
-    "firstSeen": 1543957597
+    "firstSeen": 1543957597,
+    "oldId": "S32034"
   },
   {
     "id": 378,
@@ -3653,7 +3924,8 @@ export default [
         "photo": "photos/191-beacon-st_2019-06-08.jpg"
       }
     ],
-    "firstSeen": 1544051477
+    "firstSeen": 1544051477,
+    "oldId": "S32035"
   },
   {
     "id": 379,
@@ -3666,7 +3938,8 @@ export default [
         "photo": "photos/tremont-st-at-w-dedham-st_2020-05-31.jpg"
       }
     ],
-    "firstSeen": 1547162749
+    "firstSeen": 1547162749,
+    "oldId": "C32060"
   },
   {
     "id": 380,
@@ -3679,7 +3952,8 @@ export default [
         "photo": "photos/mass-ave-at-albany-st_2020-06-14.jpg"
       }
     ],
-    "firstSeen": 1547147910
+    "firstSeen": 1547147910,
+    "oldId": "M32061"
   },
   {
     "id": 381,
@@ -3692,7 +3966,8 @@ export default [
         "photo": "photos/inman-square-at-springfield-st_2020-01-11.jpg"
       }
     ],
-    "firstSeen": 1547760944
+    "firstSeen": 1547760944,
+    "oldId": "M32062"
   },
   {
     "id": 384,
@@ -3705,7 +3980,8 @@ export default [
         "photo": "photos/clarendon-st-at-newbury-st_2020-05-31.jpg"
       }
     ],
-    "firstSeen": 1555951221
+    "firstSeen": 1555951221,
+    "oldId": "D32047"
   },
   {
     "id": 385,
@@ -3718,7 +3994,8 @@ export default [
         "photo": "photos/albany-st-at-e-brookline-st_2020-06-07.jpg"
       }
     ],
-    "firstSeen": 1557781273
+    "firstSeen": 1557781273,
+    "oldId": "C32061"
   },
   {
     "id": 386,
@@ -3731,7 +4008,8 @@ export default [
         "photo": "photos/sennott-park-broadway-at-norfolk-street_2020-01-11.jpg"
       }
     ],
-    "firstSeen": 1558543612
+    "firstSeen": 1558543612,
+    "oldId": "M32063"
   },
   {
     "id": 387,
@@ -3744,7 +4022,8 @@ export default [
         "photo": "photos/norman-st-at-kelvin-st_2019-06-27.jpg"
       }
     ],
-    "firstSeen": 1560542274
+    "firstSeen": 1560542274,
+    "oldId": "V32001"
   },
   {
     "id": 388,
@@ -3757,7 +4036,8 @@ export default [
         "photo": "photos/main-st-at-carter-st_2019-06-27.jpg"
       }
     ],
-    "firstSeen": 1560723784
+    "firstSeen": 1560723784,
+    "oldId": "V32002"
   },
   {
     "id": 389,
@@ -3774,7 +4054,8 @@ export default [
         "photo": "photos/everett-square_2020-06-20.jpg"
       }
     ],
-    "firstSeen": 1560574579
+    "firstSeen": 1560574579,
+    "oldId": "V32003"
   },
   {
     "id": 390,
@@ -3787,7 +4068,8 @@ export default [
         "photo": "photos/broadway-at-lynde-st_2019-06-27.jpg"
       }
     ],
-    "firstSeen": 1560561242
+    "firstSeen": 1560561242,
+    "oldId": "V32004"
   },
   {
     "id": 391,
@@ -3800,7 +4082,8 @@ export default [
         "photo": "photos/encore_2019-06-27.jpg"
       }
     ],
-    "firstSeen": 1561308045
+    "firstSeen": 1561308045,
+    "oldId": "V32005"
   },
   {
     "id": 392,
@@ -3813,7 +4096,8 @@ export default [
         "photo": "photos/glendale-square_2020-06-20.jpg"
       }
     ],
-    "firstSeen": 1561049568
+    "firstSeen": 1561049568,
+    "oldId": "V32006"
   },
   {
     "id": 393,
@@ -3826,7 +4110,8 @@ export default [
         "photo": "photos/ferry-st-at-pleasantview-ave_2020-06-20.jpg"
       }
     ],
-    "firstSeen": 1561359259
+    "firstSeen": 1561359259,
+    "oldId": "V32007"
   },
   {
     "id": 394,
@@ -3839,7 +4124,8 @@ export default [
         "photo": "photos/broadway-at-maple-st_2020-06-20.jpg"
       }
     ],
-    "firstSeen": 1561161776
+    "firstSeen": 1561161776,
+    "oldId": "V32008"
   },
   {
     "id": 395,
@@ -3852,7 +4138,8 @@ export default [
         "photo": "photos/chelsea-st-at-vine-st_2020-06-20.jpg"
       }
     ],
-    "firstSeen": 1561219701
+    "firstSeen": 1561219701,
+    "oldId": "V32009"
   },
   {
     "id": 396,
@@ -3865,7 +4152,8 @@ export default [
         "photo": "photos/main-st-at-beacon-st_2019-06-27.jpg"
       }
     ],
-    "firstSeen": 1561222006
+    "firstSeen": 1561222006,
+    "oldId": "V32010"
   },
   {
     "id": 397,
@@ -3878,7 +4166,8 @@ export default [
         "photo": "photos/broadway-at-beacham-st_2019-06-27.jpg"
       }
     ],
-    "firstSeen": 1561149760
+    "firstSeen": 1561149760,
+    "oldId": "V32011"
   },
   {
     "id": 398,
@@ -3891,7 +4180,8 @@ export default [
         "photo": "photos/75-binney-st_2020-01-11.jpg"
       }
     ],
-    "firstSeen": 1562083422
+    "firstSeen": 1562083422,
+    "oldId": "M32064"
   },
   {
     "id": 399,
@@ -3904,7 +4194,8 @@ export default [
         "photo": "photos/shawmut-ave-at-oak-st-w_2020-06-07.jpg"
       }
     ],
-    "firstSeen": 1562712093
+    "firstSeen": 1562712093,
+    "oldId": "D32048"
   },
   {
     "id": 400,
@@ -3917,7 +4208,8 @@ export default [
         "photo": "photos/lansdowne-t-stop_2020-05-31.jpg"
       }
     ],
-    "firstSeen": 1562767924
+    "firstSeen": 1562767924,
+    "oldId": "B32058"
   },
   {
     "id": 401,
@@ -3930,7 +4222,8 @@ export default [
         "photo": "photos/cypress-st-at-high-st_2020-07-03.jpg"
       }
     ],
-    "firstSeen": 1562800133
+    "firstSeen": 1562800133,
+    "oldId": "K32010"
   },
   {
     "id": 402,
@@ -3943,7 +4236,8 @@ export default [
         "photo": "photos/washington-st-at-griggs-rd_2020-07-03.jpg"
       }
     ],
-    "firstSeen": 1562794852
+    "firstSeen": 1562794852,
+    "oldId": "K32011"
   },
   {
     "id": 403,
@@ -3956,7 +4250,8 @@ export default [
         "photo": "photos/marion-st-at-harvard-st_2020-07-03.jpg"
       }
     ],
-    "firstSeen": 1562786898
+    "firstSeen": 1562786898,
+    "oldId": "K32012"
   },
   {
     "id": 404,
@@ -3969,7 +4264,8 @@ export default [
         "photo": "photos/massachusetts-ave-t-stop_2020-05-31.jpg"
       }
     ],
-    "firstSeen": 1563222150
+    "firstSeen": 1563222150,
+    "oldId": "C32063"
   },
   {
     "id": 405,
@@ -3982,7 +4278,8 @@ export default [
         "photo": "photos/sydney-st-at-carson-st_2019-10-20.jpg"
       }
     ],
-    "firstSeen": 1563252201
+    "firstSeen": 1563252201,
+    "oldId": "C32064"
   },
   {
     "id": 406,
@@ -3995,7 +4292,8 @@ export default [
         "photo": "photos/somerville-city-hall-annex_2020-05-03.jpg"
       }
     ],
-    "firstSeen": 1563313913
+    "firstSeen": 1563313913,
+    "oldId": "S32036"
   },
   {
     "id": 407,
@@ -4008,7 +4306,8 @@ export default [
         "photo": "photos/craigie-st-at-summer-st_2020-01-11.jpg"
       }
     ],
-    "firstSeen": 1563931995
+    "firstSeen": 1563931995,
+    "oldId": "S32037"
   },
   {
     "id": 408,
@@ -4021,14 +4320,16 @@ export default [
         "photo": "photos/edgerly-education-center_2020-05-03.jpg"
       }
     ],
-    "firstSeen": 1563922766
+    "firstSeen": 1563922766,
+    "oldId": "S32038"
   },
   {
     "id": 409,
     "name": "Elm St at White St",
     "lat": 42.38952436305763,
     "long": -71.11694140364307,
-    "firstSeen": 1564009481
+    "firstSeen": 1564009481,
+    "oldId": "S32039"
   },
   {
     "id": 410,
@@ -4041,7 +4342,8 @@ export default [
         "photo": "photos/adams-st-at-lonsdale-st_2020-05-24.jpg"
       }
     ],
-    "firstSeen": 1564615026
+    "firstSeen": 1564615026,
+    "oldId": "C32065"
   },
   {
     "id": 411,
@@ -4054,7 +4356,8 @@ export default [
         "photo": "photos/dorchester-ave-at-king-st_2020-05-24.jpg"
       }
     ],
-    "firstSeen": 1564612829
+    "firstSeen": 1564612829,
+    "oldId": "C32066"
   },
   {
     "id": 412,
@@ -4067,7 +4370,8 @@ export default [
         "photo": "photos/washington-st-at-peters-park_2020-06-07.jpg"
       }
     ],
-    "firstSeen": 1564606660
+    "firstSeen": 1564606660,
+    "oldId": "C32067"
   },
   {
     "id": 413,
@@ -4080,14 +4384,16 @@ export default [
         "photo": "photos/kennedy-longfellow-school-158-spring-st_2020-06-14.jpg"
       }
     ],
-    "firstSeen": 1565711742
+    "firstSeen": 1565711742,
+    "oldId": "M32065"
   },
   {
     "id": 414,
     "name": "Discovery Park - 30 Acorn Park Drive",
     "lat": 42.39790817368333,
     "long": -71.14797130814623,
-    "firstSeen": 1565808774
+    "firstSeen": 1565808774,
+    "oldId": "M32066"
   },
   {
     "id": 415,
@@ -4100,7 +4406,8 @@ export default [
         "photo": "photos/stuart-st-at-berkeley-st_2020-05-31.jpg"
       }
     ],
-    "firstSeen": 1565815776
+    "firstSeen": 1565815776,
+    "oldId": "D32049"
   },
   {
     "id": 416,
@@ -4113,7 +4420,8 @@ export default [
         "photo": "photos/blossom-st-at-charles-st_2020-06-14.jpg"
       }
     ],
-    "firstSeen": 1565818432
+    "firstSeen": 1565818432,
+    "oldId": "D32050"
   },
   {
     "id": 417,
@@ -4126,7 +4434,8 @@ export default [
         "photo": "photos/columbus-ave-at-w-canton-st_2020-05-31.jpg"
       }
     ],
-    "firstSeen": 1565819738
+    "firstSeen": 1565819738,
+    "oldId": "C32077"
   },
   {
     "id": 419,
@@ -4139,14 +4448,16 @@ export default [
         "photo": "photos/central-square-east-boston_2020-07-12.jpg"
       }
     ],
-    "firstSeen": 1566919387
+    "firstSeen": 1566919387,
+    "oldId": "A32041"
   },
   {
     "id": 420,
     "name": "Charles St at Pinckney St",
     "lat": 42.35872530462163,
     "long": -71.07079532006537,
-    "firstSeen": 1566417276
+    "firstSeen": 1566417276,
+    "oldId": "D32051"
   },
   {
     "id": 421,
@@ -4159,7 +4470,8 @@ export default [
         "photo": "photos/northbourne-rd-at-hyde-park-ave_2020-05-22.jpg"
       }
     ],
-    "firstSeen": 1566524340
+    "firstSeen": 1566524340,
+    "oldId": "C32078"
   },
   {
     "id": 422,
@@ -4172,7 +4484,8 @@ export default [
         "photo": "photos/american-legion-hwy-at-canterbury-st_2020-05-22.jpg"
       }
     ],
-    "firstSeen": 1566537710
+    "firstSeen": 1566537710,
+    "oldId": "C32079"
   },
   {
     "id": 423,
@@ -4185,7 +4498,8 @@ export default [
         "photo": "photos/mt-hope-st-at-hyde-park-ave_2020-05-22.jpg"
       }
     ],
-    "firstSeen": 1566677007
+    "firstSeen": 1566677007,
+    "oldId": "C32080"
   },
   {
     "id": 424,
@@ -4198,14 +4512,16 @@ export default [
         "photo": "photos/jamaica-st-at-south-st_2020-05-22.jpg"
       }
     ],
-    "firstSeen": 1566941915
+    "firstSeen": 1566941915,
+    "oldId": "D32052"
   },
   {
     "id": 425,
     "name": "The Dimock Center",
     "lat": 42.3193094317828,
     "long": -71.09639923859504,
-    "firstSeen": 1566934380
+    "firstSeen": 1566934380,
+    "oldId": "E32011"
   },
   {
     "id": 426,
@@ -4218,7 +4534,8 @@ export default [
         "photo": "photos/surface-rd-at-summer-st_2020-06-07.jpg"
       }
     ],
-    "firstSeen": 1567225957
+    "firstSeen": 1567225957,
+    "oldId": "A32042"
   },
   {
     "id": 427,
@@ -4231,7 +4548,8 @@ export default [
         "photo": "photos/washington-st-at-denton-terr_2020-06-21.jpg"
       }
     ],
-    "firstSeen": 1567128012
+    "firstSeen": 1567128012,
+    "oldId": "C32081"
   },
   {
     "id": 428,
@@ -4244,7 +4562,8 @@ export default [
         "photo": "photos/western-ave-at-richardson-st_2020-05-17.jpg"
       }
     ],
-    "firstSeen": 1567112307
+    "firstSeen": 1567112307,
+    "oldId": "A32043"
   },
   {
     "id": 430,
@@ -4258,7 +4577,8 @@ export default [
         "photo": "photos/washington-st-at-walsh-playground_2020-05-24.jpg"
       }
     ],
-    "firstSeen": 1567644372
+    "firstSeen": 1567644372,
+    "oldId": "C32083"
   },
   {
     "id": 431,
@@ -4272,7 +4592,8 @@ export default [
         "photo": "photos/washington-st-at-fuller-st_2020-05-24.jpg"
       }
     ],
-    "firstSeen": 1567876415
+    "firstSeen": 1567876415,
+    "oldId": "C32084"
   },
   {
     "id": 432,
@@ -4286,7 +4607,8 @@ export default [
         "photo": "photos/centre-st-at-w-roxbury-post-office_2020-06-21.jpg"
       }
     ],
-    "firstSeen": 1567723561
+    "firstSeen": 1567723561,
+    "oldId": "C32085"
   },
   {
     "id": 433,
@@ -4300,7 +4622,8 @@ export default [
         "photo": "photos/centre-st-at-parkway-ymca_2020-06-21.jpg"
       }
     ],
-    "firstSeen": 1568541133
+    "firstSeen": 1568541133,
+    "oldId": "C32086"
   },
   {
     "id": 434,
@@ -4314,7 +4637,8 @@ export default [
         "photo": "photos/spring-st-at-powell-st_2020-06-21.jpg"
       }
     ],
-    "firstSeen": 1568673925
+    "firstSeen": 1568673925,
+    "oldId": "C32087"
   },
   {
     "id": 435,
@@ -4328,7 +4652,8 @@ export default [
         "photo": "photos/river-st-at-central-ave_2020-05-24.jpg"
       }
     ],
-    "firstSeen": 1568141869
+    "firstSeen": 1568141869,
+    "oldId": "C32088"
   },
   {
     "id": 436,
@@ -4342,7 +4667,8 @@ export default [
         "photo": "photos/maverick-st-at-massport-path_2020-07-12.jpg"
       }
     ],
-    "firstSeen": 1568232175
+    "firstSeen": 1568232175,
+    "oldId": "A32044"
   },
   {
     "id": 437,
@@ -4356,7 +4682,8 @@ export default [
         "photo": "photos/berkshire-st-at-cambridge-st_2020-06-14.jpg"
       }
     ],
-    "firstSeen": 1568302329
+    "firstSeen": 1568302329,
+    "oldId": "M32067"
   },
   {
     "id": 440,
@@ -4370,7 +4697,8 @@ export default [
         "photo": "photos/boston-landing_2020-05-17.jpg"
       }
     ],
-    "firstSeen": 1571262171
+    "firstSeen": 1571262171,
+    "oldId": "A32045"
   },
   {
     "id": 441,
@@ -4384,7 +4712,8 @@ export default [
         "photo": "photos/sullivan-circle-mbta_2020-05-03.jpg"
       }
     ],
-    "firstSeen": 1572912569
+    "firstSeen": 1572912569,
+    "oldId": "D32053"
   },
   {
     "id": 442,
@@ -4398,7 +4727,8 @@ export default [
         "photo": "photos/hyde-park-ave-at-walk-hill-st_2020-05-22.jpg"
       }
     ],
-    "firstSeen": 1571356140
+    "firstSeen": 1571356140,
+    "oldId": "C32089"
   },
   {
     "id": 443,
@@ -4412,7 +4742,8 @@ export default [
         "photo": "photos/whittier-st-health-center_2020-07-24.jpg"
       }
     ],
-    "firstSeen": 1571333160
+    "firstSeen": 1571333160,
+    "oldId": "B32059"
   },
   {
     "id": 445,
@@ -4426,7 +4757,8 @@ export default [
         "photo": "photos/geiger-gibson-community-health-center_2020-06-07.jpg"
       }
     ],
-    "firstSeen": 1572523931
+    "firstSeen": 1572523931,
+    "oldId": "C32090"
   },
   {
     "id": 446,
@@ -4440,7 +4772,8 @@ export default [
         "photo": "photos/700-commonwealth-ave_2020-05-31.jpg"
       }
     ],
-    "firstSeen": 1572455584
+    "firstSeen": 1572455584,
+    "oldId": "B32060"
   },
   {
     "id": 447,
@@ -4454,7 +4787,8 @@ export default [
         "photo": "photos/the-overlook-at-st-gabriels_2020-07-03.jpg"
       }
     ],
-    "firstSeen": 1591444112
+    "firstSeen": 1591444112,
+    "oldId": "D32054"
   },
   {
     "id": 448,
@@ -4468,7 +4802,8 @@ export default [
         "photo": "photos/hale-park_2020-06-20.jpg"
       }
     ],
-    "firstSeen": 1591988301
+    "firstSeen": 1591988301,
+    "oldId": "V32012"
   },
   {
     "id": 450,
@@ -4481,7 +4816,8 @@ export default [
         "date": "2020-07-03",
         "photo": "photos/beacon-st-at-englewood-ave_2020-07-03.jpg"
       }
-    ]
+    ],
+    "oldId": "K32013"
   },
   {
     "id": 451,
@@ -4494,7 +4830,8 @@ export default [
         "date": "2020-07-03",
         "photo": "photos/washington-sq_2020-07-03.jpg"
       }
-    ]
+    ],
+    "oldId": "K32014"
   },
   {
     "id": 452,
@@ -4507,7 +4844,8 @@ export default [
         "date": "2020-07-03",
         "photo": "photos/beacon-st-at-st-paul-st_2020-07-03.jpg"
       }
-    ]
+    ],
+    "oldId": "K32015"
   },
   {
     "id": 453,
@@ -4520,9 +4858,11 @@ export default [
         "date": "2020-07-03",
         "photo": "photos/beacon-st-at-hawes-st_2020-07-03.jpg"
       }
-    ]
+    ],
+    "oldId": "K32016"
   }
 ];
+
 
 
 
