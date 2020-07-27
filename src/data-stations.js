@@ -1287,7 +1287,8 @@ export default [
         "date": "2020-05-03",
         "photo": "photos/ball-sq_2020-05-03.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1563310233
   },
   {
     "id": 102,
@@ -2922,7 +2923,8 @@ export default [
         "date": "2020-05-22",
         "photo": "photos/forest-hills-t-stop_2020-05-22.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1562103486
   },
   {
     "id": 279,
@@ -3888,7 +3890,8 @@ export default [
         "date": "2020-01-11",
         "photo": "photos/75-binney-st_2020-01-11.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1562083422
   },
   {
     "id": 399,
@@ -3900,7 +3903,8 @@ export default [
         "date": "2020-06-07",
         "photo": "photos/shawmut-ave-at-oak-st-w_2020-06-07.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1562712093
   },
   {
     "id": 400,
@@ -3912,7 +3916,8 @@ export default [
         "date": "2020-05-31",
         "photo": "photos/lansdowne-t-stop_2020-05-31.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1562767924
   },
   {
     "id": 401,
@@ -3924,7 +3929,8 @@ export default [
         "date": "2020-07-03",
         "photo": "photos/cypress-st-at-high-st_2020-07-03.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1562800133
   },
   {
     "id": 402,
@@ -3936,7 +3942,8 @@ export default [
         "date": "2020-07-03",
         "photo": "photos/washington-st-at-griggs-rd_2020-07-03.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1562794852
   },
   {
     "id": 403,
@@ -3948,7 +3955,8 @@ export default [
         "date": "2020-07-03",
         "photo": "photos/marion-st-at-harvard-st_2020-07-03.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1562786898
   },
   {
     "id": 404,
@@ -3960,7 +3968,8 @@ export default [
         "date": "2020-05-31",
         "photo": "photos/massachusetts-ave-t-stop_2020-05-31.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1563222150
   },
   {
     "id": 405,
@@ -3972,7 +3981,8 @@ export default [
         "date": "2019-10-20",
         "photo": "photos/sydney-st-at-carson-st_2019-10-20.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1563252201
   },
   {
     "id": 406,
@@ -3984,7 +3994,8 @@ export default [
         "date": "2020-05-03",
         "photo": "photos/somerville-city-hall-annex_2020-05-03.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1563313913
   },
   {
     "id": 407,
@@ -3996,7 +4007,8 @@ export default [
         "date": "2020-01-11",
         "photo": "photos/craigie-st-at-summer-st_2020-01-11.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1563931995
   },
   {
     "id": 408,
@@ -4008,13 +4020,15 @@ export default [
         "date": "2020-05-03",
         "photo": "photos/edgerly-education-center_2020-05-03.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1563922766
   },
   {
     "id": 409,
     "name": "Elm St at White St",
     "lat": 42.38952436305763,
-    "long": -71.11694140364307
+    "long": -71.11694140364307,
+    "firstSeen": 1564009481
   },
   {
     "id": 410,
@@ -4026,7 +4040,8 @@ export default [
         "date": "2020-05-24",
         "photo": "photos/adams-st-at-lonsdale-st_2020-05-24.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1564615026
   },
   {
     "id": 411,
@@ -4038,7 +4053,8 @@ export default [
         "date": "2020-05-24",
         "photo": "photos/dorchester-ave-at-king-st_2020-05-24.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1564612829
   },
   {
     "id": 412,
@@ -4050,7 +4066,8 @@ export default [
         "date": "2020-06-07",
         "photo": "photos/washington-st-at-peters-park_2020-06-07.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1564606660
   },
   {
     "id": 413,
@@ -4475,6 +4492,7 @@ export default [
     ]
   }
 ];
+
 
 
 
