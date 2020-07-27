@@ -985,7 +985,8 @@ export default [
         "date": "2019-06-08",
         "photo": "photos/beacon-st-at-washington-st-kirkland-st_2019-06-08.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1433978156
   },
   {
     "id": 80,
@@ -1161,7 +1162,8 @@ export default [
         "date": "2020-06-07",
         "photo": "photos/umass-boston_2020-06-07.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1434025587
   },
   {
     "id": 93,
@@ -4322,4 +4324,5 @@ export default [
     ]
   }
 ];
+
 
