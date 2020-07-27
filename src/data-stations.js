@@ -2709,7 +2709,8 @@ export default [
         "date": "2019-05-25",
         "photo": "photos/commonwealth-ave-at-babcock-st_2019-05-25.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1501023805
   },
   {
     "id": 227,
@@ -2721,7 +2722,8 @@ export default [
         "date": "2018-09-08",
         "photo": "photos/silber-way_2018-09-08.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1501095235
   },
   {
     "id": 228,
@@ -4376,6 +4378,7 @@ export default [
     ]
   }
 ];
+
 
 
 
