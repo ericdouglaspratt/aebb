@@ -3661,7 +3661,8 @@ export default [
         "date": "2020-05-31",
         "photo": "photos/tremont-st-at-w-dedham-st_2020-05-31.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1547162749
   },
   {
     "id": 380,
@@ -3673,7 +3674,8 @@ export default [
         "date": "2020-06-14",
         "photo": "photos/mass-ave-at-albany-st_2020-06-14.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1547147910
   },
   {
     "id": 381,
@@ -3685,7 +3687,8 @@ export default [
         "date": "2020-01-11",
         "photo": "photos/inman-square-at-springfield-st_2020-01-11.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1547760944
   },
   {
     "id": 384,
@@ -4456,6 +4459,7 @@ export default [
     ]
   }
 ];
+
 
 
 
