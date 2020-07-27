@@ -40,6 +40,10 @@ const processedTrips = rawTrips.map(trip => {
       }
     }, 0),
     numNew,
+    numTotal: Object.keys(trip.stations.reduce((result, stationId) => {
+      result[stationId] = true;
+      return result;
+    }, {})).length,
     percentage: Math.round(totalSoFar * 100 / cachedStationData.length)
   };
 });

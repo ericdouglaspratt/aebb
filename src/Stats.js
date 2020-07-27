@@ -23,21 +23,21 @@ const Stats = ({ onClickStation, onClickTrip, stations, trips }) => {
 
   useEffect(() => {
     if (trips && trips.list.length > 0) {
-      // calculate average stations per trip
+      // calculate average distance per trip
       const totalDistance = trips.list.reduce((result, trip) => result + trip.distance, 0);
       setAverageDistancePerTrip(Math.round((totalDistance / trips.list.length) * 10) / 10);
 
       // calculate average stations per trip
-      const totalStationVisits = trips.list.reduce((result, trip) => result + trip.stations.length, 0);
+      const totalStationVisits = trips.list.reduce((result, trip) => result + trip.numTotal, 0);
       setAverageStationsPerTrip(Math.round(totalStationVisits / trips.list.length));
 
       // calculate stations per trip
       const stationsPerTripMap = {};
       trips.list.forEach(trip => {
-        if (stationsPerTripMap[trip.stations.length]) {
-          stationsPerTripMap[trip.stations.length]++;
+        if (stationsPerTripMap[trip.numTotal]) {
+          stationsPerTripMap[trip.numTotal]++;
         } else {
-          stationsPerTripMap[trip.stations.length] = 1;
+          stationsPerTripMap[trip.numTotal] = 1;
         }
       });
       setStationsPerTripFrequencies(Object.keys(stationsPerTripMap).map(stationsPerTrip => ({
@@ -47,7 +47,11 @@ const Stats = ({ onClickStation, onClickTrip, stations, trips }) => {
 
       // calculate top trips by stations
       const tripsSortedByNumStations = trips.list.slice().sort((a, b) => {
-        return a.stations.length > b.stations.length ? -1 : a.stations.length < b.stations.length ? 1 : 0;
+        return a.numTotal > b.numTotal
+          ? -1
+          : a.numTotal < b.numTotal
+            ? 1
+            : 0;
       });
       setTopTripsByNumStations(tripsSortedByNumStations.slice(0, 4));
 

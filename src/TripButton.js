@@ -17,6 +17,7 @@ const TripButton = React.forwardRef((
     hideStations,
     isActive,
     numNew,
+    numTotal,
     onClick,
     percentage,
     photos,
@@ -25,7 +26,6 @@ const TripButton = React.forwardRef((
   ref
 ) => {
   const numPhotos = photos && photos.length;
-  const numTotal = stations.length;
   return (
     <Button
       className={`TripButton ${isActive ? 'TripButton--active' : ''} ${condensed ? 'TripButton--condensed' : ''} `}

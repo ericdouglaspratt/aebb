@@ -15,7 +15,7 @@ const Trip = ({onClickPhoto, trip}) => {
             <span className="Trip-statStationsNew">
               {` ${trip.numNew} new stations`}
             </span>
-            {` / ${trip.stations.length} total`}
+            {` / ${trip.numTotal} total`}
           </div>
           <div className="Trip-stat">
             {`${Math.round(trip.distance * 10) / 10} mi`}

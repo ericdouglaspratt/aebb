@@ -2011,7 +2011,13 @@ export default [
     "id": 180,
     "name": "Mt Auburn",
     "lat": 42.37478628706384,
-    "long": -71.13320231437683
+    "long": -71.13320231437683,
+    "photos": [
+      {
+        "date": "2020-07-26",
+        "photo": "photos/mt-auburn_2020-07-26.jpg"
+      }
+    ]
   },
   {
     "id": 181,
@@ -2022,6 +2028,10 @@ export default [
       {
         "date": "2018-06-30",
         "photo": "photos/huron-ave-at-vassal-lane_2018-06-30.jpg"
+      },
+      {
+        "date": "2020-07-26",
+        "photo": "photos/huron-ave-at-vassal-lane_2020-07-26.jpg"
       }
     ]
   },
@@ -2847,7 +2857,13 @@ export default [
     "id": 333,
     "name": "699 Mt Auburn St",
     "lat": 42.37500235137831,
-    "long": -71.14871613699506
+    "long": -71.14871613699506,
+    "photos": [
+      {
+        "date": "2020-07-26",
+        "photo": "photos/699-mt-auburn-st_2020-07-26.jpg"
+      }
+    ]
   },
   {
     "id": 334,
@@ -3251,7 +3267,13 @@ export default [
     "id": 367,
     "name": "Vassal Lane at Tobin/VLUS",
     "lat": 42.3839322489048,
-    "long": -71.13961271959852
+    "long": -71.13961271959852,
+    "photos": [
+      {
+        "date": "2020-07-26",
+        "photo": "photos/vassal-lane-at-tobin-vlus_2020-07-26.jpg"
+      }
+    ]
   },
   {
     "id": 368,
@@ -3287,7 +3309,13 @@ export default [
     "id": 371,
     "name": "700 Huron Ave",
     "lat": 42.380788172914286,
-    "long": -71.15412890911102
+    "long": -71.15412890911102,
+    "photos": [
+      {
+        "date": "2020-07-26",
+        "photo": "photos/700-huron-ave_2020-07-26.jpg"
+      }
+    ]
   },
   {
     "id": 372,

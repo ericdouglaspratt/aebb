@@ -399,5 +399,19 @@ export default [
     date: '2020-07-24',
     description: 'East Roxbury',
     stations: [138, 106, 360, 443, 364, 138]
+  },
+  {
+    id: '38',
+    date: '2020-07-26',
+    description: 'Fresh Pond',
+    stations: [367, 371, 333, 180, 181, 367],
+    photos: [
+      {
+        full: 'photos/2020-07-26-001.jpg',
+        lat: 42.384099,
+        lng: -71.140246,
+        thumb: 'photos/2020-07-26-001-thumb.jpg'
+      }
+    ]
   }
 ];
