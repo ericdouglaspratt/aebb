@@ -2932,7 +2932,8 @@ export default [
         "date": "2019-06-12",
         "photo": "photos/williams-st-at-washington-st_2019-06-12.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1537477856
   },
   {
     "id": 280,
@@ -2944,7 +2945,8 @@ export default [
         "date": "2019-07-28",
         "photo": "photos/main-st-at-baldwin-st_2019-07-28.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1537400682
   },
   {
     "id": 282,
@@ -2960,7 +2962,8 @@ export default [
         "date": "2020-06-27",
         "photo": "photos/stony-brook-t-stop_2020-06-27.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1537491993
   },
   {
     "id": 296,
@@ -2972,7 +2975,8 @@ export default [
         "date": "2020-06-07",
         "photo": "photos/farragut-rd-at-e-6th-st_2020-06-07.jpg"
       }
-    ]
+    ],
+    "firstSeen": 1538070016
   },
   {
     "id": 318,
@@ -4399,6 +4403,7 @@ export default [
     ]
   }
 ];
+
 
 
 
