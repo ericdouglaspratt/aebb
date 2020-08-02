@@ -1772,6 +1772,10 @@ export default [
       {
         "date": "2018-06-24",
         "photo": "photos/jackson-square-t-stop_2018-06-24.jpg"
+      },
+      {
+        "date": "2020-08-01",
+        "photo": "photos/jackson-square-t-stop_2020-08-01.jpg"
       }
     ],
     "firstSeen": 1381356660,
@@ -2574,6 +2578,12 @@ export default [
     "name": "MLK Blvd at Washington St",
     "lat": 42.32143814183195,
     "long": -71.09126061201096,
+    "photos": [
+      {
+        "date": "2020-08-01",
+        "photo": "photos/mlk-blvd-at-washington-st_2020-08-01.jpg"
+      }
+    ],
     "firstSeen": 1468690201,
     "oldId": "B32023"
   },
@@ -2582,6 +2592,12 @@ export default [
     "name": "Uphams Corner T Stop - Magnolia St at Dudley St",
     "lat": 42.318697341722434,
     "long": -71.0697814822197,
+    "photos": [
+      {
+        "date": "2020-08-01",
+        "photo": "photos/uphams-corner-t-stop_2020-08-01.jpg"
+      }
+    ],
     "firstSeen": 1469480496,
     "oldId": "B32025"
   },
@@ -2604,6 +2620,12 @@ export default [
     "name": "NCAAA - Walnut Ave at Crawford St",
     "lat": 42.316902,
     "long": -71.091946,
+    "photos": [
+      {
+        "date": "2020-08-01",
+        "photo": "photos/walnut-ave-at-crawford-st_2020-08-01.jpg"
+      }
+    ],
     "firstSeen": 1470591910,
     "oldId": "B32027"
   },
@@ -3804,6 +3826,12 @@ export default [
     "name": "Blue Hill Ave at Southwood St",
     "lat": 42.317860205899876,
     "long": -71.07798628527235,
+    "photos": [
+      {
+        "date": "2020-08-01",
+        "photo": "photos/blue-hill-ave-at-southwood-st_2020-08-01.jpg"
+      }
+    ],
     "firstSeen": 1541283291,
     "oldId": "B32057"
   },
@@ -4520,6 +4548,12 @@ export default [
     "name": "The Dimock Center",
     "lat": 42.3193094317828,
     "long": -71.09639923859504,
+    "photos": [
+      {
+        "date": "2020-08-01",
+        "photo": "photos/the-dimock-center_2020-08-01.jpg"
+      }
+    ],
     "firstSeen": 1566934380,
     "oldId": "E32011"
   },

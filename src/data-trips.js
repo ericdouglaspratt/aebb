@@ -413,5 +413,11 @@ export default [
         thumb: 'photos/2020-07-26-001-thumb.jpg'
       }
     ]
+  },
+  {
+    id: '39',
+    date: '2020-08-01',
+    description: 'Jackson Square to Upham\'s Corner',
+    stations: [131, 425, 201, 197, 368, 199]
   }
 ];
