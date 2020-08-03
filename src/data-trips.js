@@ -54,7 +54,7 @@ export default [
     color: '#0000ff',
     date: '2018-06-23',
     description: 'Boylston St through Back Bay',
-    stations: [342, 55, 61, 36, 134, 50, 42, 81]
+    stations: [342, 55, 61, 36, 454, 50, 42, 81]
   },
   {
     id: '8',

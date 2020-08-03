@@ -1785,20 +1785,6 @@ export default [
     "oldId": "E32005"
   },
   {
-    "id": 134,
-    "name": "Boylston St at Dartmouth St",
-    "lat": 42.350413,
-    "long": -71.07655,
-    "photos": [
-      {
-        "date": "2018-06-23",
-        "photo": "photos/boylston-st-at-dartmouth-st_2018-06-23.jpg"
-      }
-    ],
-    "firstSeen": 1383067380,
-    "oldId": "D32027"
-  },
-  {
     "id": 135,
     "name": "ID Building East",
     "lat": 42.344827,
@@ -4891,8 +4877,37 @@ export default [
       }
     ],
     "oldId": "K32016"
+  },
+  {
+    "id": 454,
+    "name": "Boylston St at Dartmouth St",
+    "lat": 42.35010609546997,
+    "long": -71.07720464005979,
+    "discovered": 1596464609909,
+    "photos": [
+      {
+        "date": "2018-06-23",
+        "photo": "photos/boylston-st-at-dartmouth-st_2018-06-23.jpg"
+      }
+    ],
+    "firstSeen": 1383067380,
+    "mergedLegacyStationInfo": {
+      "id": 134,
+      "name": "Boylston St at Dartmouth St",
+      "lat": 42.350413,
+      "long": -71.07655,
+      "oldId": "D32027",
+    }
+  },
+  {
+    "id": 455,
+    "name": "Coolidge Sq.",
+    "lat": 42.372076114722866,
+    "long": -71.15683130688922,
+    "discovered": 1596464609909
   }
 ];
+
 
 
 
