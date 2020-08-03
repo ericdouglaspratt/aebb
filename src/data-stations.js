@@ -556,21 +556,6 @@ export default [
     "oldId": "D32009"
   },
   {
-    "id": 45,
-    "name": "Jersey St. at Boylston St.",
-    "lat": 42.3446808403874,
-    "long": -71.09785348176956,
-    "photos": [
-      {
-        "date": "2018-06-23",
-        "photo": "photos/jersey-st-at-boylston-st_2018-06-23.jpg"
-      }
-    ],
-    "isLegacy": true,
-    "firstSeen": 1311870060,
-    "oldId": "B32011"
-  },
-  {
     "id": 46,
     "name": "Christian Science Plaza - Massachusetts Ave at Westland Ave",
     "lat": 42.3436658245146,
@@ -3456,12 +3441,24 @@ export default [
     "long": -71.09732501226972,
     "photos": [
       {
+        "date": "2018-06-23",
+        "photo": "photos/jersey-st-at-boylston-st_2018-06-23.jpg"
+      },
+      {
         "date": "2020-02-23",
         "photo": "photos/boylston-st-at-jersey-st_2020-02-23.jpg"
       }
     ],
-    "firstSeen": 1540402675,
-    "oldId": "B32034"
+    "firstSeen": 1311870060,
+    "nonLegacyFirstSeen": 1540402675,
+    "oldId": "B32034",
+    "mergedLegacyStationInfo": {
+      "id": 45,
+      "name": "Jersey St. at Boylston St.",
+      "lat": 42.3446808403874,
+      "long": -71.09785348176956,
+      "oldId": "B32011"
+    }
   },
   {
     "id": 343,
