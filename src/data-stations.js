@@ -4896,7 +4896,7 @@ export default [
       "name": "Boylston St at Dartmouth St",
       "lat": 42.350413,
       "long": -71.07655,
-      "oldId": "D32027",
+      "oldId": "D32027"
     }
   },
   {
@@ -4905,8 +4905,30 @@ export default [
     "lat": 42.372076114722866,
     "long": -71.15683130688922,
     "discovered": 1596464609909
+  },
+  {
+    "id": 456,
+    "name": "Graham and Parks School – Linnaean St at Walker St",
+    "lat": 42.38294430172271,
+    "long": -71.12449831038248,
+    "discovered": 1596897018218
+  },
+  {
+    "id": 457,
+    "name": "N. Beacon St at N. Beacon Ct",
+    "lat": 42.36444157139109,
+    "long": -71.18091373646166,
+    "discovered": 1596897018218
+  },
+  {
+    "id": 458,
+    "name": "Watertown Sq",
+    "lat": 42.365260317694485,
+    "long": -71.18573324459247,
+    "discovered": 1596897018218
   }
 ];
+
 
 
 

@@ -29,9 +29,9 @@ const StationInfo = ({ station, trips }) => {
             inactive
           </p>
         )}
-        {station.firstSeen && (
+        {(station.firstSeen || station.discovered) && (
           <p className="StationInfo-operatingSince">
-            est. {moment(station.firstSeen * 1000).format('MMM YYYY')}
+            est. {moment(station.firstSeen ? station.firstSeen * 1000 : station.discovered).format('MMM YYYY')}
           </p>
         )}
         {showBikeDockInfo && (
