@@ -328,6 +328,7 @@ function App() {
             />
             <InfoPane
               activeTravelTimestamp={activeTravelTimestamp}
+              markedRoute={markedRouteRef.current}
               onClearSelectedStation={handleClearSelectedStation}
               onViewActivate={handleViewActivate}
               onViewDeactivate={handleViewDeactivate}

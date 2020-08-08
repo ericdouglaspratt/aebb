@@ -7,6 +7,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import MenuList from '@material-ui/core/MenuList';
 import MenuItem from '@material-ui/core/MenuItem';
 import PhotoCamera from '@material-ui/icons/PhotoCamera';
+import TimelineIcon from '@material-ui/icons/Timeline';
 import './InfoPane.css';
 
 import { BREAKPOINTS, VIEWS } from './constants';
@@ -28,6 +29,7 @@ import TripList from './TripList';
 
 function InfoPane({
   activeTravelTimestamp,
+  markedRoute,
   onClearSelectedStation,
   onViewActivate,
   onViewDeactivate,
@@ -102,7 +104,10 @@ function InfoPane({
               <CancelButton onClick={() => onViewDeactivate(VIEWS.ROUTE_MARKING)} />
             </div>
           </div>
-          <RouteMarking />
+          <RouteMarking
+            markedRoute={markedRoute}
+            stations={stations}
+          />
         </>
       ) : !!activeView && activeView.view === VIEWS.STATION ? (
         <div className="InfoPane">
@@ -220,7 +225,10 @@ function InfoPane({
                       <ListItemIcon><PhotoCamera /></ListItemIcon>
                       Photos
                     </MenuItem>
-                    {/*<MenuItem onClick={() => handleClickMenuItem(VIEWS.ROUTE_MARKING)}>Mark a route</MenuItem>*/}
+                    <MenuItem onClick={() => handleClickMenuItem(VIEWS.ROUTE_MARKING)}>
+                      <ListItemIcon><TimelineIcon /></ListItemIcon>
+                      Mark a Route (beta)
+                    </MenuItem>
                   </MenuList>
                 </Drawer>
               )}
@@ -242,7 +250,10 @@ function InfoPane({
                     <ListItemIcon><History /></ListItemIcon>
                     Time Travel (beta)
                   </MenuItem>
-                  {/*<MenuItem onClick={() => handleClickMenuItem(VIEWS.ROUTE_MARKING)}>Mark a route</MenuItem>*/}
+                  <MenuItem onClick={() => handleClickMenuItem(VIEWS.ROUTE_MARKING)}>
+                    <ListItemIcon><TimelineIcon /></ListItemIcon>
+                    Mark a Route (beta)
+                  </MenuItem>
                 </MenuList>
               )}
             </div>

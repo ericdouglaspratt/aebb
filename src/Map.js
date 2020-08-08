@@ -271,6 +271,7 @@ function MapComponent({
     }
   }, [selectedMarker]);
 
+  // handle route marking
   useEffect(() => {
     if (route && route.length > 0) {
       // remove the old route, if any
@@ -278,9 +279,61 @@ function MapComponent({
         activeRoute.setMap(null);
       }
 
+      // unhighlight all previous route markers, if any
+      highlightedMarkers.forEach(({id, marker}) => {
+        marker.setIcon({
+          scaledSize: marker.icon.scaledSize,
+          url: determineMarkerIcon({
+            bikesAvailable: stations.lookup[id].bikesAvailable,
+            docksAvailable: stations.lookup[id].docksAvailable,
+            isInactive: stations.lookup[id].isInactive,
+            isLegacy: stations.lookup[id].isLegacy,
+            isVisited: !!visitedStations[id]
+          })
+        });
+        marker.setZIndex(determineMarkerZIndex(stations.lookup[id]));
+      });
+
+      // highlight the route markers
+      setHighlightedMarkers(route.map(id => {
+        const marker = stations.lookup[id].marker;
+        marker.setIcon({
+          scaledSize: marker.icon.scaledSize,
+          url: determineMarkerIcon({
+            bikesAvailable: stations.lookup[id].bikesAvailable,
+            docksAvailable: stations.lookup[id].docksAvailable,
+            isHighlighted: true,
+            isInactive: stations.lookup[id].isInactive,
+            isLegacy: stations.lookup[id].isLegacy,
+            isVisited: !!visitedStations[id]
+          })
+        });
+        marker.setZIndex(MARKER_Z_INDEX.ROUTE);
+        return {
+          id,
+          marker
+        };
+      }));
+
       // draw the new route
       setActiveRoute(drawRoute(route));
     } else if (activeRoute) {
+      // unhighlight the route markers
+      highlightedMarkers.forEach(({id, marker}) => {
+        marker.setIcon({
+          scaledSize: marker.icon.scaledSize,
+          url: determineMarkerIcon({
+            bikesAvailable: stations.lookup[id].bikesAvailable,
+            docksAvailable: stations.lookup[id].docksAvailable,
+            isInactive: stations.lookup[id].isInactive,
+            isLegacy: stations.lookup[id].isLegacy,
+            isVisited: !!visitedStations[id]
+          })
+        });
+        marker.setZIndex(determineMarkerZIndex(stations.lookup[id]));
+      });
+      setHighlightedMarkers([]);
+
       // remove the old route, if any
       activeRoute.setMap(null);
     }
