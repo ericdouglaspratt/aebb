@@ -213,6 +213,14 @@ function InfoPane({
               {breakpoint === BREAKPOINTS.MOBILE && (
                 <Drawer anchor="bottom" open={isMenuOpen} onClose={handleCloseMenu}>
                   <MenuList>
+                    <MenuItem onClick={() => handleClickMenuItem(VIEWS.PHOTOS)}>
+                      <ListItemIcon><PhotoCamera /></ListItemIcon>
+                      Photos
+                    </MenuItem>
+                    <MenuItem onClick={() => handleClickMenuItem(VIEWS.ROUTE_MARKING)}>
+                      <ListItemIcon><TimelineIcon /></ListItemIcon>
+                      Plan a Route
+                    </MenuItem>
                     <MenuItem onClick={() => handleClickMenuItem(VIEWS.TRIP_LIST)}>
                       <ListItemIcon><DirectionsBike /></ListItemIcon>
                       Trips
@@ -221,19 +229,19 @@ function InfoPane({
                       <ListItemIcon><Equalizer /></ListItemIcon>
                       Stats
                     </MenuItem>
-                    <MenuItem onClick={() => handleClickMenuItem(VIEWS.PHOTOS)}>
-                      <ListItemIcon><PhotoCamera /></ListItemIcon>
-                      Photos
-                    </MenuItem>
-                    <MenuItem onClick={() => handleClickMenuItem(VIEWS.ROUTE_MARKING)}>
-                      <ListItemIcon><TimelineIcon /></ListItemIcon>
-                      Mark a Route (beta)
-                    </MenuItem>
                   </MenuList>
                 </Drawer>
               )}
               {breakpoint === BREAKPOINTS.DESKTOP && (
                 <MenuList className="InfoPane-menu">
+                  <MenuItem onClick={() => handleClickMenuItem(VIEWS.PHOTOS)}>
+                    <ListItemIcon><PhotoCamera /></ListItemIcon>
+                    Photos
+                  </MenuItem>
+                  <MenuItem onClick={() => handleClickMenuItem(VIEWS.ROUTE_MARKING)}>
+                    <ListItemIcon><TimelineIcon /></ListItemIcon>
+                    Plan a Route
+                  </MenuItem>
                   <MenuItem onClick={() => handleClickMenuItem(VIEWS.TRIP_LIST)}>
                     <ListItemIcon><DirectionsBike /></ListItemIcon>
                     Trips
@@ -242,17 +250,9 @@ function InfoPane({
                     <ListItemIcon><Equalizer /></ListItemIcon>
                     Stats
                   </MenuItem>
-                  <MenuItem onClick={() => handleClickMenuItem(VIEWS.PHOTOS)}>
-                    <ListItemIcon><PhotoCamera /></ListItemIcon>
-                    Photos
-                  </MenuItem>
                   <MenuItem onClick={() => handleClickMenuItem(VIEWS.TIME_TRAVEL)}>
                     <ListItemIcon><History /></ListItemIcon>
                     Time Travel (beta)
-                  </MenuItem>
-                  <MenuItem onClick={() => handleClickMenuItem(VIEWS.ROUTE_MARKING)}>
-                    <ListItemIcon><TimelineIcon /></ListItemIcon>
-                    Mark a Route (beta)
                   </MenuItem>
                 </MenuList>
               )}
