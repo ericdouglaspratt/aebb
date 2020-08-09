@@ -13,7 +13,7 @@ const Trip = ({onClickPhoto, trip}) => {
         <div className="Trip-stats">
           <div className="Trip-stat">
             <span className="Trip-statStationsNew">
-              {` ${trip.numNew} new stations`}
+              {` ${trip.numNew} new ${trip.numNew === 1 ? 'station' : 'stations'}`}
             </span>
             {` / ${trip.numTotal} total`}
           </div>

@@ -44,12 +44,12 @@ function TripList({ activeTrip, onClickTrip, stations, trips }) {
           </h6>
           <div className="TripList-yearTrips">
             {year.trips.map(trip => {
-              const isActive = activeTrip && activeTrip.date.localeCompare(trip.date) === 0;
+              const isActive = activeTrip && activeTrip.id === trip.id;
               return (
                 <TripButton
                   {...trip}
                   isActive={isActive}
-                  key={trip.date}
+                  key={trip.id}
                   onClick={() => onClickTrip(trip)}
                   ref={isActive ? scrollRef : null}
                 />

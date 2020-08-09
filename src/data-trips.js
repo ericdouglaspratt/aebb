@@ -419,5 +419,23 @@ export default [
     date: '2020-08-01',
     description: 'Jackson Square to Upham\'s Corner',
     stations: [131, 425, 201, 197, 368, 199]
+  },
+  {
+    id: '40',
+    date: '2020-08-08',
+    description: 'Alewife to Porter to Davis',
+    stations: [183, 414, 319, 456, 176, 409, 328]
+  },
+  {
+    id: '41',
+    date: '2020-08-08',
+    description: 'Alewife to Watertown',
+    stations: [142, 455, 457, 458]
+  },
+  {
+    id: '42',
+    date: '2020-08-08',
+    description: 'One Hundred Percent!',
+    stations: [180, 149, 376, 70]
   }
 ];

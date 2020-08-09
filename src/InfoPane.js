@@ -210,7 +210,11 @@ function InfoPane({
           </div>
           <div className="InfoPane-content">
             <div className="InfoPane-contentMain">
-              <Progress numStations={totalNumViableStations} numVisited={Object.keys(visitedStations).length} />
+              <Progress
+                numStations={totalNumViableStations}
+                numVisited={Object.keys(visitedStations).length}
+                shouldAnimate
+              />
               {breakpoint === BREAKPOINTS.MOBILE && (
                 <Drawer anchor="bottom" open={isMenuOpen} onClose={handleCloseMenu}>
                   <MenuList>

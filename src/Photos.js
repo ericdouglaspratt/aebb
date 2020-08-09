@@ -11,7 +11,7 @@ const Photos = ({ onClickStation, onClickTrip, stations, trips }) => {
       {reversedTrips.map(trip => {
         const dateStr = moment(trip.date, 'YYYY-MM-DD').format('MMM D, YYYY');
         return (
-          <div className="Photos-day" key={trip.date}>
+          <div className="Photos-day" key={trip.id}>
             <TripButton
               {...trip}
               hideDistance
