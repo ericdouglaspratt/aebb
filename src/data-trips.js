@@ -424,18 +424,120 @@ export default [
     id: '40',
     date: '2020-08-08',
     description: 'Alewife to Porter to Davis',
-    stations: [183, 414, 319, 456, 176, 409, 328]
+    stations: [183, 414, 319, 456, 176, 409, 328],
+    photos: [
+      {
+        full: 'photos/2020-08-08-001.jpg',
+        lat: 42.395721,
+        lng: -71.142863,
+        thumb: 'photos/2020-08-08-001-thumb.jpg'
+      },
+      {
+        full: 'photos/2020-08-08-002.jpg',
+        lat: 42.397891,
+        lng: -71.147945,
+        thumb: 'photos/2020-08-08-002-thumb.jpg'
+      },
+      {
+        full: 'photos/2020-08-08-003.jpg',
+        lat: 42.393609,
+        lng: -71.144055,
+        thumb: 'photos/2020-08-08-003-thumb.jpg'
+      },
+      {
+        full: 'photos/2020-08-08-004.jpg',
+        lat: 42.382945,
+        lng: -71.124498,
+        thumb: 'photos/2020-08-08-004-thumb.jpg'
+      },
+      {
+        full: 'photos/2020-08-08-005.jpg',
+        lat: 42.386700,
+        lng: -71.119047,
+        thumb: 'photos/2020-08-08-005-thumb.jpg'
+      },
+      {
+        full: 'photos/2020-08-08-006.jpg',
+        lat: 42.389516,
+        lng: -71.116926,
+        thumb: 'photos/2020-08-08-006-thumb.jpg'
+      }
+    ]
   },
   {
     id: '41',
     date: '2020-08-08',
     description: 'Alewife to Watertown',
-    stations: [142, 455, 457, 458]
+    stations: [142, 455, 457, 458],
+    photos: [
+      {
+        full: 'photos/2020-08-08-007.jpg',
+        lat: 42.396116,
+        lng: -71.139467,
+        thumb: 'photos/2020-08-08-007-thumb.jpg'
+      },
+      {
+        full: 'photos/2020-08-08-008.jpg',
+        lat: 42.372224,
+        lng: -71.156771,
+        thumb: 'photos/2020-08-08-008-thumb.jpg'
+      },
+      {
+        full: 'photos/2020-08-08-009.jpg',
+        lat: 42.364513,
+        lng: -71.180846,
+        thumb: 'photos/2020-08-08-009-thumb.jpg'
+      },
+      {
+        full: 'photos/2020-08-08-010.jpg',
+        lat: 42.365191,
+        lng: -71.185658,
+        thumb: 'photos/2020-08-08-010-thumb.jpg'
+      }
+    ]
   },
   {
     id: '42',
     date: '2020-08-08',
     description: 'One Hundred Percent!',
-    stations: [180, 149, 376, 70]
+    stations: [180, 149, 376, 70],
+    photos: [
+      {
+        full: 'photos/2020-08-08-011.jpg',
+        lat: 42.374796,
+        lng: -71.133068,
+        thumb: 'photos/2020-08-08-011-thumb.jpg'
+      },
+      {
+        full: 'photos/2020-08-08-012.jpg',
+        lat: 42.374814,
+        lng: -71.133376,
+        thumb: 'photos/2020-08-08-012-thumb.jpg'
+      },
+      {
+        full: 'photos/2020-08-08-013.jpg',
+        lat: 42.373428,
+        lng: -71.133262,
+        thumb: 'photos/2020-08-08-013-thumb.jpg'
+      },
+      {
+        full: 'photos/2020-08-08-014.jpg',
+        lat: 42.363786,
+        lng: -71.129099,
+        thumb: 'photos/2020-08-08-014-thumb.jpg'
+      },
+      {
+        full: 'photos/2020-08-08-015.jpg',
+        lat: 42.360289,
+        lng: -71.128482,
+        thumb: 'photos/2020-08-08-015-thumb.jpg'
+      },
+      {
+        full: 'photos/2020-08-08-016.jpg',
+        lat: 42.360289,
+        lng: -71.128482,
+        thumb: 'photos/2020-08-08-016-thumb.jpg'
+      }
+    ]
   }
 ];
