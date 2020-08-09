@@ -59,6 +59,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [stations, setStations] = useState(initialStations);
   const [timeline, setTimeline] = useState([]);
+  const [totalNumViableStations, setTotalNumViableStations] = useState(0);
 
   const [markedRouteRef, setMarkedRoute] = useStateRef([]);
   const [viewStackRef, setViewStack] = useStateRef([]);
@@ -155,7 +156,10 @@ function App() {
           list: updatedStationList,
           lookup: createIdMap(updatedStationList)
         });
-        setTimeline(createTimeline(updatedStationList, trips));
+        setTimeline(createTimeline(updatedStationList, trips, visitedStations));
+        setTotalNumViableStations(updatedStationList.reduce((count, station) => {
+          return count + ((visitedStations[station.id] || !station.isInactive) ? 1 : 0);
+        }, 0));
         setIsLoading(false);
       })
       .catch(e => {
@@ -336,6 +340,7 @@ function App() {
               setActiveTravelTimestamp={setActiveTravelTimestamp}
               stations={stations}
               timeline={timeline}
+              totalNumViableStations={totalNumViableStations}
               trips={trips}
               viewStack={viewStackRef.current}
               visitedStations={visitedStations}

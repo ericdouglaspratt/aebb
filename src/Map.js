@@ -183,9 +183,10 @@ function MapComponent({
   useEffect(() => {
     if (activeTravelTimestamp) {
       stations.list.forEach(station => {
-        if (station.firstSeen > activeTravelTimestamp && station.marker.map) {
+        const stationBegin = station.firstSeen || Math.round(station.discovered / 1000);
+        if (stationBegin > activeTravelTimestamp && station.marker.map) {
           station.marker.setMap(null);
-        } else if (station.firstSeen <= activeTravelTimestamp && !station.marker.map) {
+        } else if (stationBegin <= activeTravelTimestamp && !station.marker.map) {
           station.marker.setMap(map);
         }
 

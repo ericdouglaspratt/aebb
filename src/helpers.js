@@ -34,7 +34,7 @@ export const createIdMap = items => items.reduce((result, item) => {
   return result;
 }, {});
 
-export const createTimeline = (stations, trips) => {
+export const createTimeline = (stations, trips, visitedStations) => {
   const earliestFirstSeen = stations.reduce((result, station) => {
     return station.firstSeen && station.firstSeen < result ? station.firstSeen : result;
   }, 9999999999);
@@ -51,7 +51,10 @@ export const createTimeline = (stations, trips) => {
   }
 
   const timeline = months.map(month => {
-    const stationsPresent = stations.filter(station => station.firstSeen && station.firstSeen < month.timestamp);
+    const stationsPresent = stations.filter(station => {
+      const stationBegin = station.firstSeen || Math.round(station.discovered / 1000);
+      return stationBegin && stationBegin < month.timestamp && !station.isInactive;
+    });
     const numVisited = trips.list.filter(trip => moment(trip.date, 'YYYY-M-DD').unix() < month.timestamp).reduce((sumNew, trip) => {
       return sumNew + trip.numNew;
     }, 0);
@@ -66,7 +69,7 @@ export const createTimeline = (stations, trips) => {
   timeline.push({
     description: now.format('MMM YYYY'),
     timestamp: now.unix(),
-    numStations: stations.length,
+    numStations: stations.filter(station => visitedStations[station.id] || !station.isInactive).length,
     numVisited: trips.list.reduce((sumNew, trip) => {
       return sumNew + trip.numNew;
     }, 0)

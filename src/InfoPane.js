@@ -37,6 +37,7 @@ function InfoPane({
   setActiveTravelTimestamp,
   stations,
   timeline,
+  totalNumViableStations,
   trips,
   viewStack,
   visitedStations
@@ -209,7 +210,7 @@ function InfoPane({
           </div>
           <div className="InfoPane-content">
             <div className="InfoPane-contentMain">
-              <Progress numStations={stations.list.length} numVisited={Object.keys(visitedStations).length} />
+              <Progress numStations={totalNumViableStations} numVisited={Object.keys(visitedStations).length} />
               {breakpoint === BREAKPOINTS.MOBILE && (
                 <Drawer anchor="bottom" open={isMenuOpen} onClose={handleCloseMenu}>
                   <MenuList>
