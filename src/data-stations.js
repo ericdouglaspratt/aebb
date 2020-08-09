@@ -898,6 +898,10 @@ export default [
       {
         "date": "2019-05-11",
         "photo": "photos/harvard-kennedy-school-at-bennett-st_2019-05-11.jpg"
+      },
+      {
+        "date": "2020-08-08",
+        "photo": "photos/harvard-kennedy-school-at-bennett-st-eliot-st_2020-08-08.jpg"
       }
     ],
     "firstSeen": 1343752320,
@@ -1899,6 +1903,10 @@ export default [
       {
         "date": "2018-06-30",
         "photo": "photos/alewife-station-at-russell-field_2018-06-30.jpg"
+      },
+      {
+        "date": "2020-08-08",
+        "photo": "photos/alewife-station-at-russell-field_2020-08-08.jpg"
       }
     ],
     "firstSeen": 1405113360,
@@ -1969,6 +1977,10 @@ export default [
       {
         "date": "2020-05-17",
         "photo": "photos/175-n-harvard-st_2020-05-17.jpg"
+      },
+      {
+        "date": "2020-08-08",
+        "photo": "photos/175-n-harvard-st_2020-08-08.jpg"
       }
     ],
     "firstSeen": 1397770560,
@@ -2249,6 +2261,10 @@ export default [
       {
         "date": "2019-05-11",
         "photo": "photos/lesley-university_2019-05-11.jpg"
+      },
+      {
+        "date": "2020-08-08",
+        "photo": "photos/lesley-university_2020-08-08.jpg"
       }
     ],
     "firstSeen": 1446674217,
@@ -2305,6 +2321,10 @@ export default [
       {
         "date": "2020-07-26",
         "photo": "photos/mt-auburn_2020-07-26.jpg"
+      },
+      {
+        "date": "2020-08-08",
+        "photo": "photos/mt-auburn_2020-08-08.jpg"
       }
     ],
     "firstSeen": 1446731928,
@@ -2345,6 +2365,10 @@ export default [
       {
         "date": "2018-06-30",
         "photo": "photos/alewife-mbta-at-steel-place_2018-06-30.jpg"
+      },
+      {
+        "date": "2020-08-08",
+        "photo": "photos/alewife-mbta-at-steel-place_2020-08-08.jpg"
       }
     ],
     "firstSeen": 1472591977,
@@ -3213,6 +3237,12 @@ export default [
     "name": "84 Cambridgepark Dr",
     "lat": 42.3936,
     "long": -71.143941,
+    "photos": [
+      {
+        "date": "2020-08-08",
+        "photo": "photos/84-cambridgepark-dr_2020-08-08.jpg"
+      }
+    ],
     "firstSeen": 1539867164,
     "oldId": "M32058"
   },
@@ -3239,6 +3269,10 @@ export default [
       {
         "date": "2019-06-08",
         "photo": "photos/grove-st-at-community-path_2019-06-08.jpg"
+      },
+      {
+        "date": "2020-08-08",
+        "photo": "photos/grove-st-at-community-path_2020-08-08.jpg"
       }
     ],
     "firstSeen": 1540326330,
@@ -3907,6 +3941,12 @@ export default [
     "name": "Honan Library",
     "lat": 42.36027370454934,
     "long": -71.12852452327388,
+    "photos": [
+      {
+        "date": "2020-08-08",
+        "photo": "photos/honan-allston-library_2020-08-08.jpg"
+      }
+    ],
     "firstSeen": 1543621353,
     "oldId": "A32040"
   },
@@ -4339,6 +4379,12 @@ export default [
     "name": "Elm St at White St",
     "lat": 42.38952436305763,
     "long": -71.11694140364307,
+    "photos": [
+      {
+        "date": "2020-08-08",
+        "photo": "photos/elm-st-at-white-st_2020-08-08.jpg"
+      }
+    ],
     "firstSeen": 1564009481,
     "oldId": "S32039"
   },
@@ -4403,6 +4449,12 @@ export default [
     "name": "Discovery Park - 30 Acorn Park Drive",
     "lat": 42.39790817368333,
     "long": -71.14797130814623,
+    "photos": [
+      {
+        "date": "2020-08-08",
+        "photo": "photos/discovery-park-30-acorn-park-dr_2020-08-08.jpg"
+      }
+    ],
     "firstSeen": 1565808774,
     "oldId": "M32066"
   },
@@ -4904,6 +4956,12 @@ export default [
     "name": "Coolidge Sq.",
     "lat": 42.372076114722866,
     "long": -71.15683130688922,
+    "photos": [
+      {
+        "date": "2020-08-08",
+        "photo": "photos/coolidge-sq_2020-08-08.jpg"
+      }
+    ],
     "discovered": 1596464609909
   },
   {
@@ -4911,6 +4969,12 @@ export default [
     "name": "Graham and Parks School – Linnaean St at Walker St",
     "lat": 42.38294430172271,
     "long": -71.12449831038248,
+    "photos": [
+      {
+        "date": "2020-08-08",
+        "photo": "photos/graham-and-parks-school-linnaean-st-at-walker-st_2020-08-08.jpg"
+      }
+    ],
     "discovered": 1596897018218
   },
   {
@@ -4918,6 +4982,12 @@ export default [
     "name": "N. Beacon St at N. Beacon Ct",
     "lat": 42.36444157139109,
     "long": -71.18091373646166,
+    "photos": [
+      {
+        "date": "2020-08-08",
+        "photo": "photos/n-beacon-st-at-n-beacon-ct_2020-08-08.jpg"
+      }
+    ],
     "discovered": 1596897018218
   },
   {
@@ -4925,6 +4995,12 @@ export default [
     "name": "Watertown Sq",
     "lat": 42.365260317694485,
     "long": -71.18573324459247,
+    "photos": [
+      {
+        "date": "2020-08-08",
+        "photo": "photos/watertown-sq_2020-08-08.jpg"
+      }
+    ],
     "discovered": 1596897018218
   }
 ];

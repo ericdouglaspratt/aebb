@@ -36,15 +36,21 @@ const Progress = ({numStations, numVisited, shouldAnimate}) => {
       const barRef = progressRef.current.getElementsByClassName('MuiLinearProgress-bar')[0];
 
       requestAnimationFrame(() => {
-        percentRef.current.innerHTML = `${displayPercent}%`;
-        percentRef.current.style.width = `${displayPercent}%`;
+        if (percentRef && percentRef.current) {
+          percentRef.current.innerHTML = `${displayPercent}%`;
+          percentRef.current.style.width = `${displayPercent}%`;
+        }
 
-        progressRef.current.setAttribute('aria-valueNow', displayPercent);
-        barRef.style.transition = 'none';
-        barRef.style.transform = `translateX(${-100 + displayPercent}%)`;
+        if (progressRef && progressRef.current && barRef) {
+          progressRef.current.setAttribute('aria-valueNow', displayPercent);
+          barRef.style.transition = 'none';
+          barRef.style.transform = `translateX(${-100 + displayPercent}%)`;
+        }
 
-        absoluteRef.current.innerHTML = `${displayNumVisited} of ${numStations} stations`;
-        absoluteRef.current.style.width = `${displayPercent}%`;
+        if (absoluteRef && absoluteRef.current) {
+          absoluteRef.current.innerHTML = `${displayNumVisited} of ${numStations} stations`;
+          absoluteRef.current.style.width = `${displayPercent}%`;
+        }
       });
       if (displayPercent !== percentComplete) {
         setTimeout(updatePercent, FRAME_DELAY);
