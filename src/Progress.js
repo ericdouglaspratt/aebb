@@ -56,6 +56,12 @@ const Progress = ({numStations, numVisited, shouldAnimate}) => {
         setTimeout(updatePercent, FRAME_DELAY);
       } else if (percentComplete === 100) {
         setShowFireworks(true);
+      } else if (absoluteRef && absoluteRef.current) {
+        setTimeout(() => {
+          requestAnimationFrame(() => {
+            absoluteRef.current.innerHTML = `${numVisited} of ${numStations} stations`;
+          });
+        }, FRAME_DELAY);
       }
     }
   };
