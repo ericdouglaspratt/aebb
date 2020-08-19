@@ -378,7 +378,7 @@ function MapComponent({
         iconFillCount = '-25';
       } else if (multiplier === 4 && bikePercentage !== 100) {
         iconFillCount = '-75';
-      } else {
+      } else if (!isNaN(multiplier)) {
         iconFillCount = `-${multiplier * 25}`;
       }
     }
