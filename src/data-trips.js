@@ -539,5 +539,25 @@ export default [
         thumb: 'photos/2020-08-08-016-thumb.jpg'
       }
     ]
+  },
+  {
+    id: '43',
+    date: '2020-09-06',
+    description: 'Two New Stations',
+    stations: [59, 460, 459],
+    photos: [
+      {
+        full: 'photos/2020-09-06-001.jpg',
+        lat: 42.351522,
+        lng: -71.059296,
+        thumb: 'photos/2020-09-06-001-thumb.jpg'
+      },
+      {
+        full: 'photos/2020-09-06-002.jpg',
+        lat: 42.365223,
+        lng: -71.060820,
+        thumb: 'photos/2020-09-06-002-thumb.jpg'
+      }
+    ]
   }
 ];

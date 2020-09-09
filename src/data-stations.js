@@ -746,6 +746,10 @@ export default [
       {
         "date": "2019-05-17",
         "photo": "photos/chinatown-gate-plaza_2019-05-17.jpg"
+      },
+      {
+        "date": "2020-09-06",
+        "photo": "photos/chinatown-gate-plaza_2020-09-06.jpg"
       }
     ],
     "firstSeen": 1314822480,
@@ -1301,8 +1305,8 @@ export default [
   {
     "id": 97,
     "name": "Harvard University River Houses at DeWolfe St / Cowperthwaite St",
-    "lat": 42.36919031768079,
-    "long": -71.11714124679565,
+    "lat": 42.369121582065524,
+    "long": -71.1163867230971,
     "photos": [
       {
         "date": "2019-05-11",
@@ -3063,8 +3067,8 @@ export default [
   {
     "id": 255,
     "name": "Park St at Norwell St",
-    "lat": 42.29208959672596,
-    "long": -71.0784115619208,
+    "lat": 42.29442578670662,
+    "long": -71.07821760713703,
     "photos": [
       {
         "date": "2020-06-27",
@@ -4886,7 +4890,8 @@ export default [
         "photo": "photos/beacon-st-at-englewood-ave_2020-07-03.jpg"
       }
     ],
-    "oldId": "K32013"
+    "oldId": "K32013",
+    "isLegacy": true
   },
   {
     "id": 451,
@@ -5002,8 +5007,35 @@ export default [
       }
     ],
     "discovered": 1596897018218
+  },
+  {
+    "id": 459,
+    "name": "Canal St at Causeway St",
+    "lat": 42.36530094929082,
+    "long": -71.06092190993877,
+    "photos": [
+      {
+        "date": "2020-09-06",
+        "photo": "photos/canal-st-at-causeway-st_2020-09-06.jpg"
+      }
+    ],
+    "discovered": 1599664086476
+  },
+  {
+    "id": 460,
+    "name": "Broad St at Central St",
+    "lat": 42.35849449039304,
+    "long": -71.05426469875965,
+    "photos": [
+      {
+        "date": "2020-09-06",
+        "photo": "photos/broad-st-at-central-st_2020-09-06.jpg"
+      }
+    ],
+    "discovered": 1599664086476
   }
 ];
+
 
 
 
