@@ -510,24 +510,6 @@ export default [
     "oldId": "A32012"
   },
   {
-    "id": 42,
-    "name": "Boylston St at Arlington St",
-    "lat": 42.35204262229712,
-    "long": -71.07057809829712,
-    "photos": [
-      {
-        "date": "2017-05-28",
-        "photo": "photos/boylston-st-at-arlington-st_2017-05-28.jpg"
-      },
-      {
-        "date": "2018-06-23",
-        "photo": "photos/boylston-st-at-arlington-st_2018-06-23.jpg"
-      }
-    ],
-    "firstSeen": 1311869700,
-    "oldId": "D32007"
-  },
-  {
     "id": 43,
     "name": "Rowes Wharf at Atlantic Ave",
     "lat": 42.357143,
@@ -2124,7 +2106,7 @@ export default [
   },
   {
     "id": 162,
-    "name": "Franklin Park - Seaver St at Humbolt Ave",
+    "name": "Franklin Park - Seaver St at Humboldt Ave",
     "lat": 42.309796,
     "long": -71.092225,
     "photos": [
@@ -2793,8 +2775,8 @@ export default [
   {
     "id": 214,
     "name": "Airport T Stop - Bremen St at Brooks St",
-    "lat": 42.37535497133996,
-    "long": -71.03133335709572,
+    "lat": 42.374079742097614,
+    "long": -71.03276392826956,
     "photos": [
       {
         "date": "2019-05-19",
@@ -3109,8 +3091,8 @@ export default [
   {
     "id": 260,
     "name": "Fields Corner T Stop",
-    "lat": 42.2996667,
-    "long": -71.0605833,
+    "lat": 42.300664,
+    "long": -71.060295,
     "photos": [
       {
         "date": "2020-05-24",
@@ -4092,7 +4074,8 @@ export default [
       }
     ],
     "firstSeen": 1560723784,
-    "oldId": "V32002"
+    "oldId": "V32002",
+    "isLegacy": true
   },
   {
     "id": 389,
@@ -4905,7 +4888,8 @@ export default [
         "photo": "photos/washington-sq_2020-07-03.jpg"
       }
     ],
-    "oldId": "K32014"
+    "oldId": "K32014",
+    "isLegacy": true
   },
   {
     "id": 452,
@@ -4933,7 +4917,8 @@ export default [
         "photo": "photos/beacon-st-at-hawes-st_2020-07-03.jpg"
       }
     ],
-    "oldId": "K32016"
+    "oldId": "K32016",
+    "isLegacy": true
   },
   {
     "id": 454,
@@ -5033,49 +5018,241 @@ export default [
       }
     ],
     "discovered": 1599664086476
+  },
+  {
+    "id": 461,
+    "name": "Railroad Lot and Minuteman Bikeway",
+    "lat": 42.416084844039744,
+    "long": -71.15315407052549,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 462,
+    "name": "Linwood St at Minuteman Bikeway",
+    "lat": 42.40935395518158,
+    "long": -71.14906518727366,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 463,
+    "name": "Smith Pl at Wilson Rd",
+    "lat": 42.39239749145834,
+    "long": -71.15058331757609,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 464,
+    "name": "Mass Ave at Grafton St",
+    "lat": 42.40726052447951,
+    "long": -71.14382132425817,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 465,
+    "name": "Broadway at Grafton St",
+    "lat": 42.40994213011757,
+    "long": -71.14009319811885,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 466,
+    "name": "Centre St at Washington St",
+    "lat": 42.35574334805774,
+    "long": -71.18641942508475,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 467,
+    "name": "Washington St at Crafts St",
+    "lat": 42.35389024396587,
+    "long": -71.19943707257335,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 468,
+    "name": "Nonantum Library",
+    "lat": 42.36068455768156,
+    "long": -71.20146199598821,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 469,
+    "name": "Bacon St at Washington St",
+    "lat": 42.35711920909866,
+    "long": -71.1860453666327,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 470,
+    "name": "Union St at Herrick Rd – Newton Centre Green Line",
+    "lat": 42.32956868185623,
+    "long": -71.19367271661758,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 471,
+    "name": "MIT Carleton St at Amherst St",
+    "lat": 42.36054174140606,
+    "long": -71.08669817447662,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 472,
+    "name": "MIT Hayward St at Amherst St",
+    "lat": 42.36085937353302,
+    "long": -71.08551858007559,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 473,
+    "name": "West Newton",
+    "lat": 42.349600498642076,
+    "long": -71.2262749671936,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 474,
+    "name": "West Newton Armory",
+    "lat": 42.34947178098653,
+    "long": -71.22000678911718,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 475,
+    "name": "Arsenal Yards",
+    "lat": 42.36277388549605,
+    "long": -71.15764854490408,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 476,
+    "name": "Boylston St at Charles St",
+    "lat": 42.3525760946701,
+    "long": -71.06764405041758,
+    "photos": [
+      {
+        "date": "2017-05-28",
+        "photo": "photos/boylston-st-at-arlington-st_2017-05-28.jpg"
+      },
+      {
+        "date": "2018-06-23",
+        "photo": "photos/boylston-st-at-arlington-st_2018-06-23.jpg"
+      }
+    ],
+    "discovered": 1605550855975,
+    "firstSeen": 1311869700,
+    "oldId": "D32007",
+    "mergedLegacyStationInfo": {
+      "id": 42,
+      "name": "Boylston St at Arlington St",
+      "lat": 42.35204262229712,
+      "long": -71.07057809829712
+    }
+  },
+  {
+    "id": 477,
+    "name": "Marion St at White St",
+    "lat": 42.38066930871317,
+    "long": -71.03907315999093,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 478,
+    "name": "Gove St at Orleans St",
+    "lat": 42.37057753242139,
+    "long": -71.03558540113227,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 479,
+    "name": "Galileo Galilei Way at Main Street",
+    "lat": 42.363003781560096,
+    "long": -71.08974037706501,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 480,
+    "name": "Thorndike Field at Minuteman Bikeway",
+    "lat": 42.40016804853787,
+    "long": -71.14456963094199,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 481,
+    "name": "645 Summer St",
+    "lat": 42.341780891371904,
+    "long": -71.03987016504107,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 482,
+    "name": "Kearins Playground",
+    "lat": 42.406161241322444,
+    "long": -71.06041654944418,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 483,
+    "name": "Porzio Park",
+    "lat": 42.364119035231525,
+    "long": -71.02876782417297,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 484,
+    "name": "Revere Public Library",
+    "lat": 42.408088,
+    "long": -71.008942,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 485,
+    "name": "Revere City Hall",
+    "lat": 42.40741,
+    "long": -71.0139,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 486,
+    "name": "Langley Lot",
+    "lat": 42.330528,
+    "long": -71.192861,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 487,
+    "name": "Community Path at Lowell St",
+    "lat": 42.392525,
+    "long": -71.105587,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 488,
+    "name": "Martha Eliot Health Center",
+    "lat": 42.324173,
+    "long": -71.10196,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 489,
+    "name": "Day Sq",
+    "lat": 42.379295,
+    "long": -71.027733,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 490,
+    "name": "Blue Hill Ave at Havelock St",
+    "lat": 42.286012,
+    "long": -71.090986,
+    "discovered": 1605550855975
+  },
+  {
+    "id": 491,
+    "name": "Harrison Ave at E. Dedham St",
+    "lat": 42.339194,
+    "long": -71.06975,
+    "discovered": 1605550855975
   }
 ];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

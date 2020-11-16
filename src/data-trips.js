@@ -4,7 +4,7 @@ export default [
     color: '#f1c40f',
     date: '2017-05-28',
     description: 'Kendall to South Station',
-    stations: [107, 72, 60, 120, 58, 42, 81, 22]
+    stations: [107, 72, 60, 120, 58, 476, 81, 22]
   },
   {
     id: '2',
@@ -54,7 +54,7 @@ export default [
     color: '#0000ff',
     date: '2018-06-23',
     description: 'Boylston St through Back Bay',
-    stations: [342, 55, 61, 36, 454, 50, 42, 81]
+    stations: [342, 55, 61, 36, 454, 50, 476, 81]
   },
   {
     id: '8',
