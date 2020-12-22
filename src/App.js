@@ -164,6 +164,10 @@ function App() {
       })
       .catch(e => {
         console.log('error fetching current station data', e);
+        setTimeline(createTimeline(initialStations.list, trips, visitedStations));
+        setTotalNumViableStations(initialStations.list.reduce((count, station) => {
+          return count + ((visitedStations[station.id] || !station.isInactive) ? 1 : 0);
+        }, 0));
         setIsLoading(false);
       });
   };
