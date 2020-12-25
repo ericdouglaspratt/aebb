@@ -95,6 +95,160 @@ export const csvToJson = csv => {
   return result;
 };
 
+export const detectStationChanges = (oldStations, newStations, visitedStations) => {
+  const diffLog = [];
+  const oldStationMap = createIdMap(oldStations);
+  const newStationsFound = [];
+  const updatedStationList = [];
+
+  let changesDetected = false;
+  let numLocationChanged = 0;
+  let numNameChanged = 0;
+
+  newStations.forEach(newStation => {
+    const matchingOldStation = oldStationMap[newStation.station_id];
+
+    if (!matchingOldStation) {
+      // if we discovered a new station
+      if (newStation.lat && newStation.lon) {
+        const newStationFound = {
+          hashId: newStation.external_id,
+          id: newStation.station_id,
+          name: newStation.name,
+          lat: newStation.lat,
+          long: newStation.lon,
+          discovered: (new Date()).getTime()
+        };
+        newStationsFound.push(newStationFound);
+        updatedStationList.push(newStationFound);
+        diffLog.push(`new station '${newStation.name}' found`);
+      }
+    } else if (matchingOldStation.name !== newStation.name) {
+      // if a known station changed its name
+      diffLog.push(`station ${newStation.station_id} name changed from "${matchingOldStation.name}" to "${newStation.name}"`);
+      updatedStationList.push({
+        ...matchingOldStation,
+        name: newStation.name,
+        id: `${matchingOldStation.id}`
+      });
+      numNameChanged++;
+    } else if (matchingOldStation.lat !== newStation.lat || matchingOldStation.long !== newStation.lon) {
+      // if a known station changed its location
+      const percentChangeLat = calcPercentChange(matchingOldStation.lat, newStation.lat);
+      const percentChangeLong = calcPercentChange(matchingOldStation.long, newStation.lon);
+      const avgPercentChange = (percentChangeLat + percentChangeLong) / 2;
+      diffLog.push(`station '${matchingOldStation.name}' location has changed from (${matchingOldStation.lat}, ${matchingOldStation.long}) to (${newStation.lat}, ${newStation.lon}), percent change ${avgPercentChange}%`);
+      updatedStationList.push({
+        ...matchingOldStation,
+        lat: newStation.lat,
+        long: newStation.lon,
+        id: `${matchingOldStation.id}`
+      });
+      numLocationChanged++;
+    } else {
+      updatedStationList.push({
+        ...matchingOldStation,
+        hashId: newStation.external_id,
+        id: `${matchingOldStation.id}`
+      });
+    }
+  });
+
+  // find stations that kept the same name but changed ids
+  const duplicatedSameNameStations = oldStations.filter(station => !!newStations.find(
+    newStation => (station.id != newStation.station_id) && (station.name === newStation.name)
+  ));
+  if (duplicatedSameNameStations.length) {
+    diffLog.push(`${duplicatedSameNameStations.length} stations have been duplicated with the same name`);
+  } else {
+    diffLog.push('no duplicated stations with the same name found');
+  }
+
+  // find stations that kept the same location but changed ids
+  const duplicatedSameLocationStations = oldStations.filter(station => !!newStations.find(
+    newStation => (station.id != newStation.station_id) && (station.lat === newStation.lat) && (station.long === newStation.lon)
+  ));
+  if (duplicatedSameLocationStations.length) {
+    diffLog.push(`${duplicatedSameLocationStations.length} stations have been duplicated with the same location`);
+  } else {
+    diffLog.push('no duplicated stations with the same location found');
+  }
+
+  // find stations that no longer exist
+  const nonexistentStations = oldStations.filter(station => !newStations.find(newStation => station.id == newStation.station_id));
+  if (nonexistentStations.length) {
+    let numLegacyStations = 0;
+
+    nonexistentStations.forEach(nonexistentStation => {
+      // if we've visited this station, preserve it
+      if (visitedStations[nonexistentStation.id]) {
+        updatedStationList.push({
+          ...nonexistentStation,
+          id: `${nonexistentStation.id}`,
+          isInactive: true,
+          isLegacy: true
+        });
+        numLegacyStations++;
+      }
+    });
+
+    diffLog.push(`${numLegacyStations} legacy stations have been preserved`);
+    diffLog.push(`${nonexistentStations.length - numLegacyStations} stations have been removed`);
+  }
+
+  // summary report on new stations found
+  if (newStationsFound && newStationsFound.length > 0) {
+    updatedStationList.sort((a, b) => {
+      const aid = parseInt(a.id);
+      const bia = parseInt(b.id);
+      return (aid < bia) ? -1 : ((aid > bia) ? 1 : 0);
+    });
+    diffLog.push(`${newStationsFound.length} new stations found`);
+    changesDetected = true;
+  } else {
+    diffLog.push('no new stations found');
+  }
+
+  // summary report on name changes detected
+  if (numNameChanged > 0) {
+    diffLog.push(`${numNameChanged} station name changes detected`);
+    changesDetected = true;
+  } else {
+    diffLog.push('no station name changes detected');
+  }
+
+  // summary report on location changes detected
+  if (numLocationChanged > 0) {
+    diffLog.push(`${numLocationChanged} station location changes detected`);
+    changesDetected = true;
+  } else {
+    diffLog.push('no station location changes detected');
+  }
+
+  if (changesDetected) {
+    diffLog.forEach(log => console.log(log));
+    /*updatedStationList.sort((a, b) => {
+      const aid = parseInt(a.id);
+      const bia = parseInt(b.id);
+      return (aid < bia) ? -1 : ((aid > bia) ? 1 : 0);
+    });
+    const newList = updatedStationList.map(item => {
+      const newItem = {...item};
+      delete newItem.bikesAvailable;
+      delete newItem.docksAvailable;
+      delete newItem.isInactive;
+      return newItem;
+    })
+    console.log('new list of stations', newList);
+    console.log(JSON.stringify(newList));*/
+  }
+
+  return {
+    diffLog,
+    updatedStationList
+  };
+};
+
 export const diffStations = (oldStations, newStations, visitedStations) => {
   const diffLog = [];
   const oldStationMap = createIdMap(oldStations);

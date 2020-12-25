@@ -3,7 +3,14 @@ import moment from 'moment';
 import './App.css';
 
 import { VIEWS } from './constants';
-import { calculateDistance, createIdMap, createTimeline, csvToJson, diffStations, useStateRef } from './helpers';
+import {
+  calculateDistance,
+  createIdMap,
+  createTimeline,
+  csvToJson,
+  detectStationChanges,
+  useStateRef
+} from './helpers';
 import cachedStationData from './data-stations';
 import rawTrips from './data-trips';
 
@@ -137,33 +144,42 @@ function App() {
   };
 
   const loadCurrentStationData = visitedMap => {
-    fetch('https://member.bluebikes.com/data/stations.json')
+    const stationInfoPromise = fetch('https://gbfs.bluebikes.com/gbfs/en/station_information.json')
+      .then(response => response.json())
+      .then(data => detectStationChanges(stations.list, data?.data?.stations, visitedMap));
+
+    const stationStatusPromise = fetch('https://gbfs.bluebikes.com/gbfs/en/station_status.json')
       .then(response => response.json())
       .then(data => {
-        const { diffLog, updatedStationList } = diffStations(stations.list, data.stations, visitedMap);
-        setDiffLog(diffLog);
-        /*const output = updatedStationList.map(item => {
-          const a = {
-            ...item
+        const stationStatusMap = data.data.stations.reduce((result, station) => {
+          result[station.station_id] = {
+            bikesAvailable: station.num_bikes_available,
+            docksAvailable: station.num_docks_available,
+            isInactive: station.station_status !== 'active'
           };
-          delete a.bikesAvailable;
-          delete a.docksAvailable;
-          delete a.isInactive;
-          return a;
-        });
-        console.log(JSON.stringify(output));*/
+          return result;
+        }, {});
+        return stationStatusMap;
+      });
+
+    Promise.all([stationInfoPromise, stationStatusPromise])
+      .then(([stationInfoResult, stationStatusResult]) => {
+        const mergedStationList = stationInfoResult.updatedStationList.map(station => ({
+          ...station,
+          ...(stationStatusResult[station.id])
+        }));
+
         setStations({
-          list: updatedStationList,
-          lookup: createIdMap(updatedStationList)
+          list: mergedStationList,
+          lookup: createIdMap(mergedStationList)
         });
-        setTimeline(createTimeline(updatedStationList, trips, visitedStations));
-        setTotalNumViableStations(updatedStationList.reduce((count, station) => {
+        setTimeline(createTimeline(mergedStationList, trips, visitedStations));
+        setTotalNumViableStations(mergedStationList.reduce((count, station) => {
           return count + ((visitedStations[station.id] || !station.isInactive) ? 1 : 0);
         }, 0));
         setIsLoading(false);
       })
       .catch(e => {
-        console.log('error fetching current station data', e);
         setTimeline(createTimeline(initialStations.list, trips, visitedStations));
         setTotalNumViableStations(initialStations.list.reduce((count, station) => {
           return count + ((visitedStations[station.id] || !station.isInactive) ? 1 : 0);
