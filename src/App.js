@@ -178,6 +178,17 @@ function App() {
           return count + ((visitedStations[station.id] || !station.isInactive) ? 1 : 0);
         }, 0));
         setIsLoading(false);
+
+        // FOR ADDING IN NEW FIRSTSEEN DATA
+        /*const cleanList = stationInfoResult.updatedStationList.map(station => {
+          const a = {...station};
+          delete a.isInactive;
+          return a;
+        });
+        validateStationHistory({
+          list: cleanList,
+          lookup: createIdMap(cleanList)
+        });*/
       })
       .catch(e => {
         setTimeline(createTimeline(initialStations.list, trips, visitedStations));
@@ -237,11 +248,13 @@ function App() {
   };
 
   const validateStationHistory = stations => {
-    fetch('/hubway_Trips_2014_2.csv')
+    fetch('/202011-bluebikes-tripdata.csv')
       .then(response => response.text())
       .then(csv => {
         //console.log('csv', csv);
         const json = csvToJson(csv);
+
+        // OLD FORMAT
         /*json.sort((a, b) => {
           const am = moment(a.Startdate, 'M/D/YYYY H:mm').unix();
           const bm = moment(b.Startdate, 'M/D/YYYY H:mm').unix();
@@ -274,6 +287,7 @@ function App() {
         console.log('update', updatedStations);
         console.log(JSON.stringify(updatedStations));*/
 
+        // NEW FORMAT
         /*const firstTripTimes = json.reduce((result, trip) => {
           if (trip.startstationid && stations.lookup[trip.startstationid] && !stations.lookup[trip.startstationid].firstSeen && !result[trip.startstationid]) {
             result[trip.startstationid] = moment(trip.starttime).unix();
@@ -296,6 +310,12 @@ function App() {
             } else {
               return station;
             }
+          });
+
+          updatedStations.sort((a, b) => {
+            const aid = parseInt(a.id);
+            const bia = parseInt(b.id);
+            return (aid < bia) ? -1 : ((aid > bia) ? 1 : 0);
           });
 
           console.log('update', updatedStations);
@@ -329,6 +349,16 @@ function App() {
   // in trip list, on right side, auto-generate an SVG of what the route looks like
   // fix mobile view-centering padding when selecting a station
   // fix mobile route-centering padding when trip has photos vs. when it doesn't
+
+
+  // validate the most recent firstSeen we have
+  /*const stationLastSeen = stations.list.reduce((result, station) => {
+    if (station.firstSeen && station.firstSeen > result) {
+      return station.firstSeen;
+    }
+    return result;
+  }, 0);
+  console.log('station last seen', stationLastSeen, new Date(stationLastSeen * 1000));*/
 
   return (
     <div className="App">
