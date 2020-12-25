@@ -45,15 +45,16 @@ export const createTimeline = (stations, trips, visitedStations) => {
   while (monthIterator < now) {
     months.push({
       description: monthIterator.format('MMM YYYY'),
-      timestamp: monthIterator.unix()
+      timestamp: monthIterator.unix(),
+      //timestampStr: monthIterator.format('YYYY-MM-DD HH:mm:ss')
     });
-    monthIterator.add(1, 'month');
+    monthIterator.add(1, 'month').endOf('month').subtract(5, 'seconds');
   }
 
   const timeline = months.map(month => {
     const stationsPresent = stations.filter(station => {
       const stationBegin = station.firstSeen || Math.round(station.discovered / 1000);
-      return stationBegin && stationBegin < month.timestamp && !station.isInactive;
+      return stationBegin && stationBegin < month.timestamp;
     });
     const numVisited = trips.list.filter(trip => moment(trip.date, 'YYYY-M-DD').unix() < month.timestamp).reduce((sumNew, trip) => {
       return sumNew + trip.numNew;
