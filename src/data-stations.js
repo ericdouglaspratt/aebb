@@ -5597,7 +5597,8 @@ export default [
     "lat": 42.408088,
     "long": -71.008942,
     "discovered": 1605550855975,
-    "hashId": "7feae3ce-ddf2-4a45-a123-1209c8a9182b"
+    "hashId": "7feae3ce-ddf2-4a45-a123-1209c8a9182b",
+    "firstSeen": 1604530499
   },
   {
     "id": "485",
@@ -5632,7 +5633,8 @@ export default [
     "lat": 42.324173,
     "long": -71.10196,
     "discovered": 1605550855975,
-    "hashId": "aefc33cd-40b9-48da-8b87-415428816bdb"
+    "hashId": "aefc33cd-40b9-48da-8b87-415428816bdb",
+    "firstSeen": 1604343249
   },
   {
     "id": "489",
@@ -5649,7 +5651,8 @@ export default [
     "lat": 42.286012,
     "long": -71.090986,
     "discovered": 1605550855975,
-    "hashId": "065e0e5d-8a0d-49b7-9c1f-c8eaba51a8b4"
+    "hashId": "065e0e5d-8a0d-49b7-9c1f-c8eaba51a8b4",
+    "firstSeen": 1604584651
   },
   {
     "id": "491",
@@ -5657,7 +5660,8 @@ export default [
     "lat": 42.339194,
     "long": -71.06975,
     "discovered": 1605550855975,
-    "hashId": "50cc3c7f-50ed-4c70-b483-c89f3f47c938"
+    "hashId": "50cc3c7f-50ed-4c70-b483-c89f3f47c938",
+    "firstSeen": 1605208203
   },
   {
     "hashId": "0f554e1d-9f0f-452d-9b4a-e00aa2c5911e",
@@ -5665,7 +5669,8 @@ export default [
     "name": "Harvard Stadium: N. Harvard St at Soldiers Field Rd",
     "lat": 42.368019,
     "long": -71.1242,
-    "discovered": 1608825231848
+    "discovered": 1608825231848,
+    "firstSeen": 1605640672
   },
   {
     "hashId": "efd724b2-31cb-4aec-b9d9-8ab79271630c",
