@@ -5373,7 +5373,8 @@ export default [
     "lat": 42.416084844039744,
     "long": -71.15315407052549,
     "discovered": 1605550855975,
-    "hashId": "81323081-749c-44cf-ac62-0e6c64305c32"
+    "hashId": "81323081-749c-44cf-ac62-0e6c64305c32",
+    "firstSeen": 1599767787
   },
   {
     "id": "462",
@@ -5381,7 +5382,8 @@ export default [
     "lat": 42.40935395518158,
     "long": -71.14906518727366,
     "discovered": 1605550855975,
-    "hashId": "e4d5271f-5f76-401b-b7f0-c8dce3c26f10"
+    "hashId": "e4d5271f-5f76-401b-b7f0-c8dce3c26f10",
+    "firstSeen": 1599773795
   },
   {
     "id": "463",
@@ -5389,7 +5391,8 @@ export default [
     "lat": 42.39239749145834,
     "long": -71.15058331757609,
     "discovered": 1605550855975,
-    "hashId": "38706d8c-8d4b-49f7-b6ed-7688449db261"
+    "hashId": "38706d8c-8d4b-49f7-b6ed-7688449db261",
+    "firstSeen": 1599849865
   },
   {
     "id": "464",
@@ -5397,7 +5400,8 @@ export default [
     "lat": 42.40726052447951,
     "long": -71.14382132425817,
     "discovered": 1605550855975,
-    "hashId": "9c8366d8-3b58-4894-b281-09e22f6fe5f7"
+    "hashId": "9c8366d8-3b58-4894-b281-09e22f6fe5f7",
+    "firstSeen": 1600254006
   },
   {
     "id": "465",
@@ -5405,7 +5409,8 @@ export default [
     "lat": 42.40994213011757,
     "long": -71.14009319811885,
     "discovered": 1605550855975,
-    "hashId": "8e7c1984-dc81-43b0-a0d3-58c6de45225a"
+    "hashId": "8e7c1984-dc81-43b0-a0d3-58c6de45225a",
+    "firstSeen": 1600259148
   },
   {
     "id": "466",
