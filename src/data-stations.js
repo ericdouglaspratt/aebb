@@ -1087,7 +1087,8 @@ export default [
       }
     ],
     "firstSeen": 1343906940,
-    "oldId": "S32002"
+    "oldId": "S32002",
+    "hashId": "f8349c69-0de8-11e7-991c-3863bb43a7d0"
   },
   {
     "id": "79",
@@ -1478,7 +1479,8 @@ export default [
       }
     ],
     "firstSeen": 1365276600,
-    "oldId": "K32004"
+    "oldId": "K32004",
+    "hashId": "f834b5d9-0de8-11e7-991c-3863bb43a7d0"
   },
   {
     "id": "104",
@@ -5202,7 +5204,8 @@ export default [
       }
     ],
     "oldId": "K32013",
-    "isLegacy": true
+    "isLegacy": true,
+    "firstSeen": 1593624980
   },
   {
     "id": "451",
@@ -5217,7 +5220,8 @@ export default [
       }
     ],
     "oldId": "K32014",
-    "isLegacy": true
+    "isLegacy": true,
+    "firstSeen": 1593806058
   },
   {
     "id": "452",
@@ -5232,7 +5236,8 @@ export default [
       }
     ],
     "oldId": "K32015",
-    "hashId": "a83f982f-a4f1-43e4-98e8-c8f4a0bb7290"
+    "hashId": "a83f982f-a4f1-43e4-98e8-c8f4a0bb7290",
+    "firstSeen": 1593716325
   },
   {
     "id": "453",
@@ -5247,7 +5252,8 @@ export default [
       }
     ],
     "oldId": "K32016",
-    "isLegacy": true
+    "isLegacy": true,
+    "firstSeen": 1593722549
   },
   {
     "id": "454",
@@ -5283,7 +5289,8 @@ export default [
       }
     ],
     "discovered": 1596464609909,
-    "hashId": "634b697d-0e64-4102-8849-abac7a7f8e35"
+    "hashId": "634b697d-0e64-4102-8849-abac7a7f8e35",
+    "firstSeen": 1596382352
   },
   {
     "id": "456",
@@ -5644,5 +5651,46 @@ export default [
     "lat": 42.367621,
     "long": -71.187936,
     "discovered": 1608825231848
+  },
+  {
+    "hashId": "569f4952-5a25-4394-a419-f9c4d9cca6f3",
+    "id": "495",
+    "name": "Union Square East (Temp Winter Station)",
+    "lat": 42.380078,
+    "long": -71.090098,
+    "discovered": 1608916119712
+  },
+  {
+    "hashId": "603f7f65-e15c-44d7-9bce-581b5fda9a61",
+    "id": "496",
+    "name": "Trum Field @ Cedar St (Temp Winter Station)",
+    "lat": 42.398444,
+    "long": -71.107833,
+    "discovered": 1608916119712
+  },
+  {
+    "hashId": "d83f89ab-27f7-471e-a84b-e1a4d1582deb",
+    "id": "497",
+    "name": "Washington St @ New Washington St (Temp Winter Station)",
+    "lat": 42.381056,
+    "long": -71.087083,
+    "discovered": 1608916119712
+  },
+  {
+    "hashId": "b2b39507-9abd-41af-a5b2-b6e2ed8c3c4a",
+    "id": "498",
+    "name": "Broadway Opposite Norwood Ave  (Temp Winter Station)",
+    "lat": 42.396764,
+    "long": -71.102376,
+    "discovered": 1608916119712
+  },
+  {
+    "hashId": "b32131a5-0795-450f-ac27-0b5f4b56551d",
+    "id": "499",
+    "name": "Conway Park @ Bleachery Ct (Temp Winter Station)",
+    "lat": 42.3836409294306,
+    "long": -71.10868692398071,
+    "discovered": 1608916119712
   }
 ];
+
