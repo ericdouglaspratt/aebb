@@ -543,7 +543,7 @@ export default [
   {
     id: '43',
     date: '2020-09-06',
-    description: 'Two New Stations',
+    description: 'Hub on Causeway',
     stations: [59, 460, 459],
     photos: [
       {
@@ -557,6 +557,20 @@ export default [
         lat: 42.365223,
         lng: -71.060820,
         thumb: 'photos/2020-09-06-002-thumb.jpg'
+      }
+    ]
+  },
+  {
+    id: '44',
+    date: '2020-12-28',
+    description: 'Kendall Square',
+    stations: [185, 479, 471, 472, 185],
+    photos: [
+      {
+        full: 'photos/2020-12-28-001.jpg',
+        lat: 42.36340443761856,
+        lng: -71.09128831119448,
+        thumb: 'photos/2020-12-28-001-thumb.jpg'
       }
     ]
   }

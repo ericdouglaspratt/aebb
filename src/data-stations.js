@@ -782,6 +782,10 @@ export default [
       {
         "date": "2020-09-06",
         "photo": "photos/chinatown-gate-plaza_2020-09-06.jpg"
+      },
+      {
+        "date": "2020-12-28",
+        "photo": "photos/chinatown-gate-plaza_2020-12-28.jpg"
       }
     ],
     "firstSeen": 1314822480,
@@ -2541,6 +2545,10 @@ export default [
       {
         "date": "2017-08-13",
         "photo": "photos/third-at-binney-st_2017-08-13.jpg"
+      },
+      {
+        "date": "2020-12-28",
+        "photo": "photos/third-at-binney-st_2020-12-28.jpg"
       }
     ],
     "firstSeen": 1477587118,
@@ -5462,6 +5470,12 @@ export default [
     "name": "MIT Carleton St at Amherst St",
     "lat": 42.36054174140606,
     "long": -71.08669817447662,
+    "photos": [
+      {
+        "date": "2020-12-28",
+        "photo": "photos/mit-carleton-st-at-amherst-st_2020-12-28.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "f1cafe36-f800-41f6-b74d-73953cb6394c",
     "firstSeen": 1602094076
@@ -5471,6 +5485,12 @@ export default [
     "name": "MIT Hayward St at Amherst St",
     "lat": 42.36085937353302,
     "long": -71.08551858007559,
+    "photos": [
+      {
+        "date": "2020-12-28",
+        "photo": "photos/mit-hayward-st-at-amherst-st_2020-12-28.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "533620e8-00ff-494a-b288-bd67602bc98e",
     "firstSeen": 1602095479
@@ -5551,6 +5571,12 @@ export default [
     "name": "Galileo Galilei Way at Main Street",
     "lat": 42.363003781560096,
     "long": -71.08974037706501,
+    "photos": [
+      {
+        "date": "2020-12-28",
+        "photo": "photos/galileo-galilei-way-at-main-st_2020-12-28.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "13918b3b-9ac5-4968-a74d-e40dd3bc952e",
     "firstSeen": 1602692746
