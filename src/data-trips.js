@@ -573,5 +573,19 @@ export default [
         thumb: 'photos/2020-12-28-001-thumb.jpg'
       }
     ]
+  },
+  {
+    id: '45',
+    date: '2020-12-31',
+    description: 'Union Square to Magoun Square',
+    stations: [78, 495, 497, 408, 188, 498, 496, 487, 499, 78],
+    photos: [
+      {
+        full: 'photos/2020-12-31-001.jpg',
+        lat: 42.37959999000599,
+        lng: -71.09522697764592,
+        thumb: 'photos/2020-12-31-001-thumb.jpg'
+      }
+    ]
   }
 ];

@@ -1016,6 +1016,10 @@ export default [
       {
         "date": "2018-06-30",
         "photo": "photos/harvard-square-at-mass-ave-dunster_2018-06-30.jpg"
+      },
+      {
+        "date": "2020-12-31",
+        "photo": "photos/harvard-square-at-mass-ave-dunster_2020-12-31.jpg"
       }
     ],
     "firstSeen": 1343678160,
@@ -1088,6 +1092,10 @@ export default [
       {
         "date": "2018-09-08",
         "photo": "photos/union-square-somerville_2018-09-08.jpg"
+      },
+      {
+        "date": "2020-12-31",
+        "photo": "photos/union-square-somerville_2020-12-31.jpg"
       }
     ],
     "firstSeen": 1343906940,
@@ -2598,6 +2606,10 @@ export default [
       {
         "date": "2020-05-03",
         "photo": "photos/foss-park_2020-05-03.jpg"
+      },
+      {
+        "date": "2020-12-31",
+        "photo": "photos/foss-park_2020-12-31.jpg"
       }
     ],
     "firstSeen": 1533056044,
@@ -4658,6 +4670,10 @@ export default [
       {
         "date": "2020-05-03",
         "photo": "photos/edgerly-education-center_2020-05-03.jpg"
+      },
+      {
+        "date": "2020-12-31",
+        "photo": "photos/edgerly-education-center_2020-12-31.jpg"
       }
     ],
     "firstSeen": 1563922766,
@@ -5650,6 +5666,12 @@ export default [
     "lat": 42.392525,
     "long": -71.105587,
     "discovered": 1605550855975,
+    "photos": [
+      {
+        "date": "2020-12-31",
+        "photo": "photos/community-path-at-lowell-st_2020-12-31.jpg"
+      }
+    ],
     "hashId": "380de8b2-2728-4e4b-83f1-251bfbb5acf2",
     "firstSeen": 1603921292
   },
@@ -5720,6 +5742,12 @@ export default [
     "name": "Union Square East (Temp Winter Station)",
     "lat": 42.380078,
     "long": -71.090098,
+    "photos": [
+      {
+        "date": "2020-12-31",
+        "photo": "photos/union-square-east-temp-winter-station_2020-12-31.jpg"
+      }
+    ],
     "discovered": 1608916119712
   },
   {
@@ -5728,6 +5756,12 @@ export default [
     "name": "Trum Field @ Cedar St (Temp Winter Station)",
     "lat": 42.398444,
     "long": -71.107833,
+    "photos": [
+      {
+        "date": "2020-12-31",
+        "photo": "photos/trum-field-at-cedar-st-temp-winter-station_2020-12-31.jpg"
+      }
+    ],
     "discovered": 1608916119712
   },
   {
@@ -5736,6 +5770,12 @@ export default [
     "name": "Washington St @ New Washington St (Temp Winter Station)",
     "lat": 42.381056,
     "long": -71.087083,
+    "photos": [
+      {
+        "date": "2020-12-31",
+        "photo": "photos/washington-st-at-new-washington-st-temp-winter-station_2020-12-31.jpg"
+      }
+    ],
     "discovered": 1608916119712
   },
   {
@@ -5744,6 +5784,12 @@ export default [
     "name": "Broadway Opposite Norwood Ave  (Temp Winter Station)",
     "lat": 42.396764,
     "long": -71.102376,
+    "photos": [
+      {
+        "date": "2020-12-31",
+        "photo": "photos/broadway-opposite-norwood-ave-temp-winter-station_2020-12-31.jpg"
+      }
+    ],
     "discovered": 1608916119712
   },
   {
@@ -5752,6 +5798,12 @@ export default [
     "name": "Conway Park @ Bleachery Ct (Temp Winter Station)",
     "lat": 42.3836409294306,
     "long": -71.10868692398071,
+    "photos": [
+      {
+        "date": "2020-12-31",
+        "photo": "photos/conway-park-at-bleachery-ct-temp-winter-station_2020-12-31.jpg"
+      }
+    ],
     "discovered": 1608916119712
   }
 ];
