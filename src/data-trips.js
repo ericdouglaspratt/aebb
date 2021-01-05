@@ -601,5 +601,19 @@ export default [
         thumb: 'photos/2021-01-02-001-thumb.jpg'
       }
     ]
+  },
+  {
+    id: '47',
+    date: '2021-01-02',
+    description: 'North Newton',
+    stations: [466, 469, 458, 494, 468, 467, 469],
+    photos: [
+      {
+        full: 'photos/2021-01-02-002.jpg',
+        lat: 42.35383964607296,
+        lng: -71.19947646584693,
+        thumb: 'photos/2021-01-02-002-thumb.jpg'
+      }
+    ]
   }
 ];

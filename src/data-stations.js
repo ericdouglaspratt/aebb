@@ -5355,6 +5355,10 @@ export default [
       {
         "date": "2020-08-08",
         "photo": "photos/watertown-sq_2020-08-08.jpg"
+      },
+      {
+        "date": "2021-01-02",
+        "photo": "photos/watertown-sq_2021-01-02.jpg"
       }
     ],
     "discovered": 1596897018218,
@@ -5441,6 +5445,12 @@ export default [
     "name": "Centre St at Washington St",
     "lat": 42.35574334805774,
     "long": -71.18641942508475,
+    "photos": [
+      {
+        "date": "2021-01-02",
+        "photo": "photos/centre-st-at-washington-st_2020-01-02.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "9f582e05-15e0-4a39-aef5-c719e0c78e26",
     "firstSeen": 1601735653
@@ -5450,6 +5460,12 @@ export default [
     "name": "Washington St at Crafts St",
     "lat": 42.35389024396587,
     "long": -71.19943707257335,
+    "photos": [
+      {
+        "date": "2021-01-02",
+        "photo": "photos/washington-st-at-crafts-st_2021-01-02.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "918335df-fc1a-45c2-9cfc-c5e2e93aecc0",
     "firstSeen": 1601582880
@@ -5459,6 +5475,12 @@ export default [
     "name": "Nonantum Library",
     "lat": 42.36068455768156,
     "long": -71.20146199598821,
+    "photos": [
+      {
+        "date": "2021-01-02",
+        "photo": "photos/nonantum-library_2021-01-02.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "ad2fb6f2-921f-440c-83de-08be76e35c2a",
     "firstSeen": 1601640669
@@ -5468,6 +5490,12 @@ export default [
     "name": "Bacon St at Washington St",
     "lat": 42.35711920909866,
     "long": -71.1860453666327,
+    "photos": [
+      {
+        "date": "2021-01-02",
+        "photo": "photos/bacon-st-at-washington-st_2020-01-02.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "01d29f8c-768d-4c4f-84ca-3de966075287",
     "firstSeen": 1601667456
@@ -5746,6 +5774,12 @@ export default [
     "name": "Watertown Town Hall",
     "lat": 42.367621,
     "long": -71.187936,
+    "photos": [
+      {
+        "date": "2021-01-02",
+        "photo": "photos/watertown-town-hall_2021-01-02.jpg"
+      }
+    ],
     "discovered": 1608825231848
   },
   {
