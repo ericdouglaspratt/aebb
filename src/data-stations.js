@@ -5477,6 +5477,12 @@ export default [
     "name": "Union St at Herrick Rd – Newton Centre Green Line",
     "lat": 42.32956868185623,
     "long": -71.19367271661758,
+    "photos": [
+      {
+        "date": "2021-01-02",
+        "photo": "photos/union-st-at-herrick-rd-newton-centre-green-line_2020-01-02.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "fa568ea4-1be4-4992-93ca-9b1ca2ff52b4",
     "firstSeen": 1601569899
@@ -5656,6 +5662,12 @@ export default [
     "name": "Langley Lot",
     "lat": 42.330528,
     "long": -71.192861,
+    "photos": [
+      {
+        "date": "2021-01-02",
+        "photo": "photos/langley-lot_2020-01-02.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "9340e113-e0b2-48ac-b58a-8b6f001b0a94",
     "firstSeen": 1604195299

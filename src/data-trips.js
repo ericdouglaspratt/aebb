@@ -587,5 +587,19 @@ export default [
         thumb: 'photos/2020-12-31-001-thumb.jpg'
       }
     ]
+  },
+  {
+    id: '46',
+    date: '2021-01-02',
+    description: 'Newton Centre',
+    stations: [470, 486],
+    photos: [
+      {
+        full: 'photos/2021-01-02-001.jpg',
+        lat: 42.32583996766175,
+        lng: -71.20335928618883,
+        thumb: 'photos/2021-01-02-001-thumb.jpg'
+      }
+    ]
   }
 ];
