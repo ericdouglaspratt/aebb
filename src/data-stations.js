@@ -5550,6 +5550,12 @@ export default [
     "name": "West Newton",
     "lat": 42.349600498642076,
     "long": -71.2262749671936,
+    "photos": [
+      {
+        "date": "2021-01-02",
+        "photo": "photos/west-newton_2021-01-02.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "7dd0fc98-c1dd-4c93-9c1d-4bbdf5f93346",
     "firstSeen": 1602329983
@@ -5559,6 +5565,12 @@ export default [
     "name": "West Newton Armory",
     "lat": 42.34947178098653,
     "long": -71.22000678911718,
+    "photos": [
+      {
+        "date": "2021-01-02",
+        "photo": "photos/west-newton-armory_2021-01-02.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "77c1736c-a609-4453-94f7-8e4253a8193c",
     "firstSeen": 1602249357

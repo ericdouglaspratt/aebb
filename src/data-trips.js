@@ -615,5 +615,11 @@ export default [
         thumb: 'photos/2021-01-02-002-thumb.jpg'
       }
     ]
+  },
+  {
+    id: '48',
+    date: '2021-01-02',
+    description: 'West Newton',
+    stations: [473, 474, 473]
   }
 ];
