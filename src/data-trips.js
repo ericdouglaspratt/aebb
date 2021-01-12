@@ -621,5 +621,25 @@ export default [
     date: '2021-01-02',
     description: 'West Newton',
     stations: [473, 474, 473]
+  },
+  {
+    id: '49',
+    date: '2021-01-10',
+    description: 'Eastie to Revere',
+    stations: [212, 478, 489, 485, 484, 209, 483, 212],
+    photos: [
+      {
+        full: 'photos/2021-01-10-001.jpg',
+        lat: 42.37089708038161,
+        lng: -71.03578674537668,
+        thumb: 'photos/2021-01-10-001-thumb.jpg'
+      },
+      {
+        full: 'photos/2021-01-10-002.jpg',
+        lat: 42.366802976805175,
+        lng: -71.04021295441784,
+        thumb: 'photos/2021-01-10-002-thumb.jpg'
+      }
+    ]
   }
 ];

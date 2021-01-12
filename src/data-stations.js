@@ -2903,6 +2903,10 @@ export default [
       {
         "date": "2019-05-19",
         "photo": "photos/chelsea-st-at-saratoga-st_2019-05-19.jpg"
+      },
+      {
+        "date": "2021-01-10",
+        "photo": "photos/chelsea-st-at-saratoga-st_2021-01-10.jpg"
       }
     ],
     "firstSeen": 1475021838,
@@ -2952,6 +2956,10 @@ export default [
       {
         "date": "2019-05-19",
         "photo": "photos/maverick-square-lewis-mall_2019-05-19.jpg"
+      },
+      {
+        "date": "2021-01-10",
+        "photo": "photos/maverick-square-lewis-mall_2021-01-10.jpg"
       }
     ],
     "firstSeen": 1475101634,
@@ -5624,6 +5632,12 @@ export default [
     "name": "Gove St at Orleans St",
     "lat": 42.37057753242139,
     "long": -71.03558540113227,
+    "photos": [
+      {
+        "date": "2021-01-10",
+        "photo": "photos/gove-st-at-orleans-st_2021-01-10.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "c935cfb1-ef73-402e-9b86-83aaaac6534d",
     "firstSeen": 1602018728
@@ -5675,6 +5689,12 @@ export default [
     "name": "Porzio Park",
     "lat": 42.364119035231525,
     "long": -71.02876782417297,
+    "photos": [
+      {
+        "date": "2021-01-10",
+        "photo": "photos/porzio-park_2021-01-10.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "3b158c7a-a362-43ae-af1f-121b78be32d7",
     "firstSeen": 1603447404
@@ -5684,6 +5704,12 @@ export default [
     "name": "Revere Public Library",
     "lat": 42.408088,
     "long": -71.008942,
+    "photos": [
+      {
+        "date": "2021-01-10",
+        "photo": "photos/revere-public-library_2021-01-10.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "7feae3ce-ddf2-4a45-a123-1209c8a9182b",
     "firstSeen": 1604530499
@@ -5693,6 +5719,12 @@ export default [
     "name": "Revere City Hall",
     "lat": 42.40741,
     "long": -71.0139,
+    "photos": [
+      {
+        "date": "2021-01-10",
+        "photo": "photos/revere-city-hall_2021-01-10.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "aa556ad4-0092-4687-96c2-8dbc69addb56",
     "firstSeen": 1603869345
@@ -5741,6 +5773,12 @@ export default [
     "name": "Day Sq",
     "lat": 42.379295,
     "long": -71.027733,
+    "photos": [
+      {
+        "date": "2021-01-10",
+        "photo": "photos/day-sq_2021-01-10.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "f55cdf0a-3d7b-491c-bed2-7dc0ef2062d5",
     "firstSeen": 1604159148
