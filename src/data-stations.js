@@ -3621,6 +3621,12 @@ export default [
     "name": "Mattapan T Stop",
     "lat": 42.267902,
     "long": -71.093641,
+    "photos": [
+      {
+        "date": "2020-11-21",
+        "photo": "photos/mattapan-t-stop_2020-11-21.jpg"
+      }
+    ],
     "firstSeen": 1541522271,
     "oldId": "C32045",
     "hashId": "b5894555-30a3-46db-918a-fdeb083d6001"
