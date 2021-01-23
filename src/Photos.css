@@ -2,6 +2,11 @@
   margin-top: 50px;
   padding: 10px;
 }
+
+.Photos .MuiButtonBase-root {
+  min-width: 0;
+}
+
 .Photos-header {
   font-size: 18px;
   font-weight: 400;

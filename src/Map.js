@@ -53,7 +53,9 @@ function MapComponent({
   route,
   selectedMarker,
   stations,
+  trips,
   updateStationDataWithMarkers,
+  updateTripDataWithPhotoMarkers,
   visitedStations
 }) {
   const [activeMarker, setActiveMarker] = useState(null);
@@ -101,9 +103,12 @@ function MapComponent({
       });
 
       // remove any temp markers
-      tempMarkers.forEach(marker => {
-        marker.setMap(null);
-      });
+      if (tempMarkers && tempMarkers.length > 0) {
+        tempMarkers.forEach(marker => {
+          marker.setMap(null);
+        });
+        setTempMarkers(null);
+      }
 
       // draw the new route
       setActiveRoute(drawRoute(activeTrip.stations));
@@ -132,26 +137,15 @@ function MapComponent({
       // create photo markers as necessary
       if (activeTrip.photos && activeTrip.photos.length > 0) {
         setTempMarkers(activeTrip.photos.map(photo => {
-          const marker = createMarker({
-            date: activeTrip.date,
-            full: photo.full,
-            h: MARKER_HEIGHT,
-            icon: 'img/photo.png',
-            lat: photo.lat,
-            lng: photo.lng,
-            thumb: photo.thumb,
-            w: MARKER_WIDTH,
-            zIndex: MARKER_Z_INDEX.PHOTO
-          });
-          window.google.maps.event.addListener(marker, 'click', () => {
-            onSelectPhoto(activeTrip.id, photo.thumb, marker);
-          });
-          return marker;
+          if (photo.marker) {
+            photo.marker.setMap(map);
+          }
+          return photo.marker;
         }));
       }
 
       // view the new route
-      viewArea(activeTrip.stations);
+      viewArea(activeTrip.stations, activeTrip.photos);
     } else if (activeRoute) {
       // remove the old route, if any
       activeRoute.setMap(null);
@@ -173,9 +167,12 @@ function MapComponent({
       setHighlightedMarkers([]);
 
       // remove any temp markers
-      tempMarkers.forEach(marker => {
-        marker.setMap(null);
-      });
+      if (tempMarkers && tempMarkers.length > 0) {
+        tempMarkers.forEach(marker => {
+          marker.setMap(null);
+        });
+        setTempMarkers(null);
+      }
     }
   }, [activeTrip]);
 
@@ -231,12 +228,18 @@ function MapComponent({
   useEffect(() => {
     if (selectedMarker) {
       const oldZIndex = selectedMarker.marker.zIndex;
+      const oldUrl = selectedMarker.marker.icon.url;
+      const newUrl = selectedMarker.marker.icon.url.includes('highlighted')
+        ? selectedMarker.marker.icon.url
+        : selectedMarker.marker.icon.url.includes('photo')
+          ? selectedMarker.marker.icon.url.replace('photo', 'photo-highlighted')
+          : selectedMarker.marker.icon.url.replace('inactive', 'highlighted').replace('unvisited', 'highlighted').replace('visited', 'highlighted');
 
       // reset previous marker, if any
       if (activeMarker) {
         activeMarker.marker.setIcon({
           scaledSize: new window.google.maps.Size(MARKER_WIDTH, MARKER_HEIGHT),
-          url: activeMarker.marker.icon.url
+          url: activeMarker.oldUrl
         });
         activeMarker.marker.setZIndex(activeMarker.oldZIndex);
       }
@@ -244,7 +247,7 @@ function MapComponent({
       // make the selected marker large and on top
       selectedMarker.marker.setIcon({
         scaledSize: new window.google.maps.Size(EXPANDED_MARKER_WIDTH, EXPANDED_MARKER_HEIGHT),
-        url: selectedMarker.marker.icon.url
+        url: newUrl
       });
       selectedMarker.marker.setZIndex(MARKER_Z_INDEX.ACTIVE);
 
@@ -255,6 +258,7 @@ function MapComponent({
       // save the active marker
       setActiveMarker({
         marker: selectedMarker.marker,
+        oldUrl,
         oldZIndex
       });
     } else {
@@ -262,7 +266,7 @@ function MapComponent({
       if (activeMarker) {
         activeMarker.marker.setIcon({
           scaledSize: new window.google.maps.Size(MARKER_WIDTH, MARKER_HEIGHT),
-          url: activeMarker.marker.icon.url
+          url: activeMarker.oldUrl
         });
         activeMarker.marker.setZIndex(activeMarker.oldZIndex);
       }
@@ -340,13 +344,13 @@ function MapComponent({
     }
   }, [route]);
 
-  const createMarker = ({ h, icon, lat, lng, w, ...rest }) => {
+  const createMarker = ({ addToMap, h, icon, lat, lng, w, ...rest }) => {
     return new window.google.maps.Marker({
       icon: {
         scaledSize: new window.google.maps.Size(w, h),
         url: icon
       },
-      map,
+      map: addToMap ? map : null,
       position: new window.google.maps.LatLng(lat, lng),
       ...rest
     });
@@ -467,6 +471,7 @@ function MapComponent({
   const placeStationMarkers = () => {
     const updatedStations = stations.list.map(station => {
       const marker = createMarker({
+        addToMap: true,
         bikesAvailable: station.bikesAvailable,
         docksAvailable: station.docksAvailable,
         h: MARKER_HEIGHT,
@@ -498,17 +503,47 @@ function MapComponent({
       };
     });
 
-    // add marker references to the station list so the rest of the app can access the markers
+    const updatedTrips = trips.list.map(trip => {
+      return (trip.photos && trip.photos.map) ? {
+        ...trip,
+        photos: trip.photos.map(photo => {
+          const marker = createMarker({
+            date: trip.date,
+            full: photo.full,
+            h: MARKER_HEIGHT,
+            icon: 'img/photo.png',
+            lat: photo.lat,
+            lng: photo.lng,
+            thumb: photo.thumb,
+            w: MARKER_WIDTH,
+            zIndex: MARKER_Z_INDEX.PHOTO
+          });
+          const newPhoto = {
+            ...photo,
+            marker
+          };
+          window.google.maps.event.addListener(marker, 'click', () => {
+            onSelectPhoto(newPhoto, trip);
+          });
+          return newPhoto;
+        })
+      } : trip;
+    });
+
+    // add marker references to the stations and trips lists so the rest of the app can access the markers
     updateStationDataWithMarkers(updatedStations);
+    updateTripDataWithPhotoMarkers(updatedTrips);
   };
 
-  const viewArea = stationIds => {
+  const viewArea = (stationIds, photos) => {
     const lats = stationIds.map(stationId => stations.lookup[stationId].lat);
     const lngs = stationIds.map(stationId => stations.lookup[stationId].long);
-    const minLat = Math.min(...lats);
-    const maxLat = Math.max(...lats);
-    const minLng = Math.min(...lngs);
-    const maxLng = Math.max(...lngs);
+    const photoLats = photos ? photos.map(photo => photo.lat) : [];
+    const photoLngs = photos ? photos.map(photo => photo.lng) : [];
+    const minLat = Math.min(...lats, ...photoLats);
+    const maxLat = Math.max(...lats, ...photoLats);
+    const minLng = Math.min(...lngs, ...photoLngs);
+    const maxLng = Math.max(...lngs, ...photoLngs);
 
     const bounds = new window.google.maps.LatLngBounds();
     bounds.extend(new window.google.maps.LatLng(minLat, minLng));
@@ -516,7 +551,7 @@ function MapComponent({
     map.fitBounds(
       bounds,
       breakpoint === BREAKPOINTS.MOBILE
-        ? {bottom: 200, left: 20, right: 20, top: 20}
+        ? {bottom: 300, left: 20, right: 20, top: 20}
         : {bottom: 40, left: 360, right: 40, top: 40}
     );
   };

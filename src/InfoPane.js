@@ -31,6 +31,7 @@ function InfoPane({
   activeTravelTimestamp,
   markedRoute,
   onClearSelectedStation,
+  onSelectPhoto,
   onViewActivate,
   onViewDeactivate,
   onViewReplace,
@@ -60,13 +61,6 @@ function InfoPane({
     setTimeout(() => {
       onViewActivate(view);
     }, 225);
-  };
-
-  const handleClickPhoto = (photo, trip) => {
-    onViewActivate(VIEWS.PHOTO, {
-      photo,
-      trip
-    });
   };
 
   const handleClickStation = stationId => {
@@ -129,7 +123,7 @@ function InfoPane({
           </div>
           <div className="InfoPane-content">
             <Trip
-              onClickPhoto={handleClickPhoto}
+              onClickPhoto={onSelectPhoto}
               trip={activeView.payload}
               trips={trips}
             />
@@ -144,8 +138,10 @@ function InfoPane({
             <Photos
               onClickStation={handleClickStation}
               onClickTrip={handleClickTrip}
+              onViewActivate={onViewActivate}
               stations={stations}
               trips={trips}
+              {...activeView.payload}
             />
           </div>
         </div>

@@ -55,7 +55,7 @@ const processedTrips = rawTrips.map(trip => {
     percentage: Math.round(totalSoFar * 100 / cachedStationData.length)
   };
 });
-const trips = {
+const initialTrips = {
   list: processedTrips,
   lookup: createIdMap(processedTrips)
 };
@@ -66,6 +66,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [stations, setStations] = useState(initialStations);
   const [timeline, setTimeline] = useState([]);
+  const [trips, setTrips] = useState(initialTrips);
   const [totalNumViableStations, setTotalNumViableStations] = useState(0);
 
   const [markedRouteRef, setMarkedRoute] = useStateRef([]);
@@ -134,11 +135,9 @@ function App() {
     }
   };
 
-  const handleSelectPhoto = (tripId, thumbUrl, marker) => {
-    const trip = trips.lookup[tripId];
+  const handleSelectPhoto = (photo, trip) => {
     pushView(VIEWS.PHOTO, {
-      marker,
-      photo: trip.photos.find(photo => photo.thumb === thumbUrl),
+      photo,
       trip
     });
   };
@@ -214,6 +213,7 @@ function App() {
     if (
       (view === VIEWS.PHOTO && prevView === VIEWS.PHOTO) ||
       (view === VIEWS.PHOTO && prevView === VIEWS.STATION) ||
+      (view === VIEWS.PHOTOS && prevView === VIEWS.PHOTOS) ||
       (view === VIEWS.STATION && prevView === VIEWS.STATION) ||
       (view === VIEWS.STATION && prevView === VIEWS.PHOTO) ||
       (view === VIEWS.TRIP_LIST && prevView === VIEWS.TRIP_LIST)
@@ -244,6 +244,13 @@ function App() {
     setStations({
       list: updatedStationList,
       lookup: createIdMap(updatedStationList)
+    });
+  };
+  
+  const updateTripDataWithPhotoMarkers = updatedTripList => {
+    setTrips({
+      list: updatedTripList,
+      lookup: createIdMap(updatedTripList)
     });
   };
 
@@ -330,9 +337,9 @@ function App() {
   const viewStack = viewStackRef.current;
   const currentView = viewStack.length > 0 ? viewStack[viewStack.length - 1] : null;
   const oneViewBack = viewStack.length > 1 ? viewStack[viewStack.length - 2] : null;
-  const selectedMarker = currentView && currentView.view === VIEWS.PHOTO && currentView.payload.marker
+  const selectedMarker = currentView && currentView.view === VIEWS.PHOTO && currentView.payload.photo && currentView.payload.photo.marker
     ? {
-      marker: currentView.payload.marker,
+      marker: currentView.payload.photo.marker,
       moveCenter: false
     }
     : currentView && currentView.view === VIEWS.STATION ? currentView.payload : null;
@@ -377,13 +384,16 @@ function App() {
               route={markedRouteRef.current}
               selectedMarker={selectedMarker}
               stations={stations}
+              trips={trips}
               updateStationDataWithMarkers={updateStationDataWithMarkers}
+              updateTripDataWithPhotoMarkers={updateTripDataWithPhotoMarkers}
               visitedStations={visitedStations}
             />
             <InfoPane
               activeTravelTimestamp={activeTravelTimestamp}
               markedRoute={markedRouteRef.current}
               onClearSelectedStation={handleClearSelectedStation}
+              onSelectPhoto={handleSelectPhoto}
               onViewActivate={handleViewActivate}
               onViewDeactivate={handleViewDeactivate}
               onViewReplace={handleViewReplace}
