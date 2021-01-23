@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^7.1.2",
     "immer": "8.0.1",
     "moment": "^2.29.1",
+    "object-path": "0.11.5",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-scripts": "3.4.1",
