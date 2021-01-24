@@ -2205,6 +2205,10 @@ export default [
       {
         "date": "2020-06-14",
         "photo": "photos/seaport-blvd-at-sleeper-st_2020-06-14.jpg"
+      },
+      {
+        "date": "2021-01-16",
+        "photo": "photos/seaport-blvd-at-sleeper-st_2021-01-16.jpg"
       }
     ],
     "firstSeen": 1509029086,
@@ -5677,6 +5681,12 @@ export default [
     "name": "645 Summer St",
     "lat": 42.341780891371904,
     "long": -71.03987016504107,
+    "photos": [
+      {
+        "date": "2021-01-16",
+        "photo": "photos/645-summer-st_2021-01-16.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "868ccc83-99e5-4faf-96eb-e1fae26b9741",
     "firstSeen": 1602795426
@@ -5770,6 +5780,12 @@ export default [
     "name": "Martha Eliot Health Center",
     "lat": 42.324173,
     "long": -71.10196,
+    "photos": [
+      {
+        "date": "2021-01-16",
+        "photo": "photos/martha-eliot-health-center_2021-01-16.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "aefc33cd-40b9-48da-8b87-415428816bdb",
     "firstSeen": 1604343249
@@ -5803,6 +5819,12 @@ export default [
     "name": "Harrison Ave at E. Dedham St",
     "lat": 42.339194,
     "long": -71.06975,
+    "photos": [
+      {
+        "date": "2021-01-16",
+        "photo": "photos/harrison-ave-at-e-dedham-st_2021-01-16.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "50cc3c7f-50ed-4c70-b483-c89f3f47c938",
     "firstSeen": 1605208203

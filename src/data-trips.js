@@ -641,5 +641,25 @@ export default [
         thumb: 'photos/2021-01-10-002-thumb.jpg'
       }
     ]
+  },
+  {
+    id: '50',
+    date: '2021-01-16',
+    description: '',
+    stations: [157, 481, 491, 488],
+    photos: [
+      {
+        full: 'photos/2021-01-16-001.jpg',
+        lat: 42.34177757741038,
+        lng: -71.03996045913428,
+        thumb: 'photos/2021-01-16-001-thumb.jpg'
+      },
+      {
+        full: 'photos/2021-01-16-002.jpg',
+        lat: 42.34156133060325,
+        lng: -71.04017344292265,
+        thumb: 'photos/2021-01-16-002-thumb.jpg'
+      }
+    ]
   }
 ];
