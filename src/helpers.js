@@ -359,3 +359,83 @@ export const useStateRef = (defaultValue) => {
   };
   return [valueRef, setValue];
 };
+
+export const validateStationHistory = stations => {
+  fetch('/202011-bluebikes-tripdata.csv')
+    .then(response => response.text())
+    .then(csv => {
+      //console.log('csv', csv);
+      const json = csvToJson(csv);
+
+      // OLD FORMAT
+      /*json.sort((a, b) => {
+        const am = moment(a.Startdate, 'M/D/YYYY H:mm').unix();
+        const bm = moment(b.Startdate, 'M/D/YYYY H:mm').unix();
+        return am < bm ? -1 : am > bm ? 1 : 0;
+      });*/
+      //console.log('json', json);
+
+      /*const firstTripTimes = json.reduce((result, trip) => {
+        if (trip.Startdate && !result[trip.Startstationnumber]) {
+          result[trip.Startstationnumber] = moment(trip.Startdate, 'M/D/YYYY H:mm').unix();
+        }
+        if (trip.Enddate && !result[trip.Endstationnumber]) {
+          result[trip.Endstationnumber] = moment(trip.Enddate, 'M/D/YYYY H:mm').unix();
+        }
+        return result;
+      }, {});
+      console.log('first trip times', firstTripTimes);
+
+      const updatedStations = stations.list.map(station => {
+        if (firstTripTimes[station.oldId] < station.firstSeen) {
+          return {
+            ...station,
+            firstSeen: firstTripTimes[station.oldId]
+          };
+        } else {
+          return station;
+        }
+      });
+
+      console.log('update', updatedStations);
+      console.log(JSON.stringify(updatedStations));*/
+
+      // NEW FORMAT
+      /*const firstTripTimes = json.reduce((result, trip) => {
+        if (trip.startstationid && stations.lookup[trip.startstationid] && !stations.lookup[trip.startstationid].firstSeen && !result[trip.startstationid]) {
+          result[trip.startstationid] = moment(trip.starttime).unix();
+        }
+        if (trip.endstationid && stations.lookup[trip.endstationid] && !stations.lookup[trip.endstationid].firstSeen && !result[trip.endstationid]) {
+          result[trip.endstationid] = moment(trip.stoptime).unix();
+        }
+        return result;
+      }, {});
+
+      console.log('firstTripTimes', firstTripTimes);
+
+      if (Object.keys(firstTripTimes).length > 0) {
+        const updatedStations = stations.list.map(station => {
+          if (firstTripTimes[station.id]) {
+            return {
+              ...station,
+              firstSeen: firstTripTimes[station.id]
+            };
+          } else {
+            return station;
+          }
+        });
+
+        updatedStations.sort((a, b) => {
+          const aid = parseInt(a.id);
+          const bia = parseInt(b.id);
+          return (aid < bia) ? -1 : ((aid > bia) ? 1 : 0);
+        });
+
+        console.log('update', updatedStations);
+        console.log(JSON.stringify(updatedStations));
+      }*/
+    })
+    .catch(e => {
+      console.log('error fetching station history data', e);
+    });
+};
