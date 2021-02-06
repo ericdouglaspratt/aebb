@@ -9,6 +9,7 @@ import {
   createTimeline,
   csvToJson,
   detectStationChanges,
+  processRawTrips,
   useStateRef
 } from './helpers';
 import cachedStationData from './data-stations';
@@ -24,41 +25,7 @@ const initialStations = {
 };
 
 // create visited station map and count number of new stations per trip
-const visitedStations = {};
-let totalSoFar = 0;
-const processedTrips = rawTrips.map(trip => {
-  let numNew = trip.stations.reduce((result, stationId) => {
-    if (!visitedStations[stationId]) {
-      visitedStations[stationId] = moment(trip.date, 'YYYY-MM-DD').unix();
-      return result + 1;
-    } else {
-      return result;
-    }
-  }, 0);
-  totalSoFar += numNew;
-  return {
-    ...trip,
-    distance: trip.stations.reduce((result, stationId, index) => {
-      if (index === 0) {
-        return result;
-      } else {
-        const prevStation = initialStations.lookup[trip.stations[index - 1]];
-        const currStation = initialStations.lookup[stationId];
-        return result + calculateDistance(prevStation.lat, prevStation.long, currStation.lat, currStation.long);
-      }
-    }, 0),
-    numNew,
-    numTotal: Object.keys(trip.stations.reduce((result, stationId) => {
-      result[stationId] = true;
-      return result;
-    }, {})).length,
-    percentage: Math.round(totalSoFar * 100 / cachedStationData.length)
-  };
-});
-const initialTrips = {
-  list: processedTrips,
-  lookup: createIdMap(processedTrips)
-};
+const { initialTrips, visitedStations } = processRawTrips(rawTrips, initialStations);
 
 function App() {
   const [activeTravelTimestamp, setActiveTravelTimestamp] = useState(null);
