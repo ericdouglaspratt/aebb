@@ -361,7 +361,7 @@ export const useStateRef = (defaultValue) => {
 };
 
 export const validateStationHistory = stations => {
-  fetch('/202011-bluebikes-tripdata.csv')
+  fetch('/202102-bluebikes-tripdata.csv')
     .then(response => response.text())
     .then(csv => {
       //console.log('csv', csv);
