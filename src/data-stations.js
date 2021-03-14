@@ -5856,7 +5856,8 @@ export default [
     "name": "2 Hummingbird Lane at Olmsted Green",
     "lat": 42.28887,
     "long": -71.095003,
-    "discovered": 1608825231848
+    "discovered": 1608825231848,
+    "firstSeen": 1608993693
   },
   {
     "hashId": "518f6524-0e7f-454d-974e-e3ff9db1f795",
@@ -5870,7 +5871,8 @@ export default [
         "photo": "photos/watertown-town-hall_2021-01-02.jpg"
       }
     ],
-    "discovered": 1608825231848
+    "discovered": 1608825231848,
+    "firstSeen": 1607435868
   },
   {
     "hashId": "569f4952-5a25-4394-a419-f9c4d9cca6f3",
@@ -5884,7 +5886,8 @@ export default [
         "photo": "photos/union-square-east-temp-winter-station_2020-12-31.jpg"
       }
     ],
-    "discovered": 1608916119712
+    "discovered": 1608916119712,
+    "firstSeen": 1607552976
   },
   {
     "hashId": "603f7f65-e15c-44d7-9bce-581b5fda9a61",
@@ -5898,7 +5901,8 @@ export default [
         "photo": "photos/trum-field-at-cedar-st-temp-winter-station_2020-12-31.jpg"
       }
     ],
-    "discovered": 1608916119712
+    "discovered": 1608916119712,
+    "firstSeen": 1607548319
   },
   {
     "hashId": "d83f89ab-27f7-471e-a84b-e1a4d1582deb",
@@ -5912,7 +5916,8 @@ export default [
         "photo": "photos/washington-st-at-new-washington-st-temp-winter-station_2020-12-31.jpg"
       }
     ],
-    "discovered": 1608916119712
+    "discovered": 1608916119712,
+    "firstSeen": 1607546458
   },
   {
     "hashId": "b2b39507-9abd-41af-a5b2-b6e2ed8c3c4a",
@@ -5926,7 +5931,8 @@ export default [
         "photo": "photos/broadway-opposite-norwood-ave-temp-winter-station_2020-12-31.jpg"
       }
     ],
-    "discovered": 1608916119712
+    "discovered": 1608916119712,
+    "firstSeen": 1607576675
   },
   {
     "hashId": "b32131a5-0795-450f-ac27-0b5f4b56551d",
@@ -5940,7 +5946,8 @@ export default [
         "photo": "photos/conway-park-at-bleachery-ct-temp-winter-station_2020-12-31.jpg"
       }
     ],
-    "discovered": 1608916119712
+    "discovered": 1608916119712,
+    "firstSeen": 1607571089
   },
   {
     "hashId": "1ef5abb2-5af9-41f2-a0dd-1e44278ad9f1",
@@ -5991,3 +5998,4 @@ export default [
     "discovered": 1615743887554
   }
 ];
+
