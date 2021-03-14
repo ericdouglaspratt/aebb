@@ -374,8 +374,8 @@ export default [
   {
     "id": "29",
     "name": "Innovation Lab - 125 Western Ave at Batten Way",
-    "lat": 42.36314498882458,
-    "long": -71.12298574307715,
+    "lat": 42.36371276003581,
+    "long": -71.12459778785706,
     "photos": [
       {
         "date": "2020-05-17",
@@ -1392,8 +1392,8 @@ export default [
   {
     "id": "97",
     "name": "Harvard University River Houses at DeWolfe St / Cowperthwaite St",
-    "lat": 42.369121582065524,
-    "long": -71.1163867230971,
+    "lat": 42.36920617098944,
+    "long": -71.11710637807846,
     "photos": [
       {
         "date": "2019-05-11",
@@ -5941,5 +5941,53 @@ export default [
       }
     ],
     "discovered": 1608916119712
+  },
+  {
+    "hashId": "1ef5abb2-5af9-41f2-a0dd-1e44278ad9f1",
+    "id": "502",
+    "name": "160 Arsenal",
+    "lat": 42.36466403441681,
+    "long": -71.17569386959076,
+    "discovered": 1615743887554
+  },
+  {
+    "hashId": "f35de2ab-979e-42d5-8cbd-dc479ed637e9",
+    "id": "503",
+    "name": "Cary Square",
+    "lat": 42.398135645582464,
+    "long": -71.030709722545,
+    "discovered": 1615743887554
+  },
+  {
+    "hashId": "e49a5b83-2c9c-4610-a48b-89cfea172c8f",
+    "id": "504",
+    "name": "Bellingham Square",
+    "lat": 42.39301409032274,
+    "long": -71.0339249682147,
+    "discovered": 1615743887554
+  },
+  {
+    "hashId": "f36e24cd-de4c-4a5e-adf4-cb97ccd2958d",
+    "id": "505",
+    "name": "Chelsea Square",
+    "lat": 42.390226711033826,
+    "long": -71.03857017704286,
+    "discovered": 1615743887554
+  },
+  {
+    "hashId": "a5144f51-37b3-4404-8f9c-8e6d126d5ca6",
+    "id": "506",
+    "name": "Broadway at Gerrish Ave",
+    "lat": 42.39453079292221,
+    "long": -71.03085594484583,
+    "discovered": 1615743887554
+  },
+  {
+    "hashId": "1a661bb7-7d14-49e9-ac3d-22bafec8a2f0",
+    "id": "507",
+    "name": "Chelsea Station",
+    "lat": 42.39636527849676,
+    "long": -71.03987179230899,
+    "discovered": 1615743887554
   }
 ];
