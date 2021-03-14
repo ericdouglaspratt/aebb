@@ -801,6 +801,10 @@ export default [
       {
         "date": "2017-05-28",
         "photo": "photos/charles-circle-charles-st-at-cambridge-st_2017-05-28.jpg"
+      },
+      {
+        "date": "2021-03-14",
+        "photo": "photos/charles-circle_2021-03-14.jpg"
       }
     ],
     "firstSeen": 1316793840,
@@ -1149,6 +1153,10 @@ export default [
       {
         "date": "2018-06-23",
         "photo": "photos/chinatown-t-stop_2018-06-23.jpg"
+      },
+      {
+        "date": "2021-03-14",
+        "photo": "photos/chinatown-t-stop_2021-03-14.jpg"
       }
     ],
     "firstSeen": 1344016140,
@@ -4020,6 +4028,10 @@ export default [
       {
         "date": "2020-05-31",
         "photo": "photos/deerfield-st-at-commonwealth-ave_2020-05-31.jpg"
+      },
+      {
+        "date": "2021-03-14",
+        "photo": "photos/deerfield-st-at-commonwealth-ave_2021-03-14.jpg"
       }
     ],
     "firstSeen": 1540929411,

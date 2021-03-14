@@ -645,7 +645,7 @@ export default [
   {
     id: '50',
     date: '2021-01-16',
-    description: '',
+    description: 'Seaport to Hyde Square',
     stations: [157, 481, 491, 488],
     photos: [
       {
@@ -659,6 +659,20 @@ export default [
         lat: 42.34156133060325,
         lng: -71.04017344292265,
         thumb: 'photos/2021-01-16-002-thumb.jpg'
+      }
+    ]
+  },
+  {
+    id: '51',
+    date: '2021-03-14',
+    description: 'Esplanade to Kenmore',
+    stations: [60, 361, 81],
+    photos: [
+      {
+        full: 'photos/2021-03-14-001.jpg',
+        lat: 42.36041989838347,
+        lng: -71.07285317836168,
+        thumb: 'photos/2021-03-14-001-thumb.jpg'
       }
     ]
   }
