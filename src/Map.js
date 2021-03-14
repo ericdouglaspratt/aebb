@@ -437,6 +437,7 @@ function MapComponent({
       icon: 'img/blue-sphere.png',
       lat: coords.latitude,
       lng: coords.longitude,
+      map,
       w: LOCATION_MARKER_WIDTH,
       zIndex: MARKER_Z_INDEX.LOCATION
     });
