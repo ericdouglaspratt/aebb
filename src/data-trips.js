@@ -675,5 +675,37 @@ export default [
         thumb: 'photos/2021-03-14-001-thumb.jpg'
       }
     ]
+  },
+  {
+    id: '52',
+    date: '2021-04-03',
+    description: 'Chelsea',
+    stations: [505, 504, 506, 508, 503, 507, 505],
+    photos: [
+      {
+        full: 'photos/2021-04-03-001.jpg',
+        lat: 42.39002873657449,
+        lng: -71.03874699890186,
+        thumb: 'photos/2021-04-03-001-thumb.jpg'
+      },
+      {
+        full: 'photos/2021-04-03-002.jpg',
+        lat: 42.38688078219241,
+        lng: -71.04072557041741,
+        thumb: 'photos/2021-04-03-002-thumb.jpg'
+      },
+      {
+        full: 'photos/2021-04-03-003.jpg',
+        lat: 42.38783002196382,
+        lng: -71.04839199904282,
+        thumb: 'photos/2021-04-03-003-thumb.jpg'
+      },
+      {
+        full: 'photos/2021-04-03-004.jpg',
+        lat: 42.38738574366823,
+        lng: -71.05197606998252,
+        thumb: 'photos/2021-04-03-004-thumb.jpg'
+      }
+    ]
   }
 ];

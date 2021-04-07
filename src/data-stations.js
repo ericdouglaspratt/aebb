@@ -1090,8 +1090,8 @@ export default [
   {
     "id": "78",
     "name": "Union Square - Somerville",
-    "lat": 42.379584,
-    "long": -71.095236,
+    "lat": 42.37971603393044,
+    "long": -71.09391331672668,
     "photos": [
       {
         "date": "2018-09-08",
@@ -1486,8 +1486,8 @@ export default [
   {
     "id": "103",
     "name": "JFK Crossing at Harvard St. / Thorndike St.",
-    "lat": 42.344952,
-    "long": -71.127351,
+    "lat": 42.346551241753566,
+    "long": -71.1283321143128,
     "photos": [
       {
         "date": "2019-05-25",
@@ -5887,7 +5887,8 @@ export default [
       }
     ],
     "discovered": 1608916119712,
-    "firstSeen": 1607552976
+    "firstSeen": 1607552976,
+    "isLegacy": true
   },
   {
     "hashId": "603f7f65-e15c-44d7-9bce-581b5fda9a61",
@@ -5902,7 +5903,8 @@ export default [
       }
     ],
     "discovered": 1608916119712,
-    "firstSeen": 1607548319
+    "firstSeen": 1607548319,
+    "isLegacy": true
   },
   {
     "hashId": "d83f89ab-27f7-471e-a84b-e1a4d1582deb",
@@ -5917,7 +5919,8 @@ export default [
       }
     ],
     "discovered": 1608916119712,
-    "firstSeen": 1607546458
+    "firstSeen": 1607546458,
+    "isLegacy": true
   },
   {
     "hashId": "b2b39507-9abd-41af-a5b2-b6e2ed8c3c4a",
@@ -5932,7 +5935,8 @@ export default [
       }
     ],
     "discovered": 1608916119712,
-    "firstSeen": 1607576675
+    "firstSeen": 1607576675,
+    "isLegacy": true
   },
   {
     "hashId": "b32131a5-0795-450f-ac27-0b5f4b56551d",
@@ -5963,6 +5967,12 @@ export default [
     "name": "Cary Square",
     "lat": 42.398135645582464,
     "long": -71.030709722545,
+    "photos": [
+      {
+        "date": "2021-04-03",
+        "photo": "photos/cary-square_2021-04-03.jpg"
+      }
+    ],
     "discovered": 1615743887554
   },
   {
@@ -5971,6 +5981,12 @@ export default [
     "name": "Bellingham Square",
     "lat": 42.39301409032274,
     "long": -71.0339249682147,
+    "photos": [
+      {
+        "date": "2021-04-03",
+        "photo": "photos/bellingham-square_2021-04-03.jpg"
+      }
+    ],
     "discovered": 1615743887554
   },
   {
@@ -5979,6 +5995,12 @@ export default [
     "name": "Chelsea Square",
     "lat": 42.390226711033826,
     "long": -71.03857017704286,
+    "photos": [
+      {
+        "date": "2021-04-03",
+        "photo": "photos/chelsea-square_2021-04-03.jpg"
+      }
+    ],
     "discovered": 1615743887554
   },
   {
@@ -5987,6 +6009,12 @@ export default [
     "name": "Broadway at Gerrish Ave",
     "lat": 42.39453079292221,
     "long": -71.03085594484583,
+    "photos": [
+      {
+        "date": "2021-04-03",
+        "photo": "photos/broadway-at-gerrish-ave_2021-04-03.jpg"
+      }
+    ],
     "discovered": 1615743887554
   },
   {
@@ -5995,7 +6023,34 @@ export default [
     "name": "Chelsea Station",
     "lat": 42.39636527849676,
     "long": -71.03987179230899,
+    "photos": [
+      {
+        "date": "2021-04-03",
+        "photo": "photos/chelsea-station_2021-04-03.jpg"
+      }
+    ],
     "discovered": 1615743887554
+  },
+  {
+    "hashId": "199f3d59-e726-4549-b9c1-4dfc8a343fdb",
+    "id": "508",
+    "name": "855 Broadway",
+    "lat": 42.398417726101584,
+    "long": -71.02390923402707,
+    "photos": [
+      {
+        "date": "2021-04-03",
+        "photo": "photos/855-broadway_2021-04-03.jpg"
+      }
+    ],
+    "discovered": 1617809221531
+  },
+  {
+    "hashId": "d5349097-b478-4b3f-9c46-d8fbcf38e3f4",
+    "id": "509",
+    "name": "Nichols Ave. at Watertown Greenway",
+    "lat": 42.36762048745005,
+    "long": -71.1565663665533,
+    "discovered": 1617809221531
   }
 ];
-
