@@ -707,5 +707,11 @@ export default [
         thumb: 'photos/2021-04-03-004-thumb.jpg'
       }
     ]
+  },
+  {
+    id: '53',
+    date: '2021-04-07',
+    description: 'Franklin Field South',
+    stations: [493, 490]
   }
 ];

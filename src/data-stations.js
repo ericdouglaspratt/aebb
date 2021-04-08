@@ -5822,6 +5822,12 @@ export default [
     "name": "Blue Hill Ave at Havelock St",
     "lat": 42.286012,
     "long": -71.090986,
+    "photos": [
+      {
+        "date": "2021-04-07",
+        "photo": "photos/blue-hill-ave-at-havelock-st_2021-04-07.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "065e0e5d-8a0d-49b7-9c1f-c8eaba51a8b4",
     "firstSeen": 1604584651
@@ -5856,6 +5862,12 @@ export default [
     "name": "2 Hummingbird Lane at Olmsted Green",
     "lat": 42.28887,
     "long": -71.095003,
+    "photos": [
+      {
+        "date": "2021-04-07",
+        "photo": "photos/2-hummingbird-lane-at-olmsted-green_2021-04-07.jpg"
+      }
+    ],
     "discovered": 1608825231848,
     "firstSeen": 1608993693
   },
