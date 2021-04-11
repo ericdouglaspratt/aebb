@@ -713,5 +713,29 @@ export default [
     date: '2021-04-07',
     description: 'Franklin Field South',
     stations: [493, 490]
+  },
+  {
+    id: '54',
+    date: '2021-04-10',
+    description: 'Watertown and Allston',
+    stations: [509, 502, 475, 492, 509]
+  },
+  {
+    id: '55',
+    date: '2021-04-10',
+    description: 'Alewife South of the Tracks',
+    stations: [463]
+  },
+  {
+    id: '56',
+    date: '2021-04-10',
+    description: 'Arlington',
+    stations: [183, 480, 462, 461, 510, 465, 464, 183]
+  },
+  {
+    id: '57',
+    date: '2021-04-10',
+    description: '100 Percent, Again, in Everett',
+    stations: [482]
   }
 ];

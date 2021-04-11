@@ -5963,7 +5963,8 @@ export default [
       }
     ],
     "discovered": 1608916119712,
-    "firstSeen": 1607571089
+    "firstSeen": 1607571089,
+    "isLegacy": true
   },
   {
     "hashId": "1ef5abb2-5af9-41f2-a0dd-1e44278ad9f1",
@@ -6064,5 +6065,13 @@ export default [
     "lat": 42.36762048745005,
     "long": -71.1565663665533,
     "discovered": 1617809221531
+  },
+  {
+    "hashId": "04d40632-aaf2-49f2-a709-95c2974a7838",
+    "id": "510",
+    "name": "Mass Ave at Broadway",
+    "lat": 42.414202132001854,
+    "long": -71.15051883389242,
+    "discovered": 1618099535176
   }
 ];

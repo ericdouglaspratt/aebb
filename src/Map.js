@@ -555,6 +555,13 @@ function MapComponent({
         ? {bottom: 300, left: 20, right: 20, top: 20}
         : {bottom: 40, left: 360, right: 40, top: 40}
     );
+
+    if (stationIds.length === 1) {
+      let listener = window.google.maps.event.addListener(map, "idle", function() { 
+        if (map.getZoom() > 16) map.setZoom(16); 
+        window.google.maps.event.removeListener(listener); 
+      });
+    }
   };
 
   return (
