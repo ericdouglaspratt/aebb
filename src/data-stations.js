@@ -2535,6 +2535,10 @@ export default [
       {
         "date": "2020-08-08",
         "photo": "photos/alewife-mbta-at-steel-place_2020-08-08.jpg"
+      },
+      {
+        "date": "2021-04-10",
+        "photo": "photos/alewife-mbta-at-steel-place_2021-04-10.jpg"
       }
     ],
     "firstSeen": 1472591977,
@@ -5430,6 +5434,12 @@ export default [
     "name": "Railroad Lot and Minuteman Bikeway",
     "lat": 42.416084844039744,
     "long": -71.15315407052549,
+    "photos": [
+      {
+        "date": "2021-04-10",
+        "photo": "photos/railroad-lot-and-minuteman-bikeway_2021-04-10.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "81323081-749c-44cf-ac62-0e6c64305c32",
     "firstSeen": 1599767787
@@ -5439,6 +5449,12 @@ export default [
     "name": "Linwood St at Minuteman Bikeway",
     "lat": 42.40935395518158,
     "long": -71.14906518727366,
+    "photos": [
+      {
+        "date": "2021-04-10",
+        "photo": "photos/linwood-st-at-minuteman-bikeway_2021-04-10.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "e4d5271f-5f76-401b-b7f0-c8dce3c26f10",
     "firstSeen": 1599773795
@@ -5448,6 +5464,12 @@ export default [
     "name": "Smith Pl at Wilson Rd",
     "lat": 42.39239749145834,
     "long": -71.15058331757609,
+    "photos": [
+      {
+        "date": "2021-04-10",
+        "photo": "photos/smith-pl-at-wilson-rd_2021-04-10.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "38706d8c-8d4b-49f7-b6ed-7688449db261",
     "firstSeen": 1599849865
@@ -5457,6 +5479,12 @@ export default [
     "name": "Mass Ave at Grafton St",
     "lat": 42.40726052447951,
     "long": -71.14382132425817,
+    "photos": [
+      {
+        "date": "2021-04-10",
+        "photo": "photos/mass-ave-at-grafton-st_2021-04-10.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "9c8366d8-3b58-4894-b281-09e22f6fe5f7",
     "firstSeen": 1600254006
@@ -5466,6 +5494,12 @@ export default [
     "name": "Broadway at Grafton St",
     "lat": 42.40994213011757,
     "long": -71.14009319811885,
+    "photos": [
+      {
+        "date": "2021-04-10",
+        "photo": "photos/broadway-at-grafton-st_2021-04-10.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "8e7c1984-dc81-43b0-a0d3-58c6de45225a",
     "firstSeen": 1600259148
@@ -5610,6 +5644,12 @@ export default [
     "name": "Arsenal Yards",
     "lat": 42.36277388549605,
     "long": -71.15764854490408,
+    "photos": [
+      {
+        "date": "2021-04-10",
+        "photo": "photos/arsenal-yards_2021-04-10.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "68e5e79a-3c94-4848-b619-9c0829d7f687",
     "firstSeen": 1602183983
@@ -5684,6 +5724,12 @@ export default [
     "name": "Thorndike Field at Minuteman Bikeway",
     "lat": 42.40016804853787,
     "long": -71.14456963094199,
+    "photos": [
+      {
+        "date": "2021-04-10",
+        "photo": "photos/thorndike-field-at-minuteman-bikeway_2021-04-10.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "af066ffd-b892-434f-8532-1982fc408780",
     "firstSeen": 1602798800
@@ -5708,6 +5754,12 @@ export default [
     "name": "Kearins Playground",
     "lat": 42.406161241322444,
     "long": -71.06041654944418,
+    "photos": [
+      {
+        "date": "2021-04-10",
+        "photo": "photos/kearins-playground_2021-04-10.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "e68655be-23d3-46e5-a509-25be677e7542",
     "firstSeen": 1603043705
@@ -5853,6 +5905,12 @@ export default [
     "name": "Harvard Stadium: N. Harvard St at Soldiers Field Rd",
     "lat": 42.368019,
     "long": -71.1242,
+    "photos": [
+      {
+        "date": "2021-04-10",
+        "photo": "photos/harvard-stadium-n-harvard-st-at-soldiers-field-rd_2021-04-10.jpg"
+      }
+    ],
     "discovered": 1608825231848,
     "firstSeen": 1605640672
   },
@@ -5972,6 +6030,12 @@ export default [
     "name": "160 Arsenal",
     "lat": 42.36466403441681,
     "long": -71.17569386959076,
+    "photos": [
+      {
+        "date": "2021-04-10",
+        "photo": "photos/160-arsenal_2021-04-10.jpg"
+      }
+    ],
     "discovered": 1615743887554
   },
   {
@@ -6064,6 +6128,12 @@ export default [
     "name": "Nichols Ave. at Watertown Greenway",
     "lat": 42.36762048745005,
     "long": -71.1565663665533,
+    "photos": [
+      {
+        "date": "2021-04-10",
+        "photo": "photos/nichols-ave-at-watertown-greenway_2021-04-10.jpg"
+      }
+    ],
     "discovered": 1617809221531
   },
   {
@@ -6072,6 +6142,12 @@ export default [
     "name": "Mass Ave at Broadway",
     "lat": 42.414202132001854,
     "long": -71.15051883389242,
+    "photos": [
+      {
+        "date": "2021-04-10",
+        "photo": "photos/mass-ave-at-broadway_2021-04-10.jpg"
+      }
+    ],
     "discovered": 1618099535176
   }
 ];

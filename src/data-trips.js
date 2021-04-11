@@ -724,18 +724,48 @@ export default [
     id: '55',
     date: '2021-04-10',
     description: 'Alewife South of the Tracks',
-    stations: [463]
+    stations: [463],
+    photos: [
+      {
+        full: 'photos/2021-04-10-001.jpg',
+        lat: 42.392488517270564,
+        lng: -71.15058164239358,
+        thumb: 'photos/2021-04-10-001-thumb.jpg'
+      }
+    ]
   },
   {
     id: '56',
     date: '2021-04-10',
     description: 'Arlington',
-    stations: [183, 480, 462, 461, 510, 465, 464, 183]
+    stations: [183, 480, 462, 461, 510, 465, 464, 183],
+    photos: [
+      {
+        full: 'photos/2021-04-10-002.jpg',
+        lat: 42.40015506080741,
+        lng: -71.14440349299176,
+        thumb: 'photos/2021-04-10-002-thumb.jpg'
+      }
+    ]
   },
   {
     id: '57',
     date: '2021-04-10',
     description: '100 Percent, Again, in Everett',
-    stations: [482]
+    stations: [482],
+    photos: [
+      {
+        full: 'photos/2021-04-10-003.jpg',
+        lat: 42.4061449605306,
+        lng: -71.06035945204053,
+        thumb: 'photos/2021-04-10-003-thumb.jpg'
+      },
+      {
+        full: 'photos/2021-04-10-004.jpg',
+        lat: 42.4061449605306,
+        lng: -71.06035945204053,
+        thumb: 'photos/2021-04-10-004-thumb.jpg'
+      }
+    ]
   }
 ];
