@@ -4,6 +4,7 @@ export const BREAKPOINTS = {
 };
 
 export const VIEWS = {
+  ABOUT: 'about',
   PHOTO: 'photo',
   PHOTOS: 'photos',
   ROUTE: 'route',

@@ -3,6 +3,7 @@ import DirectionsBike from '@material-ui/icons/DirectionsBike';
 import Drawer from '@material-ui/core/Drawer';
 import Equalizer from '@material-ui/icons/Equalizer';
 import History from '@material-ui/icons/History';
+import InfoIcon from '@material-ui/icons/Info';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import MenuList from '@material-ui/core/MenuList';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -13,6 +14,8 @@ import './InfoPane.css';
 import { BREAKPOINTS, VIEWS } from './constants';
 import { useBreakpoint } from './helpers';
 
+import AboutContent from './AboutContent';
+import AboutDialog from './AboutDialog';
 import BackButton from './BackButton';
 import CancelButton from './CancelButton';
 import MenuButton from './MenuButton';
@@ -214,6 +217,10 @@ function InfoPane({
               {breakpoint === BREAKPOINTS.MOBILE && (
                 <Drawer anchor="bottom" open={isMenuOpen} onClose={handleCloseMenu}>
                   <MenuList>
+                    {/* <MenuItem onClick={() => handleClickMenuItem(VIEWS.ABOUT)}>
+                      <ListItemIcon><InfoIcon /></ListItemIcon>
+                      About the Journey
+                    </MenuItem> */}
                     <MenuItem onClick={() => handleClickMenuItem(VIEWS.PHOTOS)}>
                       <ListItemIcon><PhotoCamera /></ListItemIcon>
                       Photos
@@ -235,6 +242,10 @@ function InfoPane({
               )}
               {breakpoint === BREAKPOINTS.DESKTOP && (
                 <MenuList className="InfoPane-menu">
+                  {/* <MenuItem onClick={() => handleClickMenuItem(VIEWS.ABOUT)}>
+                    <ListItemIcon><InfoIcon /></ListItemIcon>
+                    About the Journey
+                  </MenuItem> */}
                   <MenuItem onClick={() => handleClickMenuItem(VIEWS.PHOTOS)}>
                     <ListItemIcon><PhotoCamera /></ListItemIcon>
                     Photos
@@ -261,6 +272,15 @@ function InfoPane({
           </div>
         </div>
       )}
+      {/* breakpoint === BREAKPOINTS.MOBILE && (
+        <Drawer
+          anchor="bottom"
+          open={!!activeView && activeView.view === VIEWS.ABOUT}
+          onClose={() => onViewDeactivate(VIEWS.ABOUT)}
+        >
+          <AboutContent />
+        </Drawer>
+      ) */}
       {breakpoint === BREAKPOINTS.MOBILE && (
         <Drawer
           anchor="bottom"
@@ -312,6 +332,14 @@ function InfoPane({
           />
         </Drawer>
       )}
+      {/* breakpoint === BREAKPOINTS.DESKTOP && (
+        <AboutDialog
+          open={!!activeView && activeView.view === VIEWS.ABOUT}
+          onClose={() => onViewDeactivate(VIEWS.ABOUT)}
+        >
+          <AboutContent />
+        </AboutDialog>
+      ) */}
     </>
   );
 }

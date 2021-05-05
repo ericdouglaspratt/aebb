@@ -767,5 +767,43 @@ export default [
         thumb: 'photos/2021-04-10-004-thumb.jpg'
       }
     ]
+  },
+  {
+    id: '58',
+    date: '2021-05-01',
+    description: 'South End to Chinatown',
+    stations: [364, 42, 59]
+  },
+  {
+    id: '59',
+    date: '2021-05-01',
+    description: 'Eastie Urban Wild Ride',
+    stations: [212, 489, 477, 212],
+    photos: [
+      {
+        full: 'photos/2021-05-01-001.jpg',
+        lat: 42.382794250888146,
+        lng: -71.02994025015826,
+        thumb: 'photos/2021-05-01-001-thumb.jpg'
+      },
+      {
+        full: 'photos/2021-05-01-002.jpg',
+        lat: 42.380716577326496,
+        lng: -71.03914699888598,
+        thumb: 'photos/2021-05-01-002-thumb.jpg'
+      },
+      {
+        full: 'photos/2021-05-01-003.jpg',
+        lat: 42.38067610644888,
+        lng: -71.03910846977531,
+        thumb: 'photos/2021-05-01-003-thumb.jpg'
+      },
+      {
+        full: 'photos/2021-05-01-004.jpg',
+        lat: 42.38067610644888,
+        lng: -71.03910846977531,
+        thumb: 'photos/2021-05-01-004-thumb.jpg'
+      }
+    ]
   }
 ];

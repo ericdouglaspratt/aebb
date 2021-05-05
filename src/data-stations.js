@@ -545,6 +545,20 @@ export default [
     "hashId": "f8348136-0de8-11e7-991c-3863bb43a7d0"
   },
   {
+    "hashId": "f83481c5-0de8-11e7-991c-3863bb43a7d0",
+    "id": "42",
+    "name": "Boylston St at Arlington St",
+    "lat": 42.35204262229712,
+    "long": -71.07057809829712,
+    "photos": [
+      {
+        "date": "2021-05-01",
+        "photo": "photos/boylston-st-at-arlington-st_2021-05-01.jpg"
+      }
+    ],
+    "discovered": 1619965196820
+  },
+  {
     "id": "43",
     "name": "Rowes Wharf at Atlantic Ave",
     "lat": 42.357143,
@@ -786,6 +800,10 @@ export default [
       {
         "date": "2020-12-28",
         "photo": "photos/chinatown-gate-plaza_2020-12-28.jpg"
+      },
+      {
+        "date": "2021-05-01",
+        "photo": "photos/chinatown-gate-plaza_2021-05-01.jpg"
       }
     ],
     "firstSeen": 1314822480,
@@ -965,8 +983,8 @@ export default [
   {
     "id": "71",
     "name": "Conway Park - Somerville Avenue",
-    "lat": 42.383405,
-    "long": -71.107593,
+    "lat": 42.383638948222654,
+    "long": -71.10853672027588,
     "photos": [
       {
         "date": "2019-06-08",
@@ -2927,7 +2945,8 @@ export default [
     ],
     "firstSeen": 1475021838,
     "oldId": "A32027",
-    "hashId": "f8352905-0de8-11e7-991c-3863bb43a7d0"
+    "hashId": "f8352905-0de8-11e7-991c-3863bb43a7d0",
+    "isLegacy": true
   },
   {
     "id": "210",
@@ -2947,8 +2966,8 @@ export default [
   {
     "id": "211",
     "name": "Piers Park",
-    "lat": 42.3648929326648,
-    "long": -71.03497177362442,
+    "lat": 42.36501119822304,
+    "long": -71.03528559207916,
     "photos": [
       {
         "date": "2019-05-19",
@@ -2976,6 +2995,10 @@ export default [
       {
         "date": "2021-01-10",
         "photo": "photos/maverick-square-lewis-mall_2021-01-10.jpg"
+      },
+      {
+        "date": "2021-05-01",
+        "photo": "photos/maverick-square-lewis-mall_2021-05-01.jpg"
       }
     ],
     "firstSeen": 1475101634,
@@ -4085,6 +4108,10 @@ export default [
       {
         "date": "2020-07-24",
         "photo": "photos/tremont-st-at-northampton-st_2020-07-24.jpg"
+      },
+      {
+        "date": "2021-05-01",
+        "photo": "photos/tremont-st-at-northampton-st_2021-05-01.jpg"
       }
     ],
     "firstSeen": 1540933540,
@@ -4319,8 +4346,8 @@ export default [
   {
     "id": "381",
     "name": "Inman Square at Springfield St.",
-    "lat": 42.37438408515815,
-    "long": -71.1001574621514,
+    "lat": 42.37354190072053,
+    "long": -71.09986782073975,
     "photos": [
       {
         "date": "2020-01-11",
@@ -5685,6 +5712,12 @@ export default [
     "name": "Marion St at White St",
     "lat": 42.38066930871317,
     "long": -71.03907315999093,
+    "photos": [
+      {
+        "date": "2021-05-01",
+        "photo": "photos/marion-st-at-white-st_2021-05-01.jpg"
+      }
+    ],
     "discovered": 1605550855975,
     "hashId": "9b0aff89-5242-475e-b03b-87c3c3bf51bb",
     "firstSeen": 1602006629
@@ -5863,6 +5896,10 @@ export default [
       {
         "date": "2021-01-10",
         "photo": "photos/day-sq_2021-01-10.jpg"
+      },
+      {
+        "date": "2021-05-01",
+        "photo": "photos/day-sq_2021-05-01.jpg"
       }
     ],
     "discovered": 1605550855975,
